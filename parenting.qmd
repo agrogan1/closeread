@@ -8,6 +8,20 @@ format:
       narrative-background-color-overlay: grey
       narrative-background-color-sidebar: white
       section-background-color: white
+filters:
+  - social-share
+share:
+  permalink: "https://globalfamilies.quarto.pub/parenting/"
+  description: "awesome page"
+  twitter: false
+  facebook: true
+  reddit: true
+  stumble: false
+  tumblr: false
+  linkedin: true
+  email: true
+  mastodon: true
+  bsky: true
 ---
 
 :::{.cr-section}
