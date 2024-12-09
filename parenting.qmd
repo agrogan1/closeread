@@ -1,0 +1,132 @@
+---
+title: "What Should Parents Do?"
+subtitle: "Positive and Negative Parental Discipline Behaviors And Child Outcomes Across 60 Countries"
+format: 
+  closeread-html:
+    cr-style:
+      narrative-text-color-sidebar: black
+      narrative-background-color-overlay: grey
+      narrative-background-color-sidebar: white
+      section-background-color: white
+---
+
+:::{.cr-section}
+
+:::{focus-on="cr-positiveparenting" pan-to="0%,0%"  scale-by=".75"}
+Parents raise their children in a variety of ways. 
+:::
+
+:::{focus-on="cr-positiveparenting" pan-to="0%,0%"  scale-by="1.1"}
+The objective of this study was to test the associations between 11 caregiver aggressive and nonaggressive discipline behaviors and outcomes (aggression, distraction, and prosocial peer relations) of children under 5 in low- and middle-income countries (LMICs). 
+:::
+
+:::{#cr-positiveparenting}
+![Positive Parenting](positiveparenting.png)
+:::
+
+:::{focus-on="cr-mymap" scale-by="1.5"}
+* Data came from the fourth (2009-2013) and fifth (2012-2017) rounds of the UNICEF Multiple Indicator Cluster Surveys (MICS).
+* Analyses were restricted to households with children under 5 years, leaving a sample of 229,465 respondents across 60 LMICs.
+* Data were analyzed using a statistical method known as Bayesian multilevel logistic regression.
+:::
+
+:::{#cr-mymap}
+```{r}
+#| fig-cap: "Countries in MICS"
+#| warning: false
+#| message: false
+#| fig-dpi: 600
+
+library(sf) # simple features
+
+library(ggplot2) # beautiful graphs
+
+MICS <- read_sf("MICS/MICS.shp") 
+
+global_data <- read_sf("wrld_simpl/wrld_simpl.shp")
+
+ggplot(global_data) +
+  geom_sf() +
+  geom_sf(data = MICS,
+          color = "#5b92e5",
+          fill = "#5b92e5",
+          alpha = .5,
+          linewidth = .5) +
+  theme_minimal()
+
+```
+:::
+
+:::{focus-on="cr-discipline" pan-to="0%,0%" scale-by="1.0"}
+Different forms of discipline had different effects.
+:::
+
+:::{focus-on="cr-discipline" pan-to="50%,30%" scale-by="1.5"}
+Verbal reasoning (80%) and shouting (66%) were the most common parental discipline behaviors toward young children.
+:::
+
+:::{focus-on="cr-discipline" pan-to="0%,0%" scale-by="1.0"}
+Psychological and physical aggression had similar effects.
+:::
+
+:::{focus-on="cr-discipline2" pan-to="0%,0%" scale-by="1.0"}
+Psychological and physical aggression were associated with higher child aggression. 
+:::
+
+:::{focus-on="cr-discipline3" pan-to="0%,0%" scale-by="1.0"}
+Verbal reasoning was associated with lower aggression and higher prosocial peer relations. 
+:::
+
+:::{focus-on="cr-discipline4" pan-to="0%,0%" scale-by="1.0"}
+Taking away privileges was associated with lower prosocial peer relations. 
+:::
+
+:::{focus-on="cr-mymap"}
+Results indicated some country-level variation in the associations between parenting behaviors and child socio-emotional outcomes. 
+:::
+
+:::{focus-on="cr-discipline5"}
+However, the associations of discipline with child outcomes were still largely consistent across countries.
+:::
+
+:::{#cr-discipline}
+![Positive and Negative Discipline Behaviors](discipline.png)
+:::
+
+:::{#cr-discipline2}
+![Positive and Negative Discipline Behaviors](discipline2.png)
+:::
+
+:::{#cr-discipline3}
+![Positive and Negative Discipline Behaviors](discipline3.png)
+:::
+
+:::{#cr-discipline4}
+![Positive and Negative Discipline Behaviors](discipline4.png)
+:::
+
+:::{#cr-discipline5}
+![Positive and Negative Discipline Behaviors](discipline5.png)
+:::
+
+:::{focus-on="cr-positiveparenting" scale-by="1.25"}
+Psychological and physical aggression were disadvantageous for children’s socio-emotional development across countries. 
+:::
+
+:::{focus-on="cr-positiveparenting" scale-by="1.5"}
+Only verbal reasoning was associated with positive child socio-emotional development.
+:::
+
+:::{focus-on="cr-positiveparenting" scale-by="1.75"}
+No form of psychological aggression or physical aggression benefited child socioemotional development in any country.   
+:::
+
+:::{focus-on="cr-positiveparenting" scale-by=".75"}
+Greater emphasis should be dedicated to reducing parental use of psychological and physical aggression across cultural contexts.
+:::
+  
+:::
+
+
+**Citation:** Ward, Kaitlin P, Andrew Grogan-Kaylor, Julie Ma, Garrett T Pace, and Shawna J Lee. 2023. "Associations Between 11 Parental Discipline Behaviors and Child Outcomes Across 60 Countries." 13(10), *BMJ Open*,  [https://bmjopen.bmj.com/content/13/10/e058439](https://bmjopen.bmj.com/content/13/10/e058439). 
+
