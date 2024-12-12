@@ -39,10 +39,16 @@ The objective of this study was to test the associations between 11 caregiver ag
 ![Positive Parenting](positiveparenting.png)
 :::
 
+:::{focus-on="cr-mymap" scale-by="1.0"}
+Data came from the fourth (2009-2013) and fifth (2012-2017) rounds of the UNICEF Multiple Indicator Cluster Surveys (MICS).
+:::
+
+:::{focus-on="cr-mymap" scale-by="1.25"}
+Analyses were restricted to households with children under 5 years, leaving a sample of 229,465 respondents across 60 LMICs.
+:::
+
 :::{focus-on="cr-mymap" scale-by="1.5"}
-* Data came from the fourth (2009-2013) and fifth (2012-2017) rounds of the UNICEF Multiple Indicator Cluster Surveys (MICS).
-* Analyses were restricted to households with children under 5 years, leaving a sample of 229,465 respondents across 60 LMICs.
-* Data were analyzed using a statistical method known as Bayesian multilevel logistic regression.
+Data were analyzed using a statistical method known as Bayesian multilevel logistic regression.
 :::
 
 :::{#cr-mymap}
@@ -124,22 +130,34 @@ However, the associations of discipline with child outcomes were still largely c
 ![Positive and Negative Discipline Behaviors](discipline5.png)
 :::
 
-:::{focus-on="cr-positiveparenting" scale-by="1.25"}
+:::{focus-on="cr-positiveparenting" scale-by=".5"}
 Psychological and physical aggression were disadvantageous for children’s socio-emotional development across countries. 
 :::
 
-:::{focus-on="cr-positiveparenting" scale-by="1.5"}
+:::{focus-on="cr-positiveparenting" scale-by=".6"}
 Only verbal reasoning was associated with positive child socio-emotional development.
 :::
 
-:::{focus-on="cr-positiveparenting" scale-by="1.75"}
+:::{focus-on="cr-positiveparenting" scale-by=".7"}
 No form of psychological aggression or physical aggression benefited child socioemotional development in any country.   
 :::
 
 :::{focus-on="cr-positiveparenting" scale-by=".75"}
 Greater emphasis should be dedicated to reducing parental use of psychological and physical aggression across cultural contexts.
 :::
-  
+
+:::{#cr-father1}
+![Positive Parenting](father1.png)
+:::
+
+:::{#cr-mother1}
+![Positive Parenting](mother1.png)
+:::
+
+:::{#cr-father2}
+![Positive Parenting](father2.png)
+:::
+
 :::
 
 
