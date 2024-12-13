@@ -47,7 +47,7 @@ Data came from the fourth (2009-2013) and fifth (2012-2017) rounds of the UNICEF
 Analyses were restricted to households with children under 5 years, leaving a sample of 229,465 respondents across 60 LMICs.
 :::
 
-:::{focus-on="cr-mymap" scale-by="1.5"}
+:::{focus-on="cr-equation" scale-by="1.25"}
 Data were analyzed using a statistical method known as Bayesian multilevel logistic regression.
 :::
 
@@ -130,19 +130,19 @@ However, the associations of discipline with child outcomes were still largely c
 ![Positive and Negative Discipline Behaviors](discipline5.png)
 :::
 
-:::{focus-on="cr-positiveparenting" scale-by=".5"}
+:::{focus-on="cr-positiveparenting" scale-by=".6"}
 Psychological and physical aggression were disadvantageous for children’s socio-emotional development across countries. 
 :::
 
-:::{focus-on="cr-positiveparenting" scale-by=".6"}
+:::{focus-on="cr-positiveparenting" scale-by=".7"}
 Only verbal reasoning was associated with positive child socio-emotional development.
 :::
 
-:::{focus-on="cr-positiveparenting" scale-by=".7"}
-No form of psychological aggression or physical aggression benefited child socioemotional development in any country.   
+:::{focus-on="cr-positiveparenting" scale-by=".8"}
+No form of psychological aggression or physical aggression benefited child socio-emotional development in any country.   
 :::
 
-:::{focus-on="cr-positiveparenting" scale-by=".75"}
+:::{focus-on="cr-positiveparenting" scale-by=".9"}
 Greater emphasis should be dedicated to reducing parental use of psychological and physical aggression across cultural contexts.
 :::
 
@@ -156,6 +156,12 @@ Greater emphasis should be dedicated to reducing parental use of psychological a
 
 :::{#cr-father2}
 ![Positive Parenting](father2.png)
+:::
+
+:::{#cr-equation}
+
+$$\ln \left( \frac{p(\text{outcome})}{1- p(\text{outcome})} \right) = \beta_0 + \Sigma \beta_k \text{discipline}_k + \Sigma \beta_m \text{covariate}_m + u_{0j}  $$
+
 :::
 
 :::
