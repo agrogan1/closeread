@@ -47,7 +47,7 @@ Data came from the fourth (2009-2013) and fifth (2012-2017) rounds of the UNICEF
 Analyses were restricted to households with children under 5 years, leaving a sample of 229,465 respondents across 60 LMICs.
 :::
 
-:::{focus-on="cr-equation" scale-by="1.25"}
+:::{focus-on="cr-equation" scale-by="1"}
 Data were analyzed using a statistical method known as Bayesian multilevel logistic regression.
 :::
 
@@ -159,9 +159,7 @@ Greater emphasis should be dedicated to reducing parental use of psychological a
 :::
 
 :::{#cr-equation}
-
-$$\ln \left( \frac{p(\text{outcome})}{1- p(\text{outcome})} \right) = \beta_0 + \Sigma \beta_k \text{discipline}_k + \Sigma \beta_m \text{covariate}_m + u_{0j}  $$
-
+![Multilevel Logistic Regression](equation.png)
 :::
 
 :::
