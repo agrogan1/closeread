@@ -2,56 +2,51 @@
 title: "Be Less Wrong"
 subtitle: "Why Use Advanced Quantitative Methods?"
 author: "Andy Grogan-Kaylor"
-date: "2024-12-17"
-categories: [science, social justice, stats]
-image: "math1.png"
-draft: true
+format: 
+  closeread-html:
+    cr-style:
+      narrative-text-color-sidebar: black
+      narrative-background-color-overlay: grey
+      narrative-background-color-sidebar: white
+      section-background-color: white
 fig-height: 3
 fig-dpi: 600
+bibliography: be-less-wrong.bib
 ---
 
+:::{.cr-section}
+
+:::{focus-on="cr-earth" pan-to="0%,0%"  scale-by="1"}
 Across the globe, there are definite concrete *realities* of abuse, neglect, suffering, exploitation, violence, discrimination, and other associated problems that we are trying to understand, and to reduce. 
+:::
 
-```{r}
-#| label: fig-globe
+:::{#cr-earth}
+![Earth](earth.png)
+:::
 
-library(plotly)
-
-mymap <- plot_geo() %>%
-  layout(geo = list(showland = TRUE, # show land
-                    landcolor = toRGB("darkgrey"), # land color
-                    showcountries = TRUE, # show countries
-                    showocean = FALSE, # show ocean
-                    oceancolor = "lightblue", # ocean color
-                    lataxis = list(showgrid = TRUE, # latitude options
-                                   gridcolor = toRGB("grey")),
-                    lonaxis = list(showgrid = TRUE, # longitude options
-                                   gridcolor = toRGB("grey")))) 
-
-# mymap # replay
-
-myglobe <- mymap %>% 
-  layout(geo = list(projection = list(type = 'orthographic',
-                                      rotation = list(lon = -45,
-                                                      lat = 0,
-                                                      roll = 0))))
-
-myglobe # replay
-
-```
-
-
-> "What we see and how we see is of course determined by our perspective, by the place from which we begin our examination of history; but it is determined also by reality itself." [@Martin-Baro1994B]
-
+:::{focus-on="cr-martinbaro" scale-by="1"}
 We hope that our research will inform efforts to change these *realities*. Yet, at the same time we must recognize that our understandings are at best *iterative* and *contingent.* While we will never have a perfect understanding of social reality, we can always improve our understandings, and move in the direction of being *less wrong*.
+:::
 
+:::{#cr-martinbaro}
+> "What we see and how we see is of course determined by our perspective, by the place from which we begin our examination of history; but it is determined also by reality itself." [@Martin-Baro1994B]
+:::
+
+:::{focus-on="cr-silverman" scale-by="1"}
 As @Silverman1998 wrote: 
+:::
 
+:::{#cr-silverman}
 > "... there is no way to know when our observations about complex events in nature are complete. Our knowledge is finite, Karl Popper emphasised, but our ignorance is infinite. ... [W]e can never be certain about the consequences of our interventions, we can only narrow the area of uncertainty. This admission is not as pessimistic as it sounds: claims that resist repeated energetic challenges often turn out to be quite reliable. Such 'working truths' are the building blocks for the reasonably solid structures that support our everyday actions..." [@Silverman1998]
+:::
 
+:::{focus-on="cr-box" scale-by="1"}
 This recalls the famous saying by the statistician George Box about statistical models, reported in many places, and well captured in the passage below by @Hand2014:
+:::
 
+:::{#cr-box}
 > "In general, when building statistical models, we must not forget that the aim is to understand something about the real world. Or predict, choose an action, make a decision, summarize evidence, and so on, but always about the real world, not an abstract mathematical world: our models are not the reality—a point well made by George Box in his oft-cited remark that 'all models are wrong, but some are useful' (Box, 1979 in @MR0554183)." [@Hand2014]
+:::
 
 A key task then, of using quantitative methods is to use them to try to be progressively *less wrong* about the answers we are finding to important questions about improving human wellbeing. 
 
@@ -95,8 +90,7 @@ mydata <- data.frame(intervention, group, outcome)
 
 p0 <- ggplot(mydata,
        aes(x = intervention,
-           y = outcome,
-           group = 1)) + 
+           y = outcome)) + 
   geom_point(size = 5)+
   geom_smooth(method="lm",
               linewidth = 2,
@@ -107,9 +101,11 @@ p0 <- ggplot(mydata,
 
 ```
 
-
+:::{focus-on="cr-p0" scale-by="1"}
 Here is a first model. What do these results say about the relationship of the *intervention* and the *outcome*?
+:::
 
+:::{#cr-p0}
 ```{r}
 #| label: fig-p0
 
@@ -119,13 +115,18 @@ p0 + # replay
        y = "beneficial mental health or \npsychological outcome") 
 
 ```
+:::
 
+:::{focus-on="cr-notrecommended" scale-by="1"}
 These simple straightforward results suggest that the *intervention* is associated with a worsening of the *outcome*.
+:::
 
+:::{#cr-notrecommended}
 ::: {.callout-important appearance="simple"}
 ## The Intervention is *Not* Recommended
 
 Based upon these results we would *not* recommend using this intervention.  
+:::
 :::
 
 Let's now consider a slightly more complex model. In addition to examining the *intervention* and the *outcome*, we account for the fact that individuals come from different *groups*. This could be any kind of group, e.g. a racial, ethnic, religious, cultural, or economic group. 
@@ -248,7 +249,7 @@ What I have illustrated here is only one set of ideas about how we need to compl
 
 We need to keep the model as simple as possible so that it remains a useful abstraction, but to make the model complicated enough to reflect the complications of reality.
 
-
+:::
 
 
 
