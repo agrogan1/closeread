@@ -49,7 +49,7 @@ This recalls the famous saying by the statistician George Box about statistical 
 > "In general, when building statistical models, we must not forget that the aim is to understand something about the real world. Or predict, choose an action, make a decision, summarize evidence, and so on, but always about the real world, not an abstract mathematical world: our models are not the reality—a point well made by George Box in his oft-cited remark that 'all models are wrong, but some are useful' (Box, 1979 in @MR0554183)." [@Hand2014]
 :::
 
-:::{focus-on="cr-box2" scale-by="1"}
+:::{focus-on="cr-box2" scale-by="1.25"}
 A key task then, of using quantitative methods is to use them to try to be progressively *less wrong* about the answers we are finding to important questions about improving human wellbeing. 
 :::
 
