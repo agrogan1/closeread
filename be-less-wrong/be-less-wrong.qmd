@@ -9,6 +9,7 @@ format:
       narrative-background-color-overlay: grey
       narrative-background-color-sidebar: white
       section-background-color: white
+    css: be-less-wrong.css
 fig-height: 3
 fig-dpi: 600
 bibliography: be-less-wrong.bib
