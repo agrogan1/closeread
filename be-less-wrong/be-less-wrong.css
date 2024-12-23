@@ -1,3 +1,11 @@
 h1.title, .title.h1 {
     font-size: 300%;
 }
+blockquote {
+  color: black;
+  border-left: 3px solid #FFCB05; 
+  padding: 0.5em 10px;
+}
+.blockquote {
+  font-size: 125%;
+}

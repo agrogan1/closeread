@@ -57,11 +57,15 @@ div.csl-indent {
 <script src="be-less-wrong_files/libs/quarto-contrib/intersection-observer-polyfill-1.0.0/intersection-observer.js"></script>
 <script src="be-less-wrong_files/libs/quarto-contrib/scrollama-3.2.0/scrollama.min.js"></script>
 <script src="be-less-wrong_files/libs/quarto-contrib/closeread-0.1.0/closeread.js"></script>
+<script src="be-less-wrong_files/libs/quarto-diagram/mermaid.min.js"></script>
+<script src="be-less-wrong_files/libs/quarto-diagram/mermaid-init.js"></script>
+<link href="be-less-wrong_files/libs/quarto-diagram/mermaid.css" rel="stylesheet">
 <meta cr-debug-mode="false">
 <meta cr-remove-header-space="false">
 
 
 <link rel="stylesheet" href="_extensions/qmd-lab/closeread/closeread.css">
+<link rel="stylesheet" href="be-less-wrong.css">
 </head>
 
 <body>
@@ -108,7 +112,7 @@ div.csl-indent {
 
 <div class="cr-section cr-column-screen sidebar-left">
 <div class="narrative-col">
-<div class="trigger new-trigger" data-scale-by="1" data-pan-to="0%,0%" data-focus-on="cr-earth">
+<div class="trigger new-trigger" data-focus-on="cr-earth" data-pan-to="0%,0%" data-scale-by="1">
 <div class="narrative">
 <p>Across the globe, there are definite concrete <em>realities</em> of abuse, neglect, suffering, exploitation, violence, discrimination, and other associated problems that we are trying to understand, and to reduce.</p>
 </div>
@@ -128,12 +132,12 @@ div.csl-indent {
 <p>This recalls the famous saying by the statistician George Box about statistical models, reported in many places, and well captured in the passage below by <span class="citation" data-cites="Hand2014">Hand (<a href="#ref-Hand2014" role="doc-biblioref">2014</a>)</span>:</p>
 </div>
 </div>
-<div class="trigger">
+<div class="trigger new-trigger" data-scale-by="1" data-focus-on="cr-box2">
 <div class="narrative">
 <p>A key task then, of using quantitative methods is to use them to try to be progressively <em>less wrong</em> about the answers we are finding to important questions about improving human wellbeing.</p>
 </div>
 </div>
-<div class="trigger">
+<div class="trigger new-trigger" data-scale-by="3" data-focus-on="cr-flowchart">
 <div class="narrative">
 <p>Let’s consider some simple visual models based upon some simulated data. Two key variables in this model are <em>intervention</em> (a treatment or program that we hope does some good), and the <em>outcome</em> (an improved or beneficial mental health or psychological outcome).</p>
 </div>
@@ -163,28 +167,9 @@ div.csl-indent {
 <p>These simple straightforward results suggest that the <em>intervention</em> is associated with a worsening of the <em>outcome</em>.</p>
 </div>
 </div>
-<div class="trigger">
+<div class="trigger new-trigger" data-scale-by="1" data-focus-on="cr-p0-group">
 <div class="narrative">
 <p>Let’s now consider a slightly more complex model. In addition to examining the <em>intervention</em> and the <em>outcome</em>, we account for the fact that individuals come from different <em>groups</em>. This could be any kind of group, e.g.&nbsp;a racial, ethnic, religious, cultural, or economic group.</p>
-</div>
-</div>
-<div class="trigger">
-<div class="cell narrative">
-<div class="cell-output cell-output-stderr">
-<pre><code>`geom_smooth()` using formula = 'y ~ x'</code></pre>
-</div>
-<div class="cell-output-display">
-<div id="fig-p0-group" class="quarto-float quarto-figure quarto-figure-center anchored" width="4200">
-<figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-p0-group-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="be-less-wrong_files/figure-html/fig-p0-group-1.png" id="fig-p0-group" class="img-fluid figure-img" width="4200">
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-p0-group-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;1
-</figcaption>
-</figure>
-</div>
-</div>
 </div>
 </div>
 <div class="callout callout-style-simple callout-important callout-titled">
@@ -233,7 +218,7 @@ If those variables are observed, and included in our data set, it may be straigh
 </div>
 <div class="callout-title-container flex-fill">
 A Thought Experiment<br>
-Imagine a situation in which an intervention is administered based upon the situation in a local community. Quite possibly, the intervention might be given in communities where outcomes are less good. At the same time the intervention might be beneficial to individuals. Such a scenario would present us with exactly the data that we see reflected in <a href="#fig-p0" class="quarto-xref">Figure&nbsp;4</a> and <a href="#fig-p0-group" class="quarto-xref">Figure&nbsp;1</a>.
+Imagine a situation in which an intervention is administered based upon the situation in a local community. Quite possibly, the intervention might be given in communities where outcomes are less good. At the same time the intervention might be beneficial to individuals. Such a scenario would present us with exactly the data that we see reflected in <a href="#fig-p0" class="quarto-xref">Figure&nbsp;3</a> and <a href="#fig-p0-group" class="quarto-xref">Figure&nbsp;4</a>.
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -277,7 +262,7 @@ Imagine a situation in which an intervention is administered based upon the situ
 <img src="be-less-wrong_files/figure-html/fig-p1A-1.png" id="fig-p1A" class="img-fluid figure-img" width="4200">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-p1A-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;2
+Figure&nbsp;1
 </figcaption>
 </figure>
 </div>
@@ -296,7 +281,7 @@ Figure&nbsp;2
 <img src="be-less-wrong_files/figure-html/fig-p1B-1.png" id="fig-p1B" class="img-fluid figure-img" width="4200">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-p1B-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;3
+Figure&nbsp;2
 </figcaption>
 </figure>
 </div>
@@ -330,6 +315,11 @@ My point? Simple models feel intuitive and have a commonsense appeal. Yet, with 
 </div>
 <div class="sticky-col">
 <div class="sticky-col-stack">
+<div id="cr-martinbaro" class="sticky">
+<blockquote class="blockquote">
+<p>“What we see and how we see is of course determined by our perspective, by the place from which we begin our examination of history; but it is determined also by reality itself.” <span class="citation" data-cites="Martin-Baro1994B">(<a href="#ref-Martin-Baro1994B" role="doc-biblioref">Martín-Baró 1994</a>)</span></p>
+</blockquote>
+</div>
 <div id="cr-earth" class="sticky">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -337,11 +327,6 @@ My point? Simple models feel intuitive and have a commonsense appeal. Yet, with 
 <figcaption>Earth</figcaption>
 </figure>
 </div>
-</div>
-<div id="cr-martinbaro" class="sticky">
-<blockquote class="blockquote">
-<p>“What we see and how we see is of course determined by our perspective, by the place from which we begin our examination of history; but it is determined also by reality itself.” <span class="citation" data-cites="Martin-Baro1994B">(<a href="#ref-Martin-Baro1994B" role="doc-biblioref">Martín-Baró 1994</a>)</span></p>
-</blockquote>
 </div>
 <div id="cr-silverman" class="sticky">
 <blockquote class="blockquote">
@@ -353,11 +338,28 @@ My point? Simple models feel intuitive and have a commonsense appeal. Yet, with 
 <p>“In general, when building statistical models, we must not forget that the aim is to understand something about the real world. Or predict, choose an action, make a decision, summarize evidence, and so on, but always about the real world, not an abstract mathematical world: our models are not the reality—a point well made by George Box in his oft-cited remark that ‘all models are wrong, but some are useful’ (Box, 1979 in <span class="citation" data-cites="MR0554183">Launer and Wilkinson (<a href="#ref-MR0554183" role="doc-biblioref">1979</a>)</span>).” <span class="citation" data-cites="Hand2014">(<a href="#ref-Hand2014" role="doc-biblioref">Hand 2014</a>)</span></p>
 </blockquote>
 </div>
+<div id="cr-box2" class="sticky">
+<blockquote class="blockquote">
+<p>“All models are wrong, but some are useful.” (Box 1979)</p>
+</blockquote>
+</div>
+<div id="cr-flowchart" class="sticky">
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">flowchart LR
+  intervention(intervention) --&gt; outcome(outcome)
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+</div>
 <div id="cr-p0" class="sticky">
 <div class="cell">
-<div class="cell-output cell-output-stderr">
-<pre><code>`geom_smooth()` using formula = 'y ~ x'</code></pre>
-</div>
 <div class="cell-output-display">
 <div id="fig-p0" class="quarto-float quarto-figure quarto-figure-center anchored" width="4200">
 <figure class="quarto-float quarto-float-fig figure">
@@ -365,7 +367,7 @@ My point? Simple models feel intuitive and have a commonsense appeal. Yet, with 
 <img src="be-less-wrong_files/figure-html/fig-p0-1.png" id="fig-p0" class="img-fluid figure-img" width="4200">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-p0-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;4
+Figure&nbsp;3
 </figcaption>
 </figure>
 </div>
@@ -384,6 +386,25 @@ The Intervention is <em>Not</em> Recommended
 </div>
 <div class="callout-body-container callout-body">
 <p>Based upon these results we would <em>not</em> recommend using this intervention.</p>
+</div>
+</div>
+</div>
+<div id="cr-p0-group" class="sticky">
+<div class="cell">
+<div class="cell-output cell-output-stderr">
+<pre><code>`geom_smooth()` using formula = 'y ~ x'</code></pre>
+</div>
+<div class="cell-output-display">
+<div id="fig-p0-group" class="quarto-float quarto-figure quarto-figure-center anchored" width="4200">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-p0-group-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="be-less-wrong_files/figure-html/fig-p0-group-1.png" id="fig-p0-group" class="img-fluid figure-img" width="4200">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-p0-group-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;4
+</figcaption>
+</figure>
+</div>
 </div>
 </div>
 </div>
