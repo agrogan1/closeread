@@ -219,7 +219,7 @@ At first the scenario I've just presented seems almost like a trick, or a puzzle
 :::{#cr-thoughtexperiment}
 ## A Thought Experiment
 
-Imagine a situation in which an intervention is administered based upon the situation in a local community. Quite possibly, the intervention might be given in communities where outcomes are less good. At the same time the intervention might be beneficial to individuals. Such a scenario would present us with exactly the data that we see reflected in @fig-p0 and @fig-p0-group.
+Imagine a situation in which an intervention is administered based upon the situation in a local community. Quite possibly, the intervention might be provided at higher levels in communities where outcomes are less good. At the same time the intervention might be beneficial to individuals. Such a scenario would present us with exactly the data that we see reflected in @fig-p0 and @fig-p0-group.
 
 ```{r}
 #| message: false
