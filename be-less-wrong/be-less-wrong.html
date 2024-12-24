@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Andy Grogan-Kaylor">
-<meta name="dcterms.date" content="2024-12-23">
+<meta name="dcterms.date" content="2024-12-24">
 
 <title>Be Less Wrong</title>
 <style>
@@ -77,10 +77,10 @@ div.csl-indent {
       <!-- user-provided yaml closeread style options -->
       <style>
         :root {
-          --cr-narrative-background-color-sidebar: white;
---cr-section-background-color: white;
---cr-narrative-background-color-overlay: grey;
+          --cr-section-background-color: white;
 --cr-narrative-text-color-sidebar: black;
+--cr-narrative-background-color-sidebar: white;
+--cr-narrative-background-color-overlay: grey;
         }
       </style>
     
@@ -88,7 +88,7 @@ div.csl-indent {
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">Be Less Wrong</h1>
-<p class="subtitle lead">Why Use Advanced Quantitative Methods?</p>
+<p class="subtitle lead">Why Use Quantitative Methods?</p>
 </div>
 
 
@@ -105,7 +105,7 @@ div.csl-indent {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">December 23, 2024</p>
+      <p class="date">December 24, 2024</p>
     </div>
   </div>
   
@@ -176,13 +176,14 @@ div.csl-indent {
 <div class="trigger new-trigger" data-focus-on="cr-Simpson" data-scale-by="1">
 <div class="narrative">
 <p>The fact that statistical results–and analogously visual results–can flip when more variables are accounted for is known as Simpson’s Paradox <span class="citation" data-cites="Simpson1951">(<a href="#ref-Simpson1951" role="doc-biblioref">Simpson 1951</a>)</span>.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
+<p>Adding more variables will not always <em>flip</em> our conclusions. But often, adding additional variables means that an original conclusion that we thought was substantively or statistically significant is no longer significant.</p>
 </div>
 </div>
 <div class="trigger new-trigger" data-focus-on="cr-variables" data-scale-by="1">
-<section id="include-as-many-relevant-variables-as-you-can." class="level2 narrative">
-<h2 class="anchored" data-anchor-id="include-as-many-relevant-variables-as-you-can.">Include as many relevant variables as you can.</h2>
+<div class="narrative">
+<p>We need to include as many variables as we can in our visual and statistical models.</p>
 <p>Failure to include all of the relevant variables in our model–whether that model is visual or statistical–may lead to very wrong conclusions.</p>
-</section>
+</div>
 </div>
 <div class="trigger new-trigger" data-focus-on="cr-thoughtexperiment" data-scale-by="1">
 <div class="narrative">
@@ -192,7 +193,7 @@ div.csl-indent {
 <div class="trigger new-trigger" data-focus-on="cr-belesswrong" data-scale-by="1">
 <div class="narrative">
 <p>My point? Simple models feel intuitive and have a commonsense appeal. Yet, with even slightly complicated social issues, simple models may be wrong.</p>
-<p>What I have illustrated here is only one set of ideas about how we need to complicate our quantitative thinking to try to be a little less wrong in thinking about social problems.</p>
+<p>What I have illustrated here is only one set of ideas about how we need to complicate our quantitative thinking to try to be a <em>little less wrong</em> in thinking about social problems.</p>
 <p>Other more advanced statistical techniques may be seen as attempts to deal with other complications of the data, in an effort to be <em>less wrong</em>.</p>
 </div>
 </div>
@@ -224,7 +225,7 @@ div.csl-indent {
 </div>
 <div id="cr-box2" class="sticky">
 <blockquote class="blockquote">
-<p>“All models are wrong, but some are useful.” (Box 1979)</p>
+<p>“All models are wrong, but some are useful.” <span class="citation" data-cites="Box1979">(<a href="#ref-Box1979" role="doc-biblioref">Box 1979</a>)</span></p>
 </blockquote>
 </div>
 <div id="cr-flowchart" class="sticky">
@@ -314,9 +315,14 @@ Figure&nbsp;2
 <p>Imagine a situation in which an intervention is administered based upon the situation in a local community. Quite possibly, the intervention might be given in communities where outcomes are less good. At the same time the intervention might be beneficial to individuals. Such a scenario would present us with exactly the data that we see reflected in <a href="#fig-p0" class="quarto-xref">Figure&nbsp;1</a> and <a href="#fig-p0-group" class="quarto-xref">Figure&nbsp;2</a>.</p>
 <div class="cell">
 <div class="cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="be-less-wrong_files/figure-html/unnamed-chunk-8-1.png" class="img-fluid figure-img" width="672"></p>
+<div id="fig-combined" class="quarto-float quarto-figure quarto-figure-center anchored" width="672">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-combined-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="be-less-wrong_files/figure-html/fig-combined-1.png" id="fig-combined" class="img-fluid figure-img" width="672">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-combined-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3
+</figcaption>
 </figure>
 </div>
 </div>
@@ -336,6 +342,9 @@ Figure&nbsp;2
 
 
 <div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-Box1979" class="csl-entry" role="listitem">
+Box, George. 1979. <span>“Robustness in the Strategy of Scientific Model Building.”</span> In <em>Robustness in Statistics</em>, edited by Robert L. Launer and Graham N. Wilkinson. Academic Press, Inc. [Harcourt Brace Jovanovich, Publishers], New York-London.
+</div>
 <div id="ref-Gelman2007" class="csl-entry" role="listitem">
 Gelman, Andrew, Boris Shor, Joseph Bafumi, and David Park. 2007. <span>“Rich State, Poor State, Red State, Blue State: What’s the Matter with <span>C</span>onnecticut?”</span> <em>Quarterly Journal of Political Science</em> 2 (November): 345–67. <a href="https://doi.org/10.2139/ssrn.1010426">https://doi.org/10.2139/ssrn.1010426</a>.
 </div>

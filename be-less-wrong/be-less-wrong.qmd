@@ -1,6 +1,6 @@
 ---
 title: "Be Less Wrong"
-subtitle: "Why Use Advanced Quantitative Methods?"
+subtitle: "Why Use Quantitative Methods?"
 author: "Andy Grogan-Kaylor"
 date: "today"
 format: 
@@ -11,8 +11,13 @@ format:
       narrative-background-color-sidebar: white
       section-background-color: white
     css: be-less-wrong.css
+  docx: 
+    toc: false
+    execute:
+      echo: false
 fig-height: 3
 bibliography: be-less-wrong.bib
+format-links: false
 ---
 
 ```{r}
@@ -102,7 +107,7 @@ A key task then, of using quantitative methods is to use them to try to be progr
 :::
 
 :::{#cr-box2}
-> "All models are wrong, but some are useful." (Box 1979)
+> "All models are wrong, but some are useful." [@Box1979]
 :::
 
 :::{focus-on="cr-flowchart" scale-by="3"}
@@ -127,7 +132,7 @@ Here is a first model. What do these results say about the relationship of the *
 
 p0 + # replay
   labs(title = "A Simple Model of The Data",
-       subtitle = "What is the observed relationship between intervention and outcome?",
+       subtitle = "The outcome gets worse as more of the intervention is provided",
        y = "beneficial mental health or \npsychological outcome") 
 
 ```
@@ -175,7 +180,7 @@ Based upon these results we *would* recommend using this intervention.
 p0 + 
   aes(color = group) +
   labs(title = "A Simple Model of The Data Accounting for Group Membership",
-       subtitle = "What is the observed relationship between intervention and outcome?",
+       subtitle = "After accounting for group, the outcome improves when more of the intervention is provided",
        y = "beneficial mental health or \npsychological outcome")
 
 
@@ -184,6 +189,8 @@ p0 +
 
 :::{focus-on="cr-Simpson" scale-by="1"}
 The fact that statistical results--and analogously visual results--can flip when more variables are accounted for is known as Simpson's Paradox [@Simpson1951].[^multilevelstructure] 
+
+Adding more variables will not always *flip* our conclusions. But often, adding additional variables means that an original conclusion that we thought was substantively or statistically significant is no longer significant. 
 :::
 
 :::{#cr-Simpson}
@@ -195,7 +202,7 @@ Put briefly, and intuitively, our evidence based "story" can change--sometimes q
 [^multilevelstructure]: An analogous process can occur with *multilevel* data, in which there are often many groups, such as many schools, many neighborhoods, or many countries. Failure to account for the grouping of the data--in schools, neighborhoods or countries--can sometimes lead to dramatically incorrect results [@Gelman2007; @Nieuwenhuis2015]. 
 
 :::{focus-on="cr-variables" scale-by="1"}
-## Include as many relevant variables as you can.
+We need to include as many variables as we can in our visual and statistical models.
 
 Failure to include all of the relevant variables in our model--whether that model is visual or statistical--may lead to very wrong conclusions.
 :::
@@ -216,6 +223,7 @@ Imagine a situation in which an intervention is administered based upon the situ
 
 ```{r}
 #| message: false
+#| label: fig-combined
 
 p0 + p0 + aes(color = group) +
   plot_annotation(title = "One Model Accounts for Group While The Other Does Not")
@@ -227,7 +235,7 @@ p0 + p0 + aes(color = group) +
 :::{focus-on="cr-belesswrong" scale-by="1"}
 My point? Simple models feel intuitive and have a commonsense appeal. Yet, with even slightly complicated social issues, simple models may be wrong.
 
-What I have illustrated here is only one set of ideas about how we need to complicate our quantitative thinking to try to be a little less wrong in thinking about social problems. 
+What I have illustrated here is only one set of ideas about how we need to complicate our quantitative thinking to try to be a *little less wrong* in thinking about social problems. 
 
 Other more advanced statistical techniques may be seen as attempts to deal with other complications of the data, in an effort to be *less wrong*. 
 :::
