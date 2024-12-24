@@ -1,0 +1,13 @@
+---
+title: "leaflet demo"
+subtitle: "problems with leaflet and other interactives (e.g. plotly) in closeread"
+author: "Andy Grogan-Kaylor"
+date: "today"
+format: 
+  closeread-html:
+    cr-style:
+      narrative-text-color-sidebar: black
+      narrative-background-color-overlay: grey
+      narrative-background-color-sidebar: white
+      section-background-color: white
+---
