@@ -2,6 +2,7 @@
 title: "Be Less Wrong"
 subtitle: "Why Use Advanced Quantitative Methods?"
 author: "Andy Grogan-Kaylor"
+date: "today"
 format: 
   closeread-html:
     cr-style:
@@ -11,62 +12,8 @@ format:
       section-background-color: white
     css: be-less-wrong.css
 fig-height: 3
-fig-dpi: 600
 bibliography: be-less-wrong.bib
 ---
-
-:::{.cr-section}
-
-:::{#cr-martinbaro}
-> "What we see and how we see is of course determined by our perspective, by the place from which we begin our examination of history; but it is determined also by reality itself." [@Martin-Baro1994B]
-:::
-
-:::{focus-on="cr-earth" pan-to="0%,0%"  scale-by="1"}
-Across the globe, there are definite concrete *realities* of abuse, neglect, suffering, exploitation, violence, discrimination, and other associated problems that we are trying to understand, and to reduce. 
-:::
-
-:::{#cr-earth}
-![Earth](earth.png)
-:::
-
-:::{focus-on="cr-martinbaro" scale-by="1"}
-We hope that our research will inform efforts to change these *realities*. Yet, at the same time we must recognize that our understandings are at best *iterative* and *contingent.* While we will never have a perfect understanding of social reality, we can always improve our understandings, and move in the direction of being *less wrong*.
-:::
-
-:::{focus-on="cr-silverman" scale-by="1"}
-As @Silverman1998 wrote: 
-:::
-
-:::{#cr-silverman}
-> "... there is no way to know when our observations about complex events in nature are complete. Our knowledge is finite, Karl Popper emphasised, but our ignorance is infinite. ... [W]e can never be certain about the consequences of our interventions, we can only narrow the area of uncertainty. This admission is not as pessimistic as it sounds: claims that resist repeated energetic challenges often turn out to be quite reliable. Such 'working truths' are the building blocks for the reasonably solid structures that support our everyday actions..." [@Silverman1998]
-:::
-
-:::{focus-on="cr-box" scale-by="1"}
-This recalls the famous saying by the statistician George Box about statistical models, reported in many places, and well captured in the passage below by @Hand2014:
-:::
-
-:::{#cr-box}
-> "In general, when building statistical models, we must not forget that the aim is to understand something about the real world. Or predict, choose an action, make a decision, summarize evidence, and so on, but always about the real world, not an abstract mathematical world: our models are not the reality—a point well made by George Box in his oft-cited remark that 'all models are wrong, but some are useful' (Box, 1979 in @MR0554183)." [@Hand2014]
-:::
-
-:::{focus-on="cr-box2" scale-by="1.25"}
-A key task then, of using quantitative methods is to use them to try to be progressively *less wrong* about the answers we are finding to important questions about improving human wellbeing. 
-:::
-
-:::{#cr-box2}
-> "All models are wrong, but some are useful." (Box 1979)
-:::
-
-:::{focus-on="cr-flowchart" scale-by="3"}
-Let's consider some simple visual models based upon some simulated data. Two key variables in this model are *intervention* (a treatment or program that we hope does some good), and the *outcome* (an improved or beneficial mental health or psychological outcome).
-:::
-
-:::{#cr-flowchart}
-```{mermaid}
-flowchart LR
-  intervention(intervention) --> outcome(outcome)
-```
-:::
 
 ```{r}
 
@@ -116,6 +63,59 @@ p0 <- ggplot(mydata,
 
 ```
 
+:::{.cr-section}
+
+:::{#cr-martinbaro}
+> "What we see and how we see is of course determined by our perspective, by the place from which we begin our examination of history; but it is determined also by reality itself." [@Martin-Baro1994B]
+:::
+
+:::{focus-on="cr-earth" pan-to="0%,0%"  scale-by="1"}
+Across the globe, there are definite concrete *realities* of abuse, neglect, suffering, exploitation, violence, discrimination, and other associated problems that we are trying to understand, and to reduce. 
+:::
+
+:::{#cr-earth}
+![Earth](earth.png)
+:::
+
+:::{focus-on="cr-martinbaro" scale-by="1"}
+We hope that our research will inform efforts to change these *realities*. Yet, at the same time we must recognize that our understandings are at best *iterative* and *contingent.* While we will never have a perfect understanding of social reality, we can always improve our understandings, and move in the direction of being *less wrong*.
+:::
+
+:::{focus-on="cr-silverman" scale-by="1"}
+As @Silverman1998 wrote: 
+:::
+
+:::{#cr-silverman}
+> "... there is no way to know when our observations about complex events in nature are complete. Our knowledge is finite, Karl Popper emphasised, but our ignorance is infinite. ... [W]e can never be certain about the consequences of our interventions, we can only narrow the area of uncertainty. This admission is not as pessimistic as it sounds: claims that resist repeated energetic challenges often turn out to be quite reliable. Such 'working truths' are the building blocks for the reasonably solid structures that support our everyday actions..." [@Silverman1998]
+:::
+
+:::{focus-on="cr-box" scale-by="1"}
+This recalls the famous saying by the statistician George Box about statistical models, reported in many places, and well captured in the passage by @Hand2014:
+:::
+
+:::{#cr-box}
+> "In general, when building statistical models, we must not forget that the aim is to understand something about the real world. Or predict, choose an action, make a decision, summarize evidence, and so on, but always about the real world, not an abstract mathematical world: our models are not the reality—a point well made by George Box in his oft-cited remark that 'all models are wrong, but some are useful' (Box, 1979 in @MR0554183)." [@Hand2014]
+:::
+
+:::{focus-on="cr-box2" scale-by="1.25"}
+A key task then, of using quantitative methods is to use them to try to be progressively *less wrong* about the answers we are finding to important questions about improving human wellbeing. 
+:::
+
+:::{#cr-box2}
+> "All models are wrong, but some are useful." (Box 1979)
+:::
+
+:::{focus-on="cr-flowchart" scale-by="3"}
+Let's consider a simple visual model based upon some simulated data. Two key variables in this model are *intervention* (a treatment or program that we hope does some good), and the *outcome* (an improved or beneficial mental health or psychological outcome).
+:::
+
+:::{#cr-flowchart}
+```{mermaid}
+flowchart LR
+  intervention(intervention) --> outcome(outcome)
+```
+:::
+
 :::{focus-on="cr-p0" scale-by="1"}
 Here is a first model. What do these results say about the relationship of the *intervention* and the *outcome*?
 :::
@@ -138,15 +138,33 @@ These simple straightforward results suggest that the *intervention* is associat
 :::
 
 :::{#cr-notrecommended}
-::: {.callout-important appearance="simple"}
+::: {.boxred}
 ## The Intervention is *Not* Recommended
 
 Based upon these results we would *not* recommend using this intervention.
 :::
 :::
 
-:::{focus-on="cr-p0-group" scale-by="1"}
+:::{focus-on="cr-flowchart2" scale-by="3"}
 Let's now consider a slightly more complex model. In addition to examining the *intervention* and the *outcome*, we account for the fact that individuals come from different *groups*. This could be any kind of group, e.g. a racial, ethnic, religious, cultural, or economic group. 
+:::
+
+:::{#cr-flowchart2}
+```{mermaid}
+flowchart LR
+  intervention(intervention) --> outcome(outcome)
+  group(group) --> outcome(outcome)
+```
+:::
+
+:::{focus-on="cr-p0-group" scale-by="1"}
+Our conclusion seems to have flipped! 
+
+::: {.boxgreen}
+## The Intervention is Recommended
+
+Based upon these results we *would* recommend using this intervention.  
+:::
 :::
 
 :::{#cr-p0-group}
@@ -164,36 +182,74 @@ p0 +
 ```
 :::
 
-::: {.callout-important appearance="simple"}
-## The Intervention is Recommended
-
-Our conclusion seems to have flipped! Based upon these results we *would* recommend using this intervention.  
+:::{focus-on="cr-Simpson" scale-by="1"}
+The fact that statistical results--and analogously visual results--can flip when more variables are accounted for is known as Simpson's Paradox [@Simpson1951].[^multilevelstructure] 
 :::
 
-The fact that statistical results--and analogously visual results--can flip when more variables are accounted for is known as Simpson's Paradox [@Simpson1951]. Put briefly, and intuitively, our evidence based "story" can change--sometimes quite dramatically--as we add more and more factors to our model.[^multilevelstructure]
+:::{#cr-Simpson}
+## Simpson's Paradox
+
+Put briefly, and intuitively, our evidence based "story" can change--sometimes quite dramatically--as we add more and more factors to our model.
+:::
 
 [^multilevelstructure]: An analogous process can occur with *multilevel* data, in which there are often many groups, such as many schools, many neighborhoods, or many countries. Failure to account for the grouping of the data--in schools, neighborhoods or countries--can sometimes lead to dramatically incorrect results [@Gelman2007; @Nieuwenhuis2015]. 
 
-::: {.callout-tip appearance="simple"}
-## Include As Many Relevant Variables As You Can
+:::{focus-on="cr-variables" scale-by="1"}
+## Include as many relevant variables as you can.
 
 Failure to include all of the relevant variables in our model--whether that model is visual or statistical--may lead to very wrong conclusions.
+:::
 
+:::{#cr-variables}
+## A Strategy for Modeling
 If those variables are observed, and included in our data set, it may be straightforward to build them into our model. If those variables are not observed, and not present in our data set, more complicated modeling strategies may be necessary.
 :::
 
+:::{focus-on="cr-thoughtexperiment" scale-by="1"}
 At first the scenario I've just presented seems almost like a trick, or a puzzle, designed to confound us, or to illustrate a convoluted statistical scenario. Yet, upon reflection, the scenario I've just presented is surprisingly plausible. 
+:::
 
-::: {.callout-tip appearance="simple"}
+:::{#cr-thoughtexperiment}
 ## A Thought Experiment
 
 Imagine a situation in which an intervention is administered based upon the situation in a local community. Quite possibly, the intervention might be given in communities where outcomes are less good. At the same time the intervention might be beneficial to individuals. Such a scenario would present us with exactly the data that we see reflected in @fig-p0 and @fig-p0-group.
+
+```{r}
+#| message: false
+
+p0 + p0 + aes(color = group) +
+  plot_annotation(title = "One Model Accounts for Group While The Other Does Not")
+```
+
 :::
 
-Let's think about one more of these scenarios. For the sake of parsimony, this time I'm going to present the two graphs together. 
+
+:::{focus-on="cr-belesswrong" scale-by="1"}
+My point? Simple models feel intuitive and have a commonsense appeal. Yet, with even slightly complicated social issues, simple models may be wrong.
+
+What I have illustrated here is only one set of ideas about how we need to complicate our quantitative thinking to try to be a little less wrong in thinking about social problems. 
+
+Other more advanced statistical techniques may be seen as attempts to deal with other complications of the data, in an effort to be *less wrong*. 
+:::
+
+:::{#cr-belesswrong}
+## Be Less Wrong
+
+We need to keep the model as simple as possible so that it remains a useful abstraction, but to make the model complicated enough to reflect the complications of reality.
+:::
+
+:::
+
+```{r}
+#| eval: false
+
+# Let's think about one more of these scenarios. For the sake of parsimony, this time I'm going to present the two graphs together. 
+
+```
 
 ```{r}
 #| label: mydata2
+#| eval: false
 
 intervention <- seq(1,15) # intervention
 
@@ -212,6 +268,7 @@ mydata2 <- data.frame(intervention, group, outcome)
 ```
 
 ```{r}
+#| eval: false
 
 p1 <- ggplot(mydata2,
        aes(x = intervention,
@@ -227,6 +284,7 @@ p1 <- ggplot(mydata2,
 ```
 
 ```{r}
+#| eval: false
 
 p1A <- p1 + # replay
   labs(title = "A Simple Model of The Data",
@@ -236,6 +294,7 @@ p1A <- p1 + # replay
 ```
 
 ```{r}
+#| eval: false
 
 p1B <- p1 + 
   aes(color = group) +
@@ -248,6 +307,7 @@ p1B <- p1 +
 
 ```{r}
 #| label: fig-p1A
+#| eval: false
 
 p1A
 
@@ -255,22 +315,13 @@ p1A
 
 ```{r}
 #| label: fig-p1B
+#| eval: false
 
 p1B
 
 ```
 
-::: {.callout-tip appearance="simple"}
-## Be Less Wrong
 
-My point? Simple models feel intuitive and have a commonsense appeal. Yet, with even slightly complicated social issues, simple models may be wrong.
-:::
-
-What I have illustrated here is only one set of ideas about how we need to complicate our quantitative thinking to try to be a little less wrong in thinking about social problems. Other more advanced statistical techniques may be seen as attempts to deal with other complications of the data, in an effort to be *less wrong*. 
-
-We need to keep the model as simple as possible so that it remains a useful abstraction, but to make the model complicated enough to reflect the complications of reality.
-
-:::
 
 
 

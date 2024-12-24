@@ -9,3 +9,15 @@ blockquote {
 .blockquote {
   font-size: 125%;
 }
+.boxred {
+  border-style: solid;
+  border-color: red;
+  border-radius: 5px;
+  padding: 5px;
+}
+.boxgreen {
+  border-style: solid;
+  border-color: green;
+  border-radius: 5px;
+  padding: 5px;
+}
