@@ -1,0 +1,100 @@
+---
+title: "interactives demo"
+subtitle: "problems with leaflet and other interactives (e.g. plotly) in `closeread`"
+author: "Andy Grogan-Kaylor"
+date: "today"
+format: 
+  closeread-html:
+    cr-style:
+      narrative-text-color-sidebar: black
+      narrative-background-color-overlay: grey
+      narrative-background-color-sidebar: white
+      section-background-color: white
+---
+
+:::{.cr-section}
+
+:::{focus-on="cr-leaflet-map"}
+These are the countries of the world. I can never get the scale / layout of interactives like the `leaflet` map to be correct.
+:::
+
+:::{#cr-leaflet-map}
+```{r}
+#| output: false
+
+library(rnaturalearth) # natural earth data
+
+library(sf) # simple (spatial) features
+
+library(sp) # spatial data
+
+library(leaflet) # beautiful maps
+
+library(plotly) # interactive graphics
+
+```
+
+```{r}
+#| label: fig-world
+#| fig-cap: "Countries of the World"
+#| fig-height: 3
+
+mapdata <- ne_countries(scale = "medium", # medium scale
+                        returnclass = "sf") # as sf object
+
+mapdata <- mapdata %>% 
+  sf::st_transform('+proj=longlat +datum=WGS84') # re-project
+
+leaflet() %>%
+  setView(0, 0, zoom = 1.5) %>%
+  addProviderTiles(providers$Esri.WorldImagery) %>%
+  addPolygons(data = mapdata, 
+              fillOpacity = .0, 
+              weight = 2,
+              color = "#009edb", 
+              label = mapdata$name,
+              highlightOptions = highlightOptions(color = "red", 
+                                                  weight = 2,
+                                                  bringToFront = TRUE)) 
+
+```
+:::
+
+:::{focus-on="cr-plotly-map"}
+This is a `plotly` map of the world 
+:::
+
+:::{#cr-plotly-map}
+```{r}
+#| message: false
+#| fig-cap: "A Globe And A Flat Map"
+#| label: globe-and-flat-map
+
+library(plotly)
+
+mymap <- plot_geo() %>%
+  layout(geo = list(showland = TRUE, # show land
+                    landcolor = toRGB("darkgrey"), # land color
+                    showcountries = TRUE, # show countries
+                    showocean = FALSE, # show ocean
+                    oceancolor = "lightblue", # ocean color
+                    lataxis = list(showgrid = TRUE, # latitude options
+                                   gridcolor = toRGB("grey")),
+                    lonaxis = list(showgrid = TRUE, # longitude options
+                                   gridcolor = toRGB("grey")))) 
+
+# mymap # replay
+
+myglobe <- mymap %>% 
+  layout(geo = list(projection = list(type = 'orthographic')))
+
+# myglobe # replay
+
+subplot(myglobe, mymap, 
+        widths = c(0.3, 0.7)) %>% 
+  layout(title = 'A Globe And A Flat Map')
+
+```
+:::
+
+:::

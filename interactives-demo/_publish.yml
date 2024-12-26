@@ -1,0 +1,4 @@
+- source: interactives-demo.qmd
+  quarto-pub:
+    - id: 0296f0e7-cfcb-4c2d-be18-12fb013eaae2
+      url: 'https://globalfamilies.quarto.pub/interactives-demo'
