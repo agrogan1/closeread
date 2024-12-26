@@ -13,7 +13,7 @@ filters:
   - social-share
 share:
   permalink: "https://globalfamilies.quarto.pub/parenting/"
-  description: "awesome page"
+  description: "What Should Parents Do?"
   twitter: false
   facebook: true
   reddit: true
