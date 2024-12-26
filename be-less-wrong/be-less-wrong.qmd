@@ -21,6 +21,8 @@ format-links: false
 ---
 
 ```{r}
+#| output: false
+#| warning: false
 
 set.seed(1080)
 
@@ -29,6 +31,8 @@ library(ggplot2)
 library(ggthemes)
 
 library(gganimate)
+
+library(ggsci)
 
 library(patchwork)
 
@@ -62,8 +66,10 @@ p0 <- ggplot(mydata,
   geom_smooth(method="lm",
               linewidth = 2,
               se = FALSE) +
-  scale_color_viridis_d(name = "group",
-                        option = "turbo") +
+  # scale_color_viridis_d(name = "group",
+  #                       option = "turbo") +
+  # scale_color_bmj() +
+  scale_color_npg() +
   theme_minimal()
 
 ```
@@ -102,19 +108,19 @@ This recalls the famous saying by the statistician George Box about statistical 
 > "In general, when building statistical models, we must not forget that the aim is to understand something about the real world. Or predict, choose an action, make a decision, summarize evidence, and so on, but always about the real world, not an abstract mathematical world: our models are not the reality—a point well made by George Box in his oft-cited remark that 'all models are wrong, but some are useful' (Box, 1979 in @MR0554183)." [@Hand2014]
 :::
 
-:::{focus-on="cr-box2" scale-by="1.25"}
+:::{focus-on="cr-box2"}
 A key task then, of using quantitative methods is to use them to try to be progressively *less wrong* about the answers we are finding to important questions about improving human wellbeing. 
 :::
 
-:::{#cr-box2}
+:::{#cr-box2 .scale-to-fill}
 > "All models are wrong, but some are useful." [@Box1979]
 :::
 
-:::{focus-on="cr-flowchart" scale-by="3"}
-Let's consider a simple visual model based upon some simulated data. Two key variables in this model are *intervention* (a treatment or program that we hope does some good), and the *outcome* (an improved or beneficial mental health or psychological outcome).
+:::{focus-on="cr-flowchart"}
+Let's consider a simple visual model based upon some simulated data. Two key variables in this model are the *intervention* (a treatment or program that we hope does some good), and the *outcome* (an improved or beneficial mental health or psychological outcome).
 :::
 
-:::{#cr-flowchart}
+:::{#cr-flowchart .scale-to-fill}
 ```{mermaid}
 flowchart LR
   intervention(intervention) --> outcome(outcome)
@@ -150,11 +156,11 @@ Based upon these results we would *not* recommend using this intervention.
 :::
 :::
 
-:::{focus-on="cr-flowchart2" scale-by="3"}
+:::{focus-on="cr-flowchart2"}
 Let's now consider a slightly more complex model. In addition to examining the *intervention* and the *outcome*, we account for the fact that individuals come from different *groups*. This could be any kind of group, e.g. a racial, ethnic, religious, cultural, or economic group. 
 :::
 
-:::{#cr-flowchart2}
+:::{#cr-flowchart2 .scale-to-fill}
 ```{mermaid}
 flowchart LR
   intervention(intervention) --> outcome(outcome)
