@@ -18,6 +18,20 @@ format:
 fig-height: 3
 bibliography: be-less-wrong.bib
 format-links: false
+filters:
+  - social-share
+share:
+  permalink: "https://globalfamilies.quarto.pub/be-less-wrong/"
+  description: "Be Less Wrong"
+  twitter: false
+  facebook: true
+  reddit: true
+  stumble: false
+  tumblr: false
+  linkedin: true
+  email: true
+  mastodon: true
+  bsky: true
 ---
 
 ```{r}
@@ -80,12 +94,12 @@ p0 <- ggplot(mydata,
 > "What we see and how we see is of course determined by our perspective, by the place from which we begin our examination of history; but it is determined also by reality itself." [@Martin-Baro1994B]
 :::
 
-:::{focus-on="cr-earth" pan-to="0%,0%"  scale-by="1"}
+:::{focus-on="cr-earth"}
 Across the globe, there are definite concrete *realities* of abuse, neglect, suffering, exploitation, violence, discrimination, and other associated problems that we are trying to understand, and to reduce. 
 :::
 
-:::{#cr-earth}
-![Earth](earth.png)
+:::{#cr-earth .scale-to-fill}
+![Countries of the World From ESRI](countries-of-the-world.png)
 :::
 
 :::{focus-on="cr-martinbaro" scale-by="1"}
@@ -195,8 +209,6 @@ p0 +
 
 :::{focus-on="cr-Simpson" scale-by="1"}
 The fact that statistical results--and analogously visual results--can flip when more variables are accounted for is known as Simpson's Paradox [@Simpson1951].[^multilevelstructure] 
-
-Adding more variables will not always *flip* our conclusions. But often, adding additional variables means that an original conclusion that we thought was substantively or statistically significant is no longer significant. 
 :::
 
 :::{#cr-Simpson}
@@ -206,6 +218,16 @@ Put briefly, and intuitively, our evidence based "story" can change--sometimes q
 :::
 
 [^multilevelstructure]: An analogous process can occur with *multilevel* data, in which there are often many groups, such as many schools, many neighborhoods, or many countries. Failure to account for the grouping of the data--in schools, neighborhoods or countries--can sometimes lead to dramatically incorrect results [@Gelman2007; @Nieuwenhuis2015]. 
+
+:::{focus-on="cr-multivariate" scale-by="1"}
+Adding more variables will not always *flip* our conclusions.
+:::
+
+:::{#cr-multivariate}
+## Multivariate Processes
+
+Frequently, adding additional variables means that an original conclusion that we thought was substantively or statistically significant is no longer significant. This is an aspect of *multivariate processes* where an *outcome* is influenced by *multiple factors*. 
+::: 
 
 :::{focus-on="cr-variables" scale-by="1"}
 We need to include as many variables as we can in our visual and statistical models.

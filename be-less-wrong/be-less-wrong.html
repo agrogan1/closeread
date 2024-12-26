@@ -58,6 +58,8 @@ div.csl-indent {
 <script src="be-less-wrong_files/libs/quarto-contrib/intersection-observer-polyfill-1.0.0/intersection-observer.js"></script>
 <script src="be-less-wrong_files/libs/quarto-contrib/scrollama-3.2.0/scrollama.min.js"></script>
 <script src="be-less-wrong_files/libs/quarto-contrib/closeread-0.1.0/closeread.js"></script>
+<link href="be-less-wrong_files/libs/quarto-contrib/social-share-1.0.0/social-share.css" rel="stylesheet">
+<link href="be-less-wrong_files/libs/quarto-contrib/social-share-1.0.0/all.min.css" rel="stylesheet">
 <script src="be-less-wrong_files/libs/quarto-diagram/mermaid.min.js"></script>
 <script src="be-less-wrong_files/libs/quarto-diagram/mermaid-init.js"></script>
 <link href="be-less-wrong_files/libs/quarto-diagram/mermaid.css" rel="stylesheet">
@@ -77,10 +79,10 @@ div.csl-indent {
       <!-- user-provided yaml closeread style options -->
       <style>
         :root {
-          --cr-section-background-color: white;
+          --cr-narrative-text-color-sidebar: black;
 --cr-narrative-background-color-overlay: grey;
+--cr-section-background-color: white;
 --cr-narrative-background-color-sidebar: white;
---cr-narrative-text-color-sidebar: black;
         }
       </style>
     
@@ -119,7 +121,7 @@ div.csl-indent {
 
 <div class="cr-section cr-column-screen sidebar-left">
 <div class="narrative-col">
-<div class="trigger new-trigger" data-focus-on="cr-earth" data-pan-to="0%,0%" data-scale-by="1">
+<div class="trigger new-trigger" data-focus-on="cr-earth">
 <div class="narrative">
 <p>Across the globe, there are definite concrete <em>realities</em> of abuse, neglect, suffering, exploitation, violence, discrimination, and other associated problems that we are trying to understand, and to reduce.</p>
 </div>
@@ -146,7 +148,7 @@ div.csl-indent {
 </div>
 <div class="trigger new-trigger" data-focus-on="cr-flowchart">
 <div class="narrative">
-<p>Let’s consider a simple visual model based upon some simulated data. Two key variables in this model are <em>intervention</em> (a treatment or program that we hope does some good), and the <em>outcome</em> (an improved or beneficial mental health or psychological outcome).</p>
+<p>Let’s consider a simple visual model based upon some simulated data. Two key variables in this model are the <em>intervention</em> (a treatment or program that we hope does some good), and the <em>outcome</em> (an improved or beneficial mental health or psychological outcome).</p>
 </div>
 </div>
 <div class="trigger new-trigger" data-focus-on="cr-p0" data-scale-by="1">
@@ -176,7 +178,11 @@ div.csl-indent {
 <div class="trigger new-trigger" data-focus-on="cr-Simpson" data-scale-by="1">
 <div class="narrative">
 <p>The fact that statistical results–and analogously visual results–can flip when more variables are accounted for is known as Simpson’s Paradox <span class="citation" data-cites="Simpson1951">(<a href="#ref-Simpson1951" role="doc-biblioref">Simpson 1951</a>)</span>.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
-<p>Adding more variables will not always <em>flip</em> our conclusions. But often, adding additional variables means that an original conclusion that we thought was substantively or statistically significant is no longer significant.</p>
+</div>
+</div>
+<div class="trigger new-trigger" data-focus-on="cr-multivariate" data-scale-by="1">
+<div class="narrative">
+<p>Adding more variables will not always <em>flip</em> our conclusions.</p>
 </div>
 </div>
 <div class="trigger new-trigger" data-focus-on="cr-variables" data-scale-by="1">
@@ -205,11 +211,11 @@ div.csl-indent {
 <p>“What we see and how we see is of course determined by our perspective, by the place from which we begin our examination of history; but it is determined also by reality itself.” <span class="citation" data-cites="Martin-Baro1994B">(<a href="#ref-Martin-Baro1994B" role="doc-biblioref">Martín-Baró 1994</a>)</span></p>
 </blockquote>
 </div>
-<div id="cr-earth" class="sticky">
+<div id="cr-earth" class="scale-to-fill sticky">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="earth.png" class="img-fluid figure-img"></p>
-<figcaption>Earth</figcaption>
+<p><img src="countries-of-the-world.png" class="img-fluid figure-img"></p>
+<figcaption>Countries of the World From ESRI</figcaption>
 </figure>
 </div>
 </div>
@@ -301,6 +307,12 @@ Figure&nbsp;2
 <section id="simpsons-paradox" class="level2">
 <h2 class="anchored" data-anchor-id="simpsons-paradox">Simpson’s Paradox</h2>
 <p>Put briefly, and intuitively, our evidence based “story” can change–sometimes quite dramatically–as we add more and more factors to our model.</p>
+</section>
+</div>
+<div id="cr-multivariate" class="sticky">
+<section id="multivariate-processes" class="level2">
+<h2 class="anchored" data-anchor-id="multivariate-processes">Multivariate Processes</h2>
+<p>Frequently, adding additional variables means that an original conclusion that we thought was substantively or statistically significant is no longer significant. This is an aspect of <em>multivariate processes</em> where an <em>outcome</em> is influenced by <em>multiple factors</em>.</p>
 </section>
 </div>
 <div id="cr-variables" class="sticky">
@@ -794,6 +806,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
+<div class="page-columns page-rows-contents page-layout-article"><div class="social-share"><a href="https://www.linkedin.com/shareArticle?url=https://globalfamilies.quarto.pub/be-less-wrong/&amp;title=Be Less Wrong" target="_blank" class="linkedin"><i class="fa-brands fa-linkedin-in fa-fw fa-lg"></i></a>  <a href="mailto:?subject=Be Less Wrong&amp;body=Check out this link:https://globalfamilies.quarto.pub/be-less-wrong/" target="_blank" class="email"><i class="fa-solid fa-envelope fa-fw fa-lg"></i></a><a href="https://www.facebook.com/sharer.php?u=https://globalfamilies.quarto.pub/be-less-wrong/" target="_blank" class="facebook"><i class="fab fa-facebook-f fa-fw fa-lg"></i></a><a href="https://reddit.com/submit?url=https://globalfamilies.quarto.pub/be-less-wrong/&amp;title=Be Less Wrong" target="_blank" class="reddit">   <i class="fa-brands fa-reddit-alien fa-fw fa-lg"></i></a><a href="javascript:void(0);" onclick="var mastodon_instance=prompt('Mastodon Instance / Server Name?'); if(typeof mastodon_instance==='string' &amp;&amp; mastodon_instance.length){this.href='https://'+mastodon_instance+'/share?text=Be Less Wrong https://globalfamilies.quarto.pub/be-less-wrong/'}else{return false;}" target="_blank" class="mastodon"><i class="fa-brands fa-mastodon fa-fw fa-lg"></i></a><a href="https://bsky.app/intent/compose?text=https://globalfamilies.quarto.pub/be-less-wrong/ Be Less Wrong" target="_blank" class="bsky"><i class="fa-brands fa-bluesky"></i></a></div></div>
 
 
 
