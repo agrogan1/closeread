@@ -21,3 +21,7 @@ blockquote {
   border-radius: 5px;
   padding: 5px;
 }
+.sticky-col {
+  margin-left: 10px;
+  margin-right: 30px;
+}
