@@ -53,10 +53,7 @@ Data were analyzed using a statistical method known as Bayesian multilevel logis
 
 :::{#cr-mymap}
 ```{r}
-#| fig-cap: "Countries in MICS"
-#| warning: false
-#| message: false
-#| fig-dpi: 600
+#| output: false
 
 library(sf) # simple features
 
@@ -65,6 +62,15 @@ library(ggplot2) # beautiful graphs
 MICS <- read_sf("MICS/MICS.shp") 
 
 global_data <- read_sf("wrld_simpl/wrld_simpl.shp")
+
+```
+
+```{r}
+#| fig-cap: "Countries in MICS"
+#| warning: false
+#| message: false
+#| eval: false
+#| fig-dpi: 600
 
 ggplot(global_data) +
   geom_sf() +
@@ -76,29 +82,49 @@ ggplot(global_data) +
   theme_minimal()
 
 ```
+
+```{r}
+#| fig-cap: "Countries in MICS"
+#| message: false
+
+library(leaflet)
+
+leaflet() %>%
+  setView(0, 0, zoom = 1.5) %>%
+  # addTiles() %>%
+  addProviderTiles(providers$Esri.WorldImagery) %>%
+  addPolygons(data = MICS, 
+              fillOpacity = .75, 
+              color = "#5b92e5", 
+              label = MICS$NAME,
+              highlightOptions = highlightOptions(color = "red", 
+                                                  weight = 2,
+                                                  bringToFront = TRUE)) 
+
+```
 :::
 
-:::{focus-on="cr-discipline" pan-to="0%,0%" scale-by="1.0"}
+:::{focus-on="cr-discipline"}
 Different forms of discipline had different effects.
 :::
 
-:::{focus-on="cr-discipline" pan-to="50%,30%" scale-by="1.5"}
+:::{focus-on="cr-discipline-most-common"}
 Verbal reasoning (80%) and shouting (66%) were the most common parental discipline behaviors toward young children.
 :::
 
-:::{focus-on="cr-discipline" pan-to="0%,0%" scale-by="1.0"}
+:::{focus-on="cr-discipline"}
 Psychological and physical aggression had similar effects.
 :::
 
-:::{focus-on="cr-discipline2" pan-to="0%,0%" scale-by="1.0"}
+:::{focus-on="cr-discipline2"}
 Psychological and physical aggression were associated with higher child aggression. 
 :::
 
-:::{focus-on="cr-discipline3" pan-to="0%,0%" scale-by="1.0"}
+:::{focus-on="cr-discipline3"}
 Verbal reasoning was associated with lower aggression and higher prosocial peer relations. 
 :::
 
-:::{focus-on="cr-discipline4" pan-to="0%,0%" scale-by="1.0"}
+:::{focus-on="cr-discipline4"}
 Taking away privileges was associated with lower prosocial peer relations. 
 :::
 
@@ -106,28 +132,50 @@ Taking away privileges was associated with lower prosocial peer relations.
 Results indicated some country-level variation in the associations between parenting behaviors and child socio-emotional outcomes. 
 :::
 
-:::{focus-on="cr-discipline5"}
+:::{focus-on="cr-discipline"}
 However, the associations of discipline with child outcomes were still largely consistent across countries.
 :::
 
-:::{#cr-discipline}
-![Positive and Negative Discipline Behaviors](discipline.png)
+:::{#cr-discipline-most-common .scale-to-fill}
+```{mermaid}
+flowchart LR
+  explained[explained why behavior was wrong] 
+  shouting
+```
 :::
 
-:::{#cr-discipline2}
-![Positive and Negative Discipline Behaviors](discipline2.png)
+:::{#cr-discipline .scale-to-fill}
+```{mermaid}
+flowchart LR
+  explained[explained why behavior was wrong] 
+  explained --> higherprosocial[higher prosocial peer relations]
+  shouting --> higheraggression[higher aggression]
+  spanking --> higheraggression
+  takingawayprivileges[taking away privileges] --> lowerprosocial[lower prosocial peer relations]
+```
 :::
 
-:::{#cr-discipline3}
-![Positive and Negative Discipline Behaviors](discipline3.png)
+:::{#cr-discipline2 .scale-to-fill}
+```{mermaid}
+flowchart LR
+  shouting --> higheraggression[higher aggression]
+  spanking --> higheraggression
+```
 :::
 
-:::{#cr-discipline4}
-![Positive and Negative Discipline Behaviors](discipline4.png)
+:::{#cr-discipline3 .scale-to-fill}
+```{mermaid}
+flowchart LR
+  explained[explained why behavior was wrong] --> loweraggression[lower aggression]
+  explained --> higherprosocial[higher prosocial peer relations]
+```
 :::
 
-:::{#cr-discipline5}
-![Positive and Negative Discipline Behaviors](discipline5.png)
+:::{#cr-discipline4 .scale-to-fill}
+```{mermaid}
+flowchart LR
+  takingawayprivileges[taking away privileges] --> lowerprosocial[lower prosocial peer relations]
+```
 :::
 
 :::{focus-on="cr-positiveparenting" scale-by=".6"}
