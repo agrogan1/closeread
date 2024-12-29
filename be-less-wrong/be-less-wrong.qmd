@@ -99,7 +99,37 @@ Across the globe, there are definite concrete *realities* of abuse, neglect, suf
 :::
 
 :::{#cr-earth .scale-to-fill}
-![Countries of the World From ESRI](countries-of-the-world.png)
+```{r}
+#| fig-cap: "Countries of the World from ESRI"
+#| message: false
+
+library(rnaturalearth) # natural earth data
+
+library(sf) # simple (spatial) features
+
+library(sp) # spatial data
+
+library(leaflet) # beautiful maps
+
+mapdata <- ne_countries(scale = "medium", # medium scale
+                        returnclass = "sf") # as sf object
+
+mapdata <- mapdata %>% 
+  sf::st_transform('+proj=longlat +datum=WGS84') # re-project
+
+leaflet() %>%
+  setView(0, 0, zoom = 1.5) %>%
+  addProviderTiles(providers$Esri.WorldImagery) %>%
+  addPolygons(data = mapdata, 
+              fillOpacity = .0, 
+              weight = 2,
+              color = "#009edb", 
+              label = mapdata$name,
+              highlightOptions = highlightOptions(color = "red", 
+                                                  weight = 2,
+                                                  bringToFront = TRUE)) 
+
+```
 :::
 
 :::{focus-on="cr-martinbaro" scale-by="1"}
