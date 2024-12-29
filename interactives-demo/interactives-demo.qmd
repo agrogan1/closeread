@@ -1,6 +1,6 @@
 ---
 title: "interactives demo"
-subtitle: "problems with leaflet and other interactives (e.g. plotly) in `closeread`"
+subtitle: "questions about `leaflet` and other interactives (e.g. `plotly`) in `closeread`"
 author: "Andy Grogan-Kaylor"
 date: "today"
 format: 
@@ -10,12 +10,17 @@ format:
       narrative-background-color-overlay: grey
       narrative-background-color-sidebar: white
       section-background-color: white
+    css: interactives-demo.css
+    code-links: 
+      - text: GitHub Repo
+        icon: github
+        href: https://github.com/agrogan1/closeread/tree/main/interactives-demo
 ---
 
 :::{.cr-section}
 
 :::{focus-on="cr-leaflet-map"}
-These are the countries of the world. I can never get the scale / layout of interactives like the `leaflet` map to be correct.
+These are the countries of the world. I use CSS provided by James Goldie to get the scale / layout of interactives like the `leaflet` map to be correct.
 :::
 
 :::{#cr-leaflet-map}
