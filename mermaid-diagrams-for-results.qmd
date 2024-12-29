@@ -1,0 +1,14 @@
+---
+title: "Mermaid Diagrams for Results"
+author: "Andy Grogan-Kaylor"
+format: html
+---
+
+```{mermaid}
+flowchart LR
+  explained[explained why behavior was wrong] --> loweraggression[lower aggression]
+  explained --> higherprosocial[higher prosocial peer relations]
+  shouting --> higheraggression[higher aggression]
+  spanking --> higheraggression
+  takingawayprivileges[taking away privileges] --> lowerprosocial[lower prosocial peer relations]
+```
