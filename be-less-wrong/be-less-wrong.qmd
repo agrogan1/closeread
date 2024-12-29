@@ -102,6 +102,7 @@ Across the globe, there are definite concrete *realities* of abuse, neglect, suf
 ```{r}
 #| fig-cap: "Countries of the World from ESRI"
 #| message: false
+#| fig-height: 5
 
 library(rnaturalearth) # natural earth data
 
