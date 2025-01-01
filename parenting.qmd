@@ -51,58 +51,8 @@ Analyses were restricted to households with children under 5 years, leaving a sa
 Data were analyzed using a statistical method known as Bayesian multilevel logistic regression.
 :::
 
-:::{#cr-mymap}
-```{r}
-#| output: false
-
-library(sf) # simple features
-
-library(ggplot2) # beautiful graphs
-
-MICS <- read_sf("MICS/MICS.shp") 
-
-global_data <- read_sf("wrld_simpl/wrld_simpl.shp")
-
-```
-
-```{r}
-#| fig-cap: "Countries in MICS"
-#| warning: false
-#| message: false
-#| eval: false
-#| fig-dpi: 600
-
-ggplot(global_data) +
-  geom_sf() +
-  geom_sf(data = MICS,
-          color = "#5b92e5",
-          fill = "#5b92e5",
-          alpha = .5,
-          linewidth = .5) +
-  theme_minimal()
-
-```
-
-```{r}
-#| fig-cap: "Countries in MICS"
-#| message: false
-#| fig-height: 5
-
-library(leaflet)
-
-leaflet() %>%
-  setView(0, 0, zoom = 1.5) %>%
-  # addTiles() %>%
-  addProviderTiles(providers$Esri.WorldImagery) %>%
-  addPolygons(data = MICS, 
-              fillOpacity = .75, 
-              color = "#5b92e5", 
-              label = MICS$NAME,
-              highlightOptions = highlightOptions(color = "red", 
-                                                  weight = 2,
-                                                  bringToFront = TRUE)) 
-
-```
+:::{#cr-mymap .scale-to-fill}
+![Countries of the World](mymap.png)
 :::
 
 :::{focus-on="cr-discipline"}
