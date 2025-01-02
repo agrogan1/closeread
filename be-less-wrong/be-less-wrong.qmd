@@ -100,35 +100,37 @@ Across the globe, there are definite concrete *realities* of abuse, neglect, suf
 
 :::{#cr-earth .scale-to-fill}
 ```{r}
-#| fig-cap: "Countries of the World from ESRI"
+#| echo: false
 #| message: false
-#| fig-height: 5
+#| fig-cap: "Countries of the World"
+#| label: fig-globe
 
-library(rnaturalearth) # natural earth data
+library(plotly)
 
-library(sf) # simple (spatial) features
+mymap <- plot_geo() %>%
+  layout(geo = list(showland = TRUE, # show land
+                    landcolor = toRGB("darkgrey"), # land color
+                    showcountries = TRUE, # show countries
+                    showocean = FALSE, # show ocean
+                    oceancolor = "lightblue", # ocean color
+                    lataxis = list(showgrid = TRUE, # latitude options
+                                   gridcolor = toRGB("grey")),
+                    lonaxis = list(showgrid = TRUE, # longitude options
+                                   gridcolor = toRGB("grey")))) 
 
-library(sp) # spatial data
+# mymap # replay
 
-library(leaflet) # beautiful maps
+myglobe <- mymap %>% 
+  layout(geo = list(projection = list(type = 'orthographic',
+                                      rotation = list(lon = -45,
+                                    lat = 10,
+                                    roll = 0))))
 
-mapdata <- ne_countries(scale = "medium", # medium scale
-                        returnclass = "sf") # as sf object
+myglobe # replay
 
-mapdata <- mapdata %>% 
-  sf::st_transform('+proj=longlat +datum=WGS84') # re-project
-
-leaflet() %>%
-  setView(0, 0, zoom = 1.5) %>%
-  addProviderTiles(providers$Esri.WorldImagery) %>%
-  addPolygons(data = mapdata, 
-              fillOpacity = .0, 
-              weight = 2,
-              color = "#009edb", 
-              label = mapdata$name,
-              highlightOptions = highlightOptions(color = "red", 
-                                                  weight = 2,
-                                                  bringToFront = TRUE)) 
+# subplot(myglobe, mymap, 
+#         widths = c(0.3, 0.7)) %>% 
+#   layout(title = 'A Globe And A Flat Map')
 
 ```
 :::
