@@ -99,11 +99,12 @@ Across the globe, there are definite concrete *realities* of abuse, neglect, suf
 :::
 
 :::{#cr-earth .scale-to-fill}
-```{r}
+```{r eval = knitr::is_html_output()}
 #| echo: false
 #| message: false
 #| fig-cap: "Countries of the World"
 #| label: fig-globe
+#| out-width: '100%'
 
 library(plotly)
 
@@ -120,11 +121,20 @@ mymap <- plot_geo() %>%
 
 # mymap # replay
 
+m <- list(
+  l = 0,
+  r = 0,
+  b = 0,
+  t = 0,
+  pad = 3)
+
 myglobe <- mymap %>% 
   layout(geo = list(projection = list(type = 'orthographic',
                                       rotation = list(lon = -45,
                                     lat = 10,
-                                    roll = 0))))
+                                    roll = 0))),
+         margin = m) %>% 
+  config(displayModeBar = FALSE)
 
 myglobe # replay
 
