@@ -1,0 +1,67 @@
+---
+title: "OJS Demo"
+author: "Andy Grogan-Kaylor"
+date: "today"
+format:
+  html:
+    code-fold: true
+    code-summary: "Show the code"
+---
+
+```{r}
+#| label: mydata
+
+intervention <- seq(1,15) # intervention
+
+group <- rep(LETTERS[1:5], each=3) # group
+
+index <- rep(seq(1,3), 5) # index within group
+
+e <- rnorm(15, 0, .25) # randomly distributed error
+
+outcome <- index + -.1 * intervention # + e
+
+group <- factor(group)
+
+mydata <- data.frame(intervention, group, outcome)
+
+write.csv(mydata, "mydata.csv")
+
+```
+
+```{ojs}
+
+mydata = FileAttachment("mydata.csv").csv({ typed: true })
+
+```
+
+
+```{ojs}
+//| fig-cap: "In the simplest model, the outcome gets worse as more of the intervention is provided."
+
+Plot.plot({
+  grid: true,
+  color: {legend: false},
+  symbol: {legend: true},
+  marks: [
+    Plot.dot(mydata, {x: "intervention", y: "outcome", r: 7, tip: true}),
+    Plot.linearRegressionY(mydata, {x: "intervention", y: "outcome"})
+  ]
+})
+```
+
+```{ojs}
+//| fig-cap: "After accounting for group, the outcome improves when more of the intervention is provided."
+
+Plot.plot({
+  grid: true,
+  color: {legend: false},
+  symbol: {legend: true},
+  marks: [
+    Plot.dot(mydata, {x: "intervention", y: "outcome", r: 7, fill: "group", symbol: "group", tip: true}),
+    Plot.linearRegressionY(mydata, {x: "intervention", y: "outcome", stroke: "group"})
+  ]
+})
+```
+
+

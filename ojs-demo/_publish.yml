@@ -1,0 +1,4 @@
+- source: ojs-demo.qmd
+  quarto-pub:
+    - id: 38a0a6e2-072a-460f-a377-43bbc33f09cb
+      url: 'https://globalfamilies.quarto.pub/ojs-demo'
