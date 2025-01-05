@@ -146,7 +146,7 @@ myglobe # replay
 :::
 
 :::{focus-on="cr-martinbaro" scale-by="1"}
-We hope that our research will inform efforts to change these *realities*. Yet, at the same time we must recognize that our understandings are at best *iterative* and *contingent.* While we will never have a perfect understanding of social reality, we can always improve our understandings, and move in the direction of being *less wrong*.
+We hope that our research will inform efforts to change these *realities*. However, we must be aware that our understanding of the world is at best *iterative* and *contingent.* While we will never have a perfect understanding of the social world, we can always better our understanding, and move toward being *less wrong*.
 :::
 
 :::{focus-on="cr-silverman" scale-by="1"}
@@ -158,7 +158,7 @@ As @Silverman1998 wrote:
 :::
 
 :::{focus-on="cr-box" scale-by="1"}
-This recalls the famous saying by the statistician George Box about statistical models, reported in many places, and well captured in the passage by @Hand2014:
+This reminds us of the famous saying by the statistician George Box about statistical models [@Hand2014]:
 :::
 
 :::{#cr-box}
@@ -166,7 +166,7 @@ This recalls the famous saying by the statistician George Box about statistical 
 :::
 
 :::{focus-on="cr-box2"}
-A key task then, of using quantitative methods is to use them to try to be progressively *less wrong* about the answers we are finding to important questions about improving human wellbeing. 
+Thus, an important reason for using quantitative methods is to use them to try to be iteratively *less wrong* about the answers we are finding to important questions about addressing social issues. 
 :::
 
 :::{#cr-box2 .scale-to-fill}
