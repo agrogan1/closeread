@@ -166,7 +166,7 @@ This reminds us of the famous saying by the statistician George Box about statis
 :::
 
 :::{focus-on="cr-box2"}
-Thus, an important reason for using quantitative methods is to use them to try to be iteratively *less wrong* about the answers we are finding to important questions about addressing social issues. 
+Thus, an important reason for using quantitative methods is to try to be iteratively *less wrong* in the discoveries we are making about social issues. 
 :::
 
 :::{#cr-box2 .scale-to-fill}
