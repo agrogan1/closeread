@@ -36,6 +36,7 @@ blockquote {
     .citation { 
       a {color: cyan;}
   }
+  .footnote-ref {color: cyan;}
   .boxgreen {background-color: white;}
  }
 }
