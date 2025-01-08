@@ -44,7 +44,7 @@ Plot.plot({
   color: {legend: false},
   symbol: {legend: true},
   marks: [
-    Plot.dot(mydata, {x: "intervention", y: "outcome", r: 7, tip: true}),
+    Plot.dot(mydata, {x: "intervention", y: "outcome", fill: "black", r: 7, tip: true}),
     Plot.linearRegressionY(mydata, {x: "intervention", y: "outcome"})
   ]
 })
