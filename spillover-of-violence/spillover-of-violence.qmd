@@ -1,0 +1,45 @@
+---
+title: "The Spillover of Macro-level Violence to Parental Physical Abuse of Children in Low- and Middle-Income Countries"
+author: "Global Families Research Team"
+date: "today"
+format: closeread-html
+mermaid: 
+  theme: default
+---
+
+# Background
+
+Through violence socialization processes, exposure to higher rates of violence in the macro context may spill over to family violence, including caregivers’ use of physical child abuse. 
+
+```{mermaid}
+flowchart LR
+  %% Nodes %%
+  classDef maize fill:#FFCB05,stroke:#000000,stroke-width:2px,color:#000000
+
+  macroviolence[higher rates of \nviolence in the \nmacro context]:::maize --> |"???"| pabuse[physical child abuse]:::maize
+
+  %% Links %%
+  linkStyle 0 stroke:#00274C,stroke-width:2px,color:red;
+
+
+```
+
+# Objective
+
+This study examined the associations of violence occurring in macro contexts with parental physical abuse, after accounting for norms justifying women's exposure to intimate partner violence (IPV) and parental physical punishment against children.
+
+# Participants and Setting
+
+We used data from 435,131 households with a reference child aged 1 to 17 years across 43 countries from rounds 4 and 5 of the UNICEF Multiple Indicator Cluster Surveys.
+
+# Methods
+
+We employed multilevel logistic regression models to estimate the degree to which country-level violence—measured by rates of terrorism and political conflict, homicide, and women's exposure to IPV—was associated with parental physical abuse after controlling for norms justifying violence against women and children and socio-demographic factors.
+
+# Results
+
+Results indicated that higher levels of endorsement of IPV (OR = 1.024, p < .001) and attitudes endorsing the use of physical punishment with children (OR = 1.016, p < .05) were both associated with higher odds of severe physical child abuse after controlling for covariates. The association of terrorism and political violence with severe physical abuse was mediated by norms that legitimize IPV (indirect b = 0.027, p = .005). 
+
+# Conclusion
+
+Interventions aimed at reducing abusive parenting practices in LMICs may benefit from efforts to reduce social norms that support violence against women and children. These interventions should be responsive to trauma-informed approaches that recognize the effects of macro-level violence.
