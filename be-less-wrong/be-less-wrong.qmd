@@ -2,7 +2,7 @@
 title: "Be Less Wrong"
 subtitle: "Why Use Quantitative Methods?"
 author: "Andy Grogan-Kaylor"
-date: "today"
+date: "2025-1-5"
 format: 
   closeread-html:
     cr-style:
@@ -102,6 +102,7 @@ Across the globe, there are definite concrete *realities* of abuse, neglect, suf
 ```{r eval = knitr::is_html_output()}
 #| echo: false
 #| message: false
+#| warning: false
 #| fig-cap: "Countries of the World"
 #| label: fig-globe
 #| out-width: '100%'
