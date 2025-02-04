@@ -14,7 +14,7 @@ Through violence socialization processes, exposure to higher rates of violence i
 ```{mermaid}
 flowchart LR
   %% Nodes %%
-  classDef maize fill:#FFCB05,stroke:#000000,stroke-width:2px,color:#000000
+  classDef maize fill:#FFCB05,stroke:#000000,stroke-width:2px,color:#000000;
 
   macroviolence[higher rates of \nviolence in the \nmacro context]:::maize --> |"???"| pabuse[physical child abuse]:::maize
 
@@ -28,9 +28,98 @@ flowchart LR
 
 This study examined the associations of violence occurring in macro contexts with parental physical abuse, after accounting for norms justifying women's exposure to intimate partner violence (IPV) and parental physical punishment against children.
 
+```{mermaid}
+flowchart LR
+  %% Nodes %%
+  classDef maize fill:#FFCB05,stroke:#000000,stroke-width:2px,color:#000000;
+  
+  classDef blue fill:#00274C,stroke:#000000,stroke-width:2px,color:#FFFFFF;
+
+  macroviolence[higher rates of \nviolence in the \nmacro context]:::maize --> |"???"| pabuse[physical child abuse]:::maize
+  
+  norms[norms justifying \nviolence]:::blue --> pabuse
+
+  %% Links %%
+  linkStyle 0 stroke:#00274C,stroke-width:2px,color:red;
+
+```
+
 # Participants and Setting
 
 We used data from 435,131 households with a reference child aged 1 to 17 years across 43 countries from rounds 4 and 5 of the UNICEF Multiple Indicator Cluster Surveys.
+
+```{r}
+#| output: false
+
+library(ggplot2)
+
+library(plotly)
+
+library(dplyr)
+
+library(countrycode)
+
+```
+
+```{r}
+#| echo: false
+#| warning: false
+
+country <- c("Algeria",  "Argentina",  "Bangladesh",  "Barbados",  "Belarus",  "Belize",  "Benin",  "Bosnia and Herzegovina",  "Cameroon",  "Central African Republic",  "Chad",  "Democratic Republic of the Congo",  "Republic of the Congo",  "Costa Rica",  "Cote d'Ivoire",  "Dominican Republic",  "El Salvador",  "Eswatini",  "Ghana",  "Guinea",  "Guinea Bissau",  "Guyana",  "Iraq",  "Jamaica",  "Kazakhstan",  "Kenya",  "Kosovo",  "Kyrgyzstan",  "Laos", "Macedonia",  "Madagascar",  "Malawi",  "Mali",  "Mauritania",  "Mexico",  "Moldova",  "Mongolia",  "Montenegro",  "Nepal",  "Nigeria",  "Pakistan",  "Panama",  "Paraguay",  "Sao Tome and Principe",  "Senegal",  "Serbia",  "Sierra Leone",  "Somalia",  "St. Lucia",  "State of Palestine",  "Suriname",  "Thailand",  "The Gambia",  "Togo",  "Trinidad and Tobago",  "Tunisia",  "Turkmenistan",  "Ukraine",  "Uruguay",  "Vietnam",  "Zimbabwe")
+
+MICScountries <- data.frame(country)
+
+MICScountries$country_iso <- countrycode(MICScountries$country, 
+                                 'country.name', 
+                                 'iso3c')
+
+```
+
+```{r}
+#| echo: false
+#| fig-cap: "Countries in MICS"
+#| label: fig-2
+
+
+g <- list(showframe = TRUE, 
+          showcoastlines = TRUE, 
+          showcountries = TRUE,
+          showland = TRUE,
+          countrycolor = toRGB("grey"),
+          showocean = TRUE,
+          oceancolor = "white",
+          projection = list(type = 'orthographic',
+                            rotation = list(lon = -25,
+                                            lat = 0,
+                                            roll = 0)),
+          showland = TRUE,
+          landcolor = toRGB("lightgrey"),
+          bgcolor = "transparent")
+
+t <- list(family = "sans serif", 
+          size = 8, 
+          color = toRGB("black"))
+
+l <- list(color = toRGB("black"), 
+          width = 0.5)
+
+p0 <- MICScountries %>% 
+  plot_geo() %>% 
+  add_trace(z = 1,
+    text = ~country, 
+    colors = "#009edb",
+    hoverinfo = 'text',
+    locations = ~country_iso, 
+    showscale = FALSE,
+    marker = list(size=10, line = l)) %>%
+  layout(geo = g,
+         plot_bgcolor='transparent',
+         paper_bgcolor='transparent')
+
+p0
+
+```
+
 
 # Methods
 

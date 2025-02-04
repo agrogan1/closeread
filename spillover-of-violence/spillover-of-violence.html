@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.553">
+<meta name="generator" content="quarto-1.5.57">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Global Families Research Team">
-<meta name="dcterms.date" content="2025-02-03">
+<meta name="dcterms.date" content="2025-02-04">
 
 <title>The Spillover of Macro-level Violence to Parental Physical Abuse of Children in Low- and Middle-Income Countries</title>
 <style>
@@ -42,6 +42,14 @@ ul.task-list li input[type="checkbox"] {
 <script src="spillover-of-violence_files/libs/quarto-diagram/mermaid.min.js"></script>
 <script src="spillover-of-violence_files/libs/quarto-diagram/mermaid-init.js"></script>
 <link href="spillover-of-violence_files/libs/quarto-diagram/mermaid.css" rel="stylesheet">
+<script src="spillover-of-violence_files/libs/htmlwidgets-1.6.2/htmlwidgets.js"></script>
+<script src="spillover-of-violence_files/libs/plotly-binding-4.10.4/plotly.js"></script>
+<script src="spillover-of-violence_files/libs/typedarray-0.1/typedarray.min.js"></script>
+<script src="spillover-of-violence_files/libs/jquery-3.5.1/jquery.min.js"></script>
+<link href="spillover-of-violence_files/libs/crosstalk-1.2.0/css/crosstalk.min.css" rel="stylesheet">
+<script src="spillover-of-violence_files/libs/crosstalk-1.2.0/js/crosstalk.min.js"></script>
+<link href="spillover-of-violence_files/libs/plotly-htmlwidgets-css-2.11.1/plotly-htmlwidgets.css" rel="stylesheet">
+<script src="spillover-of-violence_files/libs/plotly-main-2.11.1/plotly-latest.min.js"></script>
 <meta cr-debug-mode="false">
 <meta cr-remove-header-space="false">
 
@@ -74,7 +82,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">February 3, 2025</p>
+      <p class="date">February 4, 2025</p>
     </div>
   </div>
   
@@ -96,13 +104,12 @@ ul.task-list li input[type="checkbox"] {
 <div>
 <pre class="mermaid mermaid-js">flowchart LR
   %% Nodes %%
-  classDef maize fill:#FFCB05,stroke:#000000,stroke-width:2px,color:#000000
+  classDef maize fill:#FFCB05,stroke:#000000,stroke-width:2px,color:#000000;
 
   macroviolence[higher rates of \nviolence in the \nmacro context]:::maize --&gt; |"???"| pabuse[physical child abuse]:::maize
 
   %% Links %%
   linkStyle 0 stroke:#00274C,stroke-width:2px,color:red;
-
 
 </pre>
 </div>
@@ -114,10 +121,47 @@ ul.task-list li input[type="checkbox"] {
 <section id="objective" class="level1">
 <h1>Objective</h1>
 <p>This study examined the associations of violence occurring in macro contexts with parental physical abuse, after accounting for norms justifying women’s exposure to intimate partner violence (IPV) and parental physical punishment against children.</p>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">flowchart LR
+  %% Nodes %%
+  classDef maize fill:#FFCB05,stroke:#000000,stroke-width:2px,color:#000000;
+  
+  classDef blue fill:#00274C,stroke:#000000,stroke-width:2px,color:#FFFFFF;
+
+  macroviolence[higher rates of \nviolence in the \nmacro context]:::maize --&gt; |"???"| pabuse[physical child abuse]:::maize
+  
+  norms[norms justifying \nviolence]:::blue --&gt; pabuse
+
+  %% Links %%
+  linkStyle 0 stroke:#00274C,stroke-width:2px,color:red;
+
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
 </section>
 <section id="participants-and-setting" class="level1">
 <h1>Participants and Setting</h1>
 <p>We used data from 435,131 households with a reference child aged 1 to 17 years across 43 countries from rounds 4 and 5 of the UNICEF Multiple Indicator Cluster Surveys.</p>
+<div class="cell">
+<div id="fig-2" class="cell-output-display quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="plotly html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-642d5ce764590a456d16" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-642d5ce764590a456d16">{"x":{"visdat":{"fbd21f7fdb6d":["function () ","plotlyVisDat"]},"cur_data":"fbd21f7fdb6d","attrs":{"fbd21f7fdb6d":{"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"z":1,"text":{},"colors":"#009edb","hoverinfo":"text","locations":{},"showscale":false,"marker":{"size":10,"line":{"color":"rgba(0,0,0,1)","width":0.5}},"inherit":true}},"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"mapType":"geo","geo":{"domain":{"x":[0,1],"y":[0,1]},"showframe":true,"showcoastlines":true,"showcountries":true,"showland":true,"countrycolor":"rgba(190,190,190,1)","showocean":true,"oceancolor":"white","projection":{"type":"orthographic","rotation":{"lon":0,"lat":0,"roll":0}},"landcolor":"rgba(211,211,211,1)","bgcolor":"transparent"},"plot_bgcolor":"transparent","paper_bgcolor":"transparent","scene":{"zaxis":{"title":[]}},"hovermode":"closest","showlegend":false},"source":"A","config":{"modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"data":[{"colorbar":{"title":"","ticklen":2},"colorscale":[["0","rgba(0,158,219,1)"],["1","rgba(0,158,219,1)"]],"showscale":false,"z":[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],"text":["Algeria","Argentina","Bangladesh","Barbados","Belarus","Belize","Benin","Bosnia and Herzegovina","Cameroon","Central African Republic","Chad","Democratic Republic of the Congo","Republic of the Congo","Costa Rica","Cote d'Ivoire","Dominican Republic","El Salvador","Eswatini","Ghana","Guinea","Guinea Bissau","Guyana","Iraq","Jamaica","Kazakhstan","Kenya","Kosovo","Kyrgyzstan","Laos","Macedonia","Madagascar","Malawi","Mali","Mauritania","Mexico","Moldova","Mongolia","Montenegro","Nepal","Nigeria","Pakistan","Panama","Paraguay","Sao Tome and Principe","Senegal","Serbia","Sierra Leone","Somalia","St. Lucia","State of Palestine","Suriname","Thailand","The Gambia","Togo","Trinidad and Tobago","Tunisia","Turkmenistan","Ukraine","Uruguay","Vietnam","Zimbabwe"],"hoverinfo":["text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text"],"locations":["DZA","ARG","BGD","BRB","BLR","BLZ","BEN","BIH","CMR","CAF","TCD","COD","COG","CRI","CIV","DOM","SLV","SWZ","GHA","GIN","GNB","GUY","IRQ","JAM","KAZ","KEN",null,"KGZ","LAO","MKD","MDG","MWI","MLI","MRT","MEX","MDA","MNG","MNE","NPL","NGA","PAK","PAN","PRY","STP","SEN","SRB","SLE","SOM","LCA","PSE","SUR","THA","GMB","TGO","TTO","TUN","TKM","UKR","URY","VNM","ZWE"],"marker":{"size":10,"line":{"color":"rgba(0,0,0,1)","width":0.5}},"type":"choropleth","geo":"geo","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: Countries in MICS
+</figcaption>
+</figure>
+</div>
+</div>
 </section>
 <section id="methods" class="level1">
 <h1>Methods</h1>
@@ -169,18 +213,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
     return false;
   }
-  const clipboard = new window.ClipboardJS('.code-copy-button', {
-    text: function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
-    }
-  });
-  clipboard.on('success', function(e) {
+  const onCopySuccess = function(e) {
     // button target
     const button = e.trigger;
     // don't keep focus
@@ -212,7 +245,29 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }, 1000);
     // clear code selection
     e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
   });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
       var filterRegex = new RegExp('/' + window.location.host + '/');
@@ -220,7 +275,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
     // Inspect non-navigation links and adorn them if external
- 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
     for (var i=0; i<links.length; i++) {
       const link = links[i];
       if (!isInternal(link.href)) {
