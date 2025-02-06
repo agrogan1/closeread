@@ -225,6 +225,8 @@ flowchart LR
   
   IPV --> pabuse[physical child abuse]:::maize
   
+  interventions --> pabuse
+  
   trauma[trauma informed \napproaches]:::red --> interventions
   
   %% Links %%
