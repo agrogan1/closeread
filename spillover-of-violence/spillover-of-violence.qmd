@@ -1,5 +1,5 @@
 ---
-title: "The Spillover of Macro-level Violence to Parental Physical Abuse of Children in Low- and Middle-Income Countries"
+title: "The Spillover of Violence in Low- and Middle-Income Countries"
 author: "Global Families Research Team"
 date: "today"
 format:
@@ -97,6 +97,10 @@ p0 <- MICScountries %>%
 
 :::{.cr-section}
 
+:::{focus-on="cr-earth"}
+<span style="font-size:105px;color:red;text-align:center;">⇣</span>
+:::
+
 :::{focus-on="cr-intro"}
 Through violence socialization processes, exposure to higher rates of violence in the macro context may spill over to family violence, including caregivers’ use of physical child abuse. 
 :::
@@ -145,7 +149,7 @@ We used data from 435,131 households with a reference child aged 1 to 17 years a
 :::{#cr-earth .scale-to-fill}
 ```{r}
 #| echo: false
-#| fig-cap: "Countries in MICS"
+#| fig-cap: "Countries in UNICEF MICS Data"
 #| label: fig-2
 
 p0
@@ -206,7 +210,9 @@ flowchart LR
 :::
 
 :::{focus-on="cr-interventions"}
-Interventions aimed at reducing abusive parenting practices in LMICs may benefit from efforts to reduce social norms that support violence against women and children. These interventions should be responsive to trauma-informed approaches that recognize the effects of macro-level violence.
+Interventions aimed at reducing abusive parenting practices in LMICs may benefit from efforts to reduce social norms that support violence against women and children. 
+
+These interventions should be responsive to trauma-informed approaches that recognize the effects of macro-level violence.
 :::
 
 :::{#cr-interventions .scale-to-fill}
