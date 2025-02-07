@@ -91,13 +91,18 @@ p0 <- MICScountries %>%
     marker = list(size=10, line = l)) %>%
   layout(geo = g,
          plot_bgcolor='transparent',
-         paper_bgcolor='transparent')
+         paper_bgcolor='transparent') %>% 
+  config(displayModeBar = FALSE)
 
 ```
 
 :::{.cr-section}
 
 :::{focus-on="cr-earth"}
+<span style="font-size:105px;color:red;text-align:center;">⇣</span>
+
+<span style="font-size:105px;color:red;text-align:center;">⇣</span>
+
 <span style="font-size:105px;color:red;text-align:center;">⇣</span>
 :::
 
@@ -106,18 +111,7 @@ Through violence socialization processes, exposure to higher rates of violence i
 :::
 
 :::{#cr-intro .scale-to-fill}
-```{mermaid}
-flowchart LR
-  %% Nodes %%
-  classDef maize fill:#FFCB05,stroke:#000000,stroke-width:2px,color:#000000;
-
-  macroviolence[higher rates of \nviolence in the \nmacro context]:::maize --> |"???"| pabuse[physical child abuse]:::maize
-
-  %% Links %%
-  linkStyle 0 stroke:#00274C,stroke-width:2px,color:red;
-
-
-```
+{{< iconify healthicons:war-outline >}} {{< iconify game-icons:carpet-bombing >}} {{< iconify mdi:human-male-child >}}
 :::
 
 :::{focus-on="cr-researchquestion"}
@@ -188,7 +182,7 @@ flowchart LR
 :::
 
 :::{focus-on="cr-results2"}
-The association of terrorism and political violence with severe physical abuse was mediated by norms that legitimize IPV (indirect b = 0.027, p = .005). 
+The association of terrorism and political violence with severe physical abuse was mediated (statistically connected) by norms that legitimize IPV (indirect b = 0.027, p = .005). 
 :::
 
 :::{#cr-results2 .scale-to-fill}
@@ -217,7 +211,7 @@ These interventions should be responsive to trauma-informed approaches that reco
 
 :::{#cr-interventions .scale-to-fill}
 ```{mermaid}
-flowchart LR
+flowchart TB
   %% Nodes %%
   classDef maize fill:#FFCB05,stroke:#000000,stroke-width:2px,color:#000000;
   
@@ -227,9 +221,9 @@ flowchart LR
   
   classDef red fill:#9A3324,stroke:#000000,stroke-width:2px,color:#FFFFFF;
 
-  interventions:::orange --> IPV[higher levels of \nendorsement of IPV]:::blue
+  interventions:::orange --> IPV[lower levels of \nendorsement of IPV]:::blue
   
-  IPV --> pabuse[physical child abuse]:::maize
+  IPV --> pabuse[less physical child abuse]:::maize
   
   interventions --> pabuse
   
