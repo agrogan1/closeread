@@ -183,9 +183,7 @@ flowchart LR
 
 :::{focus-on="cr-results2"}
 The association of terrorism and political violence with severe physical abuse was mediated (statistically connected) by norms that legitimize IPV (indirect b = 0.027, p = .005). 
-:::
 
-:::{#cr-results2 .scale-to-fill}
 ```{mermaid}
 flowchart LR
   %% Nodes %%
@@ -200,6 +198,35 @@ flowchart LR
   %% Links %%
   linkStyle 0 stroke:#00274C,stroke-width:2px,color:red;
 
+```
+:::
+
+:::{#cr-results2 .scale-to-fill}
+
+```{ojs}
+
+mydata = FileAttachment("spillover.csv").csv({ typed: true })
+
+```
+
+```{ojs}
+//| fig-cap: "As political violence and terrorism increase, so does the probability of physical abuse"
+
+Plot.plot({
+  grid: true,
+  color: {legend: false},
+  symbol: {legend: true},
+  marks: [
+    Plot.dot(mydata, {x: "pctile", 
+    y: "pabuse", 
+    fill: "red", 
+    r: 7, 
+    tip: true}),
+    Plot.line(mydata, {x: "pctile", y: "pabuse", curve: "monotone-y"}),
+    Plot.axisX({label: "percentile of political violence and terrorism"}),
+    Plot.axisY({label: "probability of physical abuse"})
+  ]
+})
 ```
 :::
 
