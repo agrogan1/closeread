@@ -105,10 +105,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <!-- user-provided yaml closeread style options -->
       <style>
         :root {
-          --cr-narrative-text-color-sidebar: black;
---cr-section-background-color: white;
+          --cr-section-background-color: white;
 --cr-narrative-background-color-overlay: grey;
 --cr-narrative-background-color-sidebar: white;
+--cr-narrative-text-color-sidebar: black;
         }
       </style>
     
@@ -181,30 +181,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="trigger new-trigger" data-focus-on="cr-results2">
 <div class="narrative">
 <p>The association of terrorism and political violence with severe physical abuse was mediated (statistically connected) by norms that legitimize IPV (indirect b = 0.027, p = .005).</p>
-<div class="cell" data-layout-align="default">
-<div class="cell-output-display">
-<div>
-<p></p><figure class="figure"><p></p>
-<div>
-<pre class="mermaid mermaid-js">flowchart LR
-  %% Nodes %%
-  classDef maize fill:#FFCB05,stroke:#000000,stroke-width:2px,color:#000000;
-  
-  classDef blue fill:#00274C,stroke:#000000,stroke-width:2px,color:#FFFFFF;
-
-  terrorism[terrorism and \npolitical violence]:::maize --&gt; IPV[higher levels of \nendorsement of IPV]:::blue
-  
-  IPV --&gt; pabuse[physical child abuse]:::maize
-  
-  %% Links %%
-  linkStyle 0 stroke:#00274C,stroke-width:2px,color:red;
-
-</pre>
-</div>
-<p></p></figure><p></p>
-</div>
-</div>
-</div>
 </div>
 </div>
 <div class="trigger new-trigger" data-focus-on="cr-interventions">
@@ -250,8 +226,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div id="fig-2" class="cell-output-display quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<div class="plotly html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-29e11a117f9ecf540498" style="width:100%;height:464px;"></div>
-<script type="application/json" data-for="htmlwidget-29e11a117f9ecf540498">{"x":{"visdat":{"15a538688536":["function () ","plotlyVisDat"]},"cur_data":"15a538688536","attrs":{"15a538688536":{"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"z":1,"text":{},"colors":"#009edb","hoverinfo":"text","locations":{},"showscale":false,"marker":{"size":10,"line":{"color":"rgba(0,0,0,1)","width":0.5}},"inherit":true}},"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"mapType":"geo","geo":{"domain":{"x":[0,1],"y":[0,1]},"showframe":true,"showcoastlines":true,"showcountries":true,"showland":true,"countrycolor":"rgba(190,190,190,1)","showocean":true,"oceancolor":"white","projection":{"type":"orthographic","rotation":{"lon":-25,"lat":0,"roll":0}},"landcolor":"rgba(211,211,211,1)","bgcolor":"transparent"},"plot_bgcolor":"transparent","paper_bgcolor":"transparent","scene":{"zaxis":{"title":[]}},"hovermode":"closest","showlegend":false},"source":"A","config":{"modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false,"displayModeBar":false},"data":[{"colorbar":{"title":"","ticklen":2},"colorscale":[["0","rgba(0,158,219,1)"],["1","rgba(0,158,219,1)"]],"showscale":false,"z":[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],"text":["Algeria","Argentina","Bangladesh","Barbados","Belarus","Belize","Benin","Bosnia and Herzegovina","Cameroon","Central African Republic","Chad","Democratic Republic of the Congo","Republic of the Congo","Costa Rica","Cote d'Ivoire","Dominican Republic","El Salvador","Eswatini","Ghana","Guinea","Guinea Bissau","Guyana","Iraq","Jamaica","Kazakhstan","Kenya","Kosovo","Kyrgyzstan","Laos","Macedonia","Madagascar","Malawi","Mali","Mauritania","Mexico","Moldova","Mongolia","Montenegro","Nepal","Nigeria","Pakistan","Panama","Paraguay","Sao Tome and Principe","Senegal","Serbia","Sierra Leone","Somalia","St. Lucia","State of Palestine","Suriname","Thailand","The Gambia","Togo","Trinidad and Tobago","Tunisia","Turkmenistan","Ukraine","Uruguay","Vietnam","Zimbabwe"],"hoverinfo":["text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text"],"locations":["DZA","ARG","BGD","BRB","BLR","BLZ","BEN","BIH","CMR","CAF","TCD","COD","COG","CRI","CIV","DOM","SLV","SWZ","GHA","GIN","GNB","GUY","IRQ","JAM","KAZ","KEN",null,"KGZ","LAO","MKD","MDG","MWI","MLI","MRT","MEX","MDA","MNG","MNE","NPL","NGA","PAK","PAN","PRY","STP","SEN","SRB","SLE","SOM","LCA","PSE","SUR","THA","GMB","TGO","TTO","TUN","TKM","UKR","URY","VNM","ZWE"],"marker":{"size":10,"line":{"color":"rgba(0,0,0,1)","width":0.5}},"type":"choropleth","geo":"geo","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+<div class="plotly html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-d26a0a96309b842e28e6" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-d26a0a96309b842e28e6">{"x":{"visdat":{"11373d819c8":["function () ","plotlyVisDat"]},"cur_data":"11373d819c8","attrs":{"11373d819c8":{"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"z":1,"text":{},"colors":"#009edb","hoverinfo":"text","locations":{},"showscale":false,"marker":{"size":10,"line":{"color":"rgba(0,0,0,1)","width":0.5}},"inherit":true}},"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"mapType":"geo","geo":{"domain":{"x":[0,1],"y":[0,1]},"showframe":true,"showcoastlines":true,"showcountries":true,"showland":true,"countrycolor":"rgba(190,190,190,1)","showocean":true,"oceancolor":"white","projection":{"type":"orthographic","rotation":{"lon":-25,"lat":0,"roll":0}},"landcolor":"rgba(211,211,211,1)","bgcolor":"transparent"},"plot_bgcolor":"transparent","paper_bgcolor":"transparent","scene":{"zaxis":{"title":[]}},"hovermode":"closest","showlegend":false},"source":"A","config":{"modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false,"displayModeBar":false},"data":[{"colorbar":{"title":"","ticklen":2},"colorscale":[["0","rgba(0,158,219,1)"],["1","rgba(0,158,219,1)"]],"showscale":false,"z":[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],"text":["Algeria","Argentina","Bangladesh","Barbados","Belarus","Belize","Benin","Bosnia and Herzegovina","Cameroon","Central African Republic","Chad","Democratic Republic of the Congo","Republic of the Congo","Costa Rica","Cote d'Ivoire","Dominican Republic","El Salvador","Eswatini","Ghana","Guinea","Guinea Bissau","Guyana","Iraq","Jamaica","Kazakhstan","Kenya","Kosovo","Kyrgyzstan","Laos","Macedonia","Madagascar","Malawi","Mali","Mauritania","Mexico","Moldova","Mongolia","Montenegro","Nepal","Nigeria","Pakistan","Panama","Paraguay","Sao Tome and Principe","Senegal","Serbia","Sierra Leone","Somalia","St. Lucia","State of Palestine","Suriname","Thailand","The Gambia","Togo","Trinidad and Tobago","Tunisia","Turkmenistan","Ukraine","Uruguay","Vietnam","Zimbabwe"],"hoverinfo":["text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text"],"locations":["DZA","ARG","BGD","BRB","BLR","BLZ","BEN","BIH","CMR","CAF","TCD","COD","COG","CRI","CIV","DOM","SLV","SWZ","GHA","GIN","GNB","GUY","IRQ","JAM","KAZ","KEN",null,"KGZ","LAO","MKD","MDG","MWI","MLI","MRT","MEX","MDA","MNG","MNE","NPL","NGA","PAK","PAN","PRY","STP","SEN","SRB","SLE","SOM","LCA","PSE","SUR","THA","GMB","TGO","TTO","TUN","TKM","UKR","URY","VNM","ZWE"],"marker":{"size":10,"line":{"color":"rgba(0,0,0,1)","width":0.5}},"type":"choropleth","geo":"geo","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Figure&nbsp;1: Countries in UNICEF MICS Data
@@ -296,7 +272,7 @@ Figure&nbsp;1: Countries in UNICEF MICS Data
 </div>
 <div id="cr-results2" class="scale-to-fill sticky">
 <div class="cell">
-<div class="sourceCode cell-code hidden" id="cb1" data-startfrom="206" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 205;"><span id="cb1-206"><a href="#cb1-206" aria-hidden="true" tabindex="-1"></a>mydata <span class="op">=</span> <span class="fu">FileAttachment</span>(<span class="st">"spillover.csv"</span>)<span class="op">.</span><span class="fu">csv</span>({ <span class="dt">typed</span><span class="op">:</span> <span class="kw">true</span> })</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code hidden" id="cb1" data-startfrom="190" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 189;"><span id="cb1-190"><a href="#cb1-190" aria-hidden="true" tabindex="-1"></a>mydata <span class="op">=</span> <span class="fu">FileAttachment</span>(<span class="st">"spillover.csv"</span>)<span class="op">.</span><span class="fu">csv</span>({ <span class="dt">typed</span><span class="op">:</span> <span class="kw">true</span> })</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <div id="ojs-cell-1" data-nodetype="declaration">
 
@@ -304,21 +280,15 @@ Figure&nbsp;1: Countries in UNICEF MICS Data
 </div>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code hidden" id="cb2" data-startfrom="213" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 212;"><span id="cb2-213"><a href="#cb2-213" aria-hidden="true" tabindex="-1"></a>Plot<span class="op">.</span><span class="fu">plot</span>({</span>
-<span id="cb2-214"><a href="#cb2-214" aria-hidden="true" tabindex="-1"></a>  <span class="dt">grid</span><span class="op">:</span> <span class="kw">true</span><span class="op">,</span></span>
-<span id="cb2-215"><a href="#cb2-215" aria-hidden="true" tabindex="-1"></a>  <span class="dt">color</span><span class="op">:</span> {<span class="dt">legend</span><span class="op">:</span> <span class="kw">false</span>}<span class="op">,</span></span>
-<span id="cb2-216"><a href="#cb2-216" aria-hidden="true" tabindex="-1"></a>  <span class="dt">symbol</span><span class="op">:</span> {<span class="dt">legend</span><span class="op">:</span> <span class="kw">true</span>}<span class="op">,</span></span>
-<span id="cb2-217"><a href="#cb2-217" aria-hidden="true" tabindex="-1"></a>  <span class="dt">marks</span><span class="op">:</span> [</span>
-<span id="cb2-218"><a href="#cb2-218" aria-hidden="true" tabindex="-1"></a>    Plot<span class="op">.</span><span class="fu">dot</span>(mydata<span class="op">,</span> {<span class="dt">x</span><span class="op">:</span> <span class="st">"pctile"</span><span class="op">,</span> </span>
-<span id="cb2-219"><a href="#cb2-219" aria-hidden="true" tabindex="-1"></a>    <span class="dt">y</span><span class="op">:</span> <span class="st">"pabuse"</span><span class="op">,</span> </span>
-<span id="cb2-220"><a href="#cb2-220" aria-hidden="true" tabindex="-1"></a>    <span class="dt">fill</span><span class="op">:</span> <span class="st">"red"</span><span class="op">,</span> </span>
-<span id="cb2-221"><a href="#cb2-221" aria-hidden="true" tabindex="-1"></a>    <span class="dt">r</span><span class="op">:</span> <span class="dv">7</span><span class="op">,</span> </span>
-<span id="cb2-222"><a href="#cb2-222" aria-hidden="true" tabindex="-1"></a>    <span class="dt">tip</span><span class="op">:</span> <span class="kw">true</span>})<span class="op">,</span></span>
-<span id="cb2-223"><a href="#cb2-223" aria-hidden="true" tabindex="-1"></a>    Plot<span class="op">.</span><span class="fu">line</span>(mydata<span class="op">,</span> {<span class="dt">x</span><span class="op">:</span> <span class="st">"pctile"</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> <span class="st">"pabuse"</span><span class="op">,</span> <span class="dt">curve</span><span class="op">:</span> <span class="st">"monotone-y"</span>})<span class="op">,</span></span>
-<span id="cb2-224"><a href="#cb2-224" aria-hidden="true" tabindex="-1"></a>    Plot<span class="op">.</span><span class="fu">axisX</span>({<span class="dt">label</span><span class="op">:</span> <span class="st">"percentile of political violence and terrorism"</span>})<span class="op">,</span></span>
-<span id="cb2-225"><a href="#cb2-225" aria-hidden="true" tabindex="-1"></a>    Plot<span class="op">.</span><span class="fu">axisY</span>({<span class="dt">label</span><span class="op">:</span> <span class="st">"probability of physical abuse"</span>})</span>
-<span id="cb2-226"><a href="#cb2-226" aria-hidden="true" tabindex="-1"></a>  ]</span>
-<span id="cb2-227"><a href="#cb2-227" aria-hidden="true" tabindex="-1"></a>})</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code hidden" id="cb2" data-startfrom="197" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 196;"><span id="cb2-197"><a href="#cb2-197" aria-hidden="true" tabindex="-1"></a>Plot<span class="op">.</span><span class="fu">plot</span>({</span>
+<span id="cb2-198"><a href="#cb2-198" aria-hidden="true" tabindex="-1"></a>  <span class="dt">grid</span><span class="op">:</span> <span class="kw">true</span><span class="op">,</span></span>
+<span id="cb2-199"><a href="#cb2-199" aria-hidden="true" tabindex="-1"></a>  <span class="dt">marks</span><span class="op">:</span> [</span>
+<span id="cb2-200"><a href="#cb2-200" aria-hidden="true" tabindex="-1"></a>    Plot<span class="op">.</span><span class="fu">line</span>(mydata<span class="op">,</span> {<span class="dt">x</span><span class="op">:</span> <span class="st">"percentile"</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> <span class="st">"abuse"</span><span class="op">,</span> <span class="dt">curve</span><span class="op">:</span> <span class="st">"monotone-y"</span>})<span class="op">,</span></span>
+<span id="cb2-201"><a href="#cb2-201" aria-hidden="true" tabindex="-1"></a>    Plot<span class="op">.</span><span class="fu">dot</span>(mydata<span class="op">,</span> {<span class="dt">x</span><span class="op">:</span> <span class="st">"percentile"</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> <span class="st">"abuse"</span><span class="op">,</span> <span class="dt">fill</span><span class="op">:</span> <span class="st">"red"</span><span class="op">,</span> <span class="dt">r</span><span class="op">:</span> <span class="dv">9</span><span class="op">,</span> <span class="dt">tip</span><span class="op">:</span> <span class="kw">true</span>})<span class="op">,</span></span>
+<span id="cb2-202"><a href="#cb2-202" aria-hidden="true" tabindex="-1"></a>    Plot<span class="op">.</span><span class="fu">axisX</span>({<span class="dt">label</span><span class="op">:</span> <span class="st">"Percentile of political violence and terrorism"</span>})<span class="op">,</span></span>
+<span id="cb2-203"><a href="#cb2-203" aria-hidden="true" tabindex="-1"></a>    Plot<span class="op">.</span><span class="fu">axisY</span>({<span class="dt">label</span><span class="op">:</span> <span class="st">"Probability of abuse"</span>})</span>
+<span id="cb2-204"><a href="#cb2-204" aria-hidden="true" tabindex="-1"></a>  ]</span>
+<span id="cb2-205"><a href="#cb2-205" aria-hidden="true" tabindex="-1"></a>})</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div id="fig-ojs-cell-2" class="cell-output cell-output-display quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-ojs-cell-2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -374,7 +344,7 @@ Figure&nbsp;2: As political violence and terrorism increase, so does the probabi
 </main>
 <!-- /main column -->
 <script type="ojs-module-contents">
-eyJjb250ZW50cyI6W3sibWV0aG9kTmFtZSI6ImludGVycHJldCIsImNlbGxOYW1lIjoib2pzLWNlbGwtMSIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6IlxubXlkYXRhID0gRmlsZUF0dGFjaG1lbnQoXCJzcGlsbG92ZXIuY3N2XCIpLmNzdih7IHR5cGVkOiB0cnVlIH0pXG5cbiJ9LHsibWV0aG9kTmFtZSI6ImludGVycHJldCIsImNlbGxOYW1lIjoib2pzLWNlbGwtMiIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6IlxuUGxvdC5wbG90KHtcbiAgZ3JpZDogdHJ1ZSxcbiAgY29sb3I6IHtsZWdlbmQ6IGZhbHNlfSxcbiAgc3ltYm9sOiB7bGVnZW5kOiB0cnVlfSxcbiAgbWFya3M6IFtcbiAgICBQbG90LmRvdChteWRhdGEsIHt4OiBcInBjdGlsZVwiLCBcbiAgICB5OiBcInBhYnVzZVwiLCBcbiAgICBmaWxsOiBcInJlZFwiLCBcbiAgICByOiA3LCBcbiAgICB0aXA6IHRydWV9KSxcbiAgICBQbG90LmxpbmUobXlkYXRhLCB7eDogXCJwY3RpbGVcIiwgeTogXCJwYWJ1c2VcIiwgY3VydmU6IFwibW9ub3RvbmUteVwifSksXG4gICAgUGxvdC5heGlzWCh7bGFiZWw6IFwicGVyY2VudGlsZSBvZiBwb2xpdGljYWwgdmlvbGVuY2UgYW5kIHRlcnJvcmlzbVwifSksXG4gICAgUGxvdC5heGlzWSh7bGFiZWw6IFwicHJvYmFiaWxpdHkgb2YgcGh5c2ljYWwgYWJ1c2VcIn0pXG4gIF1cbn0pXG4ifV19
+eyJjb250ZW50cyI6W3sibWV0aG9kTmFtZSI6ImludGVycHJldCIsImNlbGxOYW1lIjoib2pzLWNlbGwtMSIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6IlxubXlkYXRhID0gRmlsZUF0dGFjaG1lbnQoXCJzcGlsbG92ZXIuY3N2XCIpLmNzdih7IHR5cGVkOiB0cnVlIH0pXG5cbiJ9LHsibWV0aG9kTmFtZSI6ImludGVycHJldCIsImNlbGxOYW1lIjoib2pzLWNlbGwtMiIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6IlxuUGxvdC5wbG90KHtcbiAgZ3JpZDogdHJ1ZSxcbiAgbWFya3M6IFtcbiAgICBQbG90LmxpbmUobXlkYXRhLCB7eDogXCJwZXJjZW50aWxlXCIsIHk6IFwiYWJ1c2VcIiwgY3VydmU6IFwibW9ub3RvbmUteVwifSksXG4gICAgUGxvdC5kb3QobXlkYXRhLCB7eDogXCJwZXJjZW50aWxlXCIsIHk6IFwiYWJ1c2VcIiwgZmlsbDogXCJyZWRcIiwgcjogOSwgdGlwOiB0cnVlfSksXG4gICAgUGxvdC5heGlzWCh7bGFiZWw6IFwiUGVyY2VudGlsZSBvZiBwb2xpdGljYWwgdmlvbGVuY2UgYW5kIHRlcnJvcmlzbVwifSksXG4gICAgUGxvdC5heGlzWSh7bGFiZWw6IFwiUHJvYmFiaWxpdHkgb2YgYWJ1c2VcIn0pXG4gIF1cbn0pXG5cbiJ9XX0=
 </script>
 <script type="module">
 if (window.location.protocol === "file:") { alert("The OJS runtime does not work with file:// URLs. Please use a web server to view this document."); }

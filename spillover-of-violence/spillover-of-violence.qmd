@@ -183,22 +183,6 @@ flowchart LR
 
 :::{focus-on="cr-results2"}
 The association of terrorism and political violence with severe physical abuse was mediated (statistically connected) by norms that legitimize IPV (indirect b = 0.027, p = .005). 
-
-```{mermaid}
-flowchart LR
-  %% Nodes %%
-  classDef maize fill:#FFCB05,stroke:#000000,stroke-width:2px,color:#000000;
-  
-  classDef blue fill:#00274C,stroke:#000000,stroke-width:2px,color:#FFFFFF;
-
-  terrorism[terrorism and \npolitical violence]:::maize --> IPV[higher levels of \nendorsement of IPV]:::blue
-  
-  IPV --> pabuse[physical child abuse]:::maize
-  
-  %% Links %%
-  linkStyle 0 stroke:#00274C,stroke-width:2px,color:red;
-
-```
 :::
 
 :::{#cr-results2 .scale-to-fill}
@@ -214,19 +198,14 @@ mydata = FileAttachment("spillover.csv").csv({ typed: true })
 
 Plot.plot({
   grid: true,
-  color: {legend: false},
-  symbol: {legend: true},
   marks: [
-    Plot.dot(mydata, {x: "pctile", 
-    y: "pabuse", 
-    fill: "red", 
-    r: 7, 
-    tip: true}),
-    Plot.line(mydata, {x: "pctile", y: "pabuse", curve: "monotone-y"}),
-    Plot.axisX({label: "percentile of political violence and terrorism"}),
-    Plot.axisY({label: "probability of physical abuse"})
+    Plot.line(mydata, {x: "percentile", y: "abuse", curve: "monotone-y"}),
+    Plot.dot(mydata, {x: "percentile", y: "abuse", fill: "red", r: 9, tip: true}),
+    Plot.axisX({label: "Percentile of political violence and terrorism"}),
+    Plot.axisY({label: "Probability of abuse"})
   ]
 })
+
 ```
 :::
 
