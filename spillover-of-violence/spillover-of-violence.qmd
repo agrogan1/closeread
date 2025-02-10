@@ -33,6 +33,8 @@ share:
 
 library(ggplot2)
 
+library(readr)
+
 library(plotly)
 
 library(dplyr)
@@ -187,26 +189,35 @@ The association of terrorism and political violence with severe physical abuse w
 
 :::{#cr-results2 .scale-to-fill}
 
-```{ojs}
+```{r}
+#| fig-cap: "As political violence and terrorism increase, so does the probability of physical abuse"
+#| message: false
 
-mydata = FileAttachment("spillover.csv").csv({ typed: true })
+spillover <- read_csv("spillover.csv")
+
+p_spillover <- plot_ly(data = spillover, 
+                       x = ~percentile, 
+                       y = ~abuse, 
+                       text = ~paste("percentile: ", 
+                                     percentile, 
+                                     '<br>probability of abuse:', 
+                                     abuse),
+                       hoverinfo = 'text',
+                       marker = list(size = 35,
+                                     color = 'red',
+                                     line = list(color = 'darkblue',
+                                                 width = 2)),
+                       type = 'scatter', 
+                       mode = 'lines+markers') %>%
+  layout(title = 'As political violence and terrorism increase, <br>so does the probability of physical abuse.', 
+         xaxis = list(title = "percentile of political violence and terrorism"),
+         yaxis = list(title = "probability of abuse")) %>% 
+  config(displayModeBar = FALSE)
+
+p_spillover # replay
 
 ```
 
-```{ojs}
-//| fig-cap: "As political violence and terrorism increase, so does the probability of physical abuse"
-
-Plot.plot({
-  grid: true,
-  marks: [
-    Plot.line(mydata, {x: "percentile", y: "abuse", curve: "monotone-y"}),
-    Plot.dot(mydata, {x: "percentile", y: "abuse", fill: "red", r: 9, tip: true}),
-    Plot.axisX({label: "Percentile of political violence and terrorism"}),
-    Plot.axisY({label: "Probability of abuse"})
-  ]
-})
-
-```
 :::
 
 :::{focus-on="cr-interventions"}
