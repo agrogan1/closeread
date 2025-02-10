@@ -1,0 +1,28 @@
+---
+title: "OJS Examples"
+author: "Andy Grogan-Kaylor"
+format: html
+---
+
+# OJS Examples
+
+```{ojs}
+
+mydata = FileAttachment("spillover.csv").csv({ typed: true })
+
+```
+
+```{ojs}
+//| fig-cap: "As political violence and terrorism increase, so does the probability of physical abuse"
+
+Plot.plot({
+  grid: true,
+  marks: [
+    Plot.line(mydata, {x: "percentile", y: "abuse", curve: "monotone-y"}),
+    Plot.dot(mydata, {x: "percentile", y: "abuse", fill: "red", r: 9, tip: true}),
+    Plot.axisX({label: "Percentile of political violence and terrorism"}),
+    Plot.axisY({label: "Probability of abuse"})
+  ]
+})
+
+```
