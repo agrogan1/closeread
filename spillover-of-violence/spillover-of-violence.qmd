@@ -203,15 +203,16 @@ p_spillover <- plot_ly(data = spillover,
                                      '<br>probability of abuse:', 
                                      abuse),
                        hoverinfo = 'text',
-                       marker = list(size = 35,
+                       marker = list(size = 15,
                                      color = 'red',
-                                     line = list(color = 'darkblue',
+                                     line = list(color = 'black',
                                                  width = 2)),
                        type = 'scatter', 
                        mode = 'lines+markers') %>%
   layout(title = 'As political violence and terrorism increase, <br>so does the probability of physical abuse.', 
          xaxis = list(title = "percentile of political violence and terrorism"),
-         yaxis = list(title = "probability of abuse")) %>% 
+         yaxis = list(title = "probability of abuse"),
+         hoverlabel = list(bgcolor = "white")) %>% 
   config(displayModeBar = FALSE)
 
 p_spillover # replay
