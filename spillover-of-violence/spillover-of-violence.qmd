@@ -156,7 +156,23 @@ p0
 :::
 
 :::{focus-on="cr-analysis"}
-We employed multilevel logistic regression models to estimate the degree to which country-level violence—measured by rates of terrorism and political conflict, homicide, and women's exposure to IPV—was associated with parental physical abuse after controlling for norms justifying violence against women and children and socio-demographic factors.
+We employed multilevel logistic regression models.
+:::
+
+:::{focus-on="cr-analysis" pan-to="25%,50%" scale-by="1.5"}
+We estimated the factors associated with parental physical abuse.
+:::
+
+:::{focus-on="cr-analysis" pan-to="-30%,50%" scale-by="1.5"}
+We controlled for country-level violence—measured by rates of terrorism and political conflict, homicide, and women's exposure to IPV
+:::
+
+:::{focus-on="cr-analysis" pan-to="-70%,50%" scale-by="1.5"}
+We also controlled for other covariates, including norms justifying violence against women and children and socio-demographic factors.
+:::
+
+:::{focus-on="cr-analysis" pan-to="-90%,50%" scale-by="1.5"}
+We accounted for the country in which study participants lived. 
 :::
 
 :::{#cr-analysis .scale-to-fill}
@@ -225,11 +241,37 @@ p_spillover # replay
 
 :::{focus-on="cr-interventions"}
 Interventions aimed at reducing abusive parenting practices in LMICs may benefit from efforts to reduce social norms that support violence against women and children. 
+:::
 
+:::{focus-on="cr-interventions2"}
 These interventions should be responsive to trauma-informed approaches that recognize the effects of macro-level violence.
 :::
 
 :::{#cr-interventions .scale-to-fill}
+```{mermaid}
+flowchart TB
+  %% Nodes %%
+  classDef maize fill:#FFCB05,stroke:#000000,stroke-width:2px,color:#000000;
+  
+  classDef blue fill:#00274C,stroke:#000000,stroke-width:2px,color:#FFFFFF;
+  
+  classDef orange fill:#D86018,stroke:#000000,stroke-width:2px,color:#FFFFFF;
+  
+  classDef red fill:#9A3324,stroke:#000000,stroke-width:2px,color:#FFFFFF;
+
+  interventions:::orange --> IPV[lower levels of \nendorsement of IPV]:::blue
+  
+  IPV --> pabuse[less physical child abuse]:::maize
+  
+  interventions --> pabuse
+  
+  %% Links %%
+  linkStyle 0 stroke:#00274C,stroke-width:2px,color:red;
+
+```
+:::
+
+:::{#cr-interventions2 .scale-to-fill}
 ```{mermaid}
 flowchart TB
   %% Nodes %%
