@@ -101,11 +101,13 @@ p0 <- MICScountries %>%
 :::{.cr-section}
 
 :::{focus-on="cr-earth"}
+::: {.firstbox}
 <span style="font-size:105px;color:red;text-align:center;">⇣</span>
 
 <span style="font-size:105px;color:red;text-align:center;">⇣</span>
 
 <span style="font-size:105px;color:red;text-align:center;">⇣</span>
+:::
 :::
 
 :::{focus-on="cr-intro"}
