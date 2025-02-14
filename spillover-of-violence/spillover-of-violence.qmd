@@ -163,15 +163,15 @@ We employed multilevel logistic regression models.
 We estimated the factors associated with parental physical abuse.
 :::
 
-:::{focus-on="cr-analysis" pan-to="-35%,50%" scale-by="1.5"}
+:::{focus-on="cr-analysis" pan-to="-45%,50%" scale-by="1.5"}
 We controlled for country-level violence—measured by rates of terrorism and political conflict, homicide, and women's exposure to IPV
 :::
 
-:::{focus-on="cr-analysis" pan-to="-70%,50%" scale-by="1.5"}
+:::{focus-on="cr-analysis" pan-to="-75%,50%" scale-by="1.5"}
 We also controlled for other covariates, including norms justifying violence against women and children and socio-demographic factors.
 :::
 
-:::{focus-on="cr-analysis" pan-to="-95%,50%" scale-by="1.5"}
+:::{focus-on="cr-analysis" pan-to="-98%,50%" scale-by="1.5"}
 We accounted for the country in which study participants lived. 
 :::
 
