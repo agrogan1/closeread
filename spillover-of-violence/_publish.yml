@@ -1,4 +1,4 @@
 - source: spillover-of-violence.qmd
   quarto-pub:
     - id: 24cfeec0-775d-461b-bfd4-63686d450c08
-      url: 'https://globalfamilies.quarto.pub/spillover-of-violence'
+      url: https://globalfamilies.quarto.pub/spillover-of-violence
