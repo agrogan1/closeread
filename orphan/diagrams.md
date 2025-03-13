@@ -7,4 +7,6 @@ config:
 flowchart LR
   nonorphan(non-orphan) --> |"???"| harshdiscipline(harsh discipline)
   maternalorphan(maternal orphan) --> |"???"| harshdiscipline(harsh discipline)
+  paternalorphan(paternal orphan) --> |"???"| harshdiscipline(harsh discipline)
+  doubleorphan(double orphan) --> |"???"| harshdiscipline(harsh discipline)
 ```
