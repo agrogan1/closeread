@@ -1,7 +1,7 @@
 ```mermaid
 %%{
   init: {
-    'theme': 'base',
+    'theme': 'default',
     'look': 'handDrawn'
     }
   }
