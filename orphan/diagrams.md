@@ -9,5 +9,5 @@ flowchart LR
   maternalorphan(maternal orphan) --> |"???"| harshdiscipline(harsh discipline)
   paternalorphan(paternal orphan) --> |"???"| harshdiscipline(harsh discipline)
   doubleorphan(double orphan) --> |"???"| harshdiscipline(harsh discipline)
-  style paternalorphan stroke:#D50000,fill:#FFFFFF
+  style paternalorphan stroke:#003153,fill:#FFFFFF
 ```
