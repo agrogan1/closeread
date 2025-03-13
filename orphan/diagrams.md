@@ -17,5 +17,5 @@
 }%%
 
 flowchart LR
-  nonorphan(non-orphan)
+  nonorphan(non-orphan) --> |"???"| harshdiscipline(harsh discipline)
 ```
