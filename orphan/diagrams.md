@@ -2,7 +2,7 @@
 ---
 config:
   look: handDrawn
-  theme: default
+  theme: forest
 ---
 flowchart LR
   nonorphan(non-orphan) --> |"???"| harshdiscipline(harsh discipline)
