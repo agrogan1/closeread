@@ -2,7 +2,7 @@
 ---
 config:
   look: handDrawn
-  theme: neo
+  theme: default
 ---
 flowchart LR
   nonorphan(non-orphan) --> |"???"| harshdiscipline(harsh discipline)
