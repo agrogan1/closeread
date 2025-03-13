@@ -1,8 +1,8 @@
 ```mermaid
 ---
 config:
-  look: neo
-  theme: neo
+  look: handDrawn
+  theme: default
 ---
 flowchart LR
   nonorphan(non-orphan) --> |"???"| harshdiscipline(harsh discipline)
