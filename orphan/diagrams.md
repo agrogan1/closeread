@@ -2,7 +2,7 @@
 %%{
   init: {
     'theme': 'default',
-    'look': 'handDrawn'
+    'look': 'handDrawn',
     }
   }
 }%%
