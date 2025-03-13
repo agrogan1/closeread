@@ -4,7 +4,7 @@
     'theme': 'base',
     'look': 'handDrawn',
     'themeVariables': {
-      'primaryColor': '#FFCB05',
+      'primaryColor': '#FFFFFF',
       'primaryTextColor': '#000000',
       'primaryBorderColor': '#00274C',
       'lineColor': '#00274C',
@@ -17,9 +17,5 @@
 }%%
 
 flowchart LR
-  A(have a question) --> B(get data)
-  B --> C(process and clean data) 
-  C --> D(analyze data)
-  D --> E(visualize data)
-  E --> F(make conclusions)
+  nonorphan(non-orphan)
 ```
