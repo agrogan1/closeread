@@ -1,7 +1,7 @@
 ```mermaid
 ---
 config:
-  look: handDrawn
+  look: neo
   theme: neutral
 ---
 flowchart LR
