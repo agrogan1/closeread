@@ -1,4 +1,19 @@
-```mermaid
+---
+title: "Diagrams"
+author: "Andy Grogan-Kaylor"
+date: "today"
+format:
+  html:
+    toc: true
+    number-sections: true
+    lightbox: true
+    theme: default
+  pdf: 
+    toc: true
+    number-sections: true
+---
+
+```{mermaid}
 ---
 config:
   look: handDrawn
