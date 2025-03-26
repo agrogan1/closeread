@@ -86,7 +86,7 @@ p0 <- MICScountries %>%
   plot_geo() %>% 
   add_trace(z = 1,
     text = ~country, 
-    colors = "#009edb",
+    colors = "#1CABE2",
     hoverinfo = 'text',
     locations = ~country_iso, 
     showscale = FALSE,
@@ -102,11 +102,11 @@ p0 <- MICScountries %>%
 
 :::{focus-on="cr-earth"}
 ::: {.firstbox}
-<span style="font-size:105px;color:red;text-align:center;">⇣</span>
+<span style="font-size:105px;color:#E2231A;text-align:center;">⇣</span>
 
-<span style="font-size:105px;color:red;text-align:center;">⇣</span>
+<span style="font-size:105px;color:#E2231A;text-align:center;">⇣</span>
 
-<span style="font-size:105px;color:red;text-align:center;">⇣</span>
+<span style="font-size:105px;color:#E2231A;text-align:center;">⇣</span>
 :::
 :::
 
@@ -126,16 +126,21 @@ This study examined the associations of violence occurring in macro contexts wit
 ```{mermaid}
 flowchart LR
   %% Nodes %%
-  classDef maize fill:#FFCB05,stroke:#000000,stroke-width:2px,color:#000000;
+  classDef yellow fill:#FFC20E,stroke:#000000,stroke-width:2px,color:#000000;
   
-  classDef blue fill:#00274C,stroke:#000000,stroke-width:2px,color:#FFFFFF;
+  classDef cyan fill:#1CABE2,stroke:#000000,stroke-width:2px,color:#FFFFFF;
+  
+  classDef red fill:#E2231A,stroke:#000000,stroke-width:2px,color:#FFFFFF;
+  
+  classDef orange fill:#F26A21,stroke:#000000,stroke-width:2px,color:#FFFFFF;
+  
 
-  macroviolence[higher rates of \nviolence in the \nmacro context]:::maize --> |"???"| pabuse[physical child abuse]:::maize
+  macroviolence[higher rates of \nviolence in the \nmacro context]:::red --> |"???"| pabuse[physical child abuse]:::yellow
   
-  norms[norms justifying \nviolence]:::blue --> pabuse
+  norms[norms justifying \nviolence]:::orange --> pabuse
 
   %% Links %%
-  linkStyle 0 stroke:#00274C,stroke-width:2px,color:red;
+  linkStyle 0 stroke:#E2231A,stroke-width:2px,color:red;
 
 ```
 :::
@@ -187,13 +192,18 @@ Results indicated that higher levels of endorsement of IPV (OR = 1.024, p < .001
 ```{mermaid}
 flowchart LR
   %% Nodes %%
-  classDef maize fill:#FFCB05,stroke:#000000,stroke-width:2px,color:#000000;
+  classDef yellow fill:#FFC20E,stroke:#000000,stroke-width:2px,color:#000000;
   
-  classDef blue fill:#00274C,stroke:#000000,stroke-width:2px,color:#FFFFFF;
-
-  IPV[higher levels of \nendorsement of IPV]:::blue --> pabuse[physical child abuse]:::maize
+  classDef cyan fill:#1CABE2,stroke:#000000,stroke-width:2px,color:#FFFFFF;
   
-  CP[attitudes endorsing \ncorporal punishment]:::blue --> pabuse
+  classDef red fill:#E2231A,stroke:#000000,stroke-width:2px,color:#FFFFFF;
+  
+  classDef orange fill:#F26A21,stroke:#000000,stroke-width:2px,color:#FFFFFF;
+  
+  
+  IPV[higher levels of \nendorsement of IPV]:::orange --> pabuse[physical child abuse]:::yellow
+  
+  CP[attitudes endorsing \ncorporal punishment]:::orange --> pabuse
   
   %% Links %%
   linkStyle 0 stroke:#00274C,stroke-width:2px,color:red;
@@ -230,7 +240,7 @@ p_spillover <- plot_ly(data = spillover,
                                      abuse),
                        hoverinfo = 'text',
                        marker = list(size = 15,
-                                     color = 'red',
+                                     color = '#E2231A',
                                      line = list(color = 'black',
                                                  width = 2)),
                        type = 'scatter', 
@@ -261,17 +271,19 @@ These interventions should be responsive to trauma-informed approaches that reco
 ```{mermaid}
 flowchart TB
   %% Nodes %%
-  classDef maize fill:#FFCB05,stroke:#000000,stroke-width:2px,color:#000000;
+  classDef yellow fill:#FFC20E,stroke:#000000,stroke-width:2px,color:#000000;
   
-  classDef blue fill:#00274C,stroke:#000000,stroke-width:2px,color:#FFFFFF;
+  classDef blue fill:#374EA2,stroke:#000000,stroke-width:2px,color:#FFFFFF;
+  
+  classDef green fill:#00833D,stroke:#000000,stroke-width:2px,color:#FFFFFF;
   
   classDef orange fill:#D86018,stroke:#000000,stroke-width:2px,color:#FFFFFF;
   
   classDef red fill:#9A3324,stroke:#000000,stroke-width:2px,color:#FFFFFF;
 
-  interventions:::orange --> IPV[lower levels of \nendorsement of IPV]:::blue
+  interventions:::green --> IPV[lower levels of \nendorsement of IPV]:::blue
   
-  IPV --> pabuse[less physical child abuse]:::maize
+  IPV --> pabuse[less physical child abuse]:::yellow
   
   interventions --> pabuse
   
@@ -285,24 +297,27 @@ flowchart TB
 ```{mermaid}
 flowchart TB
   %% Nodes %%
-  classDef maize fill:#FFCB05,stroke:#000000,stroke-width:2px,color:#000000;
+
+  classDef yellow fill:#FFC20E,stroke:#000000,stroke-width:2px,color:#000000;
   
-  classDef blue fill:#00274C,stroke:#000000,stroke-width:2px,color:#FFFFFF;
+  classDef blue fill:#374EA2,stroke:#000000,stroke-width:2px,color:#FFFFFF;
+  
+  classDef green fill:#00833D,stroke:#000000,stroke-width:2px,color:#FFFFFF;
   
   classDef orange fill:#D86018,stroke:#000000,stroke-width:2px,color:#FFFFFF;
   
   classDef red fill:#9A3324,stroke:#000000,stroke-width:2px,color:#FFFFFF;
 
-  interventions:::orange --> IPV[lower levels of \nendorsement of IPV]:::blue
+  interventions:::green --> IPV[lower levels of \nendorsement of IPV]:::blue
   
-  IPV --> pabuse[less physical child abuse]:::maize
+  IPV --> pabuse[less physical child abuse]:::yellow
   
   interventions --> pabuse
   
   trauma[trauma informed \napproaches]:::red --> interventions
   
   %% Links %%
-  linkStyle 0 stroke:#00274C,stroke-width:2px,color:red;
+  linkStyle 0 stroke:#00274C,stroke-width:2px,color:E2231A;
 
 ```
 :::
