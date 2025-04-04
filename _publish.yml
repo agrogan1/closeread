@@ -1,4 +1,4 @@
 - source: parenting.qmd
   quarto-pub:
     - id: 64708e98-8c23-4fa6-a3fa-9bdfa01ac883
-      url: 'https://globalfamilies.quarto.pub/parenting'
+      url: https://globalfamilies.quarto.pub/parenting

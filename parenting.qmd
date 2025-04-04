@@ -90,42 +90,109 @@ However, the associations of discipline with child outcomes were still largely c
 :::{#cr-discipline-most-common .scale-to-fill}
 ```{mermaid}
 flowchart LR
-  explained[explained why behavior was wrong] 
-  shouting
+
+  classDef yellow fill:#FFC20E,stroke:#000000,stroke-width:2px,color:#000000;
+  
+  classDef blue fill:#374EA2,stroke:#000000,stroke-width:2px,color:#FFFFFF;
+  
+  classDef green fill:#00833D,stroke:#000000,stroke-width:2px,color:#FFFFFF;
+  
+  classDef orange fill:#D86018,stroke:#000000,stroke-width:2px,color:#FFFFFF;
+  
+  classDef red fill:#9A3324,stroke:#000000,stroke-width:2px,color:#FFFFFF;
+
+  explained[explained why behavior was wrong]:::green 
+  
+  shouting:::red
+  
 ```
 :::
 
 :::{#cr-discipline .scale-to-fill}
 ```{mermaid}
+  
 flowchart LR
-  explained[explained why behavior was wrong] 
-  explained --> higherprosocial[higher prosocial peer relations]
-  shouting --> higheraggression[higher aggression]
-  spanking --> higheraggression
-  takingawayprivileges[taking away privileges] --> lowerprosocial[lower prosocial peer relations]
+
+  classDef yellow fill:#FFC20E,stroke:#000000,stroke-width:2px,color:#000000;
+  
+  classDef blue fill:#374EA2,stroke:#000000,stroke-width:2px,color:#FFFFFF;
+  
+  classDef green fill:#00833D,stroke:#000000,stroke-width:2px,color:#FFFFFF;
+  
+  classDef orange fill:#D86018,stroke:#000000,stroke-width:2px,color:#FFFFFF;
+  
+  classDef red fill:#9A3324,stroke:#000000,stroke-width:2px,color:#FFFFFF;
+  
+  explained[explained why behavior was wrong]:::green 
+  
+  explained --> higherprosocial[higher prosocial peer relations]:::blue
+  
+  shouting:::red --> higheraggression[higher aggression]:::yellow
+  
+  spanking:::red --> higheraggression
+  
+  takingawayprivileges[taking away privileges]:::orange --> lowerprosocial[lower prosocial peer relations]:::yellow
 ```
 :::
 
 :::{#cr-discipline2 .scale-to-fill}
 ```{mermaid}
 flowchart LR
-  shouting --> higheraggression[higher aggression]
-  spanking --> higheraggression
+
+  classDef yellow fill:#FFC20E,stroke:#000000,stroke-width:2px,color:#000000;
+  
+  classDef blue fill:#374EA2,stroke:#000000,stroke-width:2px,color:#FFFFFF;
+  
+  classDef green fill:#00833D,stroke:#000000,stroke-width:2px,color:#FFFFFF;
+  
+  classDef orange fill:#D86018,stroke:#000000,stroke-width:2px,color:#FFFFFF;
+  
+  classDef red fill:#9A3324,stroke:#000000,stroke-width:2px,color:#FFFFFF;
+
+  shouting:::red --> higheraggression[higher aggression]:::yellow
+  
+  spanking:::red --> higheraggression
+  
 ```
 :::
 
 :::{#cr-discipline3 .scale-to-fill}
 ```{mermaid}
 flowchart LR
-  explained[explained why behavior was wrong] --> loweraggression[lower aggression]
-  explained --> higherprosocial[higher prosocial peer relations]
+
+ classDef yellow fill:#FFC20E,stroke:#000000,stroke-width:2px,color:#000000;
+  
+  classDef blue fill:#374EA2,stroke:#000000,stroke-width:2px,color:#FFFFFF;
+  
+  classDef green fill:#00833D,stroke:#000000,stroke-width:2px,color:#FFFFFF;
+  
+  classDef orange fill:#D86018,stroke:#000000,stroke-width:2px,color:#FFFFFF;
+  
+  classDef red fill:#9A3324,stroke:#000000,stroke-width:2px,color:#FFFFFF;
+  
+  explained[explained why behavior was wrong]:::green --> loweraggression[lower aggression]:::blue
+  
+  explained --> higherprosocial[higher prosocial peer relations]:::blue
+  
 ```
 :::
 
 :::{#cr-discipline4 .scale-to-fill}
 ```{mermaid}
 flowchart LR
-  takingawayprivileges[taking away privileges] --> lowerprosocial[lower prosocial peer relations]
+
+ classDef yellow fill:#FFC20E,stroke:#000000,stroke-width:2px,color:#000000;
+  
+  classDef blue fill:#374EA2,stroke:#000000,stroke-width:2px,color:#FFFFFF;
+  
+  classDef green fill:#00833D,stroke:#000000,stroke-width:2px,color:#FFFFFF;
+  
+  classDef orange fill:#D86018,stroke:#000000,stroke-width:2px,color:#FFFFFF;
+  
+  classDef red fill:#9A3324,stroke:#000000,stroke-width:2px,color:#FFFFFF;
+  
+  takingawayprivileges[taking away privileges]:::orange --> lowerprosocial[lower prosocial peer relations]:::yellow
+  
 ```
 :::
 

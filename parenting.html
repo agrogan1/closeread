@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.5.57">
+<meta name="generator" content="quarto-1.6.42">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -29,10 +29,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="parenting_files/libs/quarto-html/tippy.umd.min.js"></script>
 <script src="parenting_files/libs/quarto-html/anchor.min.js"></script>
 <link href="parenting_files/libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="parenting_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="parenting_files/libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="parenting_files/libs/bootstrap/bootstrap.min.js"></script>
 <link href="parenting_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="parenting_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="parenting_files/libs/bootstrap/bootstrap-c0367b04c37547644fece4185067e4a7.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script src="parenting_files/libs/quarto-contrib/intersection-observer-polyfill-1.0.0/intersection-observer.js"></script>
 <script src="parenting_files/libs/quarto-contrib/scrollama-3.2.0/scrollama.min.js"></script>
 <script src="parenting_files/libs/quarto-contrib/closeread-0.1.0/closeread.js"></script>
@@ -57,10 +57,10 @@ ul.task-list li input[type="checkbox"] {
       <!-- user-provided yaml closeread style options -->
       <style>
         :root {
-          --cr-section-background-color: white;
---cr-narrative-background-color-sidebar: white;
---cr-narrative-text-color-sidebar: black;
+          --cr-narrative-background-color-sidebar: white;
 --cr-narrative-background-color-overlay: grey;
+--cr-narrative-text-color-sidebar: black;
+--cr-section-background-color: white;
         }
       </style>
     
@@ -87,12 +87,12 @@ ul.task-list li input[type="checkbox"] {
 
 <div class="cr-section cr-column-screen sidebar-left">
 <div class="narrative-col">
-<div class="trigger new-trigger" data-scale-by=".75" data-pan-to="0%,0%" data-focus-on="cr-positiveparenting">
+<div class="trigger new-trigger" data-pan-to="0%,0%" data-focus-on="cr-positiveparenting" data-scale-by=".75">
 <div class="narrative">
 <p>Parents raise their children in a variety of ways.</p>
 </div>
 </div>
-<div class="trigger new-trigger" data-scale-by="1.1" data-pan-to="0%,0%" data-focus-on="cr-positiveparenting">
+<div class="trigger new-trigger" data-pan-to="0%,0%" data-focus-on="cr-positiveparenting" data-scale-by="1.1">
 <div class="narrative">
 <p>The objective of this study was to test the associations between 11 caregiver aggressive and nonaggressive discipline behaviors and outcomes (aggression and prosocial peer relations) of children under 5 in low- and middle-income countries (LMICs).</p>
 </div>
@@ -198,8 +198,21 @@ ul.task-list li input[type="checkbox"] {
 <p></p><figure class="figure"><p></p>
 <div>
 <pre class="mermaid mermaid-js">flowchart LR
-  explained[explained why behavior was wrong] 
-  shouting
+
+  classDef yellow fill:#FFC20E,stroke:#000000,stroke-width:2px,color:#000000;
+  
+  classDef blue fill:#374EA2,stroke:#000000,stroke-width:2px,color:#FFFFFF;
+  
+  classDef green fill:#00833D,stroke:#000000,stroke-width:2px,color:#FFFFFF;
+  
+  classDef orange fill:#D86018,stroke:#000000,stroke-width:2px,color:#FFFFFF;
+  
+  classDef red fill:#9A3324,stroke:#000000,stroke-width:2px,color:#FFFFFF;
+
+  explained[explained why behavior was wrong]:::green 
+  
+  shouting:::red
+  
 </pre>
 </div>
 <p></p></figure><p></p>
@@ -213,12 +226,28 @@ ul.task-list li input[type="checkbox"] {
 <div>
 <p></p><figure class="figure"><p></p>
 <div>
-<pre class="mermaid mermaid-js">flowchart LR
-  explained[explained why behavior was wrong] 
-  explained --&gt; higherprosocial[higher prosocial peer relations]
-  shouting --&gt; higheraggression[higher aggression]
-  spanking --&gt; higheraggression
-  takingawayprivileges[taking away privileges] --&gt; lowerprosocial[lower prosocial peer relations]
+<pre class="mermaid mermaid-js">  
+flowchart LR
+
+  classDef yellow fill:#FFC20E,stroke:#000000,stroke-width:2px,color:#000000;
+  
+  classDef blue fill:#374EA2,stroke:#000000,stroke-width:2px,color:#FFFFFF;
+  
+  classDef green fill:#00833D,stroke:#000000,stroke-width:2px,color:#FFFFFF;
+  
+  classDef orange fill:#D86018,stroke:#000000,stroke-width:2px,color:#FFFFFF;
+  
+  classDef red fill:#9A3324,stroke:#000000,stroke-width:2px,color:#FFFFFF;
+  
+  explained[explained why behavior was wrong]:::green 
+  
+  explained --&gt; higherprosocial[higher prosocial peer relations]:::blue
+  
+  shouting:::red --&gt; higheraggression[higher aggression]:::yellow
+  
+  spanking:::red --&gt; higheraggression
+  
+  takingawayprivileges[taking away privileges]:::orange --&gt; lowerprosocial[lower prosocial peer relations]:::yellow
 </pre>
 </div>
 <p></p></figure><p></p>
@@ -233,8 +262,21 @@ ul.task-list li input[type="checkbox"] {
 <p></p><figure class="figure"><p></p>
 <div>
 <pre class="mermaid mermaid-js">flowchart LR
-  shouting --&gt; higheraggression[higher aggression]
-  spanking --&gt; higheraggression
+
+  classDef yellow fill:#FFC20E,stroke:#000000,stroke-width:2px,color:#000000;
+  
+  classDef blue fill:#374EA2,stroke:#000000,stroke-width:2px,color:#FFFFFF;
+  
+  classDef green fill:#00833D,stroke:#000000,stroke-width:2px,color:#FFFFFF;
+  
+  classDef orange fill:#D86018,stroke:#000000,stroke-width:2px,color:#FFFFFF;
+  
+  classDef red fill:#9A3324,stroke:#000000,stroke-width:2px,color:#FFFFFF;
+
+  shouting:::red --&gt; higheraggression[higher aggression]:::yellow
+  
+  spanking:::red --&gt; higheraggression
+  
 </pre>
 </div>
 <p></p></figure><p></p>
@@ -249,8 +291,21 @@ ul.task-list li input[type="checkbox"] {
 <p></p><figure class="figure"><p></p>
 <div>
 <pre class="mermaid mermaid-js">flowchart LR
-  explained[explained why behavior was wrong] --&gt; loweraggression[lower aggression]
-  explained --&gt; higherprosocial[higher prosocial peer relations]
+
+ classDef yellow fill:#FFC20E,stroke:#000000,stroke-width:2px,color:#000000;
+  
+  classDef blue fill:#374EA2,stroke:#000000,stroke-width:2px,color:#FFFFFF;
+  
+  classDef green fill:#00833D,stroke:#000000,stroke-width:2px,color:#FFFFFF;
+  
+  classDef orange fill:#D86018,stroke:#000000,stroke-width:2px,color:#FFFFFF;
+  
+  classDef red fill:#9A3324,stroke:#000000,stroke-width:2px,color:#FFFFFF;
+  
+  explained[explained why behavior was wrong]:::green --&gt; loweraggression[lower aggression]:::blue
+  
+  explained --&gt; higherprosocial[higher prosocial peer relations]:::blue
+  
 </pre>
 </div>
 <p></p></figure><p></p>
@@ -265,7 +320,19 @@ ul.task-list li input[type="checkbox"] {
 <p></p><figure class="figure"><p></p>
 <div>
 <pre class="mermaid mermaid-js">flowchart LR
-  takingawayprivileges[taking away privileges] --&gt; lowerprosocial[lower prosocial peer relations]
+
+ classDef yellow fill:#FFC20E,stroke:#000000,stroke-width:2px,color:#000000;
+  
+  classDef blue fill:#374EA2,stroke:#000000,stroke-width:2px,color:#FFFFFF;
+  
+  classDef green fill:#00833D,stroke:#000000,stroke-width:2px,color:#FFFFFF;
+  
+  classDef orange fill:#D86018,stroke:#000000,stroke-width:2px,color:#FFFFFF;
+  
+  classDef red fill:#9A3324,stroke:#000000,stroke-width:2px,color:#FFFFFF;
+  
+  takingawayprivileges[taking away privileges]:::orange --&gt; lowerprosocial[lower prosocial peer relations]:::yellow
+  
 </pre>
 </div>
 <p></p></figure><p></p>
@@ -394,8 +461,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   });
   clipboard.on('success', onCopySuccess);
   if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-    // For code content inside modals, clipBoardJS needs to be initialized with a container option
-    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
     const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
       text: getTextToCopy,
       container: window.document.getElementById('quarto-embedded-source-code-modal')
@@ -506,7 +571,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       if (window.Quarto?.typesetMath) {
         window.Quarto.typesetMath(note);
       }
-      // TODO in 1.5, we should make sure this works without a callout special case
       if (note.classList.contains("callout")) {
         return note.outerHTML;
       } else {
