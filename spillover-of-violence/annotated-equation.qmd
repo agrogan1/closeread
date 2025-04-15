@@ -5,6 +5,7 @@ header-includes:
   - \usepackage{annotate-equations}
 ---
 
+\definecolor{UNICEFpurple}{RGB}{107, 30, 116}
 
 \begin{equation*}
   \eqnmark[violet]{node1}{\ln \left( \frac{p(\text{physical abuse})}{1- p(\text{physical abuse})} \right)}
