@@ -26,6 +26,9 @@ share:
   email: true
   mastodon: true
   bsky: true
+bibliography: spillover-of-violence.bib
+nocite: |
+  @Ma2025
 ---
 
 ```{r}
