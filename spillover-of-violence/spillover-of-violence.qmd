@@ -218,11 +218,10 @@ flowchart LR
 The association of terrorism and political violence with severe physical abuse was mediated (statistically connected) by norms that legitimize IPV (indirect b = 0.027, p = .005). 
 :::
 
-:::{#cr-results2}
-
+:::{#cr-results2 .scale-to-fill}
 ```{r}
-#| fig-cap: "As political violence and terrorism increase, so does the probability of physical abuse"
 #| message: false
+#| eval: true
 
 spillover <- read_csv("spillover.csv")
 
@@ -237,7 +236,7 @@ m <- list(
 p_spillover <- plot_ly(data = spillover, 
                        x = ~percentile, 
                        y = ~abuse, 
-                       text = ~paste("percentile: ", 
+                       text = ~paste("percentile of political violence and terrorism: ", 
                                      percentile, 
                                      '<br>probability of abuse:', 
                                      abuse),
@@ -248,7 +247,7 @@ p_spillover <- plot_ly(data = spillover,
                                                  width = 2)),
                        type = 'scatter', 
                        mode = 'lines+markers',
-                       height = 500) %>%
+                       height = 700) %>%
   layout(title = 'As political violence and terrorism increase, <br>so does the probability of physical abuse.', 
          xaxis = list(title = "percentile of political violence and terrorism"),
          yaxis = list(title = "probability of abuse"),
@@ -259,7 +258,6 @@ p_spillover <- plot_ly(data = spillover,
 p_spillover # replay
 
 ```
-
 :::
 
 :::{focus-on="cr-interventions"}
