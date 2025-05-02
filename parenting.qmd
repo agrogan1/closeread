@@ -52,7 +52,7 @@ Data were analyzed using a statistical method known as Bayesian multilevel logis
 :::
 
 :::{#cr-mymap .scale-to-fill}
-![Countries of the World](mymap.png)
+![Countries in MICS](mymap.png)
 :::
 
 :::{focus-on="cr-discipline"}
