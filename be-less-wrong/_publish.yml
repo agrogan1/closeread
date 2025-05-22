@@ -1,4 +1,4 @@
 - source: be-less-wrong.qmd
   quarto-pub:
     - id: 6beea984-6fa5-4cc4-9760-b4bd02eb482f
-      url: 'https://globalfamilies.quarto.pub/be-less-wrong'
+      url: https://globalfamilies.quarto.pub/be-less-wrong

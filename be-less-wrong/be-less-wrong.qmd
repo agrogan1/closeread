@@ -2,7 +2,7 @@
 title: "Be Less Wrong"
 subtitle: "Why Use Quantitative Methods?"
 author: "Andy Grogan-Kaylor"
-date: "2025-1-5"
+date: "today"
 format: 
   closeread-html:
     cr-style:
@@ -261,7 +261,7 @@ The fact that statistical results--and analogously visual results--can flip when
 Put briefly, and intuitively, our evidence based "story" can change--sometimes quite dramatically--as we add more and more factors to our model.
 :::
 
-[^multilevelstructure]: An analogous process can occur with *multilevel* data, in which there are often many groups, such as many schools, many neighborhoods, or many countries. Failure to account for the grouping of the data--in schools, neighborhoods or countries--can sometimes lead to dramatically incorrect results [@Gelman2007; @Nieuwenhuis2015]. 
+[^multilevelstructure]: An analogous process can occur with *multilevel* data, in which there are often many groups, such as many schools, many neighborhoods, or many countries. Failure to account for the grouping of the data--in schools, neighborhoods or countries--can sometimes lead to dramatically incorrect results [@Gelman2007; @Nieuwenhuis2015; @langbliese]. 
 
 :::{focus-on="cr-multivariate" scale-by="1"}
 Adding more variables will not always *flip* our conclusions.
@@ -305,7 +305,11 @@ p0 + p0 + aes(color = group) +
 
 
 :::{focus-on="cr-belesswrong" scale-by="1"}
-My point? Simple models feel intuitive and have a commonsense appeal. Yet, with even slightly complicated social issues, simple models may be wrong.
+My point? Simple models feel intuitive and have a commonsense appeal. Yet, with even slightly complicated social issues, simple models may be wrong. [^power]$^,$ [^controls]
+
+[^power]: Since developing this tutorial, I've been reminded in some conversations about additional issues. For example, in this tutorial, I'm arguing for including as many control variables as possible. However, for some social issues, only *small samples* are available. Such small samples may be *statistically underpowered*, and may not have sufficient sample size to include many different control variables.
+
+[^controls]: Additionally, since developing this tutorial, I've also been reminded that one must be *careful* and *thoughtful* about choosing *control variables*. As a simple example, consider a hypothetical situation in which $x$ is a cause of $y$:  $x \rightarrow y$. If $m$ is a mediator of the relationship between $x$ and $y$, then including $m$ in one's statistical model changes the meaning of the estimate of $x$. $\beta_x$ is now an estimate of the *direct* effect of $x$ on $y$, accounting for the presence of $m$. There may be an *indirect* effect of $x$ on $y$ through $m$ ($x \rightarrow m \rightarrow$ y) that needs to be accounted for using special procedures [CF @Westreich2013]. Including a control variable $c$ that is a function of both $x$ and $y$ ($x \rightarrow c \ \& \ y \rightarrow$ c) may introduce additional complications [@Elwert2014]. 
 
 What I have illustrated here is only one set of ideas about how we need to complicate our quantitative thinking to try to be a *little less wrong* in thinking about social problems. 
 
