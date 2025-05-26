@@ -31,6 +31,11 @@ blockquote {
     width: 100cqw !important;
     height: 100cqh !important;
 }
+@media screen and (min-width: 575px) { 
+  .narrative {
+    font-size: 125%;
+  }
+}
 @media only screen and (max-width: 575px) {
   .narrative {
     .citation { 
