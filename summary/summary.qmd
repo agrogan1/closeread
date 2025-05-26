@@ -1,0 +1,62 @@
+---
+title: "Summary"
+subtitle: "Summary of Findings From UNICEF MICS Data"
+author: "Andrew Grogan-Kaylor"
+date: "today"
+format: html
+editor: source
+---
+
+# Research Question
+
+We began by setting out to examine the associations of *physical punishment* and *verbal reasoning* with *child development outcomes*.
+
+A second research question was: Are the relationships between different types of parenting *consistent* around the world?
+
+```{mermaid}
+
+flowchart LR
+
+  %% Class Definitions %%
+
+  classDef yellow fill:#FFC20E,stroke:#000000,stroke-width:2px,color:#000000;
+  
+  classDef blue fill:#374EA2,stroke:#000000,stroke-width:2px,color:#FFFFFF;
+  
+  classDef green fill:#00833D,stroke:#000000,stroke-width:2px,color:#FFFFFF;
+  
+  classDef orange fill:#D86018,stroke:#000000,stroke-width:2px,color:#FFFFFF;
+  
+  classDef red fill:#9A3324,stroke:#000000,stroke-width:2px,color:#FFFFFF;
+
+ classDef grey fill:#D8D1C9,stroke:#000000,stroke-width:2px,color:#000000;
+    
+  %% Nodes %%
+ 
+  explained[explained why behavior was wrong]:::grey 
+  
+  CP[physical punishment]:::grey
+  
+  outcome[child development outcomes]:::grey
+  
+  %% Links %%
+
+  explained --> |"???"| outcome
+  
+  CP --> |"???"| outcome
+  
+  %% Links %%
+  
+  linkStyle 0,1 stroke:#E2231A,stroke-width:4px,color:red, font-size:18pt;
+
+```
+
+# Data 
+
+To carry out our various research projects, we made use of the *Multiple Indicator Cluster Surveys* (MICS) from UNICEF. 
+
+The MICS surveys contain questions on parenting, and have been carried out in over 60 *Low and Middle Income Countries* (LMICs) around the world. 
+
+
+
+
