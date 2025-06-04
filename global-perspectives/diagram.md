@@ -11,8 +11,10 @@ flowchart LR
   
   classDef red fill:#9A3324,stroke:#000000,stroke-width:2px,color:#FFFFFF;
 
-  explained[explained why behavior was wrong]:::green 
+  explained[explained why behavior was wrong]:::green
+
+  privileges[took away privileges]:::blue
   
-  shouting:::red
+  shouted:::red
   
 ```
