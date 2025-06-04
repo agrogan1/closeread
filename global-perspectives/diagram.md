@@ -22,5 +22,10 @@ flowchart LR
   gettingalong[getting along with other children]:::blue
 
   explained ~~~ aggression
+  privileges ~~~ aggression
+  CP ~~~ aggression
+  explained ~~~ gettingalong
+  privileges ~~~ gettingalong
+  CP ~~~ gettingalong
   
 ```
