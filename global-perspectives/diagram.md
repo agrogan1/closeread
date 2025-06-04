@@ -20,5 +20,7 @@ flowchart LR
   aggression:::yellow
 
   gettingalong[getting along with other children]:::blue
+
+  explained ~~~ aggression
   
 ```
