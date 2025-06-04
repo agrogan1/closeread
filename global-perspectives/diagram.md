@@ -1,4 +1,4 @@
-  ```{mermaid}
+  ```mermaid
 flowchart LR
 
   classDef yellow fill:#FFC20E,stroke:#000000,stroke-width:2px,color:#000000;
