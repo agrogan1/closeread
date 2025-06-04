@@ -13,8 +13,12 @@ flowchart LR
 
   explained[explained why behavior was wrong]:::green
 
-  privileges[took away privileges]:::blue
+  privileges[took away privileges]:::orange
   
   shouted:::red
+
+  aggression:::yellow
+
+  gettingalong[getting along with other children]:::blue
   
 ```
