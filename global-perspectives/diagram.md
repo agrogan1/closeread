@@ -15,7 +15,7 @@ flowchart LR
 
   privileges[took away privileges]:::orange
   
-  shouted:::red
+  CP[used physical punishment]:::red
 
   aggression:::yellow
 
