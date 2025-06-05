@@ -105,11 +105,11 @@ p0 <- MICScountries %>%
 
 :::{focus-on="cr-earth"}
 ::: {.firstbox}
-<span style="font-size:105px;color:#E2231A;text-align:center;">⇣</span>
+<span style="font-size:105px;color:#E2231A;text-align:center;">`r emo::ji("down_arrow")`</span>
 
-<span style="font-size:105px;color:#E2231A;text-align:center;">⇣</span>
+<span style="font-size:105px;color:#E2231A;text-align:center;">`r emo::ji("down_arrow")`</span>
 
-<span style="font-size:105px;color:#E2231A;text-align:center;">⇣</span>
+<span style="font-size:105px;color:#E2231A;text-align:center;">`r emo::ji("down_arrow")`</span>
 :::
 :::
 
