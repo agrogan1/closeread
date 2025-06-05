@@ -70,7 +70,7 @@ g <- list(showframe = TRUE,
           countrycolor = toRGB("grey"),
           showocean = TRUE,
           oceancolor = "white",
-          projection = list(type = 'orthographic',
+          projection = list(type = 'robinson',
                             rotation = list(lon = -25,
                                             lat = 0,
                                             roll = 0)),
@@ -138,9 +138,9 @@ flowchart LR
   classDef orange fill:#F26A21,stroke:#000000,stroke-width:2px,color:#FFFFFF;
   
 
-  macroviolence[higher rates of \nviolence in the \nmacro context]:::red --> |"???"| pabuse[physical child abuse]:::yellow
+  macroviolence[higher rates of <br>violence in the <br>macro context]:::red --> |"???"| pabuse[physical child abuse]:::yellow
   
-  norms[norms justifying \nviolence]:::orange --> pabuse
+  norms[norms justifying <br>violence]:::orange --> pabuse
 
   %% Links %%
   linkStyle 0 stroke:#E2231A,stroke-width:2px,color:red;
@@ -204,9 +204,9 @@ flowchart LR
   classDef orange fill:#F26A21,stroke:#000000,stroke-width:2px,color:#FFFFFF;
   
   
-  IPV[higher levels of \nendorsement of IPV]:::orange --> pabuse[physical child abuse]:::yellow
+  IPV[higher levels of <br>endorsement of IPV]:::orange --> pabuse[physical child abuse]:::yellow
   
-  CP[attitudes endorsing \ncorporal punishment]:::orange --> pabuse
+  CP[attitudes endorsing <br>corporal punishment]:::orange --> pabuse
   
   %% Links %%
   linkStyle 0 stroke:#00274C,stroke-width:2px,color:red;
@@ -282,7 +282,7 @@ flowchart TB
   
   classDef red fill:#9A3324,stroke:#000000,stroke-width:2px,color:#FFFFFF;
 
-  interventions:::green --> IPV[lower levels of \nendorsement of IPV]:::blue
+  interventions:::green --> IPV[lower levels of <br>endorsement of IPV]:::blue
   
   IPV --> pabuse[less physical child abuse]:::yellow
   
@@ -309,13 +309,13 @@ flowchart TB
   
   classDef red fill:#9A3324,stroke:#000000,stroke-width:2px,color:#FFFFFF;
 
-  interventions:::green --> IPV[lower levels of \nendorsement of IPV]:::blue
+  interventions:::green --> IPV[lower levels of <br>endorsement of IPV]:::blue
   
   IPV --> pabuse[less physical child abuse]:::yellow
   
   interventions --> pabuse
   
-  trauma[trauma informed \napproaches]:::red --> interventions
+  trauma[trauma informed <br>approaches]:::red --> interventions
   
   %% Links %%
   linkStyle 0 stroke:#00274C,stroke-width:2px,color:E2231A;
