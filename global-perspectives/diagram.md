@@ -55,9 +55,9 @@ flowchart LR
 
   explained ~~~ aggression
   privileges ~~~ aggression
-  CP --> aggression
+  CP -->|increases| aggression
   explained ~~~ gettingalong
-  privileges ~~~ gettingalong
+  privileges --> gettingalong
   CP ~~~ gettingalong
   
 ```
