@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Andy Grogan-Kaylor">
-<meta name="dcterms.date" content="2025-06-07">
+<meta name="dcterms.date" content="2025-06-08">
 
 <title>Be Less Wrong</title>
 <style>
@@ -117,10 +117,10 @@ window.Quarto = {
       <!-- user-provided yaml closeread style options -->
       <style>
         :root {
-          --cr-section-background-color: white;
---cr-narrative-background-color-sidebar: white;
+          --cr-narrative-text-color-sidebar: black;
+--cr-section-background-color: white;
 --cr-narrative-background-color-overlay: grey;
---cr-narrative-text-color-sidebar: black;
+--cr-narrative-background-color-sidebar: white;
         }
       </style>
     
@@ -145,7 +145,7 @@ window.Quarto = {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">June 7, 2025</p>
+      <p class="date">June 8, 2025</p>
     </div>
   </div>
   
@@ -255,7 +255,7 @@ window.Quarto = {
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-globe-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="plotly html-widget html-fill-item" id="htmlwidget-70a688681697cdb7b619" style="width:100%;height:288px;"></div>
-<script type="application/json" data-for="htmlwidget-70a688681697cdb7b619">{"x":{"visdat":{"d33369993d1":["function () ","plotlyVisDat"]},"cur_data":"d33369993d1","attrs":{"d33369993d1":{"alpha_stroke":1,"sizes":[10,100],"spans":[1,20]}},"layout":{"margin":{"b":0,"l":0,"t":0,"r":0,"pad":3},"mapType":"geo","geo":{"domain":{"x":[0,1],"y":[0,1]},"showland":true,"landcolor":"rgba(34,139,34,1)","showcountries":true,"showocean":true,"oceancolor":"royalblue","lataxis":{"showgrid":true,"gridcolor":"rgba(190,190,190,1)"},"lonaxis":{"showgrid":true,"gridcolor":"rgba(190,190,190,1)"},"projection":{"type":"orthographic","rotation":{"lon":-45,"lat":10,"roll":0}}},"hovermode":"closest","showlegend":false},"source":"A","config":{"modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false,"displayModeBar":false},"data":[{"type":"scattergeo","mode":"markers","marker":{"color":"rgba(31,119,180,1)","line":{"color":"rgba(31,119,180,1)"}},"line":{"color":"rgba(31,119,180,1)"},"geo":"geo","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+<script type="application/json" data-for="htmlwidget-70a688681697cdb7b619">{"x":{"visdat":{"7fd41ef2389":["function () ","plotlyVisDat"]},"cur_data":"7fd41ef2389","attrs":{"7fd41ef2389":{"alpha_stroke":1,"sizes":[10,100],"spans":[1,20]}},"layout":{"margin":{"b":0,"l":0,"t":0,"r":0,"pad":3},"mapType":"geo","geo":{"domain":{"x":[0,1],"y":[0,1]},"showland":true,"landcolor":"rgba(211,211,211,1)","showcountries":true,"showocean":false,"oceancolor":"royalblue","lataxis":{"showgrid":true,"gridcolor":"rgba(190,190,190,1)"},"lonaxis":{"showgrid":true,"gridcolor":"rgba(190,190,190,1)"},"projection":{"type":"orthographic","rotation":{"lon":-45,"lat":10,"roll":0}}},"hovermode":"closest","showlegend":false},"source":"A","config":{"modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false,"displayModeBar":false},"data":[{"type":"scattergeo","mode":"markers","marker":{"color":"rgba(31,119,180,1)","line":{"color":"rgba(31,119,180,1)"}},"line":{"color":"rgba(31,119,180,1)"},"geo":"geo","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-globe-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Figure&nbsp;1: Countries of the World
@@ -286,6 +286,17 @@ Figure&nbsp;1: Countries of the World
 <p></p><figure class="figure"><p></p>
 <div>
 <pre class="mermaid mermaid-js">flowchart LR
+
+  classDef yellow fill:#FFC20E,stroke:#000000,stroke-width:2px,color:#000000;
+  
+  classDef blue fill:#374EA2,stroke:#000000,stroke-width:2px,color:#FFFFFF;
+  
+  classDef green fill:#00833D,stroke:#000000,stroke-width:2px,color:#FFFFFF;
+  
+  classDef orange fill:#D86018,stroke:#000000,stroke-width:2px,color:#FFFFFF;
+  
+  classDef red fill:#9A3324,stroke:#000000,stroke-width:2px,color:#FFFFFF;
+
   intervention(intervention) --&gt; outcome(outcome)
 </pre>
 </div>
@@ -323,7 +334,19 @@ Figure&nbsp;2
 <p></p><figure class="figure"><p></p>
 <div>
 <pre class="mermaid mermaid-js">flowchart LR
+
+  classDef yellow fill:#FFC20E,stroke:#000000,stroke-width:2px,color:#000000;
+  
+  classDef blue fill:#374EA2,stroke:#000000,stroke-width:2px,color:#FFFFFF;
+  
+  classDef green fill:#00833D,stroke:#000000,stroke-width:2px,color:#FFFFFF;
+  
+  classDef orange fill:#D86018,stroke:#000000,stroke-width:2px,color:#FFFFFF;
+  
+  classDef red fill:#9A3324,stroke:#000000,stroke-width:2px,color:#FFFFFF;
+
   intervention(intervention) --&gt; outcome(outcome)
+
   group(group) --&gt; outcome(outcome)
 </pre>
 </div>

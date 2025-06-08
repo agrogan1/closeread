@@ -111,9 +111,9 @@ library(plotly)
 
 mymap <- plot_geo() %>%
   layout(geo = list(showland = TRUE, # show land
-                    landcolor = toRGB("forestgreen"), # land color
+                    landcolor = toRGB("lightgrey"), # land color
                     showcountries = TRUE, # show countries
-                    showocean = TRUE, # show ocean
+                    showocean = FALSE, # show ocean
                     oceancolor = "royalblue", # ocean color
                     lataxis = list(showgrid = TRUE, # latitude options
                                    gridcolor = toRGB("grey")),
@@ -192,7 +192,7 @@ flowchart LR
   
   classDef red fill:#9A3324,stroke:#000000,stroke-width:2px,color:#FFFFFF;
 
-  intervention(intervention):::green --> outcome(outcome):::yellow
+  intervention(intervention) --> outcome(outcome)
 ```
 :::
 
@@ -243,9 +243,9 @@ flowchart LR
   
   classDef red fill:#9A3324,stroke:#000000,stroke-width:2px,color:#FFFFFF;
 
-  intervention(intervention):::green --> outcome(outcome):::yellow
+  intervention(intervention) --> outcome(outcome)
 
-  group(group):::blue --> outcome(outcome)
+  group(group) --> outcome(outcome)
 ```
 :::
 
