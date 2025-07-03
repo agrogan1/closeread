@@ -25,6 +25,77 @@ share:
   bsky: true
 ---
 
+```{r}
+#| output: false
+
+library(ggplot2)
+
+library(readr)
+
+library(plotly)
+
+library(dplyr)
+
+library(countrycode)
+
+```
+
+```{r}
+#| echo: false
+#| warning: false
+
+country <- c("Algeria",  "Argentina",  "Bangladesh",  "Barbados",  "Belarus",  "Belize",  "Benin",  "Bosnia and Herzegovina",  "Cameroon",  "Central African Republic",  "Chad",  "Democratic Republic of the Congo",  "Republic of the Congo",  "Costa Rica",  "Cote d'Ivoire",  "Dominican Republic",  "El Salvador",  "Eswatini",  "Ghana",  "Guinea",  "Guinea Bissau",  "Guyana",  "Iraq",  "Jamaica",  "Kazakhstan",  "Kenya",  "Kosovo",  "Kyrgyzstan",  "Laos", "Macedonia",  "Madagascar",  "Malawi",  "Mali",  "Mauritania",  "Mexico",  "Moldova",  "Mongolia",  "Montenegro",  "Nepal",  "Nigeria",  "Pakistan",  "Panama",  "Paraguay",  "Sao Tome and Principe",  "Senegal",  "Serbia",  "Sierra Leone",  "Somalia",  "St. Lucia",  "State of Palestine",  "Suriname",  "Thailand",  "The Gambia",  "Togo",  "Trinidad and Tobago",  "Tunisia",  "Turkmenistan",  "Ukraine",  "Uruguay",  "Vietnam",  "Zimbabwe")
+
+MICScountries <- data.frame(country)
+
+MICScountries$country_iso <- countrycode(MICScountries$country, 
+                                 'country.name', 
+                                 'iso3c')
+
+```
+
+```{r}
+#| echo: false
+
+g <- list(showframe = TRUE, 
+          showcoastlines = TRUE, 
+          showcountries = TRUE,
+          showland = TRUE,
+          countrycolor = toRGB("grey"),
+          showocean = TRUE,
+          oceancolor = "white",
+          projection = list(type = 'orthographic',
+                            rotation = list(lon = -25,
+                                            lat = 0,
+                                            roll = 0)),
+          showland = TRUE,
+          landcolor = toRGB("lightgrey"),
+          bgcolor = "transparent")
+
+t <- list(family = "sans serif", 
+          size = 8, 
+          color = toRGB("black"))
+
+l <- list(color = toRGB("black"), 
+          width = 0.5)
+
+p0 <- MICScountries %>% 
+  plot_geo() %>% 
+  add_trace(z = 1,
+    text = ~country, 
+    colors = "#1CABE2",
+    hoverinfo = 'text',
+    locations = ~country_iso, 
+    showscale = FALSE,
+    marker = list(size=10, line = l)) %>%
+  layout(geo = g,
+         plot_bgcolor='transparent',
+         paper_bgcolor='transparent') %>% 
+  config(displayModeBar = FALSE)
+
+```
+
+
 :::{.cr-section}
 
 :::{focus-on="cr-positiveparenting" pan-to="0%,0%"  scale-by=".75"}
@@ -52,7 +123,14 @@ Data were analyzed using a statistical method known as Bayesian multilevel logis
 :::
 
 :::{#cr-mymap .scale-to-fill}
-![Countries in MICS](mymap.png)
+```{r}
+#| echo: false
+#| fig-cap: "Countries in UNICEF MICS Data"
+#| label: fig-2
+
+p0
+
+```
 :::
 
 :::{focus-on="cr-discipline"}
