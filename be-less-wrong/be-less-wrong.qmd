@@ -284,7 +284,7 @@ The fact that statistical results--and analogously visual results--can flip when
 Put briefly, and intuitively, our evidence based "story" can change--sometimes quite dramatically--as we add more and more factors to our model.
 :::
 
-[^multilevelstructure]: An analogous process can occur with *multilevel* data, in which there are often many groups, such as many schools, many neighborhoods, or many countries. Failure to account for the grouping of the data--in schools, neighborhoods or countries--can sometimes lead to dramatically incorrect results [@Gelman2007; @Nieuwenhuis2015; @langbliese]. 
+[^multilevelstructure]: An analogous process can occur with *multilevel* data, in which there are often many groups, such as many schools, many neighborhoods, or many countries. Failure to account for the grouping of the data--in schools, neighborhoods or countries--can sometimes lead to dramatically incorrect results [@Gelman2007; @Nieuwenhuis2015; @DiezRoux2003]. 
 
 :::{focus-on="cr-multivariate" scale-by="1"}
 Adding more variables will not always *flip* our conclusions.
