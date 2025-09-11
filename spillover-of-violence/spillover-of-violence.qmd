@@ -1,6 +1,8 @@
 ---
 title: "The Spillover of Violence in Low- and Middle-Income Countries"
-author: "Global Families Research Team"
+author: 
+  name: "Global Families Research Team" 
+  url: https://globalfamilies.quarto.pub/global-families-project/
 date: "today"
 format:
   closeread-html:
