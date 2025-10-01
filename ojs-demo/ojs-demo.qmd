@@ -37,7 +37,7 @@ mydata = FileAttachment("mydata.csv").csv({ typed: true })
 
 
 ```{ojs}
-//| fig-cap: "In the simplest model, the outcome gets worse as more of the intervention is provided."
+//| fig-cap: "A simple model of the data:  the outcome gets worse as more of the intervention is provided."
 
 Plot.plot({
   grid: true,
@@ -51,7 +51,7 @@ Plot.plot({
 ```
 
 ```{ojs}
-//| fig-cap: "After accounting for group, the outcome improves when more of the intervention is provided."
+//| fig-cap: "A model of the data accounting for group membership:  the outcome improves when more of the intervention is provided."
 
 Plot.plot({
   grid: true,
