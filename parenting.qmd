@@ -1,5 +1,5 @@
 ---
-title: "What Should Parents Do?"
+title: "Parenting and Child Development"
 subtitle: "Positive and Negative Parental Discipline Behaviors And Child Outcomes Across 60 Countries"
 format: 
   closeread-html:
