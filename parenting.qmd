@@ -100,6 +100,12 @@ p0 <- MICScountries %>%
 
 :::{focus-on="cr-positiveparenting" pan-to="0%,0%"  scale-by=".75"}
 Parents raise their children in a variety of ways. 
+
+<span style="font-size:55px;color:#E2231A;text-align:center;">`r emo::ji("down_arrow")`</span>
+
+<span style="font-size:55px;color:#E2231A;text-align:center;">`r emo::ji("down_arrow")`</span>
+
+<span style="font-size:55px;color:#E2231A;text-align:center;">`r emo::ji("down_arrow")`</span>
 :::
 
 :::{focus-on="cr-positiveparenting" pan-to="0%,0%"  scale-by="1.1"}
