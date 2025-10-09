@@ -1,6 +1,6 @@
 # closeread
 
-closeread projects using [https://closeread.dev/](https://closeread.dev/)
+`closeread` *scrollytelling* projects using [https://closeread.dev/](https://closeread.dev/)
 
 * [https://globalfamilies.quarto.pub/parenting/](https://globalfamilies.quarto.pub/parenting/)
 * [https://globalfamilies.quarto.pub/be-less-wrong/](https://globalfamilies.quarto.pub/be-less-wrong/)
