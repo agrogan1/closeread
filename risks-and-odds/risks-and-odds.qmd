@@ -1,0 +1,12 @@
+---
+title: "Risks and Odds"
+format: html
+editor: source
+---
+
+$$
+\begin{matrix}
+\color{blue}a & \color{red}b \\
+\color{green}c & \color{orange}d \\
+\end{matrix}
+$$
