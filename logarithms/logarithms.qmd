@@ -27,33 +27,33 @@ library(Statamarkdown)
 
 ## The Exponential Function
 
-:::{focus-on="cr-exponential"}
+:::{focus-on="cr-exponential" scale-by="5.0"}
 We start with the *exponential function*.
 :::
 
-:::{#cr-exponential .scale-to-fill}
-$$y = \text{base}^{\text{exponent}}$$
+:::{#cr-exponential}
+$$\color{purple}{y} \color{black}{=} \color{blue}{\text{base}}^{\color{red}{\text{exponent}}}$$
 :::
 
-:::{focus-on="cr-exponential-definition"}
+:::{focus-on="cr-exponential-definition" scale-by="5.0"}
 The *exponent* tells us how many times to multiply the base by itself to get the result. 
 :::
 
-:::{#cr-exponential-definition .scale-to-fill}
-$2^3 = 8$ 
+:::{#cr-exponential-definition}
+$\color{blue}{2}^{\color{red}{3}} \color{black}{=} \color{purple}8$ 
 
 because 
 
-$2 \times 2 \times 2 = 8$
+$\color{blue}{2} \times \color{blue}{2} \times \color{blue}{2} \color{black}{=} \color{purple}{8}$
 :::
 
 ## The Logarithm
 
-:::{focus-on="cr-logarithm-if"}
+:::{focus-on="cr-logarithm-if" scale-by="5.0"}
 We then consider the *logarithm*. 
 :::
 
-:::{#cr-logarithm-if .scale-to-fill}
+:::{#cr-logarithm-if}
 If... 
 
 $$y = b^x$$
