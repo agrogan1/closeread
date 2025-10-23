@@ -1,0 +1,4 @@
+- source: logarithms.qmd
+  quarto-pub:
+    - id: ca634780-0311-48ed-86a0-9327bb894a73
+      url: https://globalfamilies.quarto.pub/logarithms
