@@ -12,6 +12,7 @@ format:
       narrative-background-color-sidebar: white
       section-background-color: white
     css: logarithms.css
+bibliography: logarithms.bib
 ---
 
 ```{r}
@@ -124,7 +125,7 @@ For mathematical reasons--detailed below--we end up working with the *logarithm*
 $$\ln(\frac{p(\text{outcome})}{1-p(\text{outcome})}) = x$$
 
 :::{focus-on="cr-solve-for-y"}
-To *graph* or *visualize* these *log odds*, we need to solve for $p(y)$:
+To *graph* or *visualize* these *log odds*, we need to solve for $p(\text{outcome})$, the probability of the outcome:
 :::
 
 :::{#cr-solve-for-y .scale-to-fill}
@@ -132,9 +133,9 @@ $$p(\text{outcome}) = \frac{e^x}{1 + e^x}$$
 :::
 
 :::{focus-on="cr-sigmoid"}
-This function is sometimes called a *sigmoid*, and has the interesting property of mapping the interval $- \infty < x < \infty$ to $0 < y < 1$. 
+This function is sometimes called a *sigmoid*, and has the interesting property of mapping the interval $- \infty < x < \infty$ to $0 < \text{probability} < 1$. 
 
-This is the first step in mapping a set of *continuous* predictors to a *categorical* outcome.
+This is the first step in mapping a set of *continuous* predictors to the probability of *categorical* outcome.
 :::
 
 :::{#cr-sigmoid .scale-to-fill}
@@ -143,9 +144,10 @@ This is the first step in mapping a set of *continuous* predictors to a *categor
 #| output: false
 
 
-twoway function y = exp(x)/(1 + exp(x)), lwidth(thick) /// 
+twoway function y = exp(x)/(1 + exp(x)), lwidth(vthick) /// 
 title("Logistic Function") ///
-range(-10 10)
+range(-10 10) ///
+ytitle("probability")
 
 graph export logistic.png, replace
 

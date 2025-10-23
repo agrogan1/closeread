@@ -22,7 +22,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="logarithms_files/libs/clipboard/clipboard.min.js"></script>
@@ -85,8 +105,8 @@ window.Quarto = {
       <style>
         :root {
           --cr-narrative-background-color-overlay: grey;
---cr-narrative-background-color-sidebar: white;
 --cr-section-background-color: white;
+--cr-narrative-background-color-sidebar: white;
 --cr-narrative-text-color-sidebar: black;
         }
       </style>
@@ -214,13 +234,13 @@ window.Quarto = {
 </div>
 <div class="trigger new-trigger" data-focus-on="cr-solve-for-y">
 <div class="narrative">
-<p>To <em>graph</em> or <em>visualize</em> these <em>log odds</em>, we need to solve for <span class="math inline">\(p(y)\)</span>:</p>
+<p>To <em>graph</em> or <em>visualize</em> these <em>log odds</em>, we need to solve for <span class="math inline">\(p(\text{outcome})\)</span>, the probability of the outcome:</p>
 </div>
 </div>
 <div class="trigger new-trigger" data-focus-on="cr-sigmoid">
 <div class="narrative">
-<p>This function is sometimes called a <em>sigmoid</em>, and has the interesting property of mapping the interval <span class="math inline">\(- \infty &lt; x &lt; \infty\)</span> to <span class="math inline">\(0 &lt; y &lt; 1\)</span>.</p>
-<p>This is the first step in mapping a set of <em>continuous</em> predictors to a <em>categorical</em> outcome.</p>
+<p>This function is sometimes called a <em>sigmoid</em>, and has the interesting property of mapping the interval <span class="math inline">\(- \infty &lt; x &lt; \infty\)</span> to <span class="math inline">\(0 &lt; \text{probability} &lt; 1\)</span>.</p>
+<p>This is the first step in mapping a set of <em>continuous</em> predictors to the probability of <em>categorical</em> outcome.</p>
 </div>
 </div>
 <section id="logarithmic-spiral" class="level2 narrative trigger">
@@ -321,7 +341,7 @@ Key Idea
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="hawk.png" class="img-fluid figure-img"></p>
-<figcaption>Spiral Flight of Hawk from <span class="citation" data-cites="Livio2002">@Livio2002</span></figcaption>
+<figcaption>Spiral Flight of Hawk from <span class="citation" data-cites="Livio2002">Livio (<a href="#ref-Livio2002" role="doc-biblioref">2002</a>)</span></figcaption>
 </figure>
 </div>
 </div>
@@ -333,7 +353,12 @@ Key Idea
 </div>
 
 
-<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-Livio2002" class="csl-entry" role="listitem">
+Livio, Mario. 2002. <em>The Golden Ratio: The Story of Phi, the World’s Most Astonishing Number</em>. <em>The Golden Ratio: The Story of Phi, the World’s Most Astonishing Number</em>. 1st ed. Broadway Books.
+</div>
+</div></section><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
 
 <ol>
 <li id="fn1"><p>A common definition of <span class="math inline">\(e\)</span> is <span class="math display">\[e = \lim_{n \to \infty} \left(1 + \frac{1}{n} \right)^n\]</span><a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
