@@ -1,0 +1,183 @@
+---
+title: "logarithms"
+author: 
+  name: "Andy Grogan-Kaylor" 
+  url: "https://agrogan1.github.io/"
+date: "today"
+format:
+  closeread-html:
+    cr-style:
+      narrative-text-color-sidebar: black
+      narrative-background-color-overlay: grey
+      narrative-background-color-sidebar: white
+      section-background-color: white
+    css: logarithms.css
+---
+
+```{r}
+#| echo: false
+#| output: false
+
+library(Statamarkdown)
+
+```
+
+:::{.cr-section}
+
+## The Exponential Function
+
+:::{focus-on="cr-exponential"}
+We start with the *exponential function*.
+:::
+
+:::{#cr-exponential .scale-to-fill}
+$$y = \text{base}^{\text{exponent}}$$
+:::
+
+:::{focus-on="cr-exponential-definition"}
+The *exponent* tells us how many times to multiply the base by itself to get the result. 
+:::
+
+:::{#cr-exponential-definition .scale-to-fill}
+$2^3 = 8$ 
+
+because 
+
+$2 \times 2 \times 2 = 8$
+:::
+
+## The Logarithm
+
+:::{focus-on="cr-logarithm-if"}
+We then consider the *logarithm*. 
+:::
+
+:::{#cr-logarithm-if .scale-to-fill}
+If... 
+
+$$y = b^x$$
+:::
+
+:::{focus-on="cr-logarithm-then"}
+
+:::
+
+:::{#cr-logarithm-then .scale-to-fill}
+Then... $$\log_b(y) = x$$
+:::
+
+:::{focus-on="cr-logarithm-words"}
+In words:
+:::
+
+:::{#cr-logarithm-words .scale-to-fill}
+If $\text{number} = \text{base}^{\text{exponent}}$ 
+
+then 
+
+$\log_{\text{base}}(\text{number}) = \text{exponent}$. 
+:::
+
+:::{focus-on="cr-logarithm-example"}
+For example: 
+:::
+
+:::{#cr-logarithm-example .scale-to-fill}
+$2^3 = 8$
+
+therefore 
+
+$log_2 8 = 3$
+:::
+
+:::{focus-on="cr-logarithm-question"}
+The logarithm answers the question: *What is the power to which we have to raise the number to get the result?* 
+:::
+
+:::{#cr-logarithm-question .scale-to-fill}
+::: {.callout-tip}
+### Key Idea
+The logarithm may thus be thought of as *the inverse of the exponential function*. 
+:::
+:::
+
+## The Natural Logarithm
+
+For deep mathematical reasons, it is often useful to use logarithms with base $e$ which is often termed the *natural logarithm*, written $\ln$
+
+$e$ is a kind of fundamental mathematical constant, like $\pi$, but without the easy geometric definition that $\pi$ has. (For any $\bigcirc$, $\pi = \frac{\text{circumference}}{\text{diameter}}$.) 
+
+$e$ emerges in many contexts, including some aspects of compound growth processes [^e]. $e$ is approximately equal to 2.71828....
+
+[^e]: A common definition of $e$ is $$e = \lim_{n \to \infty} \left(1 + \frac{1}{n} \right)^n$$
+
+If $$y = e^x$$ then $$\ln(y) = x$$
+
+## Logistic Regression
+
+One application of the logarithm is in thinking about *logistic regression*. In logistic regression, we start by thinking about the *odds* of our outcome: 
+
+$$\frac{p(\text{outcome})}{1-p(\text{outcome})}$$
+
+For mathematical reasons--detailed below--we end up working with the *logarithm* of the odds, or the *log odds*:
+
+$$\ln(\frac{p(\text{outcome})}{1-p(\text{outcome})}) = x$$
+
+:::{focus-on="cr-solve-for-y"}
+To *graph* or *visualize* these *log odds*, we need to solve for $p(y)$:
+:::
+
+:::{#cr-solve-for-y .scale-to-fill}
+$$p(\text{outcome}) = \frac{e^x}{1 + e^x}$$
+:::
+
+:::{focus-on="cr-sigmoid"}
+This function is sometimes called a *sigmoid*, and has the interesting property of mapping the interval $- \infty < x < \infty$ to $0 < y < 1$. 
+
+This is the first step in mapping a set of *continuous* predictors to a *categorical* outcome.
+:::
+
+:::{#cr-sigmoid .scale-to-fill}
+```{stata}
+#| echo: false
+#| output: false
+
+
+twoway function y = exp(x)/(1 + exp(x)), lwidth(thick) /// 
+title("Logistic Function") ///
+range(-10 10)
+
+graph export logistic.png, replace
+
+
+```
+
+![Logistic Function](logistic.png){width=50%}
+:::
+
+## Logarithmic Spiral
+
+:::{focus-on="cr-logarithmic-spiral"}
+An interesting sidenote is that the logarithm forms the basis of the logarithmic spiral. The equation for a logarithmic spiral in polar coordinates is: $r = ae^{b \theta}$, where $\theta$ is the angle, $r$ is the radius, and $a$ and $b$ are constants. 
+:::
+
+:::{#cr-logarithmic-spiral .scale-to-fill}
+![Desmos Graph of Logarithmic Spiral](desmos-graph.png){width=30%}
+:::
+
+:::{focus-on="cr-logarithmic-spiral-2"}
+Logarithmic spirals can be found in nature in the *nautilus shell*, and in *sunflowers* and in the *flight of hawks*.
+:::
+
+:::{#cr-logarithmic-spiral-2 .scale-to-fill}
+::: {layout-ncol=3}
+![Nautilus Shell, Courtesy Wikipedia](NautilusCutawayLogarithmicSpiral.jpg)
+
+![Sunflower, Courtesy Wikipedia](Sunflower_sky_backdrop.jpg)
+
+![Spiral Flight of Hawk from @Livio2002](hawk.png)
+:::
+:::
+
+:::
+
