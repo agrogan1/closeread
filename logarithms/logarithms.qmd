@@ -1,5 +1,6 @@
 ---
-title: "logarithms"
+title: "Logarithms"
+subtitle: "Scroll down to move through this presentation."
 author: 
   name: "Andy Grogan-Kaylor" 
   url: "https://agrogan1.github.io/"
@@ -12,6 +13,7 @@ format:
       narrative-background-color-sidebar: white
       section-background-color: white
     css: logarithms.css
+from: markdown+emoji
 bibliography: logarithms.bib
 ---
 
@@ -24,10 +26,9 @@ library(Statamarkdown)
 ```
 
 :::{.cr-section}
-
+:::{focus-on="cr-exponential" scale-by="5.0"}
 ## The Exponential Function
 
-:::{focus-on="cr-exponential" scale-by="5.0"}
 We start with the *exponential function*.
 :::
 
@@ -47,48 +48,48 @@ because
 $\color{blue}{2} \times \color{blue}{2} \times \color{blue}{2} \color{black}{=} \color{purple}{8}$
 :::
 
+:::{focus-on="cr-logarithm-if" scale-by="5.0"}
 ## The Logarithm
 
-:::{focus-on="cr-logarithm-if" scale-by="5.0"}
 We then consider the *logarithm*. 
 :::
 
 :::{#cr-logarithm-if}
 If... 
 
-$$y = b^x$$
+$$\color{purple}{y} \color{black}{=} \color{blue}{b}^{\color{red}{x}}$$
 :::
 
-:::{focus-on="cr-logarithm-then"}
+:::{focus-on="cr-logarithm-then" scale-by="5.0"}
 
 :::
 
-:::{#cr-logarithm-then .scale-to-fill}
-Then... $$\log_b(y) = x$$
+:::{#cr-logarithm-then}
+Then... $$\log_{\color{blue}{b}}{\color{purple}{y}} \color{black}{=} \color{red}{x}$$
 :::
 
-:::{focus-on="cr-logarithm-words"}
+:::{focus-on="cr-logarithm-words" scale-by="3.0"}
 In words:
 :::
 
-:::{#cr-logarithm-words .scale-to-fill}
-If $\text{number} = \text{base}^{\text{exponent}}$ 
+:::{#cr-logarithm-words}
+If $\color{purple}{\text{number}} = \color{blue}{\text{base}}^{\color{red}{\text{exponent}}}$ 
 
 then 
 
-$\log_{\text{base}}(\text{number}) = \text{exponent}$. 
+$\log_{\color{blue}{\text{base}}}{\color{purple}{\text{number}}} = \color{red}{\text{exponent}}$ 
 :::
 
-:::{focus-on="cr-logarithm-example"}
+:::{focus-on="cr-logarithm-example" scale-by="5.0"}
 For example: 
 :::
 
-:::{#cr-logarithm-example .scale-to-fill}
-$2^3 = 8$
+:::{#cr-logarithm-example}
+$\color{blue}{2}^{\color{red}{3}} = \color{purple}{8}$
 
 therefore 
 
-$log_2 8 = 3$
+$log_{\color{blue}{2}} \color{purple}{8} = \color{red}{3}$
 :::
 
 :::{focus-on="cr-logarithm-question"}
@@ -102,34 +103,68 @@ The logarithm may thus be thought of as *the inverse of the exponential function
 :::
 :::
 
+:::{focus-on="cr-e-definition"}
 ## The Natural Logarithm
 
-For deep mathematical reasons, it is often useful to use logarithms with base $e$ which is often termed the *natural logarithm*, written $\ln$
+For deep mathematical reasons, it is often useful to use logarithms with base $e$[^pi] which is often termed the *natural logarithm*, written $\ln$
+:::
 
-$e$ is a kind of fundamental mathematical constant, like $\pi$, but without the easy geometric definition that $\pi$ has. (For any $\bigcirc$, $\pi = \frac{\text{circumference}}{\text{diameter}}$.) 
+:::{#cr-e-definition .scale-to-fill}
+::: {.callout-tip}
+### e
 
-$e$ emerges in many contexts, including some aspects of compound growth processes [^e]. $e$ is approximately equal to 2.71828....
+$e$ is a kind of fundamental mathematical constant, like $\pi$. 
+:::
+:::
+ 
+[^pi]: $e$ does not have the easy geometric definition that $\pi$ has. <p> For any $\bigcirc$, $$\pi = \frac{\text{circumference}}{\text{diameter}}$$.
+
+$e$ emerges in many contexts, including some aspects of compound growth processes[^e]. $e$ is approximately equal to 2.71828....
 
 [^e]: A common definition of $e$ is $$e = \lim_{n \to \infty} \left(1 + \frac{1}{n} \right)^n$$
 
-If $$y = e^x$$ then $$\ln(y) = x$$
+:::{focus-on="cr-ln-definition-if" scale-by="5.0"}
+:::
 
+:::{#cr-ln-definition-if}
+If 
+
+$$\color{purple}{y} = \color{blue}{e}^{\color{red}{x}}$$ 
+:::
+
+:::{focus-on="cr-ln-definition-then" scale-by="5.0"}
+:::
+
+:::{#cr-ln-definition-then}
+Then 
+
+$$\ln{\color{purple}{y}} = \color{red}{x}$$
+:::
+
+:::{focus-on="cr-odds" scale-by="5.0"}
 ## Logistic Regression
 
 One application of the logarithm is in thinking about *logistic regression*. In logistic regression, we start by thinking about the *odds* of our outcome: 
+:::
 
+:::{#cr-odds}
 $$\frac{p(\text{outcome})}{1-p(\text{outcome})}$$
+:::
 
-For mathematical reasons--detailed below--we end up working with the *logarithm* of the odds, or the *log odds*:
+:::{focus-on="cr-log-odds" scale-by="3.0"}
+For mathematical reasons--illustrated below--we end up working with the *logarithm* of the odds, or the *log odds*:
+:::
 
-$$\ln(\frac{p(\text{outcome})}{1-p(\text{outcome})}) = x$$
+:::{#cr-log-odds}
+$$\ln(\frac{p(\text{outcome})}{1-p(\text{outcome})}) = \beta x$$
+:::
 
-:::{focus-on="cr-solve-for-y"}
+:::{focus-on="cr-solve-for-y" scale-by="3.0"}
 To *graph* or *visualize* these *log odds*, we need to solve for $p(\text{outcome})$, the probability of the outcome:
 :::
 
-:::{#cr-solve-for-y .scale-to-fill}
-$$p(\text{outcome}) = \frac{e^x}{1 + e^x}$$
+:::{#cr-solve-for-y}
+$$p(\text{outcome}) = \frac{e^{\beta x}}{1 + e^{\beta x}}$$
 :::
 
 :::{focus-on="cr-sigmoid"}
@@ -139,32 +174,34 @@ This is the first step in mapping a set of *continuous* predictors to the probab
 :::
 
 :::{#cr-sigmoid .scale-to-fill}
-```{stata}
+```{r}
 #| echo: false
-#| output: false
+#| output: true
 
+x <- seq(-10, 10, .5)
 
-twoway function y = exp(x)/(1 + exp(x)), lwidth(vthick) /// 
-title("Logistic Function") ///
-range(-10 10) ///
-ytitle("probability")
+y <- exp(x)/(1 + exp(x))
 
-graph export logistic.png, replace
-
+plot(x,y,
+     pch = 19,
+     col = "darkorange",
+     main = "Logistic Function",
+     ylab = "probability")
 
 ```
-
-![Logistic Function](logistic.png){width=50%}
 :::
 
-## Logarithmic Spiral
 
 :::{focus-on="cr-logarithmic-spiral"}
+## Logarithmic Spiral
+
 An interesting sidenote is that the logarithm forms the basis of the logarithmic spiral. The equation for a logarithmic spiral in polar coordinates is: $r = ae^{b \theta}$, where $\theta$ is the angle, $r$ is the radius, and $a$ and $b$ are constants. 
 :::
 
 :::{#cr-logarithmic-spiral .scale-to-fill}
-![Desmos Graph of Logarithmic Spiral](desmos-graph.png){width=30%}
+::: {layout-ncol=1}
+![](desmos-graph.png){width=30%}
+:::
 :::
 
 :::{focus-on="cr-logarithmic-spiral-2"}
