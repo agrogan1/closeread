@@ -26,21 +26,21 @@ library(Statamarkdown)
 ```
 
 :::{.cr-section}
-:::{focus-on="cr-exponential" scale-by="5.0"}
+:::{focus-on="cr-exponential"}
 ## The Exponential Function
 
 We start with the *exponential function*.
 :::
 
-:::{#cr-exponential}
+:::{#cr-exponential .scale-to-fill}
 $$\color{purple}{y} \color{black}{=} \color{blue}{\text{base}}^{\color{red}{\text{exponent}}}$$
 :::
 
-:::{focus-on="cr-exponential-definition" scale-by="5.0"}
+:::{focus-on="cr-exponential-definition"}
 The *exponent* tells us how many times to multiply the base by itself to get the result. 
 :::
 
-:::{#cr-exponential-definition}
+:::{#cr-exponential-definition .scale-to-fill}
 $\color{blue}{2}^{\color{red}{3}} \color{black}{=} \color{purple}8$ 
 
 because 
@@ -48,31 +48,31 @@ because
 $\color{blue}{2} \times \color{blue}{2} \times \color{blue}{2} \color{black}{=} \color{purple}{8}$
 :::
 
-:::{focus-on="cr-logarithm-if" scale-by="5.0"}
+:::{focus-on="cr-logarithm-if"}
 ## The Logarithm
 
 We then consider the *logarithm*. 
 :::
 
-:::{#cr-logarithm-if}
+:::{#cr-logarithm-if .scale-to-fill}
 If... 
 
 $$\color{purple}{y} \color{black}{=} \color{blue}{b}^{\color{red}{x}}$$
 :::
 
-:::{focus-on="cr-logarithm-then" scale-by="5.0"}
+:::{focus-on="cr-logarithm-then"}
 
 :::
 
-:::{#cr-logarithm-then}
+:::{#cr-logarithm-then .scale-to-fill}
 Then... $$\log_{\color{blue}{b}}{\color{purple}{y}} \color{black}{=} \color{red}{x}$$
 :::
 
-:::{focus-on="cr-logarithm-words" scale-by="3.0"}
+:::{focus-on="cr-logarithm-words"}
 In words:
 :::
 
-:::{#cr-logarithm-words}
+:::{#cr-logarithm-words .scale-to-fill}
 If $\color{purple}{\text{number}} = \color{blue}{\text{base}}^{\color{red}{\text{exponent}}}$ 
 
 then 
@@ -80,11 +80,11 @@ then
 $\log_{\color{blue}{\text{base}}}{\color{purple}{\text{number}}} = \color{red}{\text{exponent}}$ 
 :::
 
-:::{focus-on="cr-logarithm-example" scale-by="5.0"}
+:::{focus-on="cr-logarithm-example"}
 For example: 
 :::
 
-:::{#cr-logarithm-example}
+:::{#cr-logarithm-example .scale-to-fill}
 $\color{blue}{2}^{\color{red}{3}} = \color{purple}{8}$
 
 therefore 
@@ -123,47 +123,47 @@ $e$ emerges in many contexts, including some aspects of compound growth processe
 
 [^e]: A common definition of $e$ is $$e = \lim_{n \to \infty} \left(1 + \frac{1}{n} \right)^n$$
 
-:::{focus-on="cr-ln-definition-if" scale-by="5.0"}
+:::{focus-on="cr-ln-definition-if"}
 :::
 
-:::{#cr-ln-definition-if}
+:::{#cr-ln-definition-if .scale-to-fill}
 If 
 
 $$\color{purple}{y} = \color{blue}{e}^{\color{red}{x}}$$ 
 :::
 
-:::{focus-on="cr-ln-definition-then" scale-by="5.0"}
+:::{focus-on="cr-ln-definition-then"}
 :::
 
-:::{#cr-ln-definition-then}
+:::{#cr-ln-definition-then .scale-to-fill}
 Then 
 
 $$\ln{\color{purple}{y}} = \color{red}{x}$$
 :::
 
-:::{focus-on="cr-odds" scale-by="5.0"}
+:::{focus-on="cr-odds"}
 ## Logistic Regression
 
 One application of the logarithm is in thinking about *logistic regression*. In logistic regression, we start by thinking about the *odds* of our outcome: 
 :::
 
-:::{#cr-odds}
+:::{#cr-odds .scale-to-fill}
 $$\frac{p(\text{outcome})}{1-p(\text{outcome})}$$
 :::
 
-:::{focus-on="cr-log-odds" scale-by="3.0"}
+:::{focus-on="cr-log-odds"}
 For mathematical reasons--illustrated below--we end up working with the *logarithm* of the odds, or the *log odds*:
 :::
 
-:::{#cr-log-odds}
+:::{#cr-log-odds .scale-to-fill}
 $$\ln(\frac{p(\text{outcome})}{1-p(\text{outcome})}) = \beta x$$
 :::
 
-:::{focus-on="cr-solve-for-y" scale-by="3.0"}
+:::{focus-on="cr-solve-for-y"}
 To *graph* or *visualize* these *log odds*, we need to solve for $p(\text{outcome})$, the probability of the outcome:
 :::
 
-:::{#cr-solve-for-y}
+:::{#cr-solve-for-y .scale-to-fill}
 $$p(\text{outcome}) = \frac{e^{\beta x}}{1 + e^{\beta x}}$$
 :::
 
