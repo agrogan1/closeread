@@ -1,9 +1,8 @@
-h1.title, .title.h1 {
-    font-size: 500%;
-}
-
 @media screen and (min-width: 575px) { 
   .narrative {
     font-size: 175%;
+  }
+  h1.title, .title.h1 {
+    font-size: 500%;
   }
 }

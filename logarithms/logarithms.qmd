@@ -61,7 +61,7 @@ $$\color{purple}{y} \color{black}{=} \color{blue}{b}^{\color{red}{x}}$$
 :::
 
 :::{focus-on="cr-logarithm-then"}
-
+:arrow_down:
 :::
 
 :::{#cr-logarithm-then .scale-to-fill}
@@ -124,6 +124,7 @@ $e$ emerges in many contexts, including some aspects of compound growth processe
 [^e]: A common definition of $e$ is $$e = \lim_{n \to \infty} \left(1 + \frac{1}{n} \right)^n$$
 
 :::{focus-on="cr-ln-definition-if"}
+:arrow_down:
 :::
 
 :::{#cr-ln-definition-if .scale-to-fill}
@@ -133,6 +134,7 @@ $$\color{purple}{y} = \color{blue}{e}^{\color{red}{x}}$$
 :::
 
 :::{focus-on="cr-ln-definition-then"}
+:arrow_down:
 :::
 
 :::{#cr-ln-definition-then .scale-to-fill}
