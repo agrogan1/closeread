@@ -45,20 +45,20 @@ div.csl-indent {
 }</style>
 
 
-<script src="logarithms_files/libs/clipboard/clipboard.min.js"></script>
-<script src="logarithms_files/libs/quarto-html/quarto.js" type="module"></script>
-<script src="logarithms_files/libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="logarithms_files/libs/quarto-html/popper.min.js"></script>
-<script src="logarithms_files/libs/quarto-html/tippy.umd.min.js"></script>
-<script src="logarithms_files/libs/quarto-html/anchor.min.js"></script>
-<link href="logarithms_files/libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="logarithms_files/libs/quarto-html/quarto-syntax-highlighting-ea385d0e468b0dd5ea5bf0780b1290d9.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="logarithms_files/libs/bootstrap/bootstrap.min.js"></script>
-<link href="logarithms_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="logarithms_files/libs/bootstrap/bootstrap-81267100e462c21b3d6c0d5bf76a3417.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
-<script src="logarithms_files/libs/quarto-contrib/intersection-observer-polyfill-1.0.0/intersection-observer.js"></script>
-<script src="logarithms_files/libs/quarto-contrib/scrollama-3.2.0/scrollama.min.js"></script>
-<script src="logarithms_files/libs/quarto-contrib/closeread-0.1.0/closeread.js"></script>
+<script src="logarithms-simple_files/libs/clipboard/clipboard.min.js"></script>
+<script src="logarithms-simple_files/libs/quarto-html/quarto.js" type="module"></script>
+<script src="logarithms-simple_files/libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="logarithms-simple_files/libs/quarto-html/popper.min.js"></script>
+<script src="logarithms-simple_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="logarithms-simple_files/libs/quarto-html/anchor.min.js"></script>
+<link href="logarithms-simple_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="logarithms-simple_files/libs/quarto-html/quarto-syntax-highlighting-ea385d0e468b0dd5ea5bf0780b1290d9.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="logarithms-simple_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="logarithms-simple_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="logarithms-simple_files/libs/bootstrap/bootstrap-81267100e462c21b3d6c0d5bf76a3417.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="logarithms-simple_files/libs/quarto-contrib/intersection-observer-polyfill-1.0.0/intersection-observer.js"></script>
+<script src="logarithms-simple_files/libs/quarto-contrib/scrollama-3.2.0/scrollama.min.js"></script>
+<script src="logarithms-simple_files/libs/quarto-contrib/closeread-0.1.0/closeread.js"></script>
 <meta cr-debug-mode="false">
 <meta cr-remove-header-space="false">
 
@@ -104,10 +104,10 @@ window.Quarto = {
       <!-- user-provided yaml closeread style options -->
       <style>
         :root {
-          --cr-narrative-background-color-sidebar: white;
---cr-section-background-color: white;
---cr-narrative-text-color-sidebar: black;
+          --cr-section-background-color: white;
+--cr-narrative-background-color-sidebar: white;
 --cr-narrative-background-color-overlay: grey;
+--cr-narrative-text-color-sidebar: black;
         }
       </style>
     
@@ -204,28 +204,6 @@ window.Quarto = {
 <p><span class="emoji" data-emoji="arrow_down">⬇️</span></p>
 </div>
 </div>
-<div class="trigger new-trigger" data-focus-on="cr-odds">
-<section id="logistic-regression" class="level2 narrative">
-<h2 class="anchored" data-anchor-id="logistic-regression">Logistic Regression</h2>
-<p>One application of the logarithm is in thinking about <em>logistic regression</em>. In logistic regression, we start by thinking about the <em>odds</em> of our outcome:</p>
-</section>
-</div>
-<div class="trigger new-trigger" data-focus-on="cr-log-odds">
-<div class="narrative">
-<p>For mathematical reasons–illustrated below–we end up working with the <em>logarithm</em> of the odds, or the <em>log odds</em>:</p>
-</div>
-</div>
-<div class="trigger new-trigger" data-focus-on="cr-solve-for-y">
-<div class="narrative">
-<p>To <em>graph</em> or <em>visualize</em> these <em>log odds</em>, we need to solve for <span class="math inline">\(p(\text{outcome})\)</span>, the probability of the outcome:</p>
-</div>
-</div>
-<div class="trigger new-trigger" data-focus-on="cr-sigmoid">
-<div class="narrative">
-<p>This function is sometimes called a <em>sigmoid</em>, and has the interesting property of mapping the interval <span class="math inline">\(- \infty &lt; x &lt; \infty\)</span> to <span class="math inline">\(0 &lt; \text{probability} &lt; 1\)</span>.</p>
-<p>This is the first step in mapping a set of <em>continuous</em> predictors to the probability of <em>categorical</em> outcome.</p>
-</div>
-</div>
 <div class="trigger new-trigger" data-focus-on="cr-logarithmic-spiral">
 <section id="logarithmic-spiral" class="level2 narrative">
 <h2 class="anchored" data-anchor-id="logarithmic-spiral">Logarithmic Spiral</h2>
@@ -302,26 +280,6 @@ e
 <div id="cr-ln-definition-then" class="scale-to-fill sticky">
 <p>Then</p>
 <p><span class="math display">\[\ln{\color{purple}{y}} = \color{red}{x}\]</span></p>
-</div>
-<div id="cr-odds" class="scale-to-fill sticky">
-<p><span class="math display">\[\frac{p(\text{outcome})}{1-p(\text{outcome})}\]</span></p>
-</div>
-<div id="cr-log-odds" class="scale-to-fill sticky">
-<p><span class="math display">\[\ln(\frac{p(\text{outcome})}{1-p(\text{outcome})}) = \beta x\]</span></p>
-</div>
-<div id="cr-solve-for-y" class="scale-to-fill sticky">
-<p><span class="math display">\[p(\text{outcome}) = \frac{e^{\beta x}}{1 + e^{\beta x}}\]</span></p>
-</div>
-<div id="cr-sigmoid" class="scale-to-fill sticky">
-<div class="cell">
-<div class="cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="logarithms_files/figure-html/unnamed-chunk-2-1.png" class="img-fluid figure-img" width="672"></p>
-</figure>
-</div>
-</div>
-</div>
 </div>
 <div id="cr-logarithmic-spiral" class="scale-to-fill sticky">
 <div class="quarto-layout-panel" data-layout-ncol="1">

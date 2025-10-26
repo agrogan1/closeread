@@ -1,0 +1,173 @@
+---
+title: "Logarithms"
+subtitle: "Scroll down to move through this presentation."
+author: 
+  name: "Andy Grogan-Kaylor" 
+  url: "https://agrogan1.github.io/"
+date: "today"
+format:
+  closeread-html:
+    cr-style:
+      narrative-text-color-sidebar: black
+      narrative-background-color-overlay: grey
+      narrative-background-color-sidebar: white
+      section-background-color: white
+    css: logarithms.css
+from: markdown+emoji
+bibliography: logarithms.bib
+---
+
+```{r}
+#| echo: false
+#| output: false
+
+library(Statamarkdown)
+
+```
+
+:::{.cr-section}
+:::{focus-on="cr-exponential"}
+## The Exponential Function
+
+We start with the *exponential function*.
+:::
+
+:::{#cr-exponential .scale-to-fill}
+$$\color{purple}{y} \color{black}{=} \color{blue}{\text{base}}^{\color{red}{\text{exponent}}}$$
+:::
+
+:::{focus-on="cr-exponential-definition"}
+The *exponent* tells us how many times to multiply the base by itself to get the result. 
+:::
+
+:::{#cr-exponential-definition .scale-to-fill}
+$\color{blue}{2}^{\color{red}{3}} \color{black}{=} \color{purple}8$ 
+
+because 
+
+$\color{blue}{2} \times \color{blue}{2} \times \color{blue}{2} \color{black}{=} \color{purple}{8}$
+:::
+
+:::{focus-on="cr-logarithm-if"}
+## The Logarithm
+
+We then consider the *logarithm*. 
+:::
+
+:::{#cr-logarithm-if .scale-to-fill}
+If... 
+
+$$\color{purple}{y} \color{black}{=} \color{blue}{b}^{\color{red}{x}}$$
+:::
+
+:::{focus-on="cr-logarithm-then"}
+:arrow_down:
+:::
+
+:::{#cr-logarithm-then .scale-to-fill}
+Then... $$\log_{\color{blue}{b}}{\color{purple}{y}} \color{black}{=} \color{red}{x}$$
+:::
+
+:::{focus-on="cr-logarithm-words"}
+In words:
+:::
+
+:::{#cr-logarithm-words .scale-to-fill}
+If $\color{purple}{\text{number}} = \color{blue}{\text{base}}^{\color{red}{\text{exponent}}}$ 
+
+then 
+
+$\log_{\color{blue}{\text{base}}}{\color{purple}{\text{number}}} = \color{red}{\text{exponent}}$ 
+:::
+
+:::{focus-on="cr-logarithm-example"}
+For example: 
+:::
+
+:::{#cr-logarithm-example .scale-to-fill}
+$\color{blue}{2}^{\color{red}{3}} = \color{purple}{8}$
+
+therefore 
+
+$log_{\color{blue}{2}} \color{purple}{8} = \color{red}{3}$
+:::
+
+:::{focus-on="cr-logarithm-question"}
+The logarithm answers the question: *What is the power to which we have to raise the number to get the result?* 
+:::
+
+:::{#cr-logarithm-question .scale-to-fill}
+::: {.callout-tip}
+### Key Idea
+The logarithm may thus be thought of as *the inverse of the exponential function*. 
+:::
+:::
+
+:::{focus-on="cr-e-definition"}
+## The Natural Logarithm
+
+For deep mathematical reasons, it is often useful to use logarithms with base $e$[^pi] which is often termed the *natural logarithm*, written $\ln$
+:::
+
+:::{#cr-e-definition .scale-to-fill}
+::: {.callout-tip}
+### e
+
+$e$ is a kind of fundamental mathematical constant, like $\pi$. 
+:::
+:::
+ 
+[^pi]: $e$ does not have the easy geometric definition that $\pi$ has. <p> For any $\bigcirc$, $$\pi = \frac{\text{circumference}}{\text{diameter}}$$.
+
+$e$ emerges in many contexts, including some aspects of compound growth processes[^e]. $e$ is approximately equal to 2.71828....
+
+[^e]: A common definition of $e$ is $$e = \lim_{n \to \infty} \left(1 + \frac{1}{n} \right)^n$$
+
+:::{focus-on="cr-ln-definition-if"}
+:arrow_down:
+:::
+
+:::{#cr-ln-definition-if .scale-to-fill}
+If 
+
+$$\color{purple}{y} = \color{blue}{e}^{\color{red}{x}}$$ 
+:::
+
+:::{focus-on="cr-ln-definition-then"}
+:arrow_down:
+:::
+
+:::{#cr-ln-definition-then .scale-to-fill}
+Then 
+
+$$\ln{\color{purple}{y}} = \color{red}{x}$$
+:::
+
+:::{focus-on="cr-logarithmic-spiral"}
+## Logarithmic Spiral
+
+An interesting sidenote is that the logarithm forms the basis of the logarithmic spiral. The equation for a logarithmic spiral in polar coordinates is: $r = ae^{b \theta}$, where $\theta$ is the angle, $r$ is the radius, and $a$ and $b$ are constants. 
+:::
+
+:::{#cr-logarithmic-spiral .scale-to-fill}
+::: {layout-ncol=1}
+![](desmos-graph.png){width=30%}
+:::
+:::
+
+:::{focus-on="cr-logarithmic-spiral-2"}
+Logarithmic spirals can be found in nature in the *nautilus shell*, and in *sunflowers* and in the *flight of hawks*.
+:::
+
+:::{#cr-logarithmic-spiral-2 .scale-to-fill}
+::: {layout-ncol=3}
+![Nautilus Shell, Courtesy Wikipedia](NautilusCutawayLogarithmicSpiral.jpg)
+
+![Sunflower, Courtesy Wikipedia](Sunflower_sky_backdrop.jpg)
+
+![Spiral Flight of Hawk from @Livio2002](hawk.png)
+:::
+:::
+
+:::
+

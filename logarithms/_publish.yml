@@ -2,3 +2,7 @@
   quarto-pub:
     - id: ca634780-0311-48ed-86a0-9327bb894a73
       url: https://globalfamilies.quarto.pub/logarithms
+- source: logarithms-simple.qmd
+  quarto-pub:
+    - id: 4d7753f0-9dac-49ba-83a1-950bd798b2b6
+      url: https://globalfamilies.quarto.pub/logarithms-simple
