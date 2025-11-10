@@ -1,6 +1,9 @@
 ---
 title: "Parenting and Child Development"
 subtitle: "Positive and Negative Parental Discipline Behaviors And Child Outcomes Across 60 Countries"
+author: 
+  name: "Global Families Research Team" 
+  url: https://globalfamilies.quarto.pub/global-families-project/
 format: 
   closeread-html:
     cr-style:
@@ -211,11 +214,16 @@ flowchart LR
   
   explained --> higherprosocial[higher prosocial peer relations]:::blue
   
+  explained --> loweraggression[lower aggression]:::blue
+  
   shouting:::red --> higheraggression[higher aggression]:::yellow
   
   spanking:::red --> higheraggression
   
   takingawayprivileges[taking away privileges]:::orange --> lowerprosocial[lower prosocial peer relations]:::yellow
+  
+  linkStyle 0,1,2,3,4 stroke:#000000,stroke-width:3px,color:black;
+
 ```
 :::
 
@@ -237,6 +245,8 @@ flowchart LR
   
   spanking:::red --> higheraggression
   
+  linkStyle 0,1 stroke:#000000,stroke-width:3px,color:black;
+
 ```
 :::
 
@@ -257,6 +267,8 @@ flowchart LR
   explained[explained why behavior was wrong]:::green --> loweraggression[lower aggression]:::blue
   
   explained --> higherprosocial[higher prosocial peer relations]:::blue
+
+  linkStyle 0,1 stroke:#000000,stroke-width:3px,color:black;
   
 ```
 :::
@@ -276,7 +288,9 @@ flowchart LR
   classDef red fill:#9A3324,stroke:#000000,stroke-width:2px,color:#FFFFFF;
   
   takingawayprivileges[taking away privileges]:::orange --> lowerprosocial[lower prosocial peer relations]:::yellow
-  
+ 
+  linkStyle 0 stroke:#000000,stroke-width:3px,color:black;
+ 
 ```
 :::
 
