@@ -1,0 +1,32 @@
+---
+title: "Annotated Equation"
+format: 
+  pdf:
+    classoption: [landscape]
+header-includes:
+  - \usepackage{annotate-equations}
+---
+
+
+\begin{equation*}
+  \eqnmark[violet]{node1}{\ln \left( \frac{p(\text{aggression})}{1- p(\text{aggression})} \right)}
+  \tikzmarknode{node2}{=}
+  \eqnmarkbox[blue]{node3}{\beta_0}
+  \eqnmark[black]{node4}{+}
+  \eqnmarkbox[red]{node5}{\Sigma \beta \text{abuse}}
+  \eqnmark[black]{node6}{+}
+  \eqnmarkbox[cyan]{node7}{\Sigma \beta \text{covariates}}
+  \eqnmark[black]{node8}{+}
+  \eqnmarkbox[orange]{node9}{u_{0j}}
+\end{equation*}
+\annotate[yshift=-1em]{below,left}{node1}{logarithm of odds of aggression} 
+\annotate[yshift=1em]{left}{node3}{baseline log odds} 
+\annotate[yshift=-1em]{below,right}{node5}{abuse} 
+\annotate[yshift=-2.5em]{below,right}{node7}{covariates}
+\annotate[yshift=-3.5em]{below,right}{node9}{country level variation in outcome}
+
+
+
+
+
+
