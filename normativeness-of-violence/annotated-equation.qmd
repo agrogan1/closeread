@@ -3,6 +3,7 @@ title: "Annotated Equation"
 format: 
   pdf:
     classoption: [landscape]
+    papersize: legal
 header-includes:
   - \usepackage{annotate-equations}
 ---
@@ -15,15 +16,21 @@ header-includes:
   \eqnmark[black]{node4}{+}
   \eqnmarkbox[red]{node5}{\Sigma \beta \text{abuse}}
   \eqnmark[black]{node6}{+}
-  \eqnmarkbox[cyan]{node7}{\Sigma \beta \text{covariates}}
+  \eqnmarkbox[teal]{node7}{\Sigma \beta \text{covariates}}
   \eqnmark[black]{node8}{+}
-  \eqnmarkbox[orange]{node9}{u_{0j}}
+  \eqnmarkbox[purple]{node9}{\Sigma \beta \text{normativeness}}
+  \eqnmark[black]{node10}{+}
+  \eqnmarkbox[MidnightBlue]{node11}{\Sigma \beta \text{abuse} \times \text{normativeness}}
+  \eqnmark[black]{node12}{+}
+  \eqnmarkbox[orange]{node13}{u_{0j}}
 \end{equation*}
 \annotate[yshift=-1em]{below,left}{node1}{logarithm of odds of aggression} 
 \annotate[yshift=1em]{left}{node3}{baseline log odds} 
 \annotate[yshift=-1em]{below,right}{node5}{abuse} 
 \annotate[yshift=-2.5em]{below,right}{node7}{covariates}
-\annotate[yshift=-3.5em]{below,right}{node9}{country level variation in outcome}
+\annotate[yshift=-2.5em]{below,right}{node9}{normativeness of violence}
+\annotate[yshift=-2.5em]{below,right}{node11}{interaction}
+\annotate[yshift=-2.5em]{below,right}{node13}{country level variation in outcome}
 
 
 
