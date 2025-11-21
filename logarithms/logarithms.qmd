@@ -15,6 +15,20 @@ format:
     css: logarithms.css
 from: markdown+emoji
 bibliography: logarithms.bib
+filters:
+  - social-share
+share:
+  permalink: "https://globalfamilies.quarto.pub/logarithms/"
+  description: "Looking for Intuitive Explanations of an Elusive Concept"
+  twitter: false
+  facebook: true
+  reddit: true
+  stumble: false
+  tumblr: false
+  linkedin: true
+  email: true
+  mastodon: true
+  bsky: true
 ---
 
 ```{r}
