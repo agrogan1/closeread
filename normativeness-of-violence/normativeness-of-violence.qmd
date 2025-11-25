@@ -6,6 +6,7 @@ author:
 date: "today"
 format: 
   html:
+    lightbox: true
     mermaid: 
       theme: neutral
 ---
@@ -158,6 +159,8 @@ p0
 ```
 
 Multilevel logistic regression models examined main effects and interaction effects of household-level caregiver physical abuse and measures of country-level violence. 
+
+![multilevel logistic regression](annotated-equation.png)
 
 The results revealed that physical abuse is associated with higher aggression in children. 
 
