@@ -7,6 +7,7 @@ format:
 ---
 
 ```{mermaid}
+%%| label: fig-question-1
 
 flowchart LR
 
@@ -27,6 +28,7 @@ flowchart LR
 ```
 
 ```{mermaid}
+%%| label: fig-question-2
 
 flowchart LR
 
@@ -57,6 +59,66 @@ flowchart LR
   end
 
   linkStyle 0,1 stroke:#000000,stroke-width:3px,font-size:36px,color:black;
+
+  style lowerviolence fill: #F2F2F2
+
+  style higherviolence fill: #F2F2F2
+
+```
+
+```{mermaid}
+%%| label: fig-result-1
+
+flowchart LR
+
+  classDef yellow fill:#FFC20E,stroke:#000000,stroke-width:2px,color:#000000;
+  
+  classDef blue fill:#374EA2,stroke:#000000,stroke-width:2px,color:#FFFFFF;
+  
+  classDef green fill:#00833D,stroke:#000000,stroke-width:2px,color:#FFFFFF;
+  
+  classDef orange fill:#D86018,stroke:#000000,stroke-width:2px,color:#FFFFFF;
+  
+  classDef red fill:#9A3324,stroke:#000000,stroke-width:2px,color:#FFFFFF;
+  
+  abuse[physical abuse]:::red --> aggression[child aggression]:::yellow
+
+  linkStyle 0 stroke:#000000,stroke-width:5px,font-size:36px,color:black;
+
+```
+
+```{mermaid}
+%%| label: fig-result-2
+
+flowchart LR
+
+  classDef yellow fill:#FFC20E,stroke:#000000,stroke-width:2px,color:#000000;
+  
+  classDef blue fill:#374EA2,stroke:#000000,stroke-width:2px,color:#FFFFFF;
+  
+  classDef green fill:#00833D,stroke:#000000,stroke-width:2px,color:#FFFFFF;
+  
+  classDef orange fill:#D86018,stroke:#000000,stroke-width:2px,color:#FFFFFF;
+  
+  classDef red fill:#9A3324,stroke:#000000,stroke-width:2px,color:#FFFFFF;
+  
+  subgraph lowerviolence [lower violence]
+  
+  direction LR
+
+  abuse0[physical abuse]:::red --> aggression0[child aggression]:::yellow
+  
+  end
+  
+  subgraph higherviolence [higher violence]
+  
+  direction LR
+
+  abuse1[physical abuse]:::red --> aggression1[child aggression]:::yellow
+  
+  end
+
+  linkStyle 0,1 stroke:#000000,stroke-width:5px,font-size:36px,color:black;
 
   style lowerviolence fill: #F2F2F2
 
