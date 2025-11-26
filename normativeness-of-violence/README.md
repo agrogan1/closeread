@@ -17,7 +17,7 @@ flowchart LR
   
   abuse[physical abuse]:::red --> aggression[child aggression]:::yellow
 
-  macroviolence[higher levels of social or community levels of violence]:::orange --> abuse
+  macroviolence[higher levels of social or community of violence]:::orange --> abuse
 
   linkStyle 0 stroke:#000000,stroke-width:3px,font-size:36px,color:black;
 
