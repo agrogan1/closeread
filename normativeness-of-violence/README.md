@@ -19,6 +19,6 @@ flowchart LR
 
   macroviolence[higher levels of social or community of violence]:::orange --> abuse
 
-  linkStyle 0 stroke:#000000,stroke-width:3px,font-size:36px,color:black;
+  linkStyle 0,1 stroke:#000000,stroke-width:3px,font-size:36px,color:black;
 
 ```
