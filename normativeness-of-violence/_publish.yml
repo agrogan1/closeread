@@ -1,0 +1,4 @@
+- source: normativeness-of-violence.qmd
+  quarto-pub:
+    - id: 61b63fb0-f859-45c4-aa72-a70dfbdadc2f
+      url: https://globalfamilies.quarto.pub/normativeness-of-violence
