@@ -1,4 +1,4 @@
-```{mermaid}
+```mermaid
 %%| label: fig-question-1
 
 flowchart LR
