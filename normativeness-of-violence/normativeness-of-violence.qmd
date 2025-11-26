@@ -9,6 +9,8 @@ format:
     lightbox: true
     mermaid: 
       theme: neutral
+bibliography: normativeness-of-violence.bib
+csl: apa.csl
 ---
 
 This study examined whether the associations between caregiver physical abuse and aggressive behaviors among 3- to 4-year-old children in low- and middle-income countries (LMICs). 
@@ -226,6 +228,30 @@ flowchart LR
 
 ```
 
+While the link between physical abuse and child aggression appears to be constant, and does not appear to depend upon context, there is [some evidence from other research](https://globalfamilies.quarto.pub/spillover-of-violence/) [@Ma2025] that there is a pathway from higher levels of community or societal violence to physical abuse, and onward to child aggression.
+
+```{mermaid}
+%%| label: fig-other-research
+
+flowchart LR
+
+  classDef yellow fill:#FFC20E,stroke:#000000,stroke-width:2px,color:#000000;
+  
+  classDef blue fill:#374EA2,stroke:#000000,stroke-width:2px,color:#FFFFFF;
+  
+  classDef green fill:#00833D,stroke:#000000,stroke-width:2px,color:#FFFFFF;
+  
+  classDef orange fill:#D86018,stroke:#000000,stroke-width:2px,color:#FFFFFF;
+  
+  classDef red fill:#9A3324,stroke:#000000,stroke-width:2px,color:#FFFFFF;
+  
+  abuse[physical abuse]:::red --> aggression[child aggression]:::yellow
+
+  macroviolence[higher levels of <br>social or community violence]:::orange --> abuse
+
+  linkStyle 0,1 stroke:#000000,stroke-width:3px,font-size:36px,color:black;
+
+```
 
 These findings emphasize that physical abuse poses a significant threat to child development in diverse global contexts and highlight the need for contextually-responsive policy interventions aimed at reducing physically abusive practices worldwide.
 
