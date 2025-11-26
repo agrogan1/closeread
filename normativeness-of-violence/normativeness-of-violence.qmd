@@ -11,6 +11,20 @@ format:
       theme: neutral
 bibliography: normativeness-of-violence.bib
 csl: apa.csl
+filters:
+  - social-share
+share:
+  permalink: "https://globalfamilies.quarto.pub/normativeness-of-violence/"
+  description: "Normativeness of Violence"
+  twitter: false
+  facebook: true
+  reddit: true
+  stumble: false
+  tumblr: false
+  linkedin: true
+  email: true
+  mastodon: true
+  bsky: true
 ---
 
 This study examined whether the associations between caregiver physical abuse and aggressive behaviors among 3- to 4-year-old children in low- and middle-income countries (LMICs). 
