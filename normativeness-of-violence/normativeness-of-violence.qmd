@@ -105,7 +105,11 @@ p0 <- MICScountries %>%
 :::{.cr-section}
 
 :::{focus-on="cr-question-1"}
-This study [@Ma_normativeness] examined whether the associations between caregiver physical abuse and aggressive behaviors among 3- to 4-year-old children in low- and middle-income countries (LMICs). 
+<span style="font-size:105px;color:#E2231A;text-align:center;">`r emo::ji("down_arrow")`</span>
+:::
+
+:::{focus-on="cr-question-1"}
+This study [@Ma_normativeness] examined the associations between caregiver physical abuse and aggressive behaviors among 3- to 4-year-old children in low- and middle-income countries (LMICs). 
 :::
 
 :::{#cr-question-1 .scale-to-fill}
