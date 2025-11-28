@@ -11,10 +11,6 @@ format:
       narrative-background-color-overlay: grey
       narrative-background-color-sidebar: white
       section-background-color: white
-  html:
-    lightbox: true
-    mermaid: 
-      theme: neutral
 css: normativeness-of-violence.css
 bibliography: normativeness-of-violence.bib
 csl: apa.csl
@@ -34,12 +30,6 @@ share:
   bsky: true
 ---
 
-:::{.cr-section}
-
-:::{focus-on="cr-question-1"}
-This study [@Ma_normativeness] examined whether the associations between caregiver physical abuse and aggressive behaviors among 3- to 4-year-old children in low- and middle-income countries (LMICs). 
-:::
-
 ```{r}
 #| output: false
 #| echo: false
@@ -55,6 +45,68 @@ library(dplyr)
 library(countrycode)
 
 ```
+
+```{r}
+#| echo: false
+#| warning: false
+
+country <- c("Algeria",  "Argentina",  "Bangladesh",  "Barbados",  "Belarus",  "Belize",  "Benin",  "Bosnia and Herzegovina",  "Cameroon",  "Central African Republic",  "Chad",  "Democratic Republic of the Congo",  "Republic of the Congo",  "Costa Rica",  "Cote d'Ivoire",  "Dominican Republic",  "El Salvador",  "Eswatini",  "Ghana",  "Guinea",  "Guinea Bissau",  "Guyana",  "Iraq",  "Jamaica",  "Kazakhstan",  "Kenya",  "Kosovo",  "Kyrgyzstan",  "Laos", "Macedonia",  "Madagascar",  "Malawi",  "Mali",  "Mauritania",  "Mexico",  "Moldova",  "Mongolia",  "Montenegro",  "Nepal",  "Nigeria",  "Pakistan",  "Panama",  "Paraguay",  "Sao Tome and Principe",  "Senegal",  "Serbia",  "Sierra Leone",  "Somalia",  "St. Lucia",  "State of Palestine",  "Suriname",  "Thailand",  "The Gambia",  "Togo",  "Trinidad and Tobago",  "Tunisia",  "Turkmenistan",  "Ukraine",  "Uruguay",  "Vietnam",  "Zimbabwe")
+
+MICScountries <- data.frame(country)
+
+MICScountries$country_iso <- countrycode(MICScountries$country, 
+                                 'country.name', 
+                                 'iso3c')
+
+```
+
+```{r}
+#| echo: false
+
+g <- list(showframe = TRUE, 
+          showcoastlines = TRUE, 
+          showcountries = TRUE,
+          showland = TRUE,
+          countrycolor = toRGB("grey"),
+          showocean = TRUE,
+          oceancolor = "white",
+          projection = list(type = 'robinson' #,
+                            # rotation = list(lon = -25,
+                            #                 lat = 0,
+                            #                 roll = 0)
+                            ),
+          showland = TRUE,
+          landcolor = toRGB("lightgrey"),
+          bgcolor = "transparent")
+
+t <- list(family = "sans serif", 
+          size = 8, 
+          color = toRGB("black"))
+
+l <- list(color = toRGB("black"), 
+          width = 0.5)
+
+p0 <- MICScountries %>% 
+  plot_geo() %>% 
+  add_trace(z = 1,
+    text = ~country, 
+    colors = "#1CABE2",
+    hoverinfo = 'text',
+    locations = ~country_iso, 
+    showscale = FALSE,
+    marker = list(size=10, line = l)) %>%
+  layout(geo = g,
+         plot_bgcolor='transparent',
+         paper_bgcolor='transparent') %>% 
+  config(displayModeBar = FALSE)
+
+```
+
+:::{.cr-section}
+
+:::{focus-on="cr-question-1"}
+This study [@Ma_normativeness] examined whether the associations between caregiver physical abuse and aggressive behaviors among 3- to 4-year-old children in low- and middle-income countries (LMICs). 
+:::
 
 :::{#cr-question-1 .scale-to-fill}
 ```{mermaid}
@@ -126,62 +178,6 @@ flowchart LR
 We analyzed cross-sectional data from 79,806 households across 53 LMICs using the UNICEF Multiple Indicator Cluster Surveys. 
 :::
 
-```{r}
-#| echo: false
-#| warning: false
-
-country <- c("Algeria",  "Argentina",  "Bangladesh",  "Barbados",  "Belarus",  "Belize",  "Benin",  "Bosnia and Herzegovina",  "Cameroon",  "Central African Republic",  "Chad",  "Democratic Republic of the Congo",  "Republic of the Congo",  "Costa Rica",  "Cote d'Ivoire",  "Dominican Republic",  "El Salvador",  "Eswatini",  "Ghana",  "Guinea",  "Guinea Bissau",  "Guyana",  "Iraq",  "Jamaica",  "Kazakhstan",  "Kenya",  "Kosovo",  "Kyrgyzstan",  "Laos", "Macedonia",  "Madagascar",  "Malawi",  "Mali",  "Mauritania",  "Mexico",  "Moldova",  "Mongolia",  "Montenegro",  "Nepal",  "Nigeria",  "Pakistan",  "Panama",  "Paraguay",  "Sao Tome and Principe",  "Senegal",  "Serbia",  "Sierra Leone",  "Somalia",  "St. Lucia",  "State of Palestine",  "Suriname",  "Thailand",  "The Gambia",  "Togo",  "Trinidad and Tobago",  "Tunisia",  "Turkmenistan",  "Ukraine",  "Uruguay",  "Vietnam",  "Zimbabwe")
-
-MICScountries <- data.frame(country)
-
-MICScountries$country_iso <- countrycode(MICScountries$country, 
-                                 'country.name', 
-                                 'iso3c')
-
-```
-
-```{r}
-#| echo: false
-
-g <- list(showframe = TRUE, 
-          showcoastlines = TRUE, 
-          showcountries = TRUE,
-          showland = TRUE,
-          countrycolor = toRGB("grey"),
-          showocean = TRUE,
-          oceancolor = "white",
-          projection = list(type = 'robinson' #,
-                            # rotation = list(lon = -25,
-                            #                 lat = 0,
-                            #                 roll = 0)
-                            ),
-          showland = TRUE,
-          landcolor = toRGB("lightgrey"),
-          bgcolor = "transparent")
-
-t <- list(family = "sans serif", 
-          size = 8, 
-          color = toRGB("black"))
-
-l <- list(color = toRGB("black"), 
-          width = 0.5)
-
-p0 <- MICScountries %>% 
-  plot_geo() %>% 
-  add_trace(z = 1,
-    text = ~country, 
-    colors = "#1CABE2",
-    hoverinfo = 'text',
-    locations = ~country_iso, 
-    showscale = FALSE,
-    marker = list(size=10, line = l)) %>%
-  layout(geo = g,
-         plot_bgcolor='transparent',
-         paper_bgcolor='transparent') %>% 
-  config(displayModeBar = FALSE)
-
-```
-
 :::{#cr-MICS-countries .scale-to-fill}
 ```{r}
 #| echo: false
@@ -193,7 +189,7 @@ p0
 :::
 
 :::{focus-on="cr-equation"}
-Multilevel logistic regression models examined main effects and interaction effects of household-level caregiver physical abuse and measures of country-level violence. 
+Multilevel logistic regression models examined main effects and interactions of household-level caregiver physical abuse and measures of country-level violence. 
 :::
 
 :::{#cr-equation .scale-to-fill}
@@ -201,7 +197,7 @@ Multilevel logistic regression models examined main effects and interaction effe
 :::
 
 :::{focus-on="cr-result-1"}
-The results revealed that physical abuse is associated with higher aggression in children. 
+The results revealed that physical abuse **is** associated with higher aggression in children. 
 :::
 
 :::{#cr-result-1 .scale-to-fill}
@@ -227,7 +223,11 @@ flowchart LR
 :::
 
 :::{focus-on="cr-result-2"}
-There were some contextual variations in these associations. However, findings demonstrate that both severe and moderate physical abuse are consistently associated with increased odds of child aggression across countries, underscoring the universality of this risk.
+There were some contextual variations in these associations. 
+:::
+
+:::{focus-on="cr-MICS-countries"}
+However, findings demonstrated that both severe and moderate physical abuse are consistently associated with increased odds of child aggression across countries, underscoring the universality of this risk.
 :::
 
 :::{#cr-result-2 .scale-to-fill}
@@ -270,8 +270,12 @@ flowchart LR
 ```
 :::
 
+:::{focus-on="cr-result-2"}
+The link between physical abuse and child aggression appears to be constant, and does not appear to depend upon context. 
+:::
+
 :::{focus-on="cr-other-research"}
-While the link between physical abuse and child aggression appears to be constant, and does not appear to depend upon context, there is [some evidence from other research](https://globalfamilies.quarto.pub/spillover-of-violence/) [@Ma2025] that there is a pathway from higher levels of community or societal violence to physical abuse, and onward to child aggression.
+There is [some evidence from other research](https://globalfamilies.quarto.pub/spillover-of-violence/) [@Ma2025] that there is a pathway from higher levels of community or societal violence to physical abuse, and onward to child aggression.
 :::
 
 :::{#cr-other-research .scale-to-fill}
@@ -298,6 +302,34 @@ flowchart LR
 ```
 :::
 
+:::{focus-on="cr-interventions"}
+These findings emphasize that physical abuse poses a significant threat to child development in diverse global contexts and highlight the need for contextually-responsive policy interventions aimed at reducing physically abusive practices worldwide.
 :::
 
-These findings emphasize that physical abuse poses a significant threat to child development in diverse global contexts and highlight the need for contextually-responsive policy interventions aimed at reducing physically abusive practices worldwide.
+:::{#cr-interventions .scale-to-fill}
+```{mermaid}
+
+flowchart TB
+
+  classDef yellow fill:#FFC20E,stroke:#000000,stroke-width:2px,color:#000000;
+  
+  classDef blue fill:#374EA2,stroke:#000000,stroke-width:2px,color:#FFFFFF;
+  
+  classDef green fill:#00833D,stroke:#000000,stroke-width:2px,color:#FFFFFF;
+  
+  classDef orange fill:#D86018,stroke:#000000,stroke-width:2px,color:#FFFFFF;
+  
+  classDef red fill:#9A3324,stroke:#000000,stroke-width:2px,color:#FFFFFF;
+  
+  abuse[physical abuse]:::red -->  |"reduce"| aggression[child aggression]:::yellow
+
+  interventions:::green --> |"reduce"| abuse
+
+  linkStyle 0,1 stroke:#000000,stroke-width:3px,font-size:12px,color:red;
+
+```
+:::
+
+:::
+
+
