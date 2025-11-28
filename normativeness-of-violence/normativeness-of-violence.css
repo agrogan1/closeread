@@ -1,0 +1,19 @@
+h1.title, .title.h1 {
+    font-size: 300%;
+}
+
+.sticky-col-stack {
+    container-name: sticks;
+    container-type: size;
+}
+
+.html-widget {
+    width: 100cqw !important;
+    height: 100cqh !important;
+}
+
+@media screen and (min-width: 575px) { 
+  .narrative {
+    font-size: 125%;
+  }
+}

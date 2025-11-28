@@ -5,10 +5,17 @@ author:
   url: https://globalfamilies.quarto.pub/global-families-project/
 date: "today"
 format: 
+  closeread-html:
+    cr-style:
+      narrative-text-color-sidebar: black
+      narrative-background-color-overlay: grey
+      narrative-background-color-sidebar: white
+      section-background-color: white
   html:
     lightbox: true
     mermaid: 
       theme: neutral
+css: normativeness-of-violence.css
 bibliography: normativeness-of-violence.bib
 csl: apa.csl
 filters:
@@ -27,7 +34,11 @@ share:
   bsky: true
 ---
 
+:::{.cr-section}
+
+:::{focus-on="cr-question-1"}
 This study [@Ma_normativeness] examined whether the associations between caregiver physical abuse and aggressive behaviors among 3- to 4-year-old children in low- and middle-income countries (LMICs). 
+:::
 
 ```{r}
 #| output: false
@@ -45,8 +56,8 @@ library(countrycode)
 
 ```
 
+:::{#cr-question-1 .scale-to-fill}
 ```{mermaid}
-%%| label: fig-question-1
 
 flowchart LR
 
@@ -65,11 +76,14 @@ flowchart LR
   linkStyle 0 stroke:#000000,stroke-width:3px,font-size:36px,color:black;
 
 ```
+:::
 
+:::{focus-on="cr-question-2"}
 We also examined whether these associations are different or similar in contexts with high levels of macro-level violence (physical abuse, intimate partner violence, and terrorism and political violence).
+:::
 
+:::{#cr-question-2 .scale-to-fill}
 ```{mermaid}
-%%| label: fig-question-2
 
 flowchart LR
 
@@ -106,8 +120,11 @@ flowchart LR
   style higherviolence fill: #F2F2F2
 
 ```
+:::
 
+:::{focus-on="cr-MICS-countries"}
 We analyzed cross-sectional data from 79,806 households across 53 LMICs using the UNICEF Multiple Indicator Cluster Surveys. 
+:::
 
 ```{r}
 #| echo: false
@@ -165,23 +182,30 @@ p0 <- MICScountries %>%
 
 ```
 
+:::{#cr-MICS-countries .scale-to-fill}
 ```{r}
 #| echo: false
 #| fig-cap: "Countries in UNICEF MICS Data"
-#| label: fig-MICS-countries
 
 p0
 
 ```
+:::
 
+:::{focus-on="cr-equation"}
 Multilevel logistic regression models examined main effects and interaction effects of household-level caregiver physical abuse and measures of country-level violence. 
+:::
 
+:::{#cr-equation .scale-to-fill}
 ![multilevel logistic regression](annotated-equation.png)
+:::
 
+:::{focus-on="cr-result-1"}
 The results revealed that physical abuse is associated with higher aggression in children. 
+:::
 
+:::{#cr-result-1 .scale-to-fill}
 ```{mermaid}
-%%| label: fig-result-1
 
 flowchart LR
 
@@ -200,11 +224,14 @@ flowchart LR
   linkStyle 0 stroke:#000000,stroke-width:3px,font-size:36px,color:black;
 
 ```
+:::
 
+:::{focus-on="cr-result-2"}
 There were some contextual variations in these associations. However, findings demonstrate that both severe and moderate physical abuse are consistently associated with increased odds of child aggression across countries, underscoring the universality of this risk.
+:::
 
+:::{#cr-result-2 .scale-to-fill}
 ```{mermaid}
-%%| label: fig-result-2
 
 flowchart LR
 
@@ -241,11 +268,14 @@ flowchart LR
   style higherviolence fill: #F2F2F2
 
 ```
+:::
 
+:::{focus-on="cr-other-research"}
 While the link between physical abuse and child aggression appears to be constant, and does not appear to depend upon context, there is [some evidence from other research](https://globalfamilies.quarto.pub/spillover-of-violence/) [@Ma2025] that there is a pathway from higher levels of community or societal violence to physical abuse, and onward to child aggression.
+:::
 
+:::{#cr-other-research .scale-to-fill}
 ```{mermaid}
-%%| label: fig-other-research
 
 flowchart LR
 
@@ -266,9 +296,8 @@ flowchart LR
   linkStyle 0,1 stroke:#000000,stroke-width:3px,font-size:36px,color:black;
 
 ```
+:::
+
+:::
 
 These findings emphasize that physical abuse poses a significant threat to child development in diverse global contexts and highlight the need for contextually-responsive policy interventions aimed at reducing physically abusive practices worldwide.
-
-
-
-
