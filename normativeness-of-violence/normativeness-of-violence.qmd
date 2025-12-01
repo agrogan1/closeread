@@ -104,7 +104,7 @@ p0 <- MICScountries %>%
 
 :::{.cr-section}
 
-:::{focus-on="cr-question-1"}
+:::{focus-on="cr-MICS-countries"}
 <span style="font-size:105px;color:#E2231A;text-align:center;">`r emo::ji("down_arrow")`</span>
 :::
 
@@ -307,7 +307,9 @@ flowchart LR
 :::
 
 :::{focus-on="cr-interventions"}
-These findings emphasize that physical abuse poses a significant threat to child development in diverse global contexts and highlight the need for contextually-responsive policy interventions aimed at reducing physically abusive practices worldwide.
+These findings emphasize that physical abuse poses a significant threat to child development in diverse global contexts. 
+
+The findings highlight the need for contextually-responsive policy interventions aimed at reducing physically abusive practices worldwide.
 :::
 
 :::{#cr-interventions .scale-to-fill}
