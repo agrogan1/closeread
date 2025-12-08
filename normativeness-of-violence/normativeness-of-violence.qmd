@@ -16,6 +16,7 @@ bibliography: normativeness-of-violence.bib
 csl: apa.csl
 filters:
   - social-share
+  - highlight-text
 share:
   permalink: "https://globalfamilies.quarto.pub/normativeness-of-violence/"
   description: "Normativeness of Violence"
@@ -201,7 +202,7 @@ Multilevel logistic regression models examined main effects and interactions of 
 :::
 
 :::{focus-on="cr-result-1"}
-The results revealed that physical abuse **is** associated with higher aggression in children. 
+The results revealed that physical abuse [is]{color="#FF0000"} associated with higher aggression in children. 
 :::
 
 :::{#cr-result-1 .scale-to-fill}
@@ -231,7 +232,7 @@ There were some contextual variations in these associations.
 :::
 
 :::{focus-on="cr-MICS-countries"}
-However, findings demonstrated that both severe and moderate physical abuse are consistently associated with increased odds of child aggression across countries, underscoring the universality of this risk.
+However, findings demonstrated that both severe and moderate physical abuse are [consistently]{color="#FF0000"} associated with increased odds of child aggression across countries, underscoring the [universality]{color="#FF0000"} of this risk.
 :::
 
 :::{#cr-result-2 .scale-to-fill}
@@ -275,7 +276,7 @@ flowchart LR
 :::
 
 :::{focus-on="cr-result-2"}
-The link between physical abuse and child aggression appears to be constant, and does not appear to depend upon context. 
+The link between physical abuse and child aggression appears to be [constant]{color="#FF0000"}, and [does not appear to depend upon context]{color="#FF0000"}. 
 :::
 
 :::{focus-on="cr-other-research"}
