@@ -197,7 +197,11 @@ p0
 Multilevel logistic regression models examined main effects and interactions of household-level caregiver physical abuse and measures of country-level violence. 
 :::
 
-:::{#cr-equation .scale-to-fill}
+:::{focus-on="cr-equation" pan-to="50%,50%" scale-by="2.0"}
+<span style="font-size:105px;color:#E2231A;text-align:center;">`r emo::ji("down_arrow")`</span>
+:::
+
+:::{#cr-equation}
 ![multilevel logistic regression](annotated-equation.png)
 :::
 
@@ -280,7 +284,7 @@ The link between physical abuse and child aggression appears to be [constant]{co
 :::
 
 :::{focus-on="cr-other-research"}
-There is [some evidence from other research](https://globalfamilies.quarto.pub/spillover-of-violence/) [@Ma2025] that there is a pathway from higher levels of community or societal violence to physical abuse, and onward to child aggression.
+There is [some evidence from other research](https://globalfamilies.quarto.pub/spillover-of-violence/) [@Ma2025] that there is a [pathway]{color="#FF0000"} from higher levels of community or societal violence to physical abuse, and onward to child aggression.
 :::
 
 :::{#cr-other-research .scale-to-fill}
@@ -308,9 +312,9 @@ flowchart LR
 :::
 
 :::{focus-on="cr-interventions"}
-These findings emphasize that physical abuse poses a significant threat to child development in diverse global contexts. 
+These findings emphasize that physical abuse poses a [significant threat]{color="#FF0000"} to child development in [diverse global contexts]{color="#FF0000"}. 
 
-The findings highlight the need for contextually-responsive policy interventions aimed at reducing physically abusive practices worldwide.
+The findings highlight the need for contextually-responsive policy [interventions]{color="#FF0000"} aimed at reducing physically abusive practices worldwide.
 :::
 
 :::{#cr-interventions .scale-to-fill}
