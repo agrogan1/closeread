@@ -9,6 +9,21 @@ format:
       narrative-background-color-sidebar: white
       section-background-color: white
 css: triangulation.css
+filters:
+  - social-share
+  - highlight-text
+share:
+  permalink: "https://agrogan1.github.io/closeread/triangulation/triangulation.html"
+  description: "Triangulation of Child Abuse Reports"
+  twitter: false
+  facebook: true
+  reddit: true
+  stumble: false
+  tumblr: false
+  linkedin: true
+  email: true
+  mastodon: true
+  bsky: true
 ---
 
 :::{.cr-section}
@@ -137,7 +152,7 @@ Adult self-reports of abuse were most related and most predictive of adult depre
 :::
 
 :::{focus-on="cr-child-maltreatment" scale-by=".45"}
-These findings highlight the usefulness of using advanced quantitative methods when presented with data from multiple reporters, along with the usefulness of self-reports. 
+These findings highlight the usefulness of using advanced quantitative methods when presented with data from multiple reporters, along with the importance and validity of self-reports. 
 :::
 
 :::
