@@ -1,6 +1,13 @@
 ---
 title: "Squaring the Circle: Is Triangulation of Child Abuse Reports Helpful?"
 date: "today"
+author:   
+  - Nehal Eldeeb   
+  - Andy Grogan-Kaylor
+  - Lijian Zhao
+  - Sunghyun Hong
+  - Olivia Chang
+  - Todd Herrenkohl
 format: 
   closeread-html:
     cr-style:
@@ -9,6 +16,10 @@ format:
       narrative-background-color-sidebar: white
       section-background-color: white
 css: triangulation.css
+bibliography: triangulation.bib
+nocite: |
+  @Eldeeb2026
+csl: apa.csl
 filters:
   - social-share
   - highlight-text
@@ -43,21 +54,21 @@ One proposed solution is "triangulation", or integrating data from multiple repo
 However, it remains unclear how best to operationalize this concept.
 :::
 
-:::{#cr-child-maltreatment}
-![child maltreatment](child-maltreatment.png) 
+:::{#cr-child-maltreatment .center}
+![](child-maltreatment.png) 
 :::
 
 :::{#cr-multiple-measures .scale-to-fill}
 ![multiple measures from multiple reporters](multiple-measures.png) 
 :::
 
-:::{focus-on="cr-triangle" scale-by=".5"}
+:::{focus-on="cr-triangle"}
 # Objective 
 
 This study examines the concept of "triangulation" by employing different advanced analytic methods to determine whether these methods reveal a common underlying construct of physical abuse and whether they predict adult depression. 
 :::
 
-:::{#cr-triangle}
+:::{#cr-triangle .scale-to-fill}
 ![triangulation](triangle.png)
 :::
 
@@ -147,7 +158,7 @@ SEM and network analysis were the most informative for triangulation and predict
 :::
 :::
 
-:::{focus-on="cr-network-analysis" pan-to="-45%,-25%" scale-by=".75"}
+:::{focus-on="cr-network-analysis" pan-to="-55%,-15%" scale-by="1.0"}
 Adult self-reports of abuse were most related and most predictive of adult depression. 
 :::
 

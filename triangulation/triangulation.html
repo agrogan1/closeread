@@ -6,6 +6,12 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Nehal Eldeeb">
+<meta name="author" content="Andy Grogan-Kaylor">
+<meta name="author" content="Lijian Zhao">
+<meta name="author" content="Sunghyun Hong">
+<meta name="author" content="Olivia Chang">
+<meta name="author" content="Todd Herrenkohl">
 <meta name="dcterms.date" content="2025-12-26">
 
 <title>Squaring the Circle: Is Triangulation of Child Abuse Reports Helpful?</title>
@@ -21,7 +27,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="triangulation_files/libs/clipboard/clipboard.min.js"></script>
@@ -85,10 +111,10 @@ window.Quarto = {
       <!-- user-provided yaml closeread style options -->
       <style>
         :root {
-          --cr-narrative-background-color-overlay: grey;
+          --cr-section-background-color: white;
 --cr-narrative-text-color-sidebar: black;
---cr-section-background-color: white;
 --cr-narrative-background-color-sidebar: white;
+--cr-narrative-background-color-overlay: grey;
         }
       </style>
     
@@ -102,6 +128,17 @@ window.Quarto = {
 
 <div class="quarto-title-meta column-page">
 
+    <div>
+    <div class="quarto-title-meta-heading">Authors</div>
+    <div class="quarto-title-meta-contents">
+             <p>Nehal Eldeeb </p>
+             <p>Andy Grogan-Kaylor </p>
+             <p>Lijian Zhao </p>
+             <p>Sunghyun Hong </p>
+             <p>Olivia Chang </p>
+             <p>Todd Herrenkohl </p>
+          </div>
+  </div>
     
     <div>
     <div class="quarto-title-meta-heading">Published</div>
@@ -120,7 +157,7 @@ window.Quarto = {
 
 <div class="cr-section cr-column-screen sidebar-left">
 <div class="narrative-col">
-<div class="trigger new-trigger" data-scale-by=".45" data-focus-on="cr-child-maltreatment">
+<div class="trigger new-trigger" data-focus-on="cr-child-maltreatment" data-scale-by=".45">
 <section id="background" class="level1 narrative">
 <h1>Background</h1>
 </section>
@@ -138,7 +175,7 @@ window.Quarto = {
 <p>However, it remains unclear how best to operationalize this concept.</p>
 </div>
 </div>
-<div class="trigger new-trigger" data-scale-by=".5" data-focus-on="cr-triangle">
+<div class="trigger new-trigger" data-focus-on="cr-triangle">
 <section id="objective" class="level1 narrative">
 <h1>Objective</h1>
 <p>This study examines the concept of “triangulation” by employing different advanced analytic methods to determine whether these methods reveal a common underlying construct of physical abuse and whether they predict adult depression.</p>
@@ -164,7 +201,7 @@ window.Quarto = {
 <p>Adult self-reports played a particularly strong role.</p>
 </section>
 </div>
-<div class="trigger new-trigger" data-scale-by=".75" data-focus-on="cr-network-analysis">
+<div class="trigger new-trigger" data-focus-on="cr-network-analysis" data-scale-by=".75">
 <div class="narrative">
 <p>Network analysis also highlighted strong intercorrelations among self-reports and meaningful links with depression.</p>
 </div>
@@ -175,12 +212,12 @@ window.Quarto = {
 <p>SEM and network analysis were the most informative for triangulation and prediction of adult depression.</p>
 </section>
 </div>
-<div class="trigger new-trigger" data-focus-on="cr-network-analysis" data-scale-by=".75" data-pan-to="-45%,-25%">
+<div class="trigger new-trigger" data-pan-to="-55%,-15%" data-focus-on="cr-network-analysis" data-scale-by="1.0">
 <div class="narrative">
 <p>Adult self-reports of abuse were most related and most predictive of adult depression.</p>
 </div>
 </div>
-<div class="trigger new-trigger" data-scale-by=".45" data-focus-on="cr-child-maltreatment">
+<div class="trigger new-trigger" data-focus-on="cr-child-maltreatment" data-scale-by=".45">
 <div class="narrative">
 <p>These findings highlight the usefulness of using advanced quantitative methods when presented with data from multiple reporters, along with the importance and validity of self-reports.</p>
 </div>
@@ -188,13 +225,8 @@ window.Quarto = {
 </div>
 <div class="sticky-col">
 <div class="sticky-col-stack">
-<div id="cr-child-maltreatment" class="sticky">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="child-maltreatment.png" class="img-fluid figure-img"></p>
-<figcaption>child maltreatment</figcaption>
-</figure>
-</div>
+<div id="cr-child-maltreatment" class="center sticky">
+<p><img src="child-maltreatment.png" class="img-fluid"></p>
 </div>
 <div id="cr-multiple-measures" class="scale-to-fill sticky">
 <div class="quarto-figure quarto-figure-center">
@@ -204,7 +236,7 @@ window.Quarto = {
 </figure>
 </div>
 </div>
-<div id="cr-triangle" class="sticky">
+<div id="cr-triangle" class="scale-to-fill sticky">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="triangle.png" class="img-fluid figure-img"></p>
@@ -325,7 +357,12 @@ window.Quarto = {
 </div>
 </div>
 
-</main>
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list">
+<div id="ref-Eldeeb2026" class="csl-entry" role="listitem">
+Eldeeb, N., Grogan-Kaylor, A., Zhao, L., Hong, S., Chang, O., &amp; Herrenkohl, T. (n.d.). Squaring the circle: Is triangulation of child abuse reports helpful? <em>Child Abuse and Neglect</em>.
+</div>
+</div></section></div></main>
 <!-- /main column -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
