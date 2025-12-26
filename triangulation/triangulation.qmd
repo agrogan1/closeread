@@ -59,7 +59,7 @@ However, it remains unclear how best to operationalize this concept.
 :::
 
 :::{#cr-multiple-measures .scale-to-fill}
-![multiple measures from multiple reporters](multiple-measures.png) 
+![multiple measures from multiple reporters](multiple-measures.png){#fig-multiple-measures} 
 :::
 
 :::{focus-on="cr-triangle"}
@@ -69,7 +69,7 @@ This study examines the concept of "triangulation" by employing different advanc
 :::
 
 :::{#cr-triangle .scale-to-fill}
-![triangulation](triangle.png)
+![triangulation](triangle.png){#fig-triangulation}
 :::
 
 :::{#cr-equations .scale-to-fill}
@@ -101,7 +101,7 @@ Data were collected in early childhood, middle childhood, adolescence, and adult
 :::
 
 :::{#cr-Lehigh-study .scale-to-fill}
-![structure of the Lehigh Study](Slide1.png) 
+![structure of the Lehigh Study](Slide1.png){#fig-Lehigh-Study}
 :::
 
 :::{focus-on="cr-multiple-methods"}
@@ -111,16 +111,18 @@ We applied five analytic approaches - network analysis, ordinary least squares (
 :::
 
 :::{#cr-multiple-methods .scale-to-fill}
-::: {layout-ncol=3}
-![network analysis](Slide7.png)
+::: {#fig-multiple-methods layout-ncol=3}
+![network analysis](Slide7.png){#fig-network}
 
-![ordinary least squares regression](Slide2.png)
+![ordinary least squares regression](Slide2.png){#fig-OLS}
 
-![structural equation modeling](Slide5.png)
+![structural equation modeling](Slide5.png){#fig-SEM}
 
-![latent profile analysis](Slide6.png) 
+![latent profile analysis](Slide6.png){#fig-LPA}
 
-![cumulative index regression](cumulative.png)
+![cumulative index regression](cumulative.png){#fig-cumulative}
+
+multiple analytic approaches
 :::
 :::
 
@@ -133,15 +135,15 @@ Adult self-reports played a particularly strong role.
 :::
 
 :::{#cr-SEM .scale-to-fill}
-![structural equation modeling](Slide5.png)
+![structural equation modeling](Slide5.png){#fig-SEM-2}
 :::
 
-:::{focus-on="cr-network-analysis" scale-by=".75"}
+:::{focus-on="cr-network-analysis"}
 Network analysis also highlighted strong intercorrelations among self-reports and meaningful links with depression.
 :::
 
-:::{#cr-network-analysis}
-![network analysis](Slide7.png)
+:::{#cr-network-analysis .scale-to-fill}
+![network analysis](Slide7.png){#fig-network-2}
 :::
 
 :::{focus-on="cr-SEM-network-analysis"}
@@ -151,15 +153,21 @@ SEM and network analysis were the most informative for triangulation and predict
 :::
 
 :::{#cr-SEM-network-analysis .scale-to-fill}
-::: {layout-ncol=2}
-![structural equation modeling](Slide5.png)
+::: {#fig-most-informative layout-ncol=2}
+![structural equation modeling](Slide5.png){#fig-SEM-3}
 
-![network analysis](Slide7.png)
+![network analysis](Slide7.png){#fig-network-3}
+
+most informative analytic approaches
 :::
 :::
 
-:::{focus-on="cr-network-analysis" pan-to="-55%,-15%" scale-by="1.0"}
+:::{focus-on="cr-network-analysis-2" pan-to="-55%,-15%" scale-by="1.0"}
 Adult self-reports of abuse were most related and most predictive of adult depression. 
+:::
+
+:::{#cr-network-analysis-2}
+![network analysis](Slide7.png){#fig-network-2}
 :::
 
 :::{focus-on="cr-child-maltreatment" scale-by=".45"}
