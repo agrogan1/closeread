@@ -12,5 +12,6 @@ format: html
 * [https://globalfamilies.quarto.pub/spillover-of-violence/](https://globalfamilies.quarto.pub/spillover-of-violence/)
 * [https://globalfamilies.quarto.pub/logarithms/](https://globalfamilies.quarto.pub/logarithms/) | ([simplified version](https://globalfamilies.quarto.pub/logarithms-simple/))
 * [https://globalfamilies.quarto.pub/normativeness-of-violence/](https://globalfamilies.quarto.pub/normativeness-of-violence/)
+* [https://agrogan1.github.io/closeread/triangulation/triangulation.html](https://agrogan1.github.io/closeread/triangulation/triangulation.html)
 
 
