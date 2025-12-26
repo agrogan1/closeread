@@ -6,7 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2025-12-23">
+<meta name="dcterms.date" content="2025-12-26">
 
 <title>Squaring the Circle: Is Triangulation of Child Abuse Reports Helpful?</title>
 <style>
@@ -35,15 +35,61 @@ ul.task-list li input[type="checkbox"] {
 <script src="triangulation_files/libs/bootstrap/bootstrap.min.js"></script>
 <link href="triangulation_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="triangulation_files/libs/bootstrap/bootstrap-81267100e462c21b3d6c0d5bf76a3417.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="triangulation_files/libs/quarto-contrib/intersection-observer-polyfill-1.0.0/intersection-observer.js"></script>
+<script src="triangulation_files/libs/quarto-contrib/scrollama-3.2.0/scrollama.min.js"></script>
+<script src="triangulation_files/libs/quarto-contrib/closeread-0.1.0/closeread.js"></script>
+<meta cr-debug-mode="false">
+<meta cr-remove-header-space="false">
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="_extensions/qmd-lab/closeread/closeread.css">
+<link rel="stylesheet" href="triangulation.css">
 </head>
 
-<body class="fullcontent quarto-light">
+<body class="quarto-light">
 
-<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-full">
 
-<main class="content" id="quarto-document-content">
+<main class="content column-page" id="quarto-document-content">
+      <!-- user-provided yaml closeread style options -->
+      <style>
+        :root {
+          --cr-narrative-background-color-sidebar: white;
+--cr-narrative-background-color-overlay: grey;
+--cr-narrative-text-color-sidebar: black;
+--cr-section-background-color: white;
+        }
+      </style>
+    
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
@@ -52,13 +98,13 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<div class="quarto-title-meta">
+<div class="quarto-title-meta column-page">
 
     
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">December 23, 2025</p>
+      <p class="date">December 26, 2025</p>
     </div>
   </div>
   
@@ -70,35 +116,127 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="background" class="level1">
+<div class="cr-section cr-column-screen sidebar-left">
+<div class="narrative-col">
+<div class="trigger new-trigger" data-focus-on="cr-child-maltreatment" data-scale-by=".45">
+<section id="background" class="level1 narrative">
 <h1>Background</h1>
+</section>
+</div>
+<div class="trigger">
+<div class="narrative">
 <p>The measurement of child maltreatment has been a longstanding issue.</p>
+</div>
+</div>
+<div class="trigger new-trigger" data-focus-on="cr-multiple-measures">
+<div class="narrative">
 <p>Information about child maltreatment can come from multiple sources.</p>
 <p>There may be discrepancies across administrative records, parent-reports, and self-reports.</p>
 <p>One proposed solution is “triangulation”, or integrating data from multiple reporters and sources.</p>
 <p>However, it remains unclear how best to operationalize this concept.</p>
-</section>
-<section id="objective" class="level1">
+</div>
+</div>
+<div class="trigger new-trigger" data-focus-on="cr-triangle" data-scale-by=".5">
+<section id="objective" class="level1 narrative">
 <h1>Objective</h1>
 <p>This study examines the concept of “triangulation” by employing different advanced analytic methods to determine whether these methods reveal a common underlying construct of physical abuse and whether they predict adult depression.</p>
 </section>
-<section id="participants-and-setting" class="level1">
+</div>
+<div class="trigger new-trigger" data-focus-on="cr-Lehigh-study">
+<section id="participants-and-setting" class="level1 narrative">
 <h1>Participants and Setting</h1>
 <p>Data come from the Lehigh Study, a 40+ year prospective study that began in the 1970s with children ages 18 months to 6 years of age.</p>
 <p>Data were collected in early childhood, middle childhood, adolescence, and adulthood (ages 36 and 46, on average).</p>
+</section>
+</div>
+<div class="trigger new-trigger" data-focus-on="cr-multiple-methods">
+<section id="methods" class="level1 narrative">
+<h1>Methods</h1>
+<p>We applied five analytic approaches - network analysis, ordinary least squares (OLS) regression, structural equation modeling (SEM), latent profile analysis (LPA), and a cumulative index regression - to assess the relationships among multiple reporters of childhood physical abuse and adult depression.</p>
+</section>
+</div>
+<div class="trigger new-trigger" data-focus-on="cr-SEM">
+<section id="results" class="level1 narrative">
+<h1>Results</h1>
+<p>SEM (structural equation modeling) best modeled the latent construct of physical abuse and significantly predicted adult depression.</p>
+<p>Adult self-reports played a particularly strong role.</p>
+</section>
+</div>
+<div class="trigger new-trigger" data-focus-on="cr-network-analysis" data-scale-by=".75">
+<div class="narrative">
+<p>Network analysis also highlighted strong intercorrelations among self-reports and meaningful links with depression.</p>
+</div>
+</div>
+<div class="trigger new-trigger" data-focus-on="cr-SEM-network-analysis">
+<section id="conclusion" class="level1 narrative">
+<h1>Conclusion</h1>
+<p>SEM and network analysis were the most informative for triangulation and prediction of adult depression.</p>
+</section>
+</div>
+<div class="trigger new-trigger" data-scale-by=".75" data-focus-on="cr-network-analysis" data-pan-to="-45%,-25%">
+<div class="narrative">
+<p>Adult self-reports of abuse were most related and most predictive of adult depression.</p>
+</div>
+</div>
+<div class="trigger new-trigger" data-focus-on="cr-child-maltreatment" data-scale-by=".45">
+<div class="narrative">
+<p>These findings highlight the usefulness of using advanced quantitative methods when presented with data from multiple reporters, along with the usefulness of self-reports.</p>
+</div>
+</div>
+</div>
+<div class="sticky-col">
+<div class="sticky-col-stack">
+<div id="cr-child-maltreatment" class="sticky">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="child-maltreatment.png" class="img-fluid figure-img"></p>
+<figcaption>child maltreatment</figcaption>
+</figure>
+</div>
+</div>
+<div id="cr-multiple-measures" class="scale-to-fill sticky">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="multiple-measures.png" class="img-fluid figure-img"></p>
+<figcaption>multiple measures from multiple reporters</figcaption>
+</figure>
+</div>
+</div>
+<div id="cr-triangle" class="sticky">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="triangle.png" class="img-fluid figure-img"></p>
+<figcaption>triangulation</figcaption>
+</figure>
+</div>
+</div>
+<div id="cr-equations" class="scale-to-fill sticky">
+<p><span id="eq-network"><span class="math display">\[\text{cor}(\text{reporter}_k, \text{reporter}_j) \tag{1}\]</span></span></p>
+<p><span id="eq-OLS"><span class="math display">\[\text{outcome} = \beta_0 + \beta \text{PR1} + \beta \text{PR2} + \beta \text{SR1} + \beta \text{SR2} + \beta \text{SR3} + \beta \text{administrative} + \Sigma \beta \text{covariates} + e_i \tag{2}\]</span></span></p>
+<p><span id="eq-latent"><span class="math display">\[\begin{aligned}
+\text{PR1} &amp;= 1 \cdot X + e_1 \\
+\text{PR2} &amp;= \lambda_2 \cdot X + e_2 \\
+\text{SR1} &amp;= \lambda_3 \cdot X + e_3 \\
+\text{SR2} &amp;= \lambda_4 \cdot X + e_4 \\
+\text{SR3} &amp;= \lambda_5 \cdot X + e_5 \\
+\text{Administrative} &amp;= \lambda_6 \cdot X + e_6 \\
+\text{Outcome} &amp;= \beta_0 + \beta_1 X + \sum_{j} \beta_{2j} \text{Covariate}_j + e_0 \\
+\end{aligned} \tag{3}\]</span></span></p>
+<p><span id="eq-LPA"><span class="math display">\[P(C=k) = logit(\beta_0 + \Sigma \beta_j \text{reporter}_j) \tag{4}\]</span></span></p>
+<p><span id="eq-additive"><span class="math display">\[\text{outcome} = \beta_0 + \beta \text{reporter count} + \Sigma \beta \text{covariates} + e_i \tag{5}\]</span></span></p>
+</div>
+<div id="cr-Lehigh-study" class="scale-to-fill sticky">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="Slide1.png" class="img-fluid figure-img"></p>
 <figcaption>structure of the Lehigh Study</figcaption>
 </figure>
 </div>
-</section>
-<section id="methods" class="level1">
-<h1>Methods</h1>
-<p>We applied five analytic approaches - network analysis, ordinary least squares (OLS) regression, structural equation modeling (SEM), latent profile analysis (LPA), and a cumulative index regression - to assess the relationships among multiple reporters of childhood physical abuse and adult depression.</p>
-<div class="quarto-layout-panel" data-layout-ncol="2">
+</div>
+<div id="cr-multiple-methods" class="scale-to-fill sticky">
+<div class="quarto-layout-panel" data-layout-ncol="3">
 <div class="quarto-layout-row">
-<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="quarto-layout-cell" style="flex-basis: 33.3%;justify-content: flex-start;">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="Slide7.png" class="img-fluid figure-img"></p>
@@ -106,7 +244,7 @@ ul.task-list li input[type="checkbox"] {
 </figure>
 </div>
 </div>
-<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="quarto-layout-cell" style="flex-basis: 33.3%;justify-content: flex-start;">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="Slide2.png" class="img-fluid figure-img"></p>
@@ -114,9 +252,7 @@ ul.task-list li input[type="checkbox"] {
 </figure>
 </div>
 </div>
-</div>
-<div class="quarto-layout-row">
-<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="quarto-layout-cell" style="flex-basis: 33.3%;justify-content: flex-start;">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="Slide5.png" class="img-fluid figure-img"></p>
@@ -124,7 +260,9 @@ ul.task-list li input[type="checkbox"] {
 </figure>
 </div>
 </div>
-<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+</div>
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 33.3%;justify-content: flex-start;">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="Slide6.png" class="img-fluid figure-img"></p>
@@ -132,9 +270,7 @@ ul.task-list li input[type="checkbox"] {
 </figure>
 </div>
 </div>
-</div>
-<div class="quarto-layout-row">
-<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="quarto-layout-cell" style="flex-basis: 33.3%;justify-content: flex-start;">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="cumulative.png" class="img-fluid figure-img"></p>
@@ -144,28 +280,24 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 </div>
-</section>
-<section id="results" class="level1">
-<h1>Results</h1>
-<p>SEM (structural equation modeling) best modeled the latent construct of physical abuse and significantly predicted adult depression.</p>
-<p>Adult self-reports played a particularly strong role.</p>
+</div>
+<div id="cr-SEM" class="scale-to-fill sticky">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="Slide5.png" class="img-fluid figure-img"></p>
 <figcaption>structural equation modeling</figcaption>
 </figure>
 </div>
-<p>Network analysis also highlighted strong intercorrelations among self-reports and meaningful links with depression.</p>
+</div>
+<div id="cr-network-analysis" class="sticky">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="Slide7.png" class="img-fluid figure-img"></p>
 <figcaption>network analysis</figcaption>
 </figure>
 </div>
-</section>
-<section id="conclusion" class="level1">
-<h1>Conclusion</h1>
-<p>SEM and network analysis were the most informative for triangulation and prediction of adult depression.</p>
+</div>
+<div id="cr-SEM-network-analysis" class="scale-to-fill sticky">
 <div class="quarto-layout-panel" data-layout-ncol="2">
 <div class="quarto-layout-row">
 <div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
@@ -186,8 +318,10 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 </div>
-<p>Adult self-reports of abuse were most related and most predictive of adult depression.</p>
-</section>
+</div>
+</div>
+</div>
+</div>
 
 </main>
 <!-- /main column -->
