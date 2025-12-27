@@ -37,12 +37,18 @@ share:
   bsky: true
 ---
 
+::: {.callout-caution}
+## Caution
+
+If viewed on a mobile device, only the text, but not the images, will display.
+:::
+
 :::{.cr-section}
 :::{focus-on="cr-child-maltreatment" scale-by=".45"}
 # Background
-:::
 
 The measurement of child maltreatment  has been a longstanding issue. 
+:::
 
 :::{focus-on="cr-multiple-measures"}
 Information about child maltreatment can come from multiple sources. 
