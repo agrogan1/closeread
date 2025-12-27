@@ -8,7 +8,8 @@ format:
   closeread-html:
     cr-style:
       narrative-text-color-sidebar: black
-      narrative-background-color-overlay: grey
+      narrative-background-color-overlay: lightgrey
+      narrative-text-color-overlay: black
       narrative-background-color-sidebar: white
       section-background-color: white
 css: normativeness-of-violence.css
