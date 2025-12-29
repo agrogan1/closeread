@@ -135,9 +135,12 @@ Adult self-reports of abuse were most related and most predictive of adult depre
 ![network analysis](Slide7.png){#fig-network-2}
 :::
 
-:::{focus-on="cr-child-maltreatment" scale-by=".45"}
+:::{focus-on="cr-child-maltreatment-2" scale-by=".7"}
 These findings highlight the usefulness of using advanced quantitative methods when presented with data from multiple reporters, along with the importance and validity of self-reports. 
 :::
 
+:::{#cr-child-maltreatment-2 .center}
+![](child-maltreatment-2.png) 
+:::
 
 :::
