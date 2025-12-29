@@ -39,5 +39,105 @@ share:
 
 :::{.cr-section}
 
+:::{focus-on="cr-child-maltreatment" scale-by=".45"}
+# Background
+
+The measurement of child maltreatment  has been a longstanding issue. 
+:::
+
+:::{#cr-child-maltreatment .center}
+![](child-maltreatment.png) 
+:::
+
+:::{focus-on="cr-multiple-measures"}
+Information about child maltreatment can come from multiple sources. 
+
+There may be discrepancies across administrative records, parent-reports, and self-reports. 
+
+One proposed solution is "triangulation", or integrating data from multiple reporters and sources. 
+
+However, it remains unclear how best to operationalize this concept.
+:::
+
+:::{#cr-multiple-measures .scale-to-fill}
+![multiple measures from multiple reporters](multiple-measures.png){#fig-multiple-measures} 
+:::
+
+:::{focus-on="cr-triangle"}
+# Objective 
+
+This study examines the concept of "triangulation" by employing different advanced analytic methods to determine whether these methods reveal a common underlying construct of physical abuse and whether they predict adult depression. 
+:::
+
+:::{#cr-triangle .scale-to-fill}
+![triangulation](triangle.png){#fig-triangulation}
+:::
+
+:::{focus-on="cr-Lehigh-study"}
+# Participants and Setting
+
+Data come from the Lehigh Study, a 40+ year prospective study that began in the 1970s with children ages 18 months to 6 years of age. 
+
+Data were collected in early childhood, middle childhood, adolescence, and adulthood (ages 36 and 46, on average). 
+:::
+
+:::{#cr-Lehigh-study .scale-to-fill}
+![structure of the Lehigh Study](Slide1.png){#fig-Lehigh-Study}
+:::
+
+:::{focus-on="cr-multiple-methods"}
+# Methods
+
+We applied five analytic approaches - network analysis, ordinary least squares (OLS) regression, structural equation modeling (SEM), latent profile analysis (LPA), and a cumulative index regression - to assess the relationships among multiple reporters of childhood physical abuse and adult depression. 
+:::
+
+:::{#cr-multiple-methods .scale-to-fill}
+![multiple analytic approaches](multiple-methods.png){#fig-multiple-methods}
+:::
+
+:::{focus-on="cr-SEM"}
+# Results
+
+SEM (structural equation modeling) best modeled the latent construct of physical abuse and significantly predicted adult depression. 
+:::
+
+:::{focus-on="cr-SEM" pan-to="-45%,-15%" scale-by="1.0"}
+Adult self-reports played a particularly strong role. 
+:::
+
+:::{#cr-SEM .scale-to-fill}
+![structural equation modeling](Slide5.png){#fig-SEM-2}
+:::
+
+:::{focus-on="cr-network-analysis"}
+Network analysis also highlighted strong intercorrelations among self-reports and meaningful links with depression.
+:::
+
+:::{#cr-network-analysis .scale-to-fill}
+![network analysis](Slide7.png){#fig-network-2}
+:::
+
+:::{focus-on="cr-SEM-network-analysis"}
+# Conclusion
+
+SEM and network analysis were the most informative for triangulation and prediction of adult depression. 
+:::
+
+:::{#cr-SEM-network-analysis .scale-to-fill}
+![most informative analytic approaches](most-informative.png){#fig-most-informative}
+:::
+
+:::{focus-on="cr-network-analysis-2" pan-to="-55%,-15%" scale-by="1.0"}
+Adult self-reports of abuse were most related and most predictive of adult depression. 
+:::
+
+:::{#cr-network-analysis-2}
+![network analysis](Slide7.png){#fig-network-2}
+:::
+
+:::{focus-on="cr-child-maltreatment" scale-by=".45"}
+These findings highlight the usefulness of using advanced quantitative methods when presented with data from multiple reporters, along with the importance and validity of self-reports. 
+:::
+
 
 :::
