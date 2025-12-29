@@ -312,9 +312,11 @@ flowchart LR
 ```
 :::
 
-:::{focus-on="cr-interventions"}
+:::{focus-on="cr-MICS-countries"}
 These findings emphasize that physical abuse poses a [significant threat]{color="#FF0000"} to child development in [diverse global contexts]{color="#FF0000"}. 
+:::
 
+:::{focus-on="cr-interventions"}
 The findings highlight the need for contextually-responsive policy [interventions]{color="#FF0000"} aimed at reducing physically abusive practices worldwide.
 :::
 
