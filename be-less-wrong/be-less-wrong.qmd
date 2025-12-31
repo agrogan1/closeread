@@ -181,6 +181,12 @@ Let's consider a simple visual model based upon some simulated data. Two key var
 
 :::{#cr-flowchart .scale-to-fill}
 ```{mermaid}
+---
+config:
+  look: handDrawn
+  theme: neutral
+---
+
 flowchart LR
 
   classDef yellow fill:#FFC20E,stroke:#000000,stroke-width:2px,color:#000000;
@@ -232,6 +238,12 @@ Let's now consider a slightly more complex model. In addition to examining the *
 
 :::{#cr-flowchart2 .scale-to-fill}
 ```{mermaid}
+---
+config:
+  look: handDrawn
+  theme: neutral
+---
+
 flowchart LR
 
   classDef yellow fill:#FFC20E,stroke:#000000,stroke-width:2px,color:#000000;
@@ -333,9 +345,9 @@ My point? Simple models feel intuitive and have a commonsense appeal. Yet, with 
 
 [^power]: Since developing this tutorial, I've been reminded in some conversations about additional issues. For example, in this tutorial, I'm arguing for including as many control variables as possible. However, for some social issues, only *small samples* are available. Such small samples may be *statistically underpowered*, and may not have sufficient sample size to include many different control variables.
 
-[^controls]: Additionally, since developing this tutorial, I've also been reminded that one must be *careful* and *thoughtful* about choosing *control variables*. As a simple example, consider a hypothetical situation in which $x$ is a cause of $y$:  $x \rightarrow y$. If $m$ is a mediator of the relationship between $x$ and $y$, then including $m$ in one's statistical model changes the meaning of the estimate of $x$. $\beta_x$ is now an estimate of the *direct* effect of $x$ on $y$, accounting for the presence of $m$. There may be an *indirect* effect of $x$ on $y$ through $m$ ($x \rightarrow m \rightarrow$ y) that needs to be accounted for using special procedures [CF @Westreich2013]. Including a control variable $c$ that is a function of both $x$ and $y$ ($x \rightarrow c \ \& \ y \rightarrow$ c) may introduce additional complications [@Elwert2014]. 
+[^controls]: Additionally, since developing this tutorial, I've also been reminded that one must be *careful* and *thoughtful* about choosing *control variables*. As a simple example, consider a hypothetical situation in which $x$ is a cause of $y$:  $x \rightarrow y$. If $m$ is a mediator of the relationship between $x$ and $y$, then including $m$ in one's statistical model changes the meaning of the estimate of $x$. $\beta_x$ is now an estimate of the *direct* effect of $x$ on $y$, accounting for the presence of $m$. There may be an *indirect* effect of $x$ on $y$ through $m$ ($x \rightarrow m \rightarrow$ y) that needs to be accounted for using special procedures [CF @Westreich2013]. Including a  variable $c$ that is a function of both $x$ and $y$ ($x \rightarrow c \ \& \ y \rightarrow$ c) (i.e. a *collider* variable) may introduce additional complications that may bias results [@Elwert2014]. 
 
-[^RCT]: Further, one could argue, somewhat convincingly, that an RCT (*randomized controlled trial*) would solve the major issue inspiring this presentation. By *randomly* assigning study participants to a *treatment* and *control* group, we would avoid the possibility that our results could be *statistically confounded* by other factors, and thus avoid the possibility that our results would *flip* or *substantially change* as we add more variables to the model. First, it is important to remember that there are many social issues that *cannot be ethically studied* with random assignment.  Second, what is not often enough acknowledged is that RCT's are often based upon small *clinically available* or *conveniently available* samples that may not *generalize* well to other populations or people. Lastly, also not often enough acknowledged, is that the smaller samples often used in RCT's are more likely to generate *false positives* than larger samples [@Button2013]. Large observational studies with diverse populations--and models with many appropriate control variables--certainly have their role.
+[^RCT]: One could argue, somewhat convincingly, that an RCT (*randomized controlled trial*) would solve the major issue inspiring this presentation. By *randomly* assigning study participants to a *treatment* and *control* group, we would avoid the possibility that our results could be *statistically confounded* by other factors, and thus avoid the possibility that our results would *flip* or *substantially change* as we add more variables to the model. First, it is important to remember that there are many social issues that *cannot be ethically studied* with random assignment.  Second, what is not often enough acknowledged is that RCT's are often based upon small *clinically available* or *conveniently available* samples that may not *generalize* well to other populations or people. Lastly, also not often enough acknowledged, is that the smaller samples often used in RCT's are more likely to generate *false positives* than larger samples [@Button2013]. Large observational studies with diverse populations--and models with many appropriate control variables--certainly have their role.
 
 What I have illustrated here is only one set of ideas about how we need to complicate our quantitative thinking to try to be a *little less wrong* in thinking about social problems. 
 
