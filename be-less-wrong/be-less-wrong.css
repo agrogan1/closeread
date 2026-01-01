@@ -39,9 +39,9 @@ blockquote {
 @media only screen and (max-width: 575px) {
   .narrative {
     .citation { 
-      a {color: cyan;}
+      a {color: red;}
   }
-  .footnote-ref {color: cyan;}
+  .footnote-ref {color: red;}
   .boxgreen {background-color: white;}
  }
 }

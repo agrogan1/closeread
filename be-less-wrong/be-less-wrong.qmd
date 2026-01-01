@@ -7,8 +7,9 @@ format:
   closeread-html:
     cr-style:
       narrative-text-color-sidebar: black
-      narrative-background-color-overlay: grey
       narrative-background-color-sidebar: white
+      narrative-background-color-overlay: lightgrey
+      narrative-text-color-overlay: black
       section-background-color: white
     css: be-less-wrong.css
   docx: 
