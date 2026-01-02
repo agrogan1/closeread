@@ -342,7 +342,7 @@ p0 + p0 + aes(color = group) +
 
 
 :::{focus-on="cr-belesswrong" scale-by="1"}
-My point? Simple models feel intuitive and have a commonsense appeal. Yet, with even slightly complicated social issues, simple models may be wrong. [^power]$^,$ [^controls]$^,$ [^RCT]
+My point? Simple models feel intuitive and have a commonsense appeal. Yet, with even slightly complicated social issues--especially when we have data with hundreds, or thousands, or even hundreds of thousands of cases--simple models may be wrong. [^power]$^,$ [^controls]$^,$ [^RCT]
 
 [^power]: Since developing this tutorial, I've been reminded in some conversations about additional issues. For example, in this tutorial, I'm arguing for including as many control variables as possible. However, for some social issues, only *small samples* are available. Such small samples may be *statistically underpowered*, and may not have sufficient sample size to include many different control variables.
 
