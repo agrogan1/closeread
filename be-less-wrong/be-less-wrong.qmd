@@ -204,11 +204,11 @@ flowchart LR
 ```
 :::
 
-:::{focus-on="cr-p0" scale-by="1"}
+:::{focus-on="cr-p0"}
 Here is a first model. What do these results say about the relationship of the *intervention* and the *outcome*?
 :::
 
-:::{#cr-p0}
+:::{#cr-p0 .scale-to-fill}
 ```{r}
 #| label: fig-p0
 #| message: false
@@ -221,11 +221,11 @@ p0 + # replay
 ```
 :::
 
-:::{focus-on="cr-notrecommended" scale-by="1"}
+:::{focus-on="cr-notrecommended"}
 These simple straightforward results suggest that the *intervention* is associated with a worsening of the *outcome*.
 :::
 
-:::{#cr-notrecommended}
+:::{#cr-notrecommended .scale-to-fill}
 ::: {.boxred}
 ## The Intervention is *Not* Recommended
 
@@ -263,7 +263,7 @@ flowchart LR
 ```
 :::
 
-:::{focus-on="cr-p0-group" scale-by="1"}
+:::{focus-on="cr-p0-group"}
 Our conclusion seems to have flipped! 
 
 ::: {.boxgreen}
@@ -273,7 +273,7 @@ Based upon these results we *would* recommend using this intervention.
 :::
 :::
 
-:::{#cr-p0-group}
+:::{#cr-p0-group .scale-to-fill}
 ```{r}
 #| label: fig-p0-group
 #| message: false
