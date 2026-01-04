@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Andy Grogan-Kaylor">
-<meta name="dcterms.date" content="2026-01-03">
+<meta name="dcterms.date" content="2026-01-04">
 
 <title>Be Less Wrong</title>
 <style>
@@ -118,11 +118,11 @@ window.Quarto = {
       <!-- user-provided yaml closeread style options -->
       <style>
         :root {
-          --cr-narrative-text-color-overlay: black;
---cr-narrative-background-color-sidebar: white;
---cr-narrative-background-color-overlay: lightgrey;
---cr-narrative-text-color-sidebar: black;
+          --cr-narrative-text-color-sidebar: black;
 --cr-section-background-color: white;
+--cr-narrative-text-color-overlay: black;
+--cr-narrative-background-color-overlay: lightgrey;
+--cr-narrative-background-color-sidebar: white;
         }
       </style>
     
@@ -140,14 +140,14 @@ window.Quarto = {
     <div>
     <div class="quarto-title-meta-heading">Author</div>
     <div class="quarto-title-meta-contents">
-             <p>Andy Grogan-Kaylor </p>
+             <p><a href="https://agrogan1.github.io/">Andy Grogan-Kaylor</a> </p>
           </div>
   </div>
     
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">January 3, 2026</p>
+      <p class="date">January 4, 2026</p>
     </div>
   </div>
   
@@ -257,7 +257,7 @@ window.Quarto = {
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-globe-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="plotly html-widget html-fill-item" id="htmlwidget-70a688681697cdb7b619" style="width:100%;height:288px;"></div>
-<script type="application/json" data-for="htmlwidget-70a688681697cdb7b619">{"x":{"visdat":{"14267d420533":["function () ","plotlyVisDat"]},"cur_data":"14267d420533","attrs":{"14267d420533":{"alpha_stroke":1,"sizes":[10,100],"spans":[1,20]}},"layout":{"margin":{"b":0,"l":0,"t":0,"r":0,"pad":3},"mapType":"geo","geo":{"domain":{"x":[0,1],"y":[0,1]},"showland":true,"landcolor":"rgba(211,211,211,1)","showcountries":true,"showocean":false,"oceancolor":"royalblue","lataxis":{"showgrid":true,"gridcolor":"rgba(190,190,190,1)"},"lonaxis":{"showgrid":true,"gridcolor":"rgba(190,190,190,1)"},"projection":{"type":"orthographic","rotation":{"lon":-45,"lat":10,"roll":0}}},"hovermode":"closest","showlegend":false},"source":"A","config":{"modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false,"displayModeBar":false},"data":[{"type":"scattergeo","mode":"markers","marker":{"color":"rgba(31,119,180,1)","line":{"color":"rgba(31,119,180,1)"}},"line":{"color":"rgba(31,119,180,1)"},"geo":"geo","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+<script type="application/json" data-for="htmlwidget-70a688681697cdb7b619">{"x":{"visdat":{"91834237f39":["function () ","plotlyVisDat"]},"cur_data":"91834237f39","attrs":{"91834237f39":{"alpha_stroke":1,"sizes":[10,100],"spans":[1,20]}},"layout":{"margin":{"b":0,"l":0,"t":0,"r":0,"pad":3},"mapType":"geo","geo":{"domain":{"x":[0,1],"y":[0,1]},"showland":true,"landcolor":"rgba(211,211,211,1)","showcountries":true,"showocean":false,"oceancolor":"royalblue","lataxis":{"showgrid":true,"gridcolor":"rgba(190,190,190,1)"},"lonaxis":{"showgrid":true,"gridcolor":"rgba(190,190,190,1)"},"projection":{"type":"orthographic","rotation":{"lon":-45,"lat":10,"roll":0}}},"hovermode":"closest","showlegend":false},"source":"A","config":{"modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false,"displayModeBar":false},"data":[{"type":"scattergeo","mode":"markers","marker":{"color":"rgba(31,119,180,1)","line":{"color":"rgba(31,119,180,1)"}},"line":{"color":"rgba(31,119,180,1)"},"geo":"geo","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-globe-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Figure&nbsp;1: Countries of the World
@@ -480,7 +480,16 @@ Westreich, D., &amp; Greenland, S. (2013). The table 2 fallacy: Presenting and i
 <li id="fn3"><p>Additionally, since developing this tutorial, I’ve also been reminded that one must be <em>careful</em> and <em>thoughtful</em> about choosing <em>control variables</em>. As a simple example, consider a hypothetical situation in which <span class="math inline">\(x\)</span> is a cause of <span class="math inline">\(y\)</span>: <span class="math inline">\(x \rightarrow y\)</span>. If <span class="math inline">\(m\)</span> is a mediator of the relationship between <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span>, then including <span class="math inline">\(m\)</span> in one’s statistical model changes the meaning of the estimate of <span class="math inline">\(x\)</span>. <span class="math inline">\(\beta_x\)</span> is now an estimate of the <em>direct</em> effect of <span class="math inline">\(x\)</span> on <span class="math inline">\(y\)</span>, accounting for the presence of <span class="math inline">\(m\)</span>. There may be an <em>indirect</em> effect of <span class="math inline">\(x\)</span> on <span class="math inline">\(y\)</span> through <span class="math inline">\(m\)</span> (<span class="math inline">\(x \rightarrow m \rightarrow\)</span> y) that needs to be accounted for using special procedures <span class="citation" data-cites="Westreich2013">(CF <a href="#ref-Westreich2013" role="doc-biblioref">Westreich &amp; Greenland, 2013</a>)</span>. Including a variable <span class="math inline">\(c\)</span> that is a function of both <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span> (<span class="math inline">\(x \rightarrow c \ \&amp; \ y \rightarrow\)</span> c) (i.e.&nbsp;a <em>collider</em> variable) may introduce additional complications that may bias results <span class="citation" data-cites="Elwert2014">(<a href="#ref-Elwert2014" role="doc-biblioref">Elwert &amp; Winship, 2014</a>)</span>.<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn4"><p>One could argue, somewhat convincingly, that an RCT (<em>randomized controlled trial</em>) would solve the major issue inspiring this presentation. By <em>randomly</em> assigning study participants to a <em>treatment</em> and <em>control</em> group, we would avoid the possibility that our results could be <em>statistically confounded</em> by other factors, and thus avoid the possibility that our results would <em>flip</em> or <em>substantially change</em> as we add more variables to the model. First, it is important to remember that there are many social issues that <em>cannot be ethically studied</em> with random assignment. Second, what is not often enough acknowledged is that RCT’s are often based upon small <em>clinically available</em> or <em>conveniently available</em> samples that may not <em>generalize</em> well to other populations or people. Lastly, also not often enough acknowledged, is that the smaller samples often used in RCT’s are more likely to generate <em>false positives</em> than larger samples <span class="citation" data-cites="Button2013">(<a href="#ref-Button2013" role="doc-biblioref">Button et al., 2013</a>)</span>. Large observational studies with diverse populations–and models with many appropriate control variables–certainly have their role.<a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 </ol>
-</section></div></main>
+</section><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{grogan-kaylor2026,
+  author = {Grogan-Kaylor, Andy},
+  title = {Be {Less} {Wrong}},
+  date = {2026-01-04},
+  url = {https://globalfamilies.quarto.pub/be-less-wrong/},
+  langid = {en}
+}
+</code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-grogan-kaylor2026" class="csl-entry quarto-appendix-citeas" role="listitem">
+Grogan-Kaylor, A. (2026, January 4). <em>Be Less Wrong</em>. <a href="https://globalfamilies.quarto.pub/be-less-wrong/">https://globalfamilies.quarto.pub/be-less-wrong/</a>
+</div></div></section></div></main>
 <!-- /main column -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {

@@ -1,7 +1,9 @@
 ---
 title: "Be Less Wrong"
 subtitle: "Why Use Quantitative Methods?"
-author: "Andy Grogan-Kaylor"
+author: 
+  - name: "Andy Grogan-Kaylor"
+    url: https://agrogan1.github.io/
 date: "today"
 format: 
   closeread-html:
@@ -19,6 +21,8 @@ format:
 fig-height: 3
 bibliography: be-less-wrong.bib
 csl: apa.csl
+citation:
+  url: https://globalfamilies.quarto.pub/be-less-wrong/
 format-links: false
 filters:
   - social-share
