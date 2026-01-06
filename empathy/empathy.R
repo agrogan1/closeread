@@ -14,6 +14,10 @@ library(ggeffects) # model effects
 
 library(ggplot2) # beautiful graphs
 
+library(rgl) # 3D interactive graphs
+
+options(rgl.printRglwidget = TRUE) # display in RStudio viewer
+
 # get data
 
 empathy <- read_dta("empsui_043024.dta")
