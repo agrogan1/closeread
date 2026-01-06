@@ -12,6 +12,16 @@ format:
       narrative-background-color-sidebar: white
       section-background-color: white
     css: parenting.css
+bibliography: parenting.bib
+csl: apa.csl
+nocite: |
+  @Ward2023
+citation:
+  author:
+    - name:
+        literal: Global Families Research Team
+  title: "Parenting and Child Development: Positive and Negative Parental Discipline Behaviors And Child Outcomes Across 60 Countries"
+  url: https://globalfamilies.quarto.pub/parenting/  
 filters:
   - social-share
 share:
@@ -67,10 +77,7 @@ g <- list(showframe = TRUE,
           countrycolor = toRGB("grey"),
           showocean = TRUE,
           oceancolor = "white",
-          projection = list(type = 'orthographic',
-                            rotation = list(lon = -25,
-                                            lat = 0,
-                                            roll = 0)),
+          projection = list(type = 'robinson'),
           showland = TRUE,
           landcolor = toRGB("lightgrey"),
           bgcolor = "transparent")
@@ -328,6 +335,4 @@ Greater emphasis should be dedicated to reducing parental use of psychological a
 
 :::
 
-
-**Citation:** Ward, Kaitlin P, Andrew Grogan-Kaylor, Julie Ma, Garrett T Pace, and Shawna J Lee. 2023. "Associations Between 11 Parental Discipline Behaviors and Child Outcomes Across 60 Countries." 13(10), *BMJ Open*,  [https://bmjopen.bmj.com/content/13/10/e058439](https://bmjopen.bmj.com/content/13/10/e058439). 
 
