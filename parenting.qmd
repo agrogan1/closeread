@@ -16,12 +16,6 @@ bibliography: parenting.bib
 csl: apa.csl
 nocite: |
   @Ward2023
-citation:
-  author:
-    - name:
-        literal: Global Families Research Team
-  title: "Parenting and Child Development: Positive and Negative Parental Discipline Behaviors And Child Outcomes Across 60 Countries"
-  url: https://globalfamilies.quarto.pub/parenting/  
 filters:
   - social-share
 share:
