@@ -1,7 +1,9 @@
 ---
 title: "OJS Demo"
 subtitle: "A demonstration of using OJS in Quarto documents"
-author: "Andy Grogan-Kaylor"
+author: 
+  - name: "Andy Grogan-Kaylor"
+    url: https://agrogan1.github.io/
 date: "today"
 format:
   html:
