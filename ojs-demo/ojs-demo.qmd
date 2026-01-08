@@ -8,7 +8,6 @@ date: "today"
 format:
   html:
     theme: yeti
-    highlight-style: haddock
     code-fold: true
     code-summary: "Show the code"
     code-tools: true
