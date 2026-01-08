@@ -1,12 +1,21 @@
 ---
 title: "OJS Demo"
+subtitle: "A demonstration of using OJS in Quarto documents"
 author: "Andy Grogan-Kaylor"
 date: "today"
 format:
   html:
+    theme: yeti
+    highlight-style: haddock
     code-fold: true
     code-summary: "Show the code"
+    code-tools: true
+    lightbox: true
+    toc: true
+    number-sections: true
 ---
+
+# As An Example, Create The Data With R
 
 ```{r}
 #| label: mydata
@@ -29,12 +38,15 @@ write.csv(mydata, "mydata.csv")
 
 ```
 
+# Use *OJS* To Attach The Data
+
 ```{ojs}
 
 mydata = FileAttachment("mydata.csv").csv({ typed: true })
 
 ```
 
+# A First Simple Graph With OJS
 
 ```{ojs}
 //| fig-cap: "A simple model of the data:  the outcome gets worse as more of the intervention is provided."
@@ -50,6 +62,8 @@ Plot.plot({
 })
 ```
 
+# A More Complicated Graph With OJS
+
 ```{ojs}
 //| fig-cap: "A model of the data accounting for group membership:  the outcome improves when more of the intervention is provided."
 
@@ -63,5 +77,7 @@ Plot.plot({
   ]
 })
 ```
+
+
 
 
