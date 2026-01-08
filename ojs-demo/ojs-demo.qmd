@@ -40,7 +40,7 @@ write.csv(mydata, "mydata.csv")
 
 ```
 
-# Use *OJS* To Attach The Data
+# Use OJS To Attach The Data
 
 ```{ojs}
 
