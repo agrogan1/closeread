@@ -1,6 +1,8 @@
 ---
 title: "`closeread` Projects"
-author: "Andy Grogan-Kaylor"
+author: 
+  - name: "Andy Grogan-Kaylor"
+    url: https://agrogan1.github.io/
 date: "today"
 format: html
 ---
