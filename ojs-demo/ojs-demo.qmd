@@ -58,7 +58,7 @@ Plot.plot({
   symbol: {legend: true},
   marks: [
     Plot.dot(mydata, {x: "intervention", y: "outcome", fill: "black", r: 7, tip: true}),
-    Plot.linearRegressionY(mydata, {x: "intervention", y: "outcome"})
+    Plot.linearRegressionY(mydata, {x: "intervention", y: "outcome", strokeWidth: 3})
   ]
 })
 ```
@@ -74,7 +74,7 @@ Plot.plot({
   symbol: {legend: true},
   marks: [
     Plot.dot(mydata, {x: "intervention", y: "outcome", r: 7, fill: "group", symbol: "group", tip: true}),
-    Plot.linearRegressionY(mydata, {x: "intervention", y: "outcome", stroke: "group"})
+    Plot.linearRegressionY(mydata, {x: "intervention", y: "outcome", stroke: "group", strokeWidth: 3})
   ]
 })
 ```
