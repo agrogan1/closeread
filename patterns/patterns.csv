@@ -1,0 +1,15 @@
+Item,"Class 1
+High behavioral control","Class 2
+Moderate behavioral control","Class 3
+Lower behavioral control"
+Shouted at child,0.96,0.818,0.215
+Called child names,0.759,0.313,0.046
+Shook child,0.746,0.381,0.028
+Spanked child,0.881,0.497,0.071
+Hit/slapped child on arm/leg,0.822,0.251,0.027
+Hit child with object,0.593,0.193,0.031
+Hit/slapped child on face/head/ears,0.664,0.112,0.007
+Beat as hard as one could,0.282,0.022,0.003
+Took privileges away from child,0.687,0.528,0.247
+Explained why behavior was wrong,0.896,0.866,0.631
+Gave child something else to do,0.632,0.479,0.227
