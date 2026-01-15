@@ -1,4 +1,5 @@
-# When Empathy Helps and Hurts: Non-Linear Associations Between Early Childhood Maltreatment History, Empathy and Self-Harm Thoughts
+# When Empathy Helps and Hurts: 
+## Non-Linear Associations Between Early Childhood Maltreatment History, Empathy and Self-Harm Thoughts
 
 **Objective:** Child maltreatment is a well-established risk factor for self-harm, yet the affective processes underlying this association remain unclear. This study examines how empathy relates to the association between early childhood maltreatment and lifetime self-harm thoughts.
 
