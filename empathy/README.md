@@ -30,8 +30,6 @@ block
 
   style adulthood fill:#D3D3D3,stroke:#000000,stroke-width:2px,color:#000000;
 
-  linkStyle default fill:none,stroke-width:3px,stroke:red
-
 ```
 
 **Results:** Adults with early childhood maltreatment history were more likely to report self-harm thoughts than those without the history (χ² = 14.87, p < .01). A significant nonlinear association was observed between empathy and self-harm thoughts (edf = 2.14 χ² = 9.67, p = .02). 
