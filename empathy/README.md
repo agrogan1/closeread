@@ -15,5 +15,5 @@ block
   m space sh
   c   d   space
 
-m[maltreatment] --> sh["self harm thoughts"]
+m["maltreatment"] --> sh["self harm thoughts"]
 ```
