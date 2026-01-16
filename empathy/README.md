@@ -15,6 +15,6 @@ block
   m space sh
   c   e   space
 
-m["maltreatment"] --> sh["self harm thoughts"]
+m(("maltreatment")) --> sh["self harm thoughts"]
 e["empathy"] --> sh
 ```
