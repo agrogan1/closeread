@@ -15,9 +15,9 @@ block
   m space sh
   space   e   space
 
-  m(("maltreatment")) --> sh(("self harm thoughts"))
+  m("maltreatment") --> sh("self harm thoughts")
 
-  e(("empathy")) --> sh
+  e("empathy") --> sh
 
   style m fill:#9A3324,stroke:#000000,stroke-width:2px,color:#FFFFFF;
 
