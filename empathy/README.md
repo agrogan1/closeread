@@ -15,7 +15,7 @@ block
   m space sh
   space   e   space
 
-m(("maltreatment")) --> sh(("self harm thoughts"))
+m(("maltreatment")) --> sh(("self harm <br>thoughts"))
 
 e(("empathy")) --> sh
 ```
