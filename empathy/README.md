@@ -13,8 +13,9 @@
 block
   columns 3
   m space sh
-  c   e   space
+  space   e   space
 
-m(("maltreatment")) --> sh["self harm thoughts"]
-e["empathy"] --> sh
+m(("maltreatment")) --> sh(("self harm thoughts"))
+
+e(("empathy")) --> sh
 ```
