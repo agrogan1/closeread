@@ -19,6 +19,10 @@ block
 
   e(("empathy")) --> sh
 
-  style m fill:#636,stroke:#333,stroke-width:4px
+  style m fill:#9A3324,stroke:#000000,stroke-width:2px,color:#FFFFFF;
+
+  style e fill:#374EA2,stroke:#000000,stroke-width:2px,color:#FFFFFF;
+
+  style sh fill:#FFC20E,stroke:#000000,stroke-width:2px,color:#000000;
 
 ```
