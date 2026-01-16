@@ -15,6 +15,6 @@ block
   a space b
   c   d   sh
 
-a-->sh[self harm thoughts]
+a-->sh["self harm thoughts"]
 
 ```
