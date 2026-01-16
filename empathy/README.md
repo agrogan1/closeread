@@ -61,32 +61,8 @@ block
   style adulthood fill:#D3D3D3,stroke:#000000,stroke-width:2px,color:#000000;
 
 ```
+![three dimensional plot of results](empathy-vis-gam.png)
 
 **Conclusion:** While a moderate level of empathy can be protective from early childhood maltreatment, both low and high levels of empathy were associated with a greater risk for self-harm thoughts. Findings suggest the need to further investigate the role of empathy as a “risky strength” among adults.
 
-```mermaid
-block
-  columns 3
-  m space sh
-  space space space
-  space e space
-  space space space
-  childhood adolescence adulthood
 
-  m("maltreatment") --> sh("self harm thoughts")
-
-  e("empathy") --> sh
-
-  style m fill:#9A3324,stroke:#000000,stroke-width:2px,color:#FFFFFF;
-
-  style e fill:#374EA2,stroke:#000000,stroke-width:2px,color:#FFFFFF;
-
-  style sh fill:#FFC20E,stroke:#000000,stroke-width:2px,color:#000000;
-
-  style childhood fill:#D3D3D3,stroke:#000000,stroke-width:2px,color:#000000;
-
-  style adolescence fill:#D3D3D3,stroke:#000000,stroke-width:2px,color:#000000;
-
-  style adulthood fill:#D3D3D3,stroke:#000000,stroke-width:2px,color:#000000;
-
-```
