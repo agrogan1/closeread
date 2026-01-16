@@ -21,8 +21,6 @@ block
   
   classDef red fill:#9A3324,stroke:#000000,stroke-width:2px,color:#FFFFFF;
   
-  abuse[physical abuse]:::red --> |"???"| aggression[child aggression]:::yellow
-
   linkStyle 0 stroke:#000000,stroke-width:3px,font-size:36px,color:black;
 
   columns 3
