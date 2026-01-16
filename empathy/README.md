@@ -13,7 +13,8 @@
 block
   columns 3
   m space sh
-  c   d   space
+  c   e   space
 
 m["maltreatment"] --> sh["self harm thoughts"]
+e["empathy"] --> sh
 ```
