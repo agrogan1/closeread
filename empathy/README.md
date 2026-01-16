@@ -27,7 +27,7 @@ block
   m space sh
   space   e   space
 
-m(("maltreatment")):::red --> sh(("self harm <br>thoughts"))
+  m(("maltreatment")) --> sh(("self harm <br>thoughts"))
 
-e(("empathy")) --> sh
+  e(("empathy")) --> sh
 ```
