@@ -29,4 +29,8 @@ block
 
   style childhood fill:#989C97,stroke:#000000,stroke-width:2px,color:#000000;
 
+  style adolescence fill:#989C97,stroke:#000000,stroke-width:2px,color:#000000;
+
+  style adulthood fill:#989C97,stroke:#000000,stroke-width:2px,color:#000000;
+
 ```
