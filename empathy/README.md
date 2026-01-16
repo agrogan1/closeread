@@ -12,9 +12,8 @@
 ```mermaid
 block
   columns 3
-  a space b
-  c   d   sh
+  m space sh
+  c   d   space
 
-a-->sh["self harm thoughts"]
-
+m[maltreatment] --> sh["self harm thoughts"]
 ```
