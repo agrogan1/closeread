@@ -43,7 +43,7 @@ block
   space space space
   childhood adolescence adulthood
 
-  m("maltreatment") --> |increases| sh("self harm thoughts")
+  m("maltreatment") -- "X" --> sh("self harm thoughts")
 
   e("empathy") --> sh
 
