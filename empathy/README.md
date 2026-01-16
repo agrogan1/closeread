@@ -28,10 +28,10 @@ block
 
   style sh fill:#FFC20E,stroke:#000000,stroke-width:2px,color:#000000;
 
-  style childhood fill:#989C97,stroke:#000000,stroke-width:2px,color:#000000;
+  style childhood fill:#D3D3D3,stroke:#000000,stroke-width:2px,color:#000000;
 
-  style adolescence fill:#989C97,stroke:#000000,stroke-width:2px,color:#000000;
+  style adolescence fill:#D3D3D3,stroke:#000000,stroke-width:2px,color:#000000;
 
-  style adulthood fill:#989C97,stroke:#000000,stroke-width:2px,color:#000000;
+  style adulthood fill:#D3D3D3,stroke:#000000,stroke-width:2px,color:#000000;
 
 ```
