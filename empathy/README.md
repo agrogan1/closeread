@@ -13,7 +13,8 @@
 block
   columns 3
   m space sh
-  space   e   space
+  space space space
+  space e space
 
   m("maltreatment") --> sh("self harm thoughts")
 
