@@ -34,4 +34,6 @@ block
 
   style adulthood fill:#989C97,stroke:#000000,stroke-width:2px,color:#000000;
 
+  linkStyle 0,1 stroke:#000000,stroke-width:3px,font-size:36px,color:black;
+
 ```
