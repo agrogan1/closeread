@@ -43,9 +43,9 @@ block
   space space space
   childhood adolescence adulthood
 
-  m("maltreatment") -- "X" --> sh("self harm thoughts")
+  m("maltreatment") -- "increases" --> sh("self harm thoughts")
 
-  e("empathy") --> sh
+  e("empathy") -- "curvlinear relationship" --> sh
 
   style m fill:#9A3324,stroke:#000000,stroke-width:2px,color:#FFFFFF;
 
