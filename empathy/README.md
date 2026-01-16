@@ -13,7 +13,8 @@
 block
   columns 3
   a space b
-  c   d   sh[self harm thoughts]
+  c   d   sh
 
+sh[self harm thoughts]
 
 ```
