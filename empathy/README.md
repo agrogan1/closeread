@@ -45,7 +45,7 @@ block
 
   m("maltreatment") -- "increases" --> sh("self harm thoughts")
 
-  e("empathy") -- "curvlinear relationship" --> sh
+  e("empathy") -- "curvilinear <br>relationship" --> sh
 
   style m fill:#9A3324,stroke:#000000,stroke-width:2px,color:#FFFFFF;
 
