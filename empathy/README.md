@@ -64,6 +64,7 @@ block
 Predicted probabilities of self-harm thoughts were lowest at moderate levels of empathy for both groups. Risk for self-harm thoughts was highest among individuals with early childhood maltreatment history and low or high empathy.
 
 ![three dimensional plot of results](empathy-vis-gam.png)
+![self-harm thoughts by maltreatment and empathy](empathy-ggplot.png)
 
 **Conclusion:** While a moderate level of empathy can be protective from early childhood maltreatment, both low and high levels of empathy were associated with a greater risk for self-harm thoughts. Findings suggest the need to further investigate the role of empathy as a “risky strength” among adults.
 
