@@ -64,7 +64,7 @@ block
 
 There was an interesting and complex pattern of results.
 
-![overall results](overall.png)
+![overall results](overall.png | width=100)
 
 Adults with early childhood maltreatment history were more likely to report self-harm thoughts than those without the history (χ² = 14.87, p < .01). 
 
