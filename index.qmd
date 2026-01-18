@@ -15,6 +15,7 @@ format: html
 * [https://globalfamilies.quarto.pub/logarithms/](https://globalfamilies.quarto.pub/logarithms/) | ([simplified version](https://globalfamilies.quarto.pub/logarithms-simple/))
 * [https://globalfamilies.quarto.pub/normativeness-of-violence/](https://globalfamilies.quarto.pub/normativeness-of-violence/)
 * [https://agrogan1.github.io/closeread/triangulation/triangulation.html](https://agrogan1.github.io/closeread/triangulation/triangulation.html)
+* [https://agrogan1.github.io/closeread/empathy/empathy.html](https://agrogan1.github.io/closeread/empathy/empathy.html)
 
 Not a `closeread` document, but a tutorial on using *OJS*, which can be useful in `closeread` documents:  [https://agrogan1.github.io/closeread/ojs-demo/ojs-demo.html](https://agrogan1.github.io/closeread/ojs-demo/ojs-demo.html)
 
