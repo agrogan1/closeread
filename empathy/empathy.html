@@ -9,7 +9,7 @@
 <meta name="author" content="Sunghyun Hong">
 <meta name="author" content="Andy Grogan-Kaylor">
 <meta name="author" content="Todd Herrenkohl">
-<meta name="dcterms.date" content="2026-01-17">
+<meta name="dcterms.date" content="2026-01-19">
 
 <title>When Empathy Helps and Hurts</title>
 <style>
@@ -38,18 +38,36 @@ ul.task-list li input[type="checkbox"] {
 <script src="empathy_files/libs/bootstrap/bootstrap.min.js"></script>
 <link href="empathy_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="empathy_files/libs/bootstrap/bootstrap-81267100e462c21b3d6c0d5bf76a3417.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="empathy_files/libs/quarto-contrib/intersection-observer-polyfill-1.0.0/intersection-observer.js"></script>
+<script src="empathy_files/libs/quarto-contrib/scrollama-3.2.0/scrollama.min.js"></script>
+<script src="empathy_files/libs/quarto-contrib/closeread-0.1.0/closeread.js"></script>
 <script src="empathy_files/libs/quarto-diagram/mermaid.min.js"></script>
 <script src="empathy_files/libs/quarto-diagram/mermaid-init.js"></script>
 <link href="empathy_files/libs/quarto-diagram/mermaid.css" rel="stylesheet">
+<meta cr-debug-mode="false">
+<meta cr-remove-header-space="false">
 
 
+<link rel="stylesheet" href="_extensions/qmd-lab/closeread/closeread.css">
+<link rel="stylesheet" href="empathy.css">
 </head>
 
-<body class="fullcontent quarto-light">
+<body class="quarto-light">
 
-<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-full">
 
-<main class="content" id="quarto-document-content">
+<main class="content column-page" id="quarto-document-content">
+      <!-- user-provided yaml closeread style options -->
+      <style>
+        :root {
+          --cr-narrative-background-color-sidebar: white;
+--cr-section-background-color: white;
+--cr-narrative-background-color-overlay: lightgrey;
+--cr-narrative-text-color-sidebar: black;
+--cr-narrative-text-color-overlay: black;
+        }
+      </style>
+    
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
@@ -59,7 +77,7 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<div class="quarto-title-meta">
+<div class="quarto-title-meta column-page">
 
     <div>
     <div class="quarto-title-meta-heading">Authors</div>
@@ -73,7 +91,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">January 17, 2026</p>
+      <p class="date">January 19, 2026</p>
     </div>
   </div>
   
@@ -85,8 +103,60 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p><strong>Objective:</strong> Child maltreatment is a well-established risk factor for self-harm, yet the affective processes underlying this association remain unclear. This study examines how empathy relates to the association between early childhood maltreatment and lifetime self-harm thoughts.</p>
+<div class="cr-section cr-column-screen sidebar-left">
+<div class="narrative-col">
+<div class="trigger new-trigger" data-focus-on="cr-research-question">
+<div class="narrative">
+<p><strong>Objective:</strong> Child maltreatment is a well-established risk factor for self-harm, yet the affective processes underlying this association remain unclear.</p>
+<p>This study examines how empathy relates to the association between early childhood maltreatment and lifetime self-harm thoughts.</p>
+</div>
+</div>
+<div class="trigger new-trigger" data-focus-on="cr-method">
+<div class="narrative">
 <p><strong>Method:</strong> Data from 303 adults were stratified based on the presence or absence of maltreatment history in early childhood. Self-reports of lifetime self-harm thoughts in adulthood and empathy during adolescence were examined in both groups using generalized additive models to assess non-linear relationships. Models also controlled for respondents’ age, gender, and socio-economic status.</p>
+</div>
+</div>
+<div class="trigger new-trigger" data-focus-on="cr-overall">
+<div class="narrative">
+<p><strong>Results:</strong></p>
+<p>There was an interesting and complex pattern of results.</p>
+</div>
+</div>
+<div class="trigger new-trigger" data-focus-on="cr-maltreatment">
+<div class="narrative">
+<p>Adults with early childhood maltreatment history were more likely to report self-harm thoughts than those without the history (χ² = 14.87, p &lt; .01).</p>
+</div>
+</div>
+<div class="trigger new-trigger" data-focus-on="cr-empathy">
+<div class="narrative">
+<p>A significant nonlinear association was observed between empathy and self-harm thoughts (edf = 2.14 χ² = 9.67, p = .02).</p>
+</div>
+</div>
+<div class="trigger new-trigger" data-focus-on="cr-empathy" data-pan-to="-15%,-25%" data-scale-by="1.5">
+<div class="narrative">
+<p>Predicted probabilities of self-harm thoughts were lowest at moderate levels of empathy for both groups.</p>
+</div>
+</div>
+<div class="trigger new-trigger" data-focus-on="cr-empathy" data-pan-to="-45%,-5%" data-scale-by="1.5">
+<div class="narrative">
+<p>Risk for self-harm thoughts was highest among individuals with high empathy.</p>
+</div>
+</div>
+<div class="trigger new-trigger" data-focus-on="cr-empathy" data-pan-to="15%,-5%" data-scale-by="2.0">
+<div class="narrative">
+<p>Risk for self-harm thoughts was also somewhat high for individuals with low empathy.</p>
+</div>
+</div>
+<div class="trigger new-trigger" data-focus-on="cr-overall">
+<div class="narrative">
+<p><strong>Conclusion:</strong> While a moderate level of empathy can be protective from early childhood maltreatment, both low and high levels of empathy were associated with a greater risk for self-harm thoughts.</p>
+<p>Findings suggest the need to further investigate the role of empathy as a “risky strength” among adults.</p>
+</div>
+</div>
+</div>
+<div class="sticky-col">
+<div class="sticky-col-stack">
+<div id="cr-research-question" class="scale-to-fill center sticky">
 <div class="cell" data-layout-align="default">
 <div class="cell-output-display">
 <div>
@@ -136,39 +206,82 @@ ul.task-list li input[type="checkbox"] {
 
 </pre>
 </div>
-<p></p><figcaption> study design</figcaption> </figure><p></p>
+<p></p></figure><p></p>
 </div>
 </div>
 </div>
-<p><strong>Results:</strong></p>
-<p>There was an interesting and complex pattern of results.</p>
+</div>
+<div id="cr-method" class="scale-to-fill sticky">
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">flowchart LR
+  
+  subgraph maltreatment
+  
+  direction LR
+  
+  e1("empathy") --&gt; sh1("self harm thoughts")
+  
+  end
+  
+  subgraph nomaltreatment ["no maltreatment"]
+
+  direction LR
+  
+  e0("empathy") --&gt; sh0("self harm thoughts") 
+  
+  end
+  
+  style e0 fill:#374EA2,stroke:#000000,stroke-width:2px,color:#FFFFFF;
+
+  style e1 fill:#374EA2,stroke:#000000,stroke-width:2px,color:#FFFFFF;
+
+  style sh0 fill:#FFC20E,stroke:#000000,stroke-width:2px,color:#000000;
+  
+  style sh1 fill:#FFC20E,stroke:#000000,stroke-width:2px,color:#000000;
+
+  style maltreatment fill:#D9D9D9,stroke:#000000,stroke-width:2px,color:#000000;
+  
+  style nomaltreatment fill:#D9D9D9,stroke:#000000,stroke-width:2px,color:#000000;
+
+  linkStyle 0,1 stroke:#000000,stroke-width:3px,font-size:36px,color:black;
+
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+</div>
+<div id="cr-overall" class="scale-to-fill sticky">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="overall.png" class="img-fluid figure-img" style="width:80.0%"></p>
+<p><img src="overall.png" class="img-fluid figure-img"></p>
 <figcaption>overall results</figcaption>
 </figure>
 </div>
-<p>Adults with early childhood maltreatment history were more likely to report self-harm thoughts than those without the history (χ² = 14.87, p &lt; .01).</p>
+</div>
+<div id="cr-maltreatment" class="scale-to-fill sticky">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="maltreatment.png" class="img-fluid figure-img" style="width:80.0%"></p>
 <figcaption>maltreatment</figcaption>
 </figure>
 </div>
-<p>A significant nonlinear association was observed between empathy and self-harm thoughts (edf = 2.14 χ² = 9.67, p = .02).</p>
+</div>
+<div id="cr-empathy" class="scale-to-fill sticky">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="empathy.png" class="img-fluid figure-img" style="width:80.0%"></p>
 <figcaption>empathy</figcaption>
 </figure>
 </div>
-<p>Predicted probabilities of self-harm thoughts were lowest at moderate levels of empathy for both groups. Risk for self-harm thoughts was highest among individuals with high empathy. Risk for self-harm thoughts was nearly as high for individuals with low empathy.</p>
-<p><strong>Conclusion:</strong> While a moderate level of empathy can be protective from early childhood maltreatment, both low and high levels of empathy were associated with a greater risk for self-harm thoughts. Findings suggest the need to further investigate the role of empathy as a “risky strength” among adults.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="overall.png" class="img-fluid figure-img" style="width:80.0%"></p>
-<figcaption>overall results</figcaption>
-</figure>
+</div>
+</div>
+</div>
 </div>
 
 </main>
