@@ -15,9 +15,14 @@ format:
       narrative-background-color-sidebar: white
       section-background-color: white
 css: empathy.css
+from: markdown+emoji
 ---
 
 :::{.cr-section}
+
+:::{focus-on="cr-research-question"}
+<span style="font-size:55px;color:#E2231A;text-align:center;">:arrow_down:</span>
+:::
 
 :::{focus-on="cr-research-question"}
 # Objective
