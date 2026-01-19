@@ -60,11 +60,11 @@ ul.task-list li input[type="checkbox"] {
       <!-- user-provided yaml closeread style options -->
       <style>
         :root {
-          --cr-narrative-background-color-sidebar: white;
---cr-section-background-color: white;
+          --cr-section-background-color: white;
+--cr-narrative-text-color-overlay: black;
 --cr-narrative-background-color-overlay: lightgrey;
 --cr-narrative-text-color-sidebar: black;
---cr-narrative-text-color-overlay: black;
+--cr-narrative-background-color-sidebar: white;
         }
       </style>
     
@@ -124,25 +124,25 @@ ul.task-list li input[type="checkbox"] {
 </div>
 <div class="trigger new-trigger" data-focus-on="cr-maltreatment">
 <div class="narrative">
-<p>Adults with early childhood maltreatment history were more likely to report self-harm thoughts than those without the history (χ² = 14.87, p &lt; .01).</p>
+<p>Adults with early childhood maltreatment history were more likely to report self-harm thoughts than those without such a history.</p>
 </div>
 </div>
 <div class="trigger new-trigger" data-focus-on="cr-empathy">
 <div class="narrative">
-<p>A significant nonlinear association was observed between empathy and self-harm thoughts (edf = 2.14 χ² = 9.67, p = .02).</p>
+<p>A significant nonlinear association was observed between empathy and self-harm thoughts.</p>
 </div>
 </div>
-<div class="trigger new-trigger" data-focus-on="cr-empathy" data-pan-to="-15%,-25%" data-scale-by="1.5">
+<div class="trigger new-trigger" data-pan-to="-15%,-25%" data-scale-by="1.5" data-focus-on="cr-empathy">
 <div class="narrative">
 <p>Predicted probabilities of self-harm thoughts were lowest at moderate levels of empathy for both groups.</p>
 </div>
 </div>
-<div class="trigger new-trigger" data-focus-on="cr-empathy" data-pan-to="-45%,-5%" data-scale-by="1.5">
+<div class="trigger new-trigger" data-pan-to="-45%,-5%" data-scale-by="1.5" data-focus-on="cr-empathy">
 <div class="narrative">
 <p>Risk for self-harm thoughts was highest among individuals with high empathy.</p>
 </div>
 </div>
-<div class="trigger new-trigger" data-focus-on="cr-empathy" data-pan-to="15%,-5%" data-scale-by="2.0">
+<div class="trigger new-trigger" data-pan-to="15%,-5%" data-scale-by="2.0" data-focus-on="cr-empathy">
 <div class="narrative">
 <p>Risk for self-harm thoughts was also somewhat high for individuals with low empathy.</p>
 </div>
@@ -156,7 +156,7 @@ ul.task-list li input[type="checkbox"] {
 </div>
 <div class="sticky-col">
 <div class="sticky-col-stack">
-<div id="cr-research-question" class="scale-to-fill center sticky">
+<div id="cr-research-question" class="scale-to-fill sticky">
 <div class="cell" data-layout-align="default">
 <div class="cell-output-display">
 <div>
@@ -217,7 +217,7 @@ ul.task-list li input[type="checkbox"] {
 <div>
 <p></p><figure class="figure"><p></p>
 <div>
-<pre class="mermaid mermaid-js">flowchart LR
+<pre class="mermaid mermaid-js">flowchart TB
   
   subgraph maltreatment
   
@@ -243,7 +243,7 @@ ul.task-list li input[type="checkbox"] {
   
   style sh1 fill:#FFC20E,stroke:#000000,stroke-width:2px,color:#000000;
 
-  style maltreatment fill:#D9D9D9,stroke:#000000,stroke-width:2px,color:#000000;
+  style maltreatment fill:#9A3324,stroke:#000000,stroke-width:2px,color:#FFFFFF;
   
   style nomaltreatment fill:#D9D9D9,stroke:#000000,stroke-width:2px,color:#000000;
 

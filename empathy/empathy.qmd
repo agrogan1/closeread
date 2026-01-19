@@ -25,7 +25,7 @@ css: empathy.css
 This study examines how empathy relates to the association between early childhood maltreatment and lifetime self-harm thoughts.
 :::
 
-:::{#cr-research-question .scale-to-fill .center}
+:::{#cr-research-question .scale-to-fill}
 ```{mermaid}
 
 flowchart LR
@@ -80,7 +80,7 @@ flowchart LR
 :::{#cr-method .scale-to-fill}
 ```{mermaid}
 
-flowchart LR
+flowchart TB
   
   subgraph maltreatment
   
@@ -106,7 +106,7 @@ flowchart LR
   
   style sh1 fill:#FFC20E,stroke:#000000,stroke-width:2px,color:#000000;
 
-  style maltreatment fill:#D9D9D9,stroke:#000000,stroke-width:2px,color:#000000;
+  style maltreatment fill:#9A3324,stroke:#000000,stroke-width:2px,color:#FFFFFF;
   
   style nomaltreatment fill:#D9D9D9,stroke:#000000,stroke-width:2px,color:#000000;
 
@@ -114,7 +114,6 @@ flowchart LR
 
 ```
 :::
-
 
 
 :::{focus-on="cr-overall"}
@@ -128,7 +127,7 @@ There was an interesting and complex pattern of results.
 :::
 
 :::{focus-on="cr-maltreatment"}
-Adults with early childhood maltreatment history were more likely to report self-harm thoughts than those without the history (χ² = 14.87, p < .01). 
+Adults with early childhood maltreatment history were more likely to report self-harm thoughts than those without such a history.
 :::
 
 :::{#cr-maltreatment .scale-to-fill}
@@ -136,7 +135,7 @@ Adults with early childhood maltreatment history were more likely to report self
 :::
 
 :::{focus-on="cr-empathy"}
-A significant nonlinear association was observed between empathy and self-harm thoughts (edf = 2.14 χ² = 9.67, p = .02).
+A significant nonlinear association was observed between empathy and self-harm thoughts.
 :::
 
 :::{#cr-empathy .scale-to-fill}
