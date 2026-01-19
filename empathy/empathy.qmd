@@ -20,7 +20,9 @@ css: empathy.css
 :::{.cr-section}
 
 :::{focus-on="cr-research-question"}
-**Objective:** Child maltreatment is a well-established risk factor for self-harm, yet the affective processes underlying this association remain unclear. 
+# Objective
+
+Child maltreatment is a well-established risk factor for self-harm, yet the affective processes underlying this association remain unclear. 
 
 This study examines how empathy relates to the association between early childhood maltreatment and lifetime self-harm thoughts.
 :::
@@ -74,7 +76,9 @@ flowchart LR
 :::
 
 :::{focus-on="cr-method"}
-**Method:** Data from 303 adults were stratified based on the presence or absence of maltreatment history in early childhood. Self-reports of lifetime self-harm thoughts in adulthood and empathy during adolescence were examined in both groups using generalized additive models to assess non-linear relationships. Models also controlled for respondents' age, gender, and socio-economic status.
+# Method
+
+Data from 303 adults were stratified based on the presence or absence of maltreatment history in early childhood. Self-reports of lifetime self-harm thoughts in adulthood and empathy during adolescence were examined in both groups using generalized additive models to assess non-linear relationships. Models also controlled for respondents' age, gender, and socio-economic status.
 :::
 
 :::{#cr-method .scale-to-fill}
@@ -117,7 +121,7 @@ flowchart TB
 
 
 :::{focus-on="cr-overall"}
-**Results:** 
+# Results 
 
 There was an interesting and complex pattern of results.
 :::
@@ -155,7 +159,9 @@ Risk for self-harm thoughts was also somewhat high for individuals with low empa
 :::
 
 :::{focus-on="cr-overall"}
-**Conclusion:** While a moderate level of empathy can be protective from early childhood maltreatment, both low and high levels of empathy were associated with a greater risk for self-harm thoughts.
+# Conclusion
+
+While a moderate level of empathy can be protective from early childhood maltreatment, both low and high levels of empathy were associated with a greater risk for self-harm thoughts.
 
 Findings suggest the need to further investigate the role of empathy as a “risky strength” among adults.
 :::
