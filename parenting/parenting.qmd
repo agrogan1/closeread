@@ -4,6 +4,7 @@ subtitle: "Positive and Negative Parental Discipline Behaviors And Child Outcome
 author: 
   name: "Global Families Research Team" 
   url: https://globalfamilies.quarto.pub/global-families-project/
+date: "today"
 format: 
   closeread-html:
     cr-style:
