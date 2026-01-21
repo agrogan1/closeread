@@ -4,6 +4,11 @@ subtitle: "Non-Linear Associations Between Early Childhood Maltreatment History,
 author:   
   - Sunghyun Hong
   - Andy Grogan-Kaylor
+  - Moohyun Kim
+  - Anna Bender
+  - Shaddy Saba
+  - Chi-Lin Yu
+  - Lisa Fedina
   - Todd Herrenkohl
 date: "today"
 format: 
@@ -16,6 +21,21 @@ format:
       section-background-color: white
 css: empathy.css
 from: markdown+emoji
+filters:
+  - social-share
+  - highlight-text
+share:
+  permalink: "https://agrogan1.github.io/closeread/empathy/empathy.html"
+  description: "When Empathy Helps and Hurts"
+  twitter: false
+  facebook: true
+  reddit: true
+  stumble: false
+  tumblr: false
+  linkedin: true
+  email: true
+  mastodon: true
+  bsky: true
 ---
 
 :::{.cr-section}
