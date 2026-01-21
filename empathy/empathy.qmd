@@ -20,6 +20,8 @@ format:
       narrative-background-color-sidebar: white
       section-background-color: white
 css: empathy.css
+bibliography: empathy.bib
+csl: apa.csl
 from: markdown+emoji
 filters:
   - social-share
@@ -49,7 +51,7 @@ share:
 
 Child maltreatment is a well-established risk factor for self-harm, yet the affective processes underlying this association remain unclear. 
 
-This study examines how empathy relates to the association between early childhood maltreatment and lifetime self-harm thoughts.
+This study [@empathy] examines how empathy relates to the association between early childhood maltreatment and lifetime self-harm thoughts.
 :::
 
 :::{#cr-research-question .scale-to-fill}

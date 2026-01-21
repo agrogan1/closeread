@@ -29,7 +29,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="empathy_files/libs/clipboard/clipboard.min.js"></script>
@@ -67,9 +87,9 @@ ul.task-list li input[type="checkbox"] {
       <!-- user-provided yaml closeread style options -->
       <style>
         :root {
-          --cr-narrative-text-color-overlay: black;
+          --cr-narrative-text-color-sidebar: black;
 --cr-narrative-background-color-sidebar: white;
---cr-narrative-text-color-sidebar: black;
+--cr-narrative-text-color-overlay: black;
 --cr-narrative-background-color-overlay: lightgrey;
 --cr-section-background-color: white;
         }
@@ -126,7 +146,7 @@ ul.task-list li input[type="checkbox"] {
 <section id="objective" class="level1 narrative">
 <h1>Objective</h1>
 <p>Child maltreatment is a well-established risk factor for self-harm, yet the affective processes underlying this association remain unclear.</p>
-<p>This study examines how empathy relates to the association between early childhood maltreatment and lifetime self-harm thoughts.</p>
+<p>This study <span class="citation" data-cites="empathy">(<a href="#ref-empathy" role="doc-biblioref">Hong et al., n.d.</a>)</span> examines how empathy relates to the association between early childhood maltreatment and lifetime self-harm thoughts.</p>
 </section>
 </div>
 <div class="trigger new-trigger" data-focus-on="cr-method">
@@ -151,17 +171,17 @@ ul.task-list li input[type="checkbox"] {
 <p>A significant nonlinear association was observed between empathy and self-harm thoughts.</p>
 </div>
 </div>
-<div class="trigger new-trigger" data-focus-on="cr-empathy" data-pan-to="-15%,-25%" data-scale-by="1.5">
+<div class="trigger new-trigger" data-pan-to="-15%,-25%" data-scale-by="1.5" data-focus-on="cr-empathy">
 <div class="narrative">
 <p>Predicted probabilities of self-harm thoughts were lowest at moderate levels of empathy for both groups.</p>
 </div>
 </div>
-<div class="trigger new-trigger" data-focus-on="cr-empathy" data-pan-to="-45%,-5%" data-scale-by="1.5">
+<div class="trigger new-trigger" data-pan-to="-45%,-5%" data-scale-by="1.5" data-focus-on="cr-empathy">
 <div class="narrative">
 <p>Risk for self-harm thoughts was highest among individuals with high empathy.</p>
 </div>
 </div>
-<div class="trigger new-trigger" data-focus-on="cr-empathy" data-pan-to="15%,-5%" data-scale-by="2.0">
+<div class="trigger new-trigger" data-pan-to="15%,-5%" data-scale-by="2.0" data-focus-on="cr-empathy">
 <div class="narrative">
 <p>Risk for self-harm thoughts was also somewhat high for individuals with low empathy.</p>
 </div>
@@ -304,7 +324,12 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 
-</main>
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list">
+<div id="ref-empathy" class="csl-entry" role="listitem">
+Hong, S., Grogan-Kaylor, A., Kim, M., Bender, A., Saba, S., Yu, C.-L., Fedina, L., &amp; Herrenkohl, T. (n.d.). When empathy helps and hurts: Non-linear associations between early childhood maltreatment history, empathy and self-harm thoughts. <em>Child Maltreatment</em>.
+</div>
+</div></section></div></main>
 <!-- /main column -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
