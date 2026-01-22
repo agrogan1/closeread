@@ -32,9 +32,11 @@ config:
 
 flowchart LR
 
-  interventiongroup["intervention group"] --> intervention
+  interventiongroup["intervention group"] e1@==> intervention
 
   intervention[intervention] --> outcome[outcome]
+
+  e1@{ animate: true }
 
   linkStyle 0 stroke:#000000,stroke-width:3px,font-size:36px,color:black;
 
