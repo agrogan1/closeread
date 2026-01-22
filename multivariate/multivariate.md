@@ -32,11 +32,9 @@ config:
 
 flowchart LR
 
-  subgraph interventiongroup["intervention group"]
+  interventiongroup["intervention group"] --> intervention
 
-  end
-
-  intervention(intervention) --> outcome(outcome)
+  intervention[intervention] --> outcome[outcome)]
 
   linkStyle 0 stroke:#000000,stroke-width:3px,font-size:36px,color:black;
 
