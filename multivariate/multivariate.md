@@ -9,6 +9,13 @@ Yet evaluating such *interventions* or *programs* may be more difficult than it 
 Let's consider a simple evaluation of an *intervention* or *program* designed to improve mental health.
 
 ```mermaid
+graph TD;
+E[Review Pet Data] --> F{Dogs vs Cats data?};
+F -- "Dogs: 386, Cats: 85" --> G[Proceed with action];
+F -- "Other data" --> H[Re-evaluate];
+``` 
+
+```mermaid
 ---
 config:
   look: handDrawn
