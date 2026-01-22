@@ -1,6 +1,6 @@
 # Why Do We Need Multivariate Models To Evaluate Interventions?
 
-Across the world, there is a great deal of suffering. Many people have mental health issues or substance use. People often suffer the after effects of discrimination, poverty, trauma, violence or conflict.
+Across the world, there is a great deal of suffering. Many people have mental health issues or substance use issues. People often suffer the after effects of discrimination, poverty, trauma, violence or conflict.
 
 Understandably, many people and organizations try to develop *interventions* or *programs* for those who suffer from such difficulties. 
 
