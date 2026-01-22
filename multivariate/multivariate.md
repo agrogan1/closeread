@@ -34,9 +34,9 @@ flowchart LR
 
   interventiongroup["intervention group"] --> intervention
 
-  intervention[intervention] --> outcome[outcome]
+  intervention[intervention] --> outcome1[outcome]
 
-  comparisongroup["comparison group"] --> outcome
+  comparisongroup["comparison group"] --> outcome0[outcome]
 
   linkStyle 0 stroke:#000000,stroke-width:3px,font-size:36px,color:black;
 
