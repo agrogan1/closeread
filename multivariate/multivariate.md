@@ -4,11 +4,13 @@ Across the world, there is a great deal of suffering. Many people have mental he
 
 Understandably, many people and organizations try to develop *interventions* or *programs* for those who suffer from such difficulties. 
 
-Yet evaluating such *interventions* or *programs* may be more difficult than it appears.
+Yet evaluating such *programs* may be more difficult than it appears.
 
-Let's consider a simple evaluation of an *intervention* or *program* designed to improve mental health.
+Let's consider a simple evaluation of a *program* designed to improve mental health.
 
-In its simplest form, an evaluation might consist of having one group of people--an intervention group--participate in the *intervention* or *program*, while another group--a comparison group--does not participate in this intervention. We would then compare outcomes across the two groups.
+In its simplest form, an evaluation might consist of having one group of people--an intervention group--participate in the *intervention* or *program*, while another group--a comparison group--does not participate. We would then compare outcomes across the two groups.[^ethics]
+
+[^ethics]: Valid questions could be raised about the ethics of such an approach, specifically denying participation in the *program* to one group of people. If a program is of unknown benefit, it is *ethical* to evaluate this program with a comparison group approach, because it is *not yet known* whether the program confers benefit on its participants, and whether the program represents a valid use of time, energy and financial resources. Once a program has been established as beneficial, it would likely be *unethical* to conduct an evaluation where the program is withheld from some participants. 
 
 ```mermaid
 ---
