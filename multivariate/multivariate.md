@@ -19,6 +19,8 @@ flowchart LR
 
   intervention(intervention) --> outcome(outcome)
 
+  linkStyle 0 stroke:#000000,stroke-width:3px,font-size:36px,color:black;
+
 ```
 
 ```mermaid
@@ -33,6 +35,8 @@ flowchart LR
   intervention(intervention) --> outcome(outcome)
 
   group(group) --> outcome(outcome)
+
+  linkStyle 0,1 stroke:#000000,stroke-width:3px,font-size:36px,color:black;
 
 ```
 
