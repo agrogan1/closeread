@@ -9,6 +9,19 @@ Yet evaluating such *interventions* or *programs* may be more difficult than it 
 Let's consider a simple evaluation of an *intervention* or *program* designed to improve mental health.
 
 ```mermaid
+
+---
+config:
+  look: handDrawn
+---
+pie title Mermaid Hand-Drawn Pie Chart
+    "Slice A" : 40
+    "Slice B" : 30
+    "Slice C" : 20
+    "Slice D" : 10
+```
+
+```mermaid
 ---
 config:
   look: handDrawn
