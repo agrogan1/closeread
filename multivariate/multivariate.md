@@ -10,7 +10,7 @@ Let's consider a simple evaluation of a *program* designed to improve mental hea
 
 In its simplest form, an evaluation might consist of having one group of people--an intervention group--participate in the *intervention* or *program*, while another group--a comparison group--does not participate. We would then compare outcomes across the two groups.[^ethics]
 
-[^ethics]: Valid questions could be raised about the ethics of such an approach, specifically denying participation in the *program* to one group of people. If a program is of unknown benefit, it is *ethical* to evaluate this program with a comparison group approach, because it is *not yet known* whether the program confers benefit on its participants, and whether the program represents a valid use of time, energy and financial resources. Once a program has been established as beneficial, it would likely be *unethical* to conduct an evaluation where the program is withheld from some participants. 
+[^ethics]: Valid questions could be raised about the *ethics* of such an approach, specifically denying participation in the *program* to one group of people. If a program is of unknown benefit, it is *ethical* to evaluate this program with a comparison group approach, because it is *not yet known* whether the program confers benefit on its participants, and whether the program represents a valid use of time, energy and financial resources. Indeed, an evaluation might uncover the fact that the program has no beneficial effects, or even that the program is harmful! Once a program has been established as beneficial, it would likely be *unethical* to conduct an evaluation where the program is withheld from some participants. 
 
 ```mermaid
 ---
