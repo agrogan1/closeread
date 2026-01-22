@@ -8,20 +8,7 @@ Yet evaluating such *interventions* or *programs* may be more difficult than it 
 
 Let's consider a simple evaluation of an *intervention* or *program* designed to improve mental health.
 
-```mermaid
----
-config:
-  look: handDrawn
-  theme: neutral
----
-
-flowchart LR
-
-  A["Group A: 50%"]
-
-  B["Group B: 50%"]
-
-```
+In its simplest form, an evaluation might consist of having one group of people--an intervention group--participate in the *intervention* or *program*, while another group--a comparison group--does not participate in this intervention. We would then compare outcomes across the two groups.
 
 ```mermaid
 ---
@@ -41,6 +28,23 @@ flowchart LR
   linkStyle 0,1,2 stroke:#000000,stroke-width:3px,font-size:36px,color:black;
 
 ```
+
+```mermaid
+---
+config:
+  look: handDrawn
+  theme: neutral
+---
+
+flowchart LR
+
+  A["Group A: 50%"]
+
+  B["Group B: 50%"]
+
+```
+
+
 
 ```mermaid
 ---
