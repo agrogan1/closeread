@@ -9,6 +9,17 @@ Yet evaluating such *interventions* or *programs* may be more difficult than it 
 Let's consider a simple evaluation of an *intervention* or *program* designed to improve mental health.
 
 ```mermaid
+---
+config:
+  look: handDrawn
+  theme: neutral
+---
+pie title Groups In The Data
+    "A" : 50
+    "B" : 50
+```
+
+```mermaid
 graph TD;
 E[Review Pet Data] --> F{Dogs vs Cats data?};
 F -- "Dogs: 386, Cats: 85" --> G[Proceed with action];
