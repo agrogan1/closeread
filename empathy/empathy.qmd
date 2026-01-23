@@ -1,15 +1,9 @@
 ---
 title: "When Empathy Helps and Hurts"
 subtitle: "Non-Linear Associations Between Early Childhood Maltreatment History, Empathy and Self-Harm Thoughts"
-author:   
-  - Sunghyun Hong
-  - Andy Grogan-Kaylor
-  - Moohyun Kim
-  - Anna Bender
-  - Shaddy Saba
-  - Chi-Lin Yu
-  - Lisa Fedina
-  - Todd Herrenkohl
+author: 
+  - name: "Andy Grogan-Kaylor"
+    url: https://agrogan1.github.io/
 date: "today"
 format: 
   closeread-html:
