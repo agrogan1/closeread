@@ -31,7 +31,7 @@ flowchart LR
 
 ```
 
-One big question or concern in conducting an evaluation of this type is that our group of participants may be composed of different subgroups of individuals.
+One big question or concern in conducting an evaluation of this type is that our group of participants may be composed of different subgroups of individuals. These groups might be different in that they might repsresent individuals of different racial, ethnic or gender identities, might be people from different communities, or might have quite different sets of past experiences. 
 
 ```mermaid
 ---
