@@ -71,15 +71,19 @@ subgraph study["study participants"]
 
   end
 
-  A --> intervention
+  A --> interventiongroup["intervention group"]
 
-  B --> intervention
+  B --> interventiongroup["intervention group"]
 
-  A ---> outcome
+  interventiongroup["intervention group"] --> intervention
 
-  B ---> outcome
+  intervention[intervention] --> outcome1[outcome]
 
-  intervention[intervention] --> outcome[outcome]
+  A ---> comparisongroup
+
+  B ---> comparisongroup
+
+  comparisongroup["comparison group"] ---> outcome0[outcome]
 
   linkStyle 0,1 stroke:#000000,stroke-width:3px,font-size:36px,color:black;
 
