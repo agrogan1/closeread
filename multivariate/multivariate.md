@@ -79,9 +79,9 @@ subgraph study["study participants"]
 
   intervention[intervention] --> outcome1[outcome]
 
-  A ---> comparisongroup
+  A --> comparisongroup
 
-  B ---> comparisongroup
+  B --> comparisongroup
 
   comparisongroup["comparison group"] ---> outcome0[outcome]
 
