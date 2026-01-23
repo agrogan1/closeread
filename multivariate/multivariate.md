@@ -63,9 +63,23 @@ config:
 
 flowchart LR
 
-  intervention(intervention) --> outcome(outcome)
+subgraph study["study participants"]
 
-  group(group) --> outcome(outcome)
+  A["Group A: 100 people"]
+
+  B["Group B: 100 people"]
+
+  end
+
+  A --> intervention
+
+  B --> intervention
+
+  A ---> outcome
+
+  B ---> outcome
+
+  intervention[intervention] --> outcome[outcome]
 
   linkStyle 0,1 stroke:#000000,stroke-width:3px,font-size:36px,color:black;
 
