@@ -40,7 +40,7 @@ config:
   theme: neutral
 ---
 
-flowchart LR
+flowchart TB
 
   subgraph study["study participants"]
 
