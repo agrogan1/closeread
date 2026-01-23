@@ -31,6 +31,8 @@ flowchart LR
 
 ```
 
+One big question or concern in conducting an evaluation of this type is that our group of participants may be composed of different subgroups of individuals.
+
 ```mermaid
 ---
 config:
@@ -40,9 +42,13 @@ config:
 
 flowchart LR
 
-  A["Group A: 50%"]
+  subgraph study["study participants"]
 
-  B["Group B: 50%"]
+  A["Group A: 100 people"]
+
+  B["Group B: 100 people"]
+
+  end
 
 ```
 
