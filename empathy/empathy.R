@@ -6,6 +6,8 @@ library(haven) # read Stata
 
 # library(brms) # Bayes
 
+library(mgcv) # GAM
+
 library(sjPlot) # nice tables inc. for Bayes
 
 library(labelled) # work w labels
@@ -35,6 +37,8 @@ mydf <- ggpredict(mod_gam1,
                   terms = c("empathy",
                             "maltreat")) # dataframe of fit
 
+# plot 3d
+
 with(mydf, plot3d(x, 
                   group, 
                   predicted, 
@@ -46,3 +50,15 @@ with(mydf, plot3d(x,
 
 # with(iris, plot3d(Sepal.Length, Sepal.Width, Petal.Length, 
 #                   type="s", col=as.numeric(Species)))
+
+# plotly
+
+z_matrix <- xtabs(predicted ~ x + group, data = mydf)
+
+plot_ly(z = ~z_matrix) %>% 
+  add_surface()
+
+
+
+
+
