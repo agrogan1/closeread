@@ -18,11 +18,5 @@ h1.title, .title.h1 {
   }
 }
 
-.center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-} 
 
 
