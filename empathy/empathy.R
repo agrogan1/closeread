@@ -18,6 +18,8 @@ library(ggplot2) # beautiful graphs
 
 library(rgl) # 3D interactive graphs
 
+library(plotly) # 3D interactive graphs
+
 options(rgl.printRglwidget = TRUE) # display in RStudio viewer
 
 # get data
@@ -56,7 +58,8 @@ with(mydf, plot3d(x,
 z_matrix <- xtabs(predicted ~ x + group, data = mydf)
 
 plot_ly(z = ~z_matrix) %>% 
-  add_surface()
+  add_surface() %>%
+  layout(title = "Predicted Probability of Self Harm")
 
 
 
