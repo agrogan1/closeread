@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Andy Grogan-Kaylor">
-<meta name="dcterms.date" content="2026-01-23">
+<meta name="dcterms.date" content="2026-01-28">
 
 <title>Why Do We Need Multivariate Models To Evaluate Interventions?</title>
 <style>
@@ -36,7 +36,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="multivariate_files/libs/bootstrap/bootstrap.min.js"></script>
 <link href="multivariate_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="multivariate_files/libs/bootstrap/bootstrap-81267100e462c21b3d6c0d5bf76a3417.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
-<meta name="mermaid-theme" content="forest">
+<meta name="mermaid-theme" content="neutral">
 <script src="multivariate_files/libs/quarto-diagram/mermaid.min.js"></script>
 <script src="multivariate_files/libs/quarto-diagram/mermaid-init.js"></script>
 <link href="multivariate_files/libs/quarto-diagram/mermaid.css" rel="stylesheet">
@@ -69,7 +69,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">January 23, 2026</p>
+      <p class="date">January 28, 2026</p>
     </div>
   </div>
   
@@ -96,7 +96,7 @@ ul.task-list li input[type="checkbox"] {
 <pre class="mermaid mermaid-js">---
 config:
   look: handDrawn
-  theme: neutral
+  theme: default
 ---
 
 flowchart LR
@@ -104,6 +104,34 @@ flowchart LR
   interventiongroup["intervention group"] --&gt; intervention
 
   intervention[intervention] --&gt; outcome1[outcome]
+
+  comparisongroup["comparison group"] ---&gt; outcome0[outcome]
+
+  linkStyle 0,1,2 stroke:#000000,stroke-width:3px,font-size:36px,color:black;
+
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+<p>We hope that our results will show that those participants who have participated in the intervention group have better outcomes than those who were members of the comparison group.</p>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">---
+config:
+  look: handDrawn
+  theme: default
+---
+
+flowchart LR
+
+  interventiongroup["intervention group"] --&gt; intervention
+
+  intervention[intervention] --&gt; outcome1[better outcome]
 
   comparisongroup["comparison group"] ---&gt; outcome0[outcome]
 
@@ -124,7 +152,7 @@ flowchart LR
 <pre class="mermaid mermaid-js">---
 config:
   look: handDrawn
-  theme: neutral
+  theme: default
 ---
 
 flowchart TB
@@ -143,6 +171,7 @@ flowchart TB
 </div>
 </div>
 </div>
+<p>If participants from Group A and Group B are evenly distributed across the intervention and treatment groups, then we are not worried about the idea that an apparent effect of the intervention is because of unequal allocation of groups to the intervention.</p>
 <div class="cell" data-layout-align="default">
 <div class="cell-output-display">
 <div>
@@ -151,7 +180,7 @@ flowchart TB
 <pre class="mermaid mermaid-js">---
 config:
   look: handDrawn
-  theme: neutral
+  theme: default
 ---
 
 flowchart LR
@@ -164,21 +193,65 @@ subgraph study["study participants"]
 
   end
 
-  A --&gt; interventiongroup["intervention group"]
+  A --&gt; |"roughly 50"| interventiongroup["intervention group"]
 
-  B --&gt; interventiongroup["intervention group"]
+  B --&gt; |"roughly 50"| interventiongroup["intervention group"]
 
   interventiongroup["intervention group"] --&gt; intervention
 
   intervention[intervention] --&gt; outcome1[outcome]
 
-  A --&gt; comparisongroup
+  A --&gt; |"roughly 50"| comparisongroup
 
-  B --&gt; comparisongroup
+  B --&gt; |"roughly 50"| comparisongroup
 
   comparisongroup["comparison group"] ---&gt; outcome0[outcome]
 
-  linkStyle 0,1,2,3,4,5,6 stroke:#000000,stroke-width:3px,font-size:36px,color:black;
+  linkStyle 0,1,2,3,4,5,6 stroke:#000000,stroke-width:3px,font-size:14px,color:red;
+
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+<p>One way of accomplishing this <em>even distribution</em> would be by randomly assigning participants to the intervention.</p>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">---
+config:
+  look: handDrawn
+  theme: default
+---
+
+flowchart LR
+
+subgraph study["study participants"]
+
+  A["Group A: 100 people"]
+
+  B["Group B: 100 people"]
+
+  end
+
+  A --&gt; |"roughly 50 RANDOMLY ASSIGNED"| interventiongroup["intervention group"]
+
+  B --&gt; |"roughly 50 RANDOMLY ASSIGNED"| interventiongroup["intervention group"]
+
+  interventiongroup["intervention group"] --&gt; intervention
+
+  intervention[intervention] --&gt; outcome1[outcome]
+
+  A --&gt; |"roughly 50 RANDOMLY ASSIGNED"| comparisongroup
+
+  B --&gt; |"roughly 50 RANDOMLY ASSIGNED"| comparisongroup
+
+  comparisongroup["comparison group"] ---&gt; outcome0[outcome]
+
+  linkStyle 0,1,2,3,4,5,6 stroke:#000000,stroke-width:3px,font-size:14px,color:red;
 
 </pre>
 </div>
@@ -192,7 +265,7 @@ subgraph study["study participants"]
 <div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
 
 <ol>
-<li id="fn1"><p>Valid questions could be raised about the <em>ethics</em> of such an approach, specifically denying participation in the <em>program</em> to one group of people. If a program is of unknown benefit, it is <em>ethical</em> to evaluate this program with a comparison group approach, because it is <em>not yet known</em> whether the program confers benefit on its participants, and whether the program represents a valid use of time, energy and financial resources. Indeed, an evaluation might uncover the fact that the program has no beneficial effects, or even that the program is harmful! Once a program has been established as beneficial, it would likely be <em>unethical</em> to conduct an evaluation where the program is withheld from some participants.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn1"><p>Valid questions could be raised about the <em>ethics</em> of such an approach, specifically denying participation in the <em>program</em> to one group of people. If a program is of <em>unknown</em> benefit, it is <em>ethical</em> to evaluate this program with a comparison group approach, because it is <em>not yet known</em> whether the program confers benefit on its participants, and whether the program represents a valid use of time, energy and financial resources, or whether the program is a waste of resources, and of participant’s time. Indeed, an evaluation might uncover the fact that the program has no beneficial effects, or even that the program is harmful! Once a program has been established as <em>beneficial</em>, it would likely be <em>unethical</em> to conduct an evaluation where the program is withheld from some participants. However, we could then consider a comparison of the program with an enhanced version of the program that might confer even more benefits.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 </ol>
 </section></div></main>
 <!-- /main column -->

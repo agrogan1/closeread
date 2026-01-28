@@ -6,7 +6,7 @@ author:
 date: "today"
 format: html
 mermaid:
-  theme: forest
+  theme: neutral
 ---
 
 # Introduction
@@ -21,13 +21,13 @@ Let's consider a simple evaluation of a *program* designed to improve mental hea
 
 In its simplest form, an evaluation might consist of having one group of people--an *intervention group*--participate in the or *program*, while another group--a comparison group--does not participate. We would then compare outcomes across the two groups.[^ethics]
 
-[^ethics]: Valid questions could be raised about the *ethics* of such an approach, specifically denying participation in the *program* to one group of people. If a program is of unknown benefit, it is *ethical* to evaluate this program with a comparison group approach, because it is *not yet known* whether the program confers benefit on its participants, and whether the program represents a valid use of time, energy and financial resources. Indeed, an evaluation might uncover the fact that the program has no beneficial effects, or even that the program is harmful! Once a program has been established as beneficial, it would likely be *unethical* to conduct an evaluation where the program is withheld from some participants. 
+[^ethics]: Valid questions could be raised about the *ethics* of such an approach, specifically denying participation in the *program* to one group of people. If a program is of *unknown* benefit, it is *ethical* to evaluate this program with a comparison group approach, because it is *not yet known* whether the program confers benefit on its participants, and whether the program represents a valid use of time, energy and financial resources, or whether the program is a waste of resources, and of participant's time. Indeed, an evaluation might uncover the fact that the program has no beneficial effects, or even that the program is harmful! Once a program has been established as *beneficial*, it would likely be *unethical* to conduct an evaluation where the program is withheld from some participants. However, we could then consider a comparison of the program with an enhanced version of the program that might confer even more benefits.
 
 ```{mermaid}
 ---
 config:
   look: handDrawn
-  theme: neutral
+  theme: default
 ---
 
 flowchart LR
@@ -42,13 +42,34 @@ flowchart LR
 
 ```
 
+We hope that our results will show that those participants who have participated in the intervention group have better outcomes than those who were members of the comparison group.
+
+```{mermaid}
+---
+config:
+  look: handDrawn
+  theme: default
+---
+
+flowchart LR
+
+  interventiongroup["intervention group"] --> intervention
+
+  intervention[intervention] --> outcome1[better outcome]
+
+  comparisongroup["comparison group"] ---> outcome0[outcome]
+
+  linkStyle 0,1,2 stroke:#000000,stroke-width:3px,font-size:36px,color:black;
+
+```
+
 One big question or concern in conducting an evaluation of this type is that our group of participants may be composed of different subgroups of individuals. These groups might be different in that they might repsresent individuals of different racial, ethnic or gender identities, might be people from different communities, or might have quite different sets of past experiences. 
 
 ```{mermaid}
 ---
 config:
   look: handDrawn
-  theme: neutral
+  theme: default
 ---
 
 flowchart TB
@@ -63,13 +84,13 @@ flowchart TB
 
 ```
 
-
+If participants from Group A and Group B are evenly distributed across the intervention and treatment groups, then we are not worried about the idea that an apparent effect of the intervention is because of unequal allocation of groups to the intervention.
 
 ```{mermaid}
 ---
 config:
   look: handDrawn
-  theme: neutral
+  theme: default
 ---
 
 flowchart LR
@@ -82,21 +103,60 @@ subgraph study["study participants"]
 
   end
 
-  A --> interventiongroup["intervention group"]
+  A --> |"roughly 50"| interventiongroup["intervention group"]
 
-  B --> interventiongroup["intervention group"]
+  B --> |"roughly 50"| interventiongroup["intervention group"]
 
   interventiongroup["intervention group"] --> intervention
 
   intervention[intervention] --> outcome1[outcome]
 
-  A --> comparisongroup
+  A --> |"roughly 50"| comparisongroup
 
-  B --> comparisongroup
+  B --> |"roughly 50"| comparisongroup
 
   comparisongroup["comparison group"] ---> outcome0[outcome]
 
-  linkStyle 0,1,2,3,4,5,6 stroke:#000000,stroke-width:3px,font-size:36px,color:black;
+  linkStyle 0,1,2,3,4,5,6 stroke:#000000,stroke-width:3px,font-size:14px,color:red;
 
 ```
+
+One way of accomplishing this *even distribution* would be by randomly assigning participants to the intervention.
+
+```{mermaid}
+---
+config:
+  look: handDrawn
+  theme: default
+---
+
+flowchart LR
+
+subgraph study["study participants"]
+
+  A["Group A: 100 people"]
+
+  B["Group B: 100 people"]
+
+  end
+
+  A --> |"roughly 50 RANDOMLY ASSIGNED"| interventiongroup["intervention group"]
+
+  B --> |"roughly 50 RANDOMLY ASSIGNED"| interventiongroup["intervention group"]
+
+  interventiongroup["intervention group"] --> intervention
+
+  intervention[intervention] --> outcome1[outcome]
+
+  A --> |"roughly 50 RANDOMLY ASSIGNED"| comparisongroup
+
+  B --> |"roughly 50 RANDOMLY ASSIGNED"| comparisongroup
+
+  comparisongroup["comparison group"] ---> outcome0[outcome]
+
+  linkStyle 0,1,2,3,4,5,6 stroke:#000000,stroke-width:3px,font-size:14px,color:red;
+
+```
+
+
 
