@@ -13,13 +13,61 @@ mermaid:
 
 Across the world, there is a great deal of suffering. Many people have mental health issues or substance use issues. People often suffer the after effects of discrimination, poverty, trauma, violence or conflict.
 
+```{r}
+#| echo: false
+#| message: false
+
+library(rnaturalearth) # natural earth data
+
+library(ggplot2) # beautiful maps
+
+library(dplyr) # data wrangling
+
+library(sf) # simple (spatial) features
+
+# library(patchwork) # stitch ggplots together
+
+mapdata <- ne_countries(scale = "medium", # medium scale
+                        returnclass = "sf") # as sf object
+
+mymap <- ggplot(mapdata) + # the data I am mapping
+  geom_sf() + # the geometry I am using
+  theme_minimal() +
+  theme(axis.text.x = element_blank())
+
+mymap + coord_sf(crs="+proj=robin") # Robinson projection
+
+```
+
 Understandably, many people and organizations try to develop *interventions* or *programs* for those who suffer from such difficulties. 
 
 Yet evaluating such *programs* may be more difficult than it appears.
 
 Let's consider a simple evaluation of a *program* designed to improve mental health.
 
-In its simplest form, an evaluation might consist of having one group of people--an *intervention group*--participate in the or *program*, while another group--a comparison group--does not participate. We would then compare outcomes across the two groups.[^ethics]
+In its simplest form, an evaluation might consist of looking at the outcomes--e.g. mental health outcomes--for those who participate in an *intervention*.
+
+```{mermaid}
+---
+config:
+  look: handDrawn
+  theme: default
+---
+
+flowchart LR
+
+  intervention[intervention] --> outcome1[outcome]
+
+  linkStyle 0 stroke:#000000,stroke-width:3px,font-size:36px,color:black;
+
+```
+
+However, we might wonder, or worry, about a number of issues. For example:
+
+* What were the outcomes like for this group of people *before* they participated in the *intervention*?
+* If the outcomes of the *intervention* were favorable, it might not be that the intervention is particularly better, but that people improve or get better *naturally* over time. 
+
+Therefore a more sophisticated research design would be to have one group of people--an *intervention group*--participate in the *intervention* or *program*, while another group--a comparison group--does not participate. We would then compare outcomes across the two groups.[^ethics]
 
 [^ethics]: Valid questions could be raised about the *ethics* of such an approach, specifically denying participation in the *program* to one group of people. If a program is of *unknown* benefit, it is *ethical* to evaluate this program with a comparison group approach, because it is *not yet known* whether the program confers benefit on its participants, and whether the program represents a valid use of time, energy and financial resources, or whether the program is a waste of resources, and of participant's time. Indeed, an evaluation might uncover the fact that the program has no beneficial effects, or even that the program is harmful! Once a program has been established as *beneficial*, it would likely be *unethical* to conduct an evaluation where the program is withheld from some participants. However, we could then consider a comparison of the program with an enhanced version of the program that might confer even more benefits.
 

@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Andy Grogan-Kaylor">
-<meta name="dcterms.date" content="2026-01-28">
+<meta name="dcterms.date" content="2026-02-03">
 
 <title>Why Do We Need Multivariate Models To Evaluate Interventions?</title>
 <style>
@@ -69,7 +69,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">January 28, 2026</p>
+      <p class="date">February 3, 2026</p>
     </div>
   </div>
   
@@ -84,10 +84,48 @@ ul.task-list li input[type="checkbox"] {
 <section id="introduction" class="level1">
 <h1>Introduction</h1>
 <p>Across the world, there is a great deal of suffering. Many people have mental health issues or substance use issues. People often suffer the after effects of discrimination, poverty, trauma, violence or conflict.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="multivariate_files/figure-html/unnamed-chunk-1-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
 <p>Understandably, many people and organizations try to develop <em>interventions</em> or <em>programs</em> for those who suffer from such difficulties.</p>
 <p>Yet evaluating such <em>programs</em> may be more difficult than it appears.</p>
 <p>Let’s consider a simple evaluation of a <em>program</em> designed to improve mental health.</p>
-<p>In its simplest form, an evaluation might consist of having one group of people–an <em>intervention group</em>–participate in the or <em>program</em>, while another group–a comparison group–does not participate. We would then compare outcomes across the two groups.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
+<p>In its simplest form, an evaluation might consist of looking at the outcomes–e.g.&nbsp;mental health outcomes–for those who participate in an <em>intervention</em>.</p>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">---
+config:
+  look: handDrawn
+  theme: default
+---
+
+flowchart LR
+
+  intervention[intervention] --&gt; outcome1[outcome]
+
+  linkStyle 0 stroke:#000000,stroke-width:3px,font-size:36px,color:black;
+
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+<p>However, we might wonder, or worry, about a number of issues. For example:</p>
+<ul>
+<li>What were the outcomes like for this group of people <em>before</em> they participated in the <em>intervention</em>?</li>
+<li>If the outcomes of the <em>intervention</em> were favorable, it might not be that the intervention is particularly better, but that people improve or get better <em>naturally</em> over time.</li>
+</ul>
+<p>Therefore a more sophisticated research design would be to have one group of people–an <em>intervention group</em>–participate in the <em>intervention</em> or <em>program</em>, while another group–a comparison group–does not participate. We would then compare outcomes across the two groups.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
 <div class="cell" data-layout-align="default">
 <div class="cell-output-display">
 <div>
