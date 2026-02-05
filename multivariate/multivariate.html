@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Andy Grogan-Kaylor">
-<meta name="dcterms.date" content="2026-02-03">
+<meta name="dcterms.date" content="2026-02-05">
 
 <title>Why Do We Need Multivariate Models To Evaluate Interventions?</title>
 <style>
@@ -44,10 +44,27 @@ ul.task-list li input[type="checkbox"] {
 
 </head>
 
-<body class="fullcontent quarto-light">
+<body class="quarto-light">
 
 <div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
-
+<div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+  <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction"><span class="header-section-number">1</span> Introduction</a></li>
+  <li><a href="#a-simple-evaluation" id="toc-a-simple-evaluation" class="nav-link" data-scroll-target="#a-simple-evaluation"><span class="header-section-number">2</span> A Simple Evaluation</a></li>
+  <li><a href="#our-worry" id="toc-our-worry" class="nav-link" data-scroll-target="#our-worry"><span class="header-section-number">3</span> Our Worry</a></li>
+  <li><a href="#a-more-sophisticated-evaluation" id="toc-a-more-sophisticated-evaluation" class="nav-link" data-scroll-target="#a-more-sophisticated-evaluation"><span class="header-section-number">4</span> A More Sophisticated Evaluation</a></li>
+  <li><a href="#different-subgroups-of-individuals" id="toc-different-subgroups-of-individuals" class="nav-link" data-scroll-target="#different-subgroups-of-individuals"><span class="header-section-number">5</span> Different Subgroups of Individuals</a></li>
+  <li><a href="#are-those-in-the-intervention-group-and-comparison-group-similar" id="toc-are-those-in-the-intervention-group-and-comparison-group-similar" class="nav-link" data-scroll-target="#are-those-in-the-intervention-group-and-comparison-group-similar"><span class="header-section-number">6</span> Are Those In the Intervention Group And Comparison Group Similar?</a></li>
+  <li><a href="#random-assignment" id="toc-random-assignment" class="nav-link" data-scroll-target="#random-assignment"><span class="header-section-number">7</span> Random Assignment</a></li>
+  <li><a href="#random-assignment-is-sometimes-not-possible" id="toc-random-assignment-is-sometimes-not-possible" class="nav-link" data-scroll-target="#random-assignment-is-sometimes-not-possible"><span class="header-section-number">8</span> Random Assignment Is Sometimes Not Possible</a></li>
+  <li><a href="#when-participants-choose-their-own-level-of-particpation" id="toc-when-participants-choose-their-own-level-of-particpation" class="nav-link" data-scroll-target="#when-participants-choose-their-own-level-of-particpation"><span class="header-section-number">9</span> When Participants Choose Their Own Level Of Particpation</a></li>
+  <li><a href="#what-to-do" id="toc-what-to-do" class="nav-link" data-scroll-target="#what-to-do"><span class="header-section-number">10</span> What To Do?</a></li>
+  </ul>
+</nav>
+</div>
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
@@ -69,7 +86,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">February 3, 2026</p>
+      <p class="date">February 5, 2026</p>
     </div>
   </div>
   
@@ -81,8 +98,8 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="introduction" class="level1">
-<h1>Introduction</h1>
+<section id="introduction" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> Introduction</h1>
 <p>Across the world, there is a great deal of suffering. Many people have mental health issues or substance use issues. People often suffer the after effects of discrimination, poverty, trauma, violence or conflict.</p>
 <div class="cell">
 <div class="cell-output-display">
@@ -95,6 +112,9 @@ ul.task-list li input[type="checkbox"] {
 </div>
 <p>Understandably, many people and organizations try to develop <em>interventions</em> or <em>programs</em> for those who suffer from such difficulties.</p>
 <p>Yet evaluating such <em>programs</em> may be more difficult than it appears.</p>
+</section>
+<section id="a-simple-evaluation" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> A Simple Evaluation</h1>
 <p>Let’s consider a simple evaluation of a <em>program</em> designed to improve mental health.</p>
 <p>In its simplest form, an evaluation might consist of looking at the outcomes–e.g.&nbsp;mental health outcomes–for those who participate in an <em>intervention</em>.</p>
 <div class="cell" data-layout-align="default">
@@ -120,12 +140,18 @@ flowchart LR
 </div>
 </div>
 </div>
+</section>
+<section id="our-worry" class="level1" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> Our Worry</h1>
 <p>However, we might wonder, or worry, about a number of issues. For example:</p>
 <ul>
 <li>What were the outcomes like for this group of people <em>before</em> they participated in the <em>intervention</em>?</li>
 <li>If the outcomes of the <em>intervention</em> were favorable, it might not be that the intervention is particularly better, but that people improve or get better <em>naturally</em> over time.</li>
 </ul>
-<p>Therefore a more sophisticated research design would be to have one group of people–an <em>intervention group</em>–participate in the <em>intervention</em> or <em>program</em>, while another group–a comparison group–does not participate. We would then compare outcomes across the two groups.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
+</section>
+<section id="a-more-sophisticated-evaluation" class="level1" data-number="4">
+<h1 data-number="4"><span class="header-section-number">4</span> A More Sophisticated Evaluation</h1>
+<p>Therefore a more sophisticated research design would be to have one group of people–an <em>intervention group</em>–participate in the <em>intervention</em> or <em>program</em>, while another group–a <em>comparison</em> group–does not participate. We would then compare outcomes across the two groups.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
 <div class="cell" data-layout-align="default">
 <div class="cell-output-display">
 <div>
@@ -169,19 +195,26 @@ flowchart LR
 
   interventiongroup["intervention group"] --&gt; intervention
 
-  intervention[intervention] --&gt; outcome1[better outcome]
+  intervention[intervention] --&gt; outcome1[better outcome]:::springgreen
 
   comparisongroup["comparison group"] ---&gt; outcome0[outcome]
 
   linkStyle 0,1,2 stroke:#000000,stroke-width:3px,font-size:36px,color:black;
 
+  classDef green fill:#80BD41,stroke:#000000,stroke-width:2px,color:#000000;
+  
+  classDef springgreen fill:#00FF7F,stroke:#000000,stroke-width:2px,color:#000000;
+  
 </pre>
 </div>
 <p></p></figure><p></p>
 </div>
 </div>
 </div>
-<p>One big question or concern in conducting an evaluation of this type is that our group of participants may be composed of different subgroups of individuals. These groups might be different in that they might repsresent individuals of different racial, ethnic or gender identities, might be people from different communities, or might have quite different sets of past experiences.</p>
+</section>
+<section id="different-subgroups-of-individuals" class="level1" data-number="5">
+<h1 data-number="5"><span class="header-section-number">5</span> Different Subgroups of Individuals</h1>
+<p>One big question or concern in conducting an evaluation of this type is that our group of participants may be composed of different subgroups of individuals. These groups might be different in that they might repsresent individuals of different <em>racial</em>, <em>ethnic</em> or <em>gender</em> identities, might be people from different communities, or might have quite different sets of past experiences.</p>
 <div class="cell" data-layout-align="default">
 <div class="cell-output-display">
 <div>
@@ -209,6 +242,9 @@ flowchart TB
 </div>
 </div>
 </div>
+</section>
+<section id="are-those-in-the-intervention-group-and-comparison-group-similar" class="level1" data-number="6">
+<h1 data-number="6"><span class="header-section-number">6</span> Are Those In the Intervention Group And Comparison Group Similar?</h1>
 <p>If participants from Group A and Group B are evenly distributed across the intervention and treatment groups, then we are not worried about the idea that an apparent effect of the intervention is because of unequal allocation of groups to the intervention.</p>
 <div class="cell" data-layout-align="default">
 <div class="cell-output-display">
@@ -253,7 +289,10 @@ subgraph study["study participants"]
 </div>
 </div>
 </div>
-<p>One way of accomplishing this <em>even distribution</em> would be by randomly assigning participants to the intervention.</p>
+</section>
+<section id="random-assignment" class="level1" data-number="7">
+<h1 data-number="7"><span class="header-section-number">7</span> Random Assignment</h1>
+<p>One way of accomplishing this <em>even distribution</em> would be by <em>randomly</em> assigning participants to the intervention.</p>
 <div class="cell" data-layout-align="default">
 <div class="cell-output-display">
 <div>
@@ -297,6 +336,94 @@ subgraph study["study participants"]
 </div>
 </div>
 </div>
+</section>
+<section id="random-assignment-is-sometimes-not-possible" class="level1" data-number="8">
+<h1 data-number="8"><span class="header-section-number">8</span> Random Assignment Is Sometimes Not Possible</h1>
+<p>However, often the nature of the <em>intervention</em> is such that we want to allow <em>participants</em> in the study to <em>select their own level of participation</em>, or non-participation, in the intervention.</p>
+<p>Often funders have objections to random assignment. Or the individuals or communities who are participating may have objections to random assignment.</p>
+</section>
+<section id="when-participants-choose-their-own-level-of-particpation" class="level1" data-number="9">
+<h1 data-number="9"><span class="header-section-number">9</span> When Participants Choose Their Own Level Of Particpation</h1>
+<p>If <em>participants</em> select their own participation, then it is likely that many background characteristics of participants–such as their age, gender, socio-economic resources, and motivation–will affect their decision to participate, and their level of participation.</p>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">---
+config:
+  look: handDrawn
+  theme: default
+---
+
+flowchart LR
+
+participation{participation &lt;br&gt;decision}
+
+age --&gt; participation
+
+gender --&gt; participation
+
+ses["socio-economic status"] --&gt; participation
+
+motivation --&gt; participation
+
+background --&gt; participation
+
+history --&gt; participation
+
+participation --&gt; interventiongroup["intervention group"]
+
+participation --&gt; comparisongroup["comparison group"]
+
+interventiongroup --&gt; intervention
+
+intervention[intervention] --&gt; outcome1[outcome]
+
+comparisongroup["comparison group"] ---&gt; outcome0[outcome]
+
+  linkStyle 0,1,2,3,4,5,6,7,8,9,10 stroke:#000000,stroke-width:3px,font-size:36px,color:black;
+
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+<p>If, for example, <em>more motivated individuals</em> and those with <em>more socio-economic resources</em> are the ones who choose to participate in the intervention, then any better outcomes might <span class="light-content" style="color: #FF0000;"><strong>not</strong></span> be the result of the <em>intervention</em>, but a result of the <em>characteristics of individuals who chose to participate</em>.</p>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">---
+config:
+  look: handDrawn
+  theme: default
+---
+
+flowchart LR
+
+  interventiongroup["intervention group &lt;br&gt;(more motivated &lt;br&gt;better SES)"]:::springgreen --&gt; intervention
+
+  intervention[intervention] --&gt; outcome1[better outcome]:::springgreen
+
+  comparisongroup["comparison group"] ---&gt; outcome0[outcome]
+
+  linkStyle 0,1,2 stroke:#000000,stroke-width:3px,font-size:36px,color:black;
+
+  classDef springgreen fill:#00FF7F,stroke:#000000,stroke-width:2px,color:#000000;
+  
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+</section>
+<section id="what-to-do" class="level1" data-number="10">
+<h1 data-number="10"><span class="header-section-number">10</span> What To Do?</h1>
+<p><em>Accounting for</em>, <em>ruling out</em>, or <em>controlling for</em> these background factors is one of the major reasons we use statistics.</p>
 </section>
 
 

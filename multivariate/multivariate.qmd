@@ -4,9 +4,14 @@ author:
   - name: "Andy Grogan-Kaylor"
     url: https://agrogan1.github.io/
 date: "today"
-format: html
+format: 
+  html:
+    toc: true
+    number-sections: true
 mermaid:
   theme: neutral
+filters:
+  - highlight-text
 ---
 
 # Introduction
@@ -31,9 +36,10 @@ mapdata <- ne_countries(scale = "medium", # medium scale
                         returnclass = "sf") # as sf object
 
 mymap <- ggplot(mapdata) + # the data I am mapping
-  geom_sf() + # the geometry I am using
+  geom_sf(fill = "#fff4dd") + # the geometry I am using
   theme_minimal() +
-  theme(axis.text.x = element_blank())
+  theme(axis.text.x = element_blank(),
+        panel.background = element_rect(fill = "#ECECFF"))
 
 mymap + coord_sf(crs="+proj=robin") # Robinson projection
 
@@ -42,6 +48,8 @@ mymap + coord_sf(crs="+proj=robin") # Robinson projection
 Understandably, many people and organizations try to develop *interventions* or *programs* for those who suffer from such difficulties. 
 
 Yet evaluating such *programs* may be more difficult than it appears.
+
+# A Simple Evaluation
 
 Let's consider a simple evaluation of a *program* designed to improve mental health.
 
@@ -62,10 +70,14 @@ flowchart LR
 
 ```
 
+# Our Worry
+
 However, we might wonder, or worry, about a number of issues. For example:
 
 * What were the outcomes like for this group of people *before* they participated in the *intervention*?
 * If the outcomes of the *intervention* were favorable, it might not be that the intervention is particularly better, but that people improve or get better *naturally* over time. 
+
+# A More Sophisticated Evaluation
 
 Therefore a more sophisticated research design would be to have one group of people--an *intervention group*--participate in the *intervention* or *program*, while another group--a *comparison* group--does not participate. We would then compare outcomes across the two groups.[^ethics]
 
@@ -103,15 +115,21 @@ flowchart LR
 
   interventiongroup["intervention group"] --> intervention
 
-  intervention[intervention] --> outcome1[better outcome]
+  intervention[intervention] --> outcome1[better outcome]:::springgreen
 
   comparisongroup["comparison group"] ---> outcome0[outcome]
 
   linkStyle 0,1,2 stroke:#000000,stroke-width:3px,font-size:36px,color:black;
 
+  classDef green fill:#80BD41,stroke:#000000,stroke-width:2px,color:#000000;
+  
+  classDef springgreen fill:#00FF7F,stroke:#000000,stroke-width:2px,color:#000000;
+  
 ```
 
-One big question or concern in conducting an evaluation of this type is that our group of participants may be composed of different subgroups of individuals. These groups might be different in that they might repsresent individuals of different racial, ethnic or gender identities, might be people from different communities, or might have quite different sets of past experiences. 
+# Different Subgroups of Individuals 
+
+One big question or concern in conducting an evaluation of this type is that our group of participants may be composed of different subgroups of individuals. These groups might be different in that they might repsresent individuals of different *racial*, *ethnic* or *gender* identities, might be people from different communities, or might have quite different sets of past experiences. 
 
 ```{mermaid}
 ---
@@ -131,6 +149,8 @@ flowchart TB
   end
 
 ```
+
+# Are Those In the Intervention Group And Comparison Group Similar?
 
 If participants from Group A and Group B are evenly distributed across the intervention and treatment groups, then we are not worried about the idea that an apparent effect of the intervention is because of unequal allocation of groups to the intervention.
 
@@ -169,7 +189,9 @@ subgraph study["study participants"]
 
 ```
 
-One way of accomplishing this *even distribution* would be by randomly assigning participants to the intervention.
+# Random Assignment
+
+One way of accomplishing this *even distribution* would be by *randomly* assigning participants to the intervention.
 
 ```{mermaid}
 ---
@@ -206,5 +228,78 @@ subgraph study["study participants"]
 
 ```
 
+# Random Assignment Is Sometimes Not Possible
+
+However, often the nature of the *intervention* is such that we want to allow *participants* in the study to *select their own level of participation*, or non-participation, in the intervention.
+
+Often funders have objections to random assignment. Or the individuals or communities who are participating may have objections to random assignment.
+
+# When Participants Choose Their Own Level Of Particpation
+
+If *participants* select their own participation, then it is likely that many background characteristics of participants--such as their age, gender, socio-economic resources, and motivation--will affect their decision to participate, and their level of participation.
+
+```{mermaid}
+---
+config:
+  look: handDrawn
+  theme: default
+---
+
+flowchart LR
+
+participation{participation <br>decision}
+
+age --> participation
+
+gender --> participation
+
+ses["socio-economic status"] --> participation
+
+motivation --> participation
+
+background --> participation
+
+history --> participation
+
+participation --> interventiongroup["intervention group"]
+
+participation --> comparisongroup["comparison group"]
+
+interventiongroup --> intervention
+
+intervention[intervention] --> outcome1[outcome]
+
+comparisongroup["comparison group"] ---> outcome0[outcome]
+
+  linkStyle 0,1,2,3,4,5,6,7,8,9,10 stroke:#000000,stroke-width:3px,font-size:36px,color:black;
+
+```
+
+If, for example, *more motivated individuals* and those with *more socio-economic resources* are the ones who choose to participate in the intervention, then any better outcomes might [**not**]{color="#FF0000"} be the result of the *intervention*, but a result of the *characteristics of individuals who chose to participate*.
+
+```{mermaid}
+---
+config:
+  look: handDrawn
+  theme: default
+---
+
+flowchart LR
+
+  interventiongroup["intervention group <br>(more motivated <br>better SES)"]:::springgreen --> intervention
+
+  intervention[intervention] --> outcome1[better outcome]:::springgreen
+
+  comparisongroup["comparison group"] ---> outcome0[outcome]
+
+  linkStyle 0,1,2 stroke:#000000,stroke-width:3px,font-size:36px,color:black;
+
+  classDef springgreen fill:#00FF7F,stroke:#000000,stroke-width:2px,color:#000000;
+  
+```
+
+# What To Do?
+
+*Accounting for*, *ruling out*, or *controlling for* these background factors is one of the major reasons we use statistics.
 
 
