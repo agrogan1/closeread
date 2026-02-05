@@ -1,0 +1,19 @@
+---
+title: "Positive and Negative Parenting and Child Development Outcomes" 
+subtitle: "Variation and Commonality Across Multiple Countries"
+author: 
+  - name: "Andy Grogan-Kaylor"
+    url: https://agrogan1.github.io/
+date: "today"
+format: 
+  closeread-html:
+    cr-style:
+      narrative-text-color-sidebar: black
+      narrative-background-color-overlay: lightgrey
+      narrative-text-color-overlay: black
+      narrative-background-color-sidebar: white
+      section-background-color: white
+---
+
+
+
