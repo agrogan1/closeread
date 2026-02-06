@@ -323,4 +323,26 @@ flowchart LR
 
 *Accounting for*, *ruling out*, or *controlling for* these background factors is one of the major reasons we use statistics.
 
+```{r}
+
+program <- seq(1:6)
+
+motivation <- c(2,1,0,7,6,5)
+
+outcome <- motivation
+
+mydata <- data.frame(program, motivation, outcome)
+
+library(ggplot2)
+
+ggplot(mydata,
+       aes(x= program,
+           y = outcome)) +
+  geom_point() + 
+  geom_smooth(method = "lm")
+
+```
+
+
+
 
