@@ -1,5 +1,5 @@
 ---
-title: "Why Do We Need Multivariate Models To Evaluate Interventions?"
+title: "Why Do We Need Multivariate Models To Evaluate Programs?"
 author: 
   - name: "Andy Grogan-Kaylor"
     url: https://agrogan1.github.io/
@@ -35,11 +35,28 @@ library(sf) # simple (spatial) features
 mapdata <- ne_countries(scale = "medium", # medium scale
                         returnclass = "sf") # as sf object
 
+# CF https://stackoverflow.com/questions/75860459/change-ocean-color-in-robinson-projection-map
+
+ocean <- st_polygon(list(cbind(c(seq(-180, 179, 
+                                     len = 100), 
+                                 rep(180, 100), 
+                                 seq(179, -180, 
+                                     len = 100),
+                                 rep(-180, 100)),
+                               c(rep(-90, 100), 
+                                 seq(-89, 89, 
+                                     len = 100),
+                                 rep(90, 100), 
+                                 seq(89, -90, 
+                                     len = 100))))) |>
+  st_sfc(crs = "WGS84") |>
+  st_as_sf()
+
 mymap <- ggplot(mapdata) + # the data I am mapping
-  geom_sf(fill = "#fff4dd") + # the geometry I am using
+  geom_sf(data = ocean, fill = "#ECECFF") +
+  geom_sf(fill = "#FFF4DD") + # the geometry I am using
   theme_minimal() +
-  theme(axis.text.x = element_blank(),
-        panel.background = element_rect(fill = "#ECECFF"))
+  theme(axis.text.x = element_blank())
 
 mymap + coord_sf(crs="+proj=robin") # Robinson projection
 
@@ -53,7 +70,7 @@ Yet evaluating such *programs* may be more difficult than it appears.
 
 Let's consider a simple evaluation of a *program* designed to improve mental health.
 
-In its simplest form, an evaluation might consist of looking at the outcomes--e.g. mental health outcomes--for those who participate in an *intervention*.
+In its simplest form, an evaluation might consist of looking at the outcomes--e.g. mental health outcomes--for those who participate in an *program*.
 
 ```{mermaid}
 ---
@@ -64,7 +81,7 @@ config:
 
 flowchart LR
 
-  intervention[intervention] --> outcome1[outcome]
+  program[program] --> outcome1[outcome]
 
   linkStyle 0 stroke:#000000,stroke-width:3px,font-size:36px,color:black;
 
@@ -74,12 +91,12 @@ flowchart LR
 
 However, we might wonder, or worry, about a number of issues. For example:
 
-* What were the outcomes like for this group of people *before* they participated in the *intervention*?
-* If the outcomes of the *intervention* were favorable, it might not be that the intervention is particularly better, but that people improve or get better *naturally* over time. 
+* What were the outcomes like for this group of people *before* they participated in the *program*?
+* If the outcomes of the *program* were favorable, it might not be that the program is particularly better, but that people improve or get better *naturally* over time. 
 
 # A More Sophisticated Evaluation
 
-Therefore a more sophisticated research design would be to have one group of people--an *intervention group*--participate in the *intervention* or *program*, while another group--a *comparison* group--does not participate. We would then compare outcomes across the two groups.[^ethics]
+Therefore a more sophisticated research design would be to have one group of people--an *program group*--participate in the *program*, while another group--a *comparison* group--does not participate. We would then compare outcomes across the two groups.[^ethics]
 
 [^ethics]: Valid questions could be raised about the *ethics* of such an approach, specifically denying participation in the *program* to one group of people. If a program is of *unknown* benefit, it is *ethical* to evaluate this program with a comparison group approach, because it is *not yet known* whether the program confers benefit on its participants, and whether the program represents a valid use of time, energy and financial resources, or whether the program is a waste of resources, and of participant's time. Indeed, an evaluation might uncover the fact that the program has no beneficial effects, or even that the program is harmful! Once a program has been established as *beneficial*, it would likely be *unethical* to conduct an evaluation where the program is withheld from some participants. However, we could then consider a comparison of the program with an enhanced version of the program that might confer even more benefits.
 
@@ -92,9 +109,9 @@ config:
 
 flowchart LR
 
-  interventiongroup["intervention group"] --> intervention
+  programgroup["program group"] --> program
 
-  intervention[intervention] --> outcome1[outcome]
+  program[program] --> outcome1[outcome]
 
   comparisongroup["comparison group"] ---> outcome0[outcome]
 
@@ -102,7 +119,7 @@ flowchart LR
 
 ```
 
-We hope that our results will show that those participants who have participated in the intervention group have better outcomes than those who were members of the comparison group.
+We hope that our results will show that those participants who have participated in the program group have better outcomes than those who were members of the comparison group.
 
 ```{mermaid}
 ---
@@ -113,9 +130,9 @@ config:
 
 flowchart LR
 
-  interventiongroup["intervention group"] --> intervention
+  programgroup["program group"] --> program
 
-  intervention[intervention] --> outcome1[better outcome]:::springgreen
+  program[program] --> outcome1[better outcome]:::forestgreen
 
   comparisongroup["comparison group"] ---> outcome0[outcome]
 
@@ -124,6 +141,8 @@ flowchart LR
   classDef green fill:#80BD41,stroke:#000000,stroke-width:2px,color:#000000;
   
   classDef springgreen fill:#00FF7F,stroke:#000000,stroke-width:2px,color:#000000;
+  
+  classDef forestgreen fill:#CDE498,stroke:#000000,stroke-width:2px,color:#000000;
   
 ```
 
@@ -150,9 +169,9 @@ flowchart TB
 
 ```
 
-# Are Those In the Intervention Group And Comparison Group Similar?
+# Are Those In the program Group And Comparison Group Similar?
 
-If participants from Group A and Group B are evenly distributed across the intervention and treatment groups, then we are not worried about the idea that an apparent effect of the intervention is because of unequal allocation of groups to the intervention.
+If participants from Group A and Group B are evenly distributed across the program and treatment groups, then we are not worried about the idea that an apparent effect of the program is because of unequal allocation of groups to the program.
 
 ```{mermaid}
 ---
@@ -171,13 +190,13 @@ subgraph study["study participants"]
 
   end
 
-  A --> |"roughly 50"| interventiongroup["intervention group"]
+  A --> |"roughly 50"| programgroup["program group"]
 
-  B --> |"roughly 50"| interventiongroup["intervention group"]
+  B --> |"roughly 50"| programgroup["program group"]
 
-  interventiongroup["intervention group"] --> intervention
+  programgroup["program group"] --> program
 
-  intervention[intervention] --> outcome1[outcome]
+  program[program] --> outcome1[outcome]
 
   A --> |"roughly 50"| comparisongroup
 
@@ -191,7 +210,7 @@ subgraph study["study participants"]
 
 # Random Assignment
 
-One way of accomplishing this *even distribution* would be by *randomly* assigning participants to the intervention.
+One way of accomplishing this *even distribution* would be by *randomly* assigning participants to the program.
 
 ```{mermaid}
 ---
@@ -210,13 +229,13 @@ subgraph study["study participants"]
 
   end
 
-  A --> |"roughly 50 RANDOMLY ASSIGNED"| interventiongroup["intervention group"]
+  A --> |"roughly 50 RANDOMLY ASSIGNED"| programgroup["program group"]
 
-  B --> |"roughly 50 RANDOMLY ASSIGNED"| interventiongroup["intervention group"]
+  B --> |"roughly 50 RANDOMLY ASSIGNED"| programgroup["program group"]
 
-  interventiongroup["intervention group"] --> intervention
+  programgroup["program group"] --> program
 
-  intervention[intervention] --> outcome1[outcome]
+  program[program] --> outcome1[outcome]
 
   A --> |"roughly 50 RANDOMLY ASSIGNED"| comparisongroup
 
@@ -230,7 +249,7 @@ subgraph study["study participants"]
 
 # Random Assignment Is Sometimes Not Possible
 
-However, often the nature of the *intervention* is such that we want to allow *participants* in the study to *select their own level of participation*, or non-participation, in the intervention.
+However, often the nature of the *program* is such that we want to allow *participants* in the study to *select their own level of participation*, or non-participation, in the program.
 
 Often funders have objections to random assignment. Or the individuals or communities who are participating may have objections to random assignment.
 
@@ -261,13 +280,13 @@ background --> participation
 
 history --> participation
 
-participation --> interventiongroup["intervention group"]
+participation --> programgroup["program group"]
 
 participation --> comparisongroup["comparison group"]
 
-interventiongroup --> intervention
+programgroup --> program
 
-intervention[intervention] --> outcome1[outcome]
+program[program] --> outcome1[outcome]
 
 comparisongroup["comparison group"] ---> outcome0[outcome]
 
@@ -275,7 +294,7 @@ comparisongroup["comparison group"] ---> outcome0[outcome]
 
 ```
 
-If, for example, *more motivated individuals* and those with *more socio-economic resources* are the ones who choose to participate in the intervention, then any better outcomes might [**not**]{color="#FF0000"} be the result of the *intervention*, but a result of the *characteristics of individuals who chose to participate*.
+If, for example, *more motivated individuals* and those with *more socio-economic resources* are the ones who choose to participate in the program, then any better outcomes might [**not**]{color="#FF0000"} be the result of the *program*, but a result of the *characteristics of individuals who chose to participate*.
 
 ```{mermaid}
 ---
@@ -286,15 +305,17 @@ config:
 
 flowchart LR
 
-  interventiongroup["intervention group <br>(more motivated <br>better SES)"]:::springgreen --> intervention
+  programgroup["program group <br>(more motivated <br>better SES)"]:::forestgreen --> program
 
-  intervention[intervention] --> outcome1[better outcome]:::springgreen
+  program[program] --> outcome1[better outcome]:::forestgreen
 
   comparisongroup["comparison group"] ---> outcome0[outcome]
 
   linkStyle 0,1,2 stroke:#000000,stroke-width:3px,font-size:36px,color:black;
 
   classDef springgreen fill:#00FF7F,stroke:#000000,stroke-width:2px,color:#000000;
+  
+  classDef forestgreen fill:#CDE498,stroke:#000000,stroke-width:2px,color:#000000;
   
 ```
 
