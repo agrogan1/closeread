@@ -24,13 +24,19 @@ Across the world, there is a great deal of suffering. Many people have mental he
 
 library(rnaturalearth) # natural earth data
 
-library(ggplot2) # beautiful maps
+library(ggplot2) # beautiful graphs & maps
 
 library(dplyr) # data wrangling
 
 library(sf) # simple (spatial) features
 
 # library(patchwork) # stitch ggplots together
+
+```
+
+```{r}
+#| echo: false
+#| message: false
 
 mapdata <- ne_countries(scale = "medium", # medium scale
                         returnclass = "sf") # as sf object
@@ -324,16 +330,16 @@ flowchart LR
 *Accounting for*, *ruling out*, or *controlling for* these background factors is one of the major reasons we use statistics.
 
 ```{r}
+#| echo: false
+#| message: false
 
 program <- seq(1:6)
 
-motivation <- c(2,1,0,7,6,5)
+motivation <- c(0,0,0,1,1,1)
 
-outcome <- motivation
+outcome <- -.1 * motivation
 
 mydata <- data.frame(program, motivation, outcome)
-
-library(ggplot2)
 
 ggplot(mydata,
        aes(x= program,
