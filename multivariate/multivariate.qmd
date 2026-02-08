@@ -335,20 +335,40 @@ flowchart LR
 
 program <- seq(1:6)
 
-motivation <- c(0,0,0,1,1,1)
+group <- c(0, 0, 0, 1, 1, 1)
 
-outcome <- -.1 * motivation
+motivation <- c(.2, .1, .0, 1.2, 1.1, 1.0)
 
-mydata <- data.frame(program, motivation, outcome)
+outcome <- motivation + group
+
+mydata <- data.frame(program, motivation, group, outcome)
 
 ggplot(mydata,
        aes(x= program,
            y = outcome)) +
   geom_point() + 
-  geom_smooth(method = "lm")
+  geom_smooth(method = "lm") +
+  geom_smooth(aes(color = factor(group)), 
+              method = "lm")
 
 ```
 
+```{r}
 
+z_matrix <- xtabs(outcome ~ program + group, data = mydata)
+
+plot_ly(z = ~z_matrix) %>% 
+  add_surface() %>%
+  layout(title = "mytitle")
+
+plot_ly(data = mydata, 
+               x = ~group, 
+               y = ~program, 
+               z = ~outcome, 
+               color = ~group,
+               type = "scatter3d", 
+               mode = "markers")
+
+```
 
 
