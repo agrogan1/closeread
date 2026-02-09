@@ -99,7 +99,7 @@ flowchart LR
 :::{focus-on="cr-method"}
 # Method
 
-Data from 303 adults were stratified based on the presence or absence of maltreatment history in early childhood. Self-reports of lifetime self-harm thoughts in adulthood and empathy during adolescence were examined in both groups using generalized additive models to assess non-linear relationships. Models also controlled for respondents' age, gender, and socio-economic status.
+Data from 303 adults were stratified based on the presence or absence of maltreatment history in early childhood. Self-reports of lifetime self-harm thoughts in adulthood and empathy during adolescence were examined in both groups using generalized additive models [@Wood2017; @Wood2025] to assess non-linear relationships. Models also controlled for respondents' age, gender, and socio-economic status.
 :::
 
 :::{#cr-method .scale-to-fill}
