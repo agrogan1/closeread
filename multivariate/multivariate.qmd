@@ -74,6 +74,27 @@ mymap + coord_sf(crs="+proj=robin") # Robinson projection
 
 ```
 
+
+```{r}
+#| echo: false
+#| eval: false
+
+ocean_polygon$fill <- "#ECECFF"
+
+roughsf::roughsf(ocean_polygon)
+
+mapdata_polygon <- sf::st_cast(mapdata, "POLYGON")
+
+mapdata_polygon$color <- "black"
+
+mapdata_polygon$fill <- "#FFF4DD"
+
+roughsf::roughsf(mapdata_polygon)
+
+roughsf::roughsf(list(ocean_polygon,mapdata_polygon))
+
+```
+
 Understandably, many people and organizations try to develop *interventions* or *programs* for those who suffer from such difficulties. 
 
 Yet evaluating such *programs* may be more difficult than it appears.
