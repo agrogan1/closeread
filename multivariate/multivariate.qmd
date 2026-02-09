@@ -381,6 +381,8 @@ flowchart LR
 
 *Accounting for*, *ruling out*, or *controlling for* these background factors is one of the major reasons we use statistics.
 
+Let's start with a simple visual model of the data.
+
 ```{r}
 #| echo: false
 #| message: false
@@ -395,15 +397,34 @@ outcome <- motivation + group
 
 mydata <- data.frame(program, motivation, group, outcome)
 
-ggplot(mydata,
-       aes(x= program,
-           y = outcome)) +
-  geom_point() + 
-  geom_smooth(method = "lm") +
-  labs(title = "A Naive Plot of the Data") +
+p0 <- ggplot(mydata,
+             aes(x= program,
+                 y = outcome)) +
+  geom_point(shape=21, 
+             fill="gold", 
+             color="black", 
+             size = 5) + 
   # geom_smooth(aes(color = factor(group)), 
   #             method = "lm") +
   theme_minimal()
+
+p0 + 
+  geom_smooth(method = "lm") + 
+  labs(title = "A Simple Model of The Data",
+       subtitle = "What is the observed relationship between program and outcome?",
+       y = "better outcome")
+
+```
+
+```{r}
+
+p0 + 
+  geom_smooth(method = "lm",
+              aes(group = factor(group))) + 
+  labs(title = "A More Complex Model of The Data \nAccounting For Group Membership",
+       subtitle = "What is the observed relationship between program and outcome?",
+       y = "better outcome")
+
 
 ```
 
