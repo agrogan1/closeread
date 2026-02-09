@@ -120,12 +120,33 @@ flowchart LR
 
 ```
 
+If the program appears to be associated with good outcomes, we might be tempted to claim that the program is successful.
+
+```{mermaid}
+---
+config:
+  look: handDrawn
+  theme: default
+---
+
+flowchart LR
+
+  program[program] --> outcome1["good outcomes"]:::forestgreen
+
+  linkStyle 0 stroke:#000000,stroke-width:3px,font-size:36px,color:black;
+
+  classDef forestgreen fill:#CDE498,stroke:#000000,stroke-width:2px,color:#000000;
+
+```
+
 # Our Worry
 
 However, we might wonder, or worry, about a number of issues. For example:
 
 * What were the outcomes like for this group of people *before* they participated in the *program*?
 * If the outcomes of the *program* were favorable, it might not be that the program is particularly better, but that people improve or get better *naturally* over time. 
+
+If we fail to account for these possibilities, we are potentially declaring a program successful, when in fact it has no effect. We are potentially advocating that time energy and money be put into this program, when our resources would be better allocated elsewhere. Advocating for programs which have not been successfully evaluated, and which are not backed up by evidence, could be seen as an *ethical* issue.
 
 # A More Sophisticated Evaluation
 
