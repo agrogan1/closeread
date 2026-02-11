@@ -43,6 +43,7 @@ library(car) # Companion to Applied Regression
 ```{r}
 #| echo: false
 #| message: false
+#| label: fig-world
 
 mapdata <- ne_countries(scale = "medium", # medium scale
                         returnclass = "sf") # as sf object
@@ -95,15 +96,15 @@ roughsf::roughsf(list(ocean_polygon,mapdata_polygon))
 
 ```
 
-Understandably, many people and organizations try to develop *interventions* or *programs* for those who suffer from such difficulties. 
+Understandably, many people and organizations try to develop interventions or programs for those who suffer from such difficulties. 
 
-Yet evaluating such *programs* may be more difficult than it appears.
+Yet evaluating such programs may be more difficult than it appears.
 
 # A Simple Evaluation
 
-Let's consider a simple evaluation of a *program* designed to improve mental health.
+Let's consider a simple evaluation of a program designed to improve mental health.
 
-In its simplest form, an evaluation might consist of looking at the outcomes--e.g. mental health outcomes--for those who participate in an *program*.
+In its simplest form, an evaluation might consist of looking at the outcomes--e.g. mental health outcomes--for those who participate in an program.
 
 ```{mermaid}
 ---
@@ -131,7 +132,7 @@ config:
 
 flowchart LR
 
-  program[program] --> outcome1["good outcomes"]:::forestgreen
+  program[program] --> outcome1["good outcome"]:::forestgreen
 
   linkStyle 0 stroke:#000000,stroke-width:3px,font-size:36px,color:black;
 
@@ -143,16 +144,16 @@ flowchart LR
 
 However, we might wonder, or worry, about a number of issues. For example:
 
-* What were the outcomes like for this group of people *before* they participated in the *program*?
-* If the outcomes of the *program* were favorable, it might not be that the program is particularly better, but that people improve or get better *naturally* over time. 
+* What were the outcomes like for this group of people before they participated in the program?
+* If the outcomes of the program were favorable, it might not be that the program is particularly better, but that people improve or get better naturally over time. 
 
-If we fail to account for these possibilities, we are potentially declaring a program successful, when in fact it has no effect. We are potentially advocating that time energy and money be put into this program, when our resources would be better allocated elsewhere. Advocating for programs which have not been successfully evaluated, and which are not backed up by evidence, could be seen as an *ethical* issue.
+If we fail to account for these possibilities, we are potentially declaring a program successful, when in fact it has no effect. We are potentially advocating that time energy and money be put into this program, when our resources would be better allocated elsewhere. Advocating for programs which have not been successfully evaluated, and which are not backed up by evidence, could thus be seen as an ethical issue.
 
 # A More Sophisticated Evaluation
 
-Therefore a more sophisticated research design would be to have one group of people--an *program group*--participate in the *program*, while another group--a *comparison* group--does not participate. We would then compare outcomes across the two groups.[^ethics]
+Therefore a more sophisticated research design would be to have one group of people--an program group--participate in the program, while another group--a comparison group--does not participate. We would then compare outcomes across the two groups.[^ethics]
 
-[^ethics]: Valid questions could be raised about the *ethics* of such an approach, specifically denying participation in the *program* to one group of people. If a program is of *unknown* benefit, it is *ethical* to evaluate this program with a comparison group approach, because it is *not yet known* whether the program confers benefit on its participants, and whether the program represents a valid use of time, energy and financial resources, or whether the program is a waste of resources, and of participant's time. Indeed, an evaluation might uncover the fact that the program has no beneficial effects, or even that the program is harmful! Once a program has been established as *beneficial*, it would likely be *unethical* to conduct an evaluation where the program is withheld from some participants. However, we could then consider a comparison of the program with an enhanced version of the program that might confer even more benefits.
+[^ethics]: Valid questions could be raised about the ethics of such an approach, specifically denying participation in the program to one group of people. If a program is of *unknown* benefit, it is ethical to evaluate this program with a comparison group approach, because it is *not yet known* whether the program confers benefit on its participants, and whether the program represents a valid use of time, energy and financial resources, or whether the program is a waste of resources, and of participant's time. Indeed, an evaluation might uncover the fact that the program has no beneficial effects, or even that the program is harmful! Once a program has been established as beneficial, it would likely be *unethical* to conduct an evaluation where the program is withheld from some participants. However, we could then consider a comparison of the program with an enhanced version of the program that might confer even more benefits.
 
 ```{mermaid}
 ---
@@ -202,7 +203,7 @@ flowchart LR
 
 # Different Subgroups of Individuals 
 
-One big question or concern in conducting an evaluation of this type is that our group of participants may be composed of different subgroups of individuals. These groups might be different in that they might repsresent individuals of different *racial*, *ethnic* or *gender* identities, might be people from different communities, or might have quite different sets of past experiences. 
+One big question or concern in conducting an evaluation of this type is that our group of participants may be composed of different subgroups of individuals. These groups might be different in that they might represent individuals of different racial, ethnic or gender identities, might be people from different communities, or might have quite different sets of past experiences. 
 
 ```{mermaid}
 ---
@@ -264,7 +265,7 @@ subgraph study["study participants"]
 
 # Random Assignment
 
-One way of accomplishing this *even distribution* would be by *randomly* assigning participants to the program.
+One way of accomplishing this even distribution would be by *randomly* assigning participants to the program.
 
 ```{mermaid}
 ---
@@ -303,19 +304,20 @@ subgraph study["study participants"]
 
 # Random Assignment Is Sometimes Not Possible
 
-However, often the nature of the *program* is such that we want to allow *participants* in the study to *select their own level of participation*, or non-participation, in the program.
+However, often the nature of the program is such that we want to allow participants in the study to select their own level of participation, or non-participation, in the program.
 
 Often funders have objections to random assignment. Or the individuals or communities who are participating may have objections to random assignment.
 
-Sometimes, instead of relying on random assignment, we may wish to observe the effects of a program more *naturalistically*.
+Sometimes, instead of relying on random assignment, we may wish to observe the effects of a program more naturalistically.
 
-And lastly, the *logistical* demands of random assign may require *smaller samples*, when we wish to observe the outcomes of a program with a *larger*, and possibly more *generalizable*, sample.
+And lastly, the logistical demands of random assign may require smaller samples, when we wish to observe the outcomes of a program with a larger, and possibly more generalizable, sample.
 
 # When Participants Choose Their Own Level Of Particpation
 
-If *participants* select their own participation, then it is likely that many background characteristics of participants--such as their age, gender, socio-economic resources, and motivation--will affect their decision to participate, and their level of participation.
+If participants select their own participation, then it is likely that many background characteristics of participants--such as their age, gender, socio-economic resources, and motivation--will affect their decision to participate, and their level of participation.
 
 ```{mermaid}
+%%| label: fig-participants-decide
 ---
 config:
   look: handDrawn
@@ -352,7 +354,7 @@ comparisongroup["comparison group"] ---> outcome0[outcome]
 
 ```
 
-If, for example, *more motivated individuals* and those with *more socio-economic resources* are the ones who choose to participate in the program, then any better outcomes might [**not**]{color="#FF0000"} be the result of the *program*, but a result of the *characteristics of individuals who chose to participate*.
+If, for example, more motivated individuals and those with more socio-economic resources are the ones who choose to participate in the program, then any better outcomes might [**not**]{color="#FF0000"} be the result of the program, but a result of the characteristics of individuals who chose to participate.
 
 ```{mermaid}
 ---
@@ -384,17 +386,21 @@ When participation in a program is not randomly assigned, we need to think about
 ::: {.panel-tabset}
 ## A Visual Exploration
 
+### A Simple Model of the Data
+
 Let's start with a simple visual model of the data.
 
 ```{r}
 #| echo: false
 #| message: false
+#| fig-height: 5
+#| label: fig-simple
 
 program <- seq(1:6)
 
 group <- c(0, 0, 0, 1, 1, 1)
 
-motivation <- c(.2, .1, .0, 1.2, 1.1, 1.0)
+motivation <- c(0, 0, 0, 1, 1, 1)
 
 outcome <- motivation + group
 
@@ -403,16 +409,16 @@ mydata <- data.frame(program, motivation, group, outcome)
 p0 <- ggplot(mydata,
              aes(x= program,
                  y = outcome)) +
-  geom_point(shape=21, 
-             fill="gold", 
-             color="black", 
-             size = 5) + 
   # geom_smooth(aes(color = factor(group)), 
   #             method = "lm") +
   theme_minimal()
 
 p1 <- p0 + 
   geom_smooth(method = "lm") + 
+    geom_point(shape=21, 
+             fill="gold", 
+             color="black", 
+             size = 5) + 
   labs(title = "A Simple Model of The Data",
        subtitle = "What is the observed relationship between program and outcome?",
        y = "better outcome")
@@ -421,20 +427,52 @@ p1 # replay
 
 ```
 
+::: {.callout-tip}
+#### Key Takeaway
+
+This simple model of the data (@fig-simple) appears to indicate that the more participation in the program is associated with more of the good outcome.
+:::
+
+Here we are considering two aspects, or *dimensions* of the data: participation in the program; and level of the good outcome.
+
+### A More Complicated Model of the Data
+
+However, our understanding becomes more complicated if we consider more dimensions of our study (@fig-more-complex). Let's consider participation in the program, the level of the outcome, but also the fact that there are different groups of people in the study. For example, there might be a more highly motivated group, and a less motivated group.
+
 ```{r}
 #| echo: false
 #| message: false
+#| label: fig-more-complex
+#| fig-height: 5
 
 p2 <- p0 + 
   geom_smooth(method = "lm",
               aes(group = factor(group))) + 
+    geom_point(shape=21, 
+               aes(fill = factor(group)),
+             color="black", 
+             size = 5) + 
   labs(title = "A More Complex Model of The Data \nAccounting For Group Membership",
        subtitle = "What is the observed relationship between program and outcome?",
-       y = "better outcome")
+       y = "better outcome") +
+  scale_fill_viridis_d(name = "group",
+                       labels = c("less motivated",
+                                  "more motivated")) +
+  theme(legend.position = "bottom")
 
 p2 # replay
 
 ```
+
+We see that when we consider a third dimension of the data, motivation, that our analysis changes. More motivated people are more likely to participate in the program, but among both more motivated people and less motivated people, participation in the program is associated with **no change** in the good outcome. 
+
+::: {.callout-tip}
+#### Key Takeaway
+
+In essence, after considering people's pre-existing levels of motivation, the program has **no effect**!
+:::
+
+Since we are considering three dimensions of the data, it may be illustrative to provide a 3 dimensional graph. This three dimensional graph illustrates the same idea as @fig-more-complex:  more participation in the program initially appears to be associated with better outcomes; after consideration of the third factor of motivation, the program appears to have no effect!
 
 ```{r}
 #| eval: true
@@ -442,6 +480,7 @@ p2 # replay
 #| message: false
 #| warning: false
 #| fig-cap: "A Three Dimensional Graph"
+#| label: fig-threeD
 
 # rglwidget()
 # options(rgl.useNULL = TRUE) 
@@ -453,30 +492,37 @@ rglwidget()
 
 ```
 
+## A Statistical Exploration
+
+Accounting for, ruling out, or controlling for multiple background factors is one of the major reasons we use statistics.
+
+While a full treatment of statistics is beyond the scope of this presentation, the annotated equation (@fig-annotated-equation) below gives some idea of the logic of statistics.
+
+In @fig-annotated-equation we are estimating the association of the program with the outcome, while accounting for motivation, while simultaneously estimating the association of motivation with the outcome while accounting for program participation.
+
+![annotated equation](annotated-equation.png){#fig-annotated-equation}
+
+Mathematically, we are essentially estimating a multidimensional plane in multidimensional space. Visually, this is equivalent to the three dimensional figure that we encountered in our visual exploration.
+
 ```{r}
-#| eval: false
+#| eval: true
 #| echo: false
+#| message: false
+#| warning: false
+#| fig-cap: "A Three Dimensional Graph"
+#| label: fig-threeD-2
 
-# z_matrix <- xtabs(outcome ~ program + group, data = mydata)
+# rglwidget()
+# options(rgl.useNULL = TRUE) 
+# setupKnitr(autoprint = TRUE) 
 
-# plot_ly(z = ~z_matrix) %>% 
-#   add_surface() %>%
-#   layout(title = "mytitle")
+scatter3d(outcome ~ program + group, data = mydata)
 
-# plot_ly(data = mydata, 
-#                x = ~group, 
-#                y = ~program, 
-#                z = ~outcome, 
-#                color = ~group,
-#                type = "scatter3d", 
-#                mode = "markers")
+rglwidget()
 
 ```
 
-## A Statistical Exploration
-
-*Accounting for*, *ruling out*, or *controlling for* multiple background factors is one of the major reasons we use statistics.
-
+Briefly, one of the major advantages of a statistical approach is that we can write out--and estimate--a much longer equation accounting for multiple possible confounding factors. For example, while we do not do so here, we could easily represent the complex dynamics influencing participation in the program that are illustrated in @fig-participants-decide as an equation, and estimate that equation to estimate outcomes associated with the program, while accounting for multiple other possible confounding factors
 :::
 
-
+# Conclusion
