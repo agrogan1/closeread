@@ -379,7 +379,10 @@ flowchart LR
 
 # What To Do?
 
-*Accounting for*, *ruling out*, or *controlling for* these background factors is one of the major reasons we use statistics.
+When participation in a program is not randomly assigned, we need to think about a way to account for the various background and demographic factors that may be different between participants and non-participants.
+
+::: {.panel-tabset}
+## A Visual Exploration
 
 Let's start with a simple visual model of the data.
 
@@ -433,7 +436,6 @@ p2 # replay
 
 ```
 
-
 ```{r}
 #| eval: true
 #| echo: false
@@ -470,5 +472,11 @@ rglwidget()
 #                mode = "markers")
 
 ```
+
+## A Statistical Exploration
+
+*Accounting for*, *ruling out*, or *controlling for* multiple background factors is one of the major reasons we use statistics.
+
+:::
 
 
