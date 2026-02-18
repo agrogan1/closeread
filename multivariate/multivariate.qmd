@@ -5,14 +5,6 @@ author:
     url: https://agrogan1.github.io/
 date: "today"
 format: 
-  closeread-html:
-    cr-style:
-      narrative-text-color-sidebar: black
-      narrative-background-color-sidebar: white
-      narrative-background-color-overlay: lightgrey
-      narrative-text-color-overlay: black
-      section-background-color: white
-    css: multivariate.css
   html:
     toc: true
     number-sections: true
@@ -526,15 +518,21 @@ rglwidget()
 
 ## A Statistical Exploration
 
+### Accounting For, Ruling Out, Or Controlling For Background Factors
+
 Accounting for, ruling out, or controlling for multiple background factors is one of the major reasons we use statistics.
 
 While a full treatment of statistics is beyond the scope of this presentation, the annotated equation (@fig-annotated-equation) below gives some idea of the logic of statistics.
+
+### An Example Equation
 
 In @fig-annotated-equation we are estimating the association of the program with the outcome, while accounting for motivation, while simultaneously estimating the association of motivation with the outcome while accounting for program participation.
 
 ![annotated equation](annotated-equation.png){#fig-annotated-equation}
 
 Mathematically, we are essentially estimating a *multidimensional* plane in *multidimensional* space.
+
+### Visually 
 
 Visually, this is equivalent to the three dimensional figure that we encountered in our visual exploration.
 
@@ -568,7 +566,6 @@ For many valid reasons, however, random assignment may not always be possible or
 Equally important is the idea of *external validity*. We need to ensure that the results of our evaluation are generalizable across different demographic and identity groups, cultures, or countries. 
 
 Thus, there is an important role for the use of more complicated visual and statistical models to evaluate social programs. Generating robust evidence for these programs can be seen as an ethical responsibility. 
-
 
 
 
