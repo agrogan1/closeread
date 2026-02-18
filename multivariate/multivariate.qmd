@@ -5,6 +5,14 @@ author:
     url: https://agrogan1.github.io/
 date: "today"
 format: 
+  closeread-html:
+    cr-style:
+      narrative-text-color-sidebar: black
+      narrative-background-color-sidebar: white
+      narrative-background-color-overlay: lightgrey
+      narrative-text-color-overlay: black
+      section-background-color: white
+    css: multivariate.css
   html:
     toc: true
     number-sections: true
@@ -31,7 +39,7 @@ share:
 
 # Introduction
 
-Across the world, there is a great deal of suffering. Many people have mental health issues or substance use issues. People often suffer the after effects of discrimination, poverty, trauma, violence or conflict.
+Across the world, there is a great deal of suffering. Many people deal with mental health issues or substance use issues. People often suffer the after effects of discrimination, poverty, trauma, violence or conflict.
 
 ```{r}
 #| echo: false
@@ -58,7 +66,6 @@ library(car) # Companion to Applied Regression
 ```{r}
 #| echo: false
 #| message: false
-#| label: fig-world
 
 mapdata <- ne_countries(scale = "medium", # medium scale
                         returnclass = "sf") # as sf object
@@ -95,6 +102,8 @@ mymap + coord_sf(crs="+proj=robin") # Robinson projection
 #| echo: false
 #| eval: false
 
+ocean_polygon <- sf::st_cast(ocean, "POLYGON")
+
 ocean_polygon$fill <- "#ECECFF"
 
 roughsf::roughsf(ocean_polygon)
@@ -113,7 +122,7 @@ roughsf::roughsf(list(ocean_polygon,mapdata_polygon))
 
 Understandably, many people and organizations try to develop interventions or programs for those who suffer from such difficulties. 
 
-Yet evaluating such programs may be more difficult than it appears.
+Yet evaluating such social programs may be more difficult than it appears.
 
 # A Simple Evaluation
 
@@ -159,14 +168,16 @@ flowchart LR
 
 However, we might wonder, or worry, about a number of issues. For example:
 
-* What were the outcomes like for this group of people before they participated in the program?
-* If the outcomes of the program were favorable, it might not be that the program is particularly better, but that people improve or get better naturally over time. 
+* What were the outcomes like for this group of people *before* they participated in the program?
+* If the outcomes of the program were favorable, it might not be that the program is particularly better, but that people improve or get better *naturally* over time. 
 
-If we fail to account for these possibilities, we are potentially declaring a program successful, when in fact it has no effect. We are potentially advocating that time energy and money be put into this program, when our resources would be better allocated elsewhere. Advocating for programs which have not been successfully evaluated, and which are not backed up by evidence, could thus be seen as an ethical issue.
+If we fail to account for these possibilities, we are potentially declaring a program successful, when in fact it has no effect. We are potentially advocating that time, energy, and money be put into this program, when our resources would be better allocated elsewhere.
+
+Advocating for programs which have not been successfully evaluated, and which are not backed up by evidence, could thus be seen as an ethical issue.
 
 # A More Sophisticated Evaluation
 
-Therefore a more sophisticated research design would be to have one group of people--an program group--participate in the program, while another group--a comparison group--does not participate. We would then compare outcomes across the two groups.[^ethics]
+Therefore a more sophisticated research design would be to have one group of people--a program group--participate in the program, while another group--a comparison group--does not participate. We would then compare outcomes across the two groups.[^ethics]
 
 [^ethics]: Valid questions could be raised about the ethics of such an approach, specifically denying participation in the program to one group of people. If a program is of *unknown* benefit, it is ethical to evaluate this program with a comparison group approach, because it is *not yet known* whether the program confers benefit on its participants, and whether the program represents a valid use of time, energy and financial resources, or whether the program is a waste of resources, and of participant's time. Indeed, an evaluation might uncover the fact that the program has no beneficial effects, or even that the program is harmful! Once a program has been established as beneficial, it would likely be *unethical* to conduct an evaluation where the program is withheld from some participants. However, we could then consider a comparison of the program with an enhanced version of the program that might confer even more benefits.
 
@@ -282,6 +293,8 @@ subgraph study["study participants"]
 
 One way of accomplishing this even distribution would be by *randomly* assigning participants to the program.
 
+Random assignment helps to ensure the *internal validity* of a program evaluation. If the evaluation finds that outcomes in the program group are better than those in the control group, we can be confident that this is due to the effects of the program. 
+
 ```{mermaid}
 ---
 config:
@@ -321,11 +334,13 @@ subgraph study["study participants"]
 
 However, often the nature of the program is such that we want to allow participants in the study to select their own level of participation, or non-participation, in the program.
 
-Often funders have objections to random assignment. Or the individuals or communities who are participating may have objections to random assignment.
+Often funders have objections to random assignment. Often the individuals or communities who are participating in the evaluation of a program may have objections to random assignment.
 
 Sometimes, instead of relying on random assignment, we may wish to observe the effects of a program more naturalistically.
 
-And lastly, the logistical demands of random assign may require smaller samples, when we wish to observe the outcomes of a program with a larger, and possibly more generalizable, sample.
+And lastly, the logistical demands of random assignment may require smaller samples, when we wish to observe the outcomes of a program with a larger, and possibly more generalizable samples of participants.[^generalizability] Generalizability is often termed *external validity*.
+
+[^generalizability]: Increasingly we are aware that an evaluation conducted with a small selected group of participants may not generalize well to other groups of people with different demographic or identity characteristics, different cultures, or who live in different countries. 
 
 # When Participants Choose Their Own Level Of Particpation
 
@@ -452,7 +467,9 @@ Here we are considering two aspects, or *dimensions* of the data: participation 
 
 ### A More Complicated Model of the Data
 
-However, our understanding becomes more complicated if we consider more dimensions of our study (@fig-more-complex). Let's consider participation in the program, the level of the outcome, but also the fact that there are different groups of people in the study. For example, there might be a more highly motivated group, and a less motivated group.
+However, our understanding becomes more complicated if we consider more *dimensions* of our study (@fig-more-complex). Let's consider participation in the program, the level of the outcome, but also the fact that there are different groups of people in the study.
+
+For example, there might be a more highly motivated group, and a less motivated group.
 
 ```{r}
 #| echo: false
@@ -479,7 +496,7 @@ p2 # replay
 
 ```
 
-We see that when we consider a third dimension of the data, motivation, that our analysis changes. More motivated people are more likely to participate in the program, but among both more motivated people and less motivated people, participation in the program is associated with **no change** in the good outcome. 
+We see that when we consider a third *dimension* of the data, motivation, that our analysis changes. People with higher levels of motivation are more likely to participate in the program, but among both people with higher levels of motivation, and people with lower levels of motivation, participation in the program is associated with **no change** in the good outcome. 
 
 ::: {.callout-tip}
 #### Key Takeaway
@@ -487,7 +504,7 @@ We see that when we consider a third dimension of the data, motivation, that our
 In essence, after considering people's pre-existing levels of motivation, the program has **no effect**!
 :::
 
-Since we are considering three dimensions of the data, it may be illustrative to provide a 3 dimensional graph. This three dimensional graph illustrates the same idea as @fig-more-complex:  more participation in the program initially appears to be associated with better outcomes; after consideration of the third factor of motivation, the program appears to have no effect!
+Since we are considering three *dimensions* of the data, it may be illustrative to provide a 3 dimensional graph. This three dimensional graph illustrates the same idea as @fig-more-complex:  more participation in the program initially appears to be associated with better outcomes; after consideration of the third factor of motivation, the program appears to have no effect!
 
 ```{r}
 #| eval: true
@@ -517,7 +534,9 @@ In @fig-annotated-equation we are estimating the association of the program with
 
 ![annotated equation](annotated-equation.png){#fig-annotated-equation}
 
-Mathematically, we are essentially estimating a multidimensional plane in multidimensional space. Visually, this is equivalent to the three dimensional figure that we encountered in our visual exploration.
+Mathematically, we are essentially estimating a *multidimensional* plane in *multidimensional* space.
+
+Visually, this is equivalent to the three dimensional figure that we encountered in our visual exploration.
 
 ```{r}
 #| eval: true
@@ -537,7 +556,20 @@ rglwidget()
 
 ```
 
-Briefly, one of the major advantages of a statistical approach is that we can write out--and estimate--a much longer equation accounting for multiple possible confounding factors. For example, while we do not do so here, we could easily represent the complex dynamics influencing participation in the program that are illustrated in @fig-participants-decide as an equation, and estimate that equation to estimate outcomes associated with the program, while accounting for multiple other possible confounding factors
+Briefly, one of the major advantages of a statistical approach is that we can write out--and estimate--a much longer equation or statistical model accounting for multiple possible confounding factors. For example, while we do not do so here, we could easily represent the complex dynamics influencing participation in the program that are illustrated in @fig-participants-decide as an equation, and estimate that equation to estimate outcomes associated with the program, while accounting for multiple other possible confounding factors
 :::
 
 # Conclusion
+
+Evaluation of social programs is complicated, but necessary, to ensure that social programs represent a wise and responsible use of time, energy and money for people who are often suffering or vulnerable. The *internal validity* of a program is strengthened when we can randomly assign participants to a program group and a control group, and compare the outcomes. However, there are often valid and important reasons that we cannot use random assignment. 
+
+For many valid reasons, however, random assignment may not always be possible or desirable. 
+
+Equally important is the idea of *external validity*. We need to ensure that the results of our evaluation are generalizable across different demographic and identity groups, cultures, or countries. 
+
+Thus, there is an important role for the use of more complicated visual and statistical models to evaluate social programs. Generating robust evidence for these programs can be seen as an ethical responsibility. 
+
+
+
+
+
