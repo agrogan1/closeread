@@ -1,5 +1,5 @@
 ---
-title: "Why Do We Need Multivariate Models To Evaluate Programs?"
+title: "Why Do We Need Multivariate Models To Evaluate Social Programs?"
 author: 
   - name: "Andy Grogan-Kaylor"
     url: https://agrogan1.github.io/
@@ -10,8 +10,23 @@ format:
     number-sections: true
 mermaid:
   theme: neutral
+citation:
+  url: https://agrogan1.github.io/closeread/multivariate/multivariate.html
 filters:
   - highlight-text
+  - social-share
+share:
+  permalink: "https://agrogan1.github.io/closeread/multivariate/multivariate.html"
+  description: "Why Do We Need Multivariate Models?"
+  twitter: false
+  facebook: true
+  reddit: true
+  stumble: false
+  tumblr: false
+  linkedin: true
+  email: true
+  mastodon: true
+  bsky: true
 ---
 
 # Introduction
