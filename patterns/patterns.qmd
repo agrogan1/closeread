@@ -9,7 +9,7 @@ library(readr) # read CSV
 
 library(tidyr) # tidy data
 
-library(dplyr) # for pipe %>%
+library(dplyr) # data wrangling, and for pipe %>%
 
 library(ggplot2) # beautiful graphs
 
@@ -19,24 +19,62 @@ library(ggplot2) # beautiful graphs
 
 patterns <- read_csv("patterns.csv")
 
+patterns <- patterns %>%
+  mutate(row_id = row_number())
+
 ```
 
 
 ```{r}
 
+# library(scales)
+
+# show_col(pal_viridis(option = "turbo")(15))
+
+patterns$Item <- factor(patterns$Item)
+
+patterns$Item <- factor(patterns$Item, 
+                        levels = c("Shouted at child", 
+                                   "Called child names", 
+                                   "Shook child", 
+                                   "Spanked child",
+                                   "Hit/slapped child on arm/leg",
+                                   "Hit child with object",
+                                   "Hit/slapped child on face/head/ears",
+                                   "Beat as hard as one could",
+                                   "Took privileges away from child",
+                                   "Explained why behavior was wrong",
+                                   "Gave child something else to do"))
+
 patterns %>% 
-  pivot_longer(!name, 
+  pivot_longer(!c(Item, row_id), 
                names_to = "discipline", 
                values_to = "value") %>%
-  ggplot(aes(x = discipline, 
+  ggplot(aes(x = reorder(Item, row_id), 
              y = value,
-             fill = discipline)) + 
+             fill = Item)) + 
   # geom_point() +
   geom_col() +
-  facet_wrap(~name) +
+  facet_wrap(~discipline) +
   coord_polar(theta = "x") +
+  labs(title = "TEST") +
+  # scale_fill_viridis_d(option = "turbo") +
+  scale_fill_manual(name = "discipline", 
+                    values = c("Shouted at child" = "#4147ADFF",
+                               "Called child names" = "#4777EFFF", 
+                               "Shook child" = "#39A4FBFF", 
+                               "Spanked child" = "#FE9B2DFF",
+                               "Hit/slapped child on arm/leg" = "#F46516FF",
+                               "Hit child with object" = "#DB3A07FF",
+                               "Hit/slapped child on face/head/ears" = "#B21A01FF",
+                               "Beat as hard as one could" = "#7A0403FF",
+                               "Took privileges away from child" = "#62FC6BFF",
+                               "Explained why behavior was wrong" = "#A2FC3CFF",
+                               "Gave child something else to do" = "#D2E935FF")) +
   theme_bw() +
-  theme(axis.text.x = element_blank())
+  theme(axis.text.x = element_blank(),
+        legend.position = "bottom") +
+  guides(fill = guide_legend(ncol = 2))
 
 ```
 
