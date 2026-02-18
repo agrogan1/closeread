@@ -55,7 +55,8 @@ patterns %>%
              fill = Item)) + 
   # geom_point() +
   geom_col() +
-  facet_wrap(~discipline) +
+  facet_wrap(~discipline,
+             ncol = 1) +
   coord_polar(theta = "x") +
   labs(title = "TEST") +
   # scale_fill_viridis_d(option = "turbo") +
@@ -73,8 +74,8 @@ patterns %>%
                                "Gave child something else to do" = "#D2E935FF")) +
   theme_bw() +
   theme(axis.text.x = element_blank(),
-        legend.position = "bottom") +
-  guides(fill = guide_legend(ncol = 2))
+        legend.position = "right") +
+  guides(fill = guide_legend(ncol = 1))
 
 ```
 

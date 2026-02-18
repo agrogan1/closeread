@@ -166,26 +166,27 @@ Moderate behavioral contro...
 <span id="cb9-26"><a href="#cb9-26" aria-hidden="true" tabindex="-1"></a>             <span class="at">fill =</span> Item)) <span class="sc">+</span> </span>
 <span id="cb9-27"><a href="#cb9-27" aria-hidden="true" tabindex="-1"></a>  <span class="co"># geom_point() +</span></span>
 <span id="cb9-28"><a href="#cb9-28" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_col</span>() <span class="sc">+</span></span>
-<span id="cb9-29"><a href="#cb9-29" aria-hidden="true" tabindex="-1"></a>  <span class="fu">facet_wrap</span>(<span class="sc">~</span>discipline) <span class="sc">+</span></span>
-<span id="cb9-30"><a href="#cb9-30" aria-hidden="true" tabindex="-1"></a>  <span class="fu">coord_polar</span>(<span class="at">theta =</span> <span class="st">"x"</span>) <span class="sc">+</span></span>
-<span id="cb9-31"><a href="#cb9-31" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"TEST"</span>) <span class="sc">+</span></span>
-<span id="cb9-32"><a href="#cb9-32" aria-hidden="true" tabindex="-1"></a>  <span class="co"># scale_fill_viridis_d(option = "turbo") +</span></span>
-<span id="cb9-33"><a href="#cb9-33" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_fill_manual</span>(<span class="at">name =</span> <span class="st">"discipline"</span>, </span>
-<span id="cb9-34"><a href="#cb9-34" aria-hidden="true" tabindex="-1"></a>                    <span class="at">values =</span> <span class="fu">c</span>(<span class="st">"Shouted at child"</span> <span class="ot">=</span> <span class="st">"#4147ADFF"</span>,</span>
-<span id="cb9-35"><a href="#cb9-35" aria-hidden="true" tabindex="-1"></a>                               <span class="st">"Called child names"</span> <span class="ot">=</span> <span class="st">"#4777EFFF"</span>, </span>
-<span id="cb9-36"><a href="#cb9-36" aria-hidden="true" tabindex="-1"></a>                               <span class="st">"Shook child"</span> <span class="ot">=</span> <span class="st">"#39A4FBFF"</span>, </span>
-<span id="cb9-37"><a href="#cb9-37" aria-hidden="true" tabindex="-1"></a>                               <span class="st">"Spanked child"</span> <span class="ot">=</span> <span class="st">"#FE9B2DFF"</span>,</span>
-<span id="cb9-38"><a href="#cb9-38" aria-hidden="true" tabindex="-1"></a>                               <span class="st">"Hit/slapped child on arm/leg"</span> <span class="ot">=</span> <span class="st">"#F46516FF"</span>,</span>
-<span id="cb9-39"><a href="#cb9-39" aria-hidden="true" tabindex="-1"></a>                               <span class="st">"Hit child with object"</span> <span class="ot">=</span> <span class="st">"#DB3A07FF"</span>,</span>
-<span id="cb9-40"><a href="#cb9-40" aria-hidden="true" tabindex="-1"></a>                               <span class="st">"Hit/slapped child on face/head/ears"</span> <span class="ot">=</span> <span class="st">"#B21A01FF"</span>,</span>
-<span id="cb9-41"><a href="#cb9-41" aria-hidden="true" tabindex="-1"></a>                               <span class="st">"Beat as hard as one could"</span> <span class="ot">=</span> <span class="st">"#7A0403FF"</span>,</span>
-<span id="cb9-42"><a href="#cb9-42" aria-hidden="true" tabindex="-1"></a>                               <span class="st">"Took privileges away from child"</span> <span class="ot">=</span> <span class="st">"#62FC6BFF"</span>,</span>
-<span id="cb9-43"><a href="#cb9-43" aria-hidden="true" tabindex="-1"></a>                               <span class="st">"Explained why behavior was wrong"</span> <span class="ot">=</span> <span class="st">"#A2FC3CFF"</span>,</span>
-<span id="cb9-44"><a href="#cb9-44" aria-hidden="true" tabindex="-1"></a>                               <span class="st">"Gave child something else to do"</span> <span class="ot">=</span> <span class="st">"#D2E935FF"</span>)) <span class="sc">+</span></span>
-<span id="cb9-45"><a href="#cb9-45" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_bw</span>() <span class="sc">+</span></span>
-<span id="cb9-46"><a href="#cb9-46" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">axis.text.x =</span> <span class="fu">element_blank</span>(),</span>
-<span id="cb9-47"><a href="#cb9-47" aria-hidden="true" tabindex="-1"></a>        <span class="at">legend.position =</span> <span class="st">"bottom"</span>) <span class="sc">+</span></span>
-<span id="cb9-48"><a href="#cb9-48" aria-hidden="true" tabindex="-1"></a>  <span class="fu">guides</span>(<span class="at">fill =</span> <span class="fu">guide_legend</span>(<span class="at">ncol =</span> <span class="dv">2</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb9-29"><a href="#cb9-29" aria-hidden="true" tabindex="-1"></a>  <span class="fu">facet_wrap</span>(<span class="sc">~</span>discipline,</span>
+<span id="cb9-30"><a href="#cb9-30" aria-hidden="true" tabindex="-1"></a>             <span class="at">ncol =</span> <span class="dv">1</span>) <span class="sc">+</span></span>
+<span id="cb9-31"><a href="#cb9-31" aria-hidden="true" tabindex="-1"></a>  <span class="fu">coord_polar</span>(<span class="at">theta =</span> <span class="st">"x"</span>) <span class="sc">+</span></span>
+<span id="cb9-32"><a href="#cb9-32" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"TEST"</span>) <span class="sc">+</span></span>
+<span id="cb9-33"><a href="#cb9-33" aria-hidden="true" tabindex="-1"></a>  <span class="co"># scale_fill_viridis_d(option = "turbo") +</span></span>
+<span id="cb9-34"><a href="#cb9-34" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_fill_manual</span>(<span class="at">name =</span> <span class="st">"discipline"</span>, </span>
+<span id="cb9-35"><a href="#cb9-35" aria-hidden="true" tabindex="-1"></a>                    <span class="at">values =</span> <span class="fu">c</span>(<span class="st">"Shouted at child"</span> <span class="ot">=</span> <span class="st">"#4147ADFF"</span>,</span>
+<span id="cb9-36"><a href="#cb9-36" aria-hidden="true" tabindex="-1"></a>                               <span class="st">"Called child names"</span> <span class="ot">=</span> <span class="st">"#4777EFFF"</span>, </span>
+<span id="cb9-37"><a href="#cb9-37" aria-hidden="true" tabindex="-1"></a>                               <span class="st">"Shook child"</span> <span class="ot">=</span> <span class="st">"#39A4FBFF"</span>, </span>
+<span id="cb9-38"><a href="#cb9-38" aria-hidden="true" tabindex="-1"></a>                               <span class="st">"Spanked child"</span> <span class="ot">=</span> <span class="st">"#FE9B2DFF"</span>,</span>
+<span id="cb9-39"><a href="#cb9-39" aria-hidden="true" tabindex="-1"></a>                               <span class="st">"Hit/slapped child on arm/leg"</span> <span class="ot">=</span> <span class="st">"#F46516FF"</span>,</span>
+<span id="cb9-40"><a href="#cb9-40" aria-hidden="true" tabindex="-1"></a>                               <span class="st">"Hit child with object"</span> <span class="ot">=</span> <span class="st">"#DB3A07FF"</span>,</span>
+<span id="cb9-41"><a href="#cb9-41" aria-hidden="true" tabindex="-1"></a>                               <span class="st">"Hit/slapped child on face/head/ears"</span> <span class="ot">=</span> <span class="st">"#B21A01FF"</span>,</span>
+<span id="cb9-42"><a href="#cb9-42" aria-hidden="true" tabindex="-1"></a>                               <span class="st">"Beat as hard as one could"</span> <span class="ot">=</span> <span class="st">"#7A0403FF"</span>,</span>
+<span id="cb9-43"><a href="#cb9-43" aria-hidden="true" tabindex="-1"></a>                               <span class="st">"Took privileges away from child"</span> <span class="ot">=</span> <span class="st">"#62FC6BFF"</span>,</span>
+<span id="cb9-44"><a href="#cb9-44" aria-hidden="true" tabindex="-1"></a>                               <span class="st">"Explained why behavior was wrong"</span> <span class="ot">=</span> <span class="st">"#A2FC3CFF"</span>,</span>
+<span id="cb9-45"><a href="#cb9-45" aria-hidden="true" tabindex="-1"></a>                               <span class="st">"Gave child something else to do"</span> <span class="ot">=</span> <span class="st">"#D2E935FF"</span>)) <span class="sc">+</span></span>
+<span id="cb9-46"><a href="#cb9-46" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_bw</span>() <span class="sc">+</span></span>
+<span id="cb9-47"><a href="#cb9-47" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">axis.text.x =</span> <span class="fu">element_blank</span>(),</span>
+<span id="cb9-48"><a href="#cb9-48" aria-hidden="true" tabindex="-1"></a>        <span class="at">legend.position =</span> <span class="st">"right"</span>) <span class="sc">+</span></span>
+<span id="cb9-49"><a href="#cb9-49" aria-hidden="true" tabindex="-1"></a>  <span class="fu">guides</span>(<span class="at">fill =</span> <span class="fu">guide_legend</span>(<span class="at">ncol =</span> <span class="dv">1</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
