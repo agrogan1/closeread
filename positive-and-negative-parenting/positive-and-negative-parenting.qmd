@@ -1,5 +1,5 @@
 ---
-title: "Positive and Negative Parenting and Child Development Outcomes" 
+title: "Positive and Negative Parenting, and Child Development Outcomes" 
 subtitle: "Variation, Commonality and Possible Universals Across Multiple Countries"
 author: 
   - name: "Andy Grogan-Kaylor"
