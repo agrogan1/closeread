@@ -12,6 +12,9 @@ format:
     theme: yeti
     lightbox: true
     css: positive-and-negative-parenting.css
+  pdf: 
+    toc: true
+    number-sections: true
   revealjs: 
     theme: default
     lightbox: true
