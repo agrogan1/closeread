@@ -1,6 +1,6 @@
 ---
 title: "Positive and Negative Parenting and Child Development Outcomes" 
-subtitle: "Variation and Commonality Across Multiple Countries"
+subtitle: "Variation, Commonality and Possible Universals Across Multiple Countries"
 author: 
   - name: "Andy Grogan-Kaylor"
     url: https://agrogan1.github.io/
