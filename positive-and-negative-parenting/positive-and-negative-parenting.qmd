@@ -5,15 +5,175 @@ author:
   - name: "Andy Grogan-Kaylor"
     url: https://agrogan1.github.io/
 date: "today"
-format: 
+format:
+  html: 
+    toc: true
+    number-sections: true
+    theme: yeti
+    lightbox: true
+    css: positive-and-negative-parenting.css
+  revealjs: 
+    theme: default
+    lightbox: true
+    scrollable: true
+    controls: true
+    controls-tutorial: true
+    slide-number: true
+    progress: true
+    transition: convex
+    transition-speed: slow
+    chalkboard: true
+    title-slide-attributes:
+      data-background-image: earth.png
+      data-background-size: cover
+      data-background-transition: fade
+    css: positive-and-negative-parenting-revealjs.css
+    view-distance: 10
+    mobile-view-distance: 10
+    output-file: positive-and-negative-parenting-revealjs.html
   closeread-html:
+    output-file: positive-and-negative-parenting-closeread.html
     cr-style:
       narrative-text-color-sidebar: black
       narrative-background-color-overlay: lightgrey
       narrative-text-color-overlay: black
       narrative-background-color-sidebar: white
       section-background-color: white
+bibliography: positive-and-negative-parenting.bib
+from: markdown+emoji
 ---
+
+```{r}
+#| output: false
+#| echo: false
+
+library(ggplot2)
+
+library(readr)
+
+library(plotly)
+
+library(dplyr)
+
+library(countrycode)
+
+```
+
+::: {.content-visible when-format="revealjs"}
+# How To Navigate This Presentation {transition="convex" transition-speed="slow"}
+
+- Use the :arrow_left: :arrow_right: keys to move through the presentation.
+- Press *o* for *panel overview*.
+- Press **☰** for *menu*.
+:::
+
+# The Scope of the Issue {.smaller}
+
+::: {.incremental}
+* UNICEF considers children globally to be in crisis: political violence, climate change, and poverty affect many children,
+* In this time of crisis, parenting is one crucial area of focus.
+* According to UNICEF data, $\frac{1}{3}$ of children are subject to physical punishment; $\frac{2}{3}$ to some form of violent punishment.
+* In a review of 50 years of literature on physical punishment, @Gershoff2016 connect physical punishment to poor mental health outcomes, and other poor outcomes over the life course. @Ward2023 examines the relationship of multiple forms of parental discipline to child outcomes.
+:::
+
+# Both Universals and Variation Are Important {.smaller .scrollable}
+
+> "Despite the incredible diversity existing among and within human cultures, there are many phenomena that occur regularly in all known societies. These commonalities, or universals, while deriving in part from human nature, may also have specific social, cultural, and systemic sources. We need to develop a working understanding of these universals so that we might advance legitimate, empirically based human science set on [creating knowledge that is politically relevant to fostering real solutions to the problems that complicate human co-existence]{.fragment .highlight-red} in the Age of the Anthropocene." [@Antweiler2016]
+
+
+# Universals and Variation (2)
+
+> "@Hanel2019 cite research suggesting that 'highlighting similarities between groups [improves interpersonal and intergroup attitudes]{.fragment .highlight-red}.' Others have argued that 'build[ing] bonds of commonality across our differences' might be an [impetus for social transformation]{.fragment .highlight-red} [@Hunt-Hendrix2024]."
+
+# Data {.smaller}
+
+MICS data collected by UNICEF from Low and Middle Income Countries (LMIC) around the world. $N = 224,647 \text{ families}; N_{countries} = 60$
+
+```{r}
+#| output: false
+#| echo: false
+
+library(Statamarkdown)
+
+```
+
+```{r}
+#| echo: false
+#| warning: false
+
+country <- c("Algeria",  "Argentina",  "Bangladesh",  "Barbados",  "Belarus",  "Belize",  "Benin",  "Bosnia and Herzegovina",  "Cameroon",  "Central African Republic",  "Chad",  "Democratic Republic of the Congo",  "Republic of the Congo",  "Costa Rica",  "Cote d'Ivoire",  "Dominican Republic",  "El Salvador",  "Eswatini",  "Ghana",  "Guinea",  "Guinea Bissau",  "Guyana",  "Iraq",  "Jamaica",  "Kazakhstan",  "Kenya",  "Kosovo",  "Kyrgyzstan",  "Laos", "Macedonia",  "Madagascar",  "Malawi",  "Mali",  "Mauritania",  "Mexico",  "Moldova",  "Mongolia",  "Montenegro",  "Nepal",  "Nigeria",  "Pakistan",  "Panama",  "Paraguay",  "Sao Tome and Principe",  "Senegal",  "Serbia",  "Sierra Leone",  "Somalia",  "St. Lucia",  "State of Palestine",  "Suriname",  "Thailand",  "The Gambia",  "Togo",  "Trinidad and Tobago",  "Tunisia",  "Turkmenistan",  "Ukraine",  "Uruguay",  "Vietnam",  "Zimbabwe")
+
+MICScountries <- data.frame(country)
+
+MICScountries$country_iso <- countrycode(MICScountries$country, 
+                                 'country.name', 
+                                 'iso3c')
+
+```
+
+```{r}
+#| echo: false
+
+g <- list(showframe = TRUE, 
+          showcoastlines = TRUE, 
+          showcountries = TRUE,
+          showland = TRUE,
+          countrycolor = toRGB("grey"),
+          showocean = TRUE,
+          oceancolor = "white",
+          projection = list(type = 'robinson' #,
+                            # rotation = list(lon = -25,
+                            #                 lat = 0,
+                            #                 roll = 0)
+                            ),
+          showland = TRUE,
+          landcolor = toRGB("lightgrey"),
+          bgcolor = "transparent")
+
+t <- list(family = "sans serif", 
+          size = 8, 
+          color = toRGB("black"))
+
+l <- list(color = toRGB("black"), 
+          width = 0.5)
+
+p0 <- MICScountries %>% 
+  plot_geo() %>% 
+  add_trace(z = 1,
+    text = ~country, 
+    colors = "#1CABE2",
+    hoverinfo = 'text',
+    locations = ~country_iso, 
+    showscale = FALSE,
+    marker = list(size=10, line = l)) %>%
+  layout(geo = g,
+         plot_bgcolor='transparent',
+         paper_bgcolor='transparent') %>% 
+  config(displayModeBar = FALSE)
+
+```
+
+::: {.content-visible when-format="html"}
+```{r}
+#| echo: false
+#| fig-cap: "Countries in UNICEF MICS Data"
+
+p0
+
+```
+:::
+
+# Parenting Behaviors Vary *Somewhat*
+
+Verbal reasoning (78%) and shouting (64%) are the most common parental discipline behaviors toward young children.
+
+::: {.content-visible when-format="revealjs"}
+# References
+:::
+
+::: {.content-visible when-format="pdf"}
+# References
+:::
 
 
 

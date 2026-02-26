@@ -1,0 +1,38 @@
+h1.title {
+  font-size: 55px;
+  color: white;
+  background-color: red;
+}
+
+.subtitle {
+  color: white;
+  background-color: red;
+}
+
+.quarto-title-author-name, .date {
+  font-size: 30px;
+  color: white;
+}
+
+p.author {
+  color: white;
+}
+
+.reveal blockquote {
+  color: black;
+  border-left: 3px solid red; 
+  padding: 0.5em 10px;
+}
+
+.reveal .progress span { 
+  color: red;
+}
+
+.center-xy {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translateY(-50%), translateX(-50%);
+  transform: translateY(-50%), translateX(-50%);
+}
