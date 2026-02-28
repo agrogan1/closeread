@@ -50,13 +50,19 @@ from: markdown+emoji
 #| output: false
 #| echo: false
 
-library(ggplot2)
+library(tibble) # data frames
+
+library(ggplot2) # beautiful graphs
+
+library(geomtextpath) # path geoms
 
 library(readr)
 
 library(plotly)
 
-library(dplyr)
+library(dplyr) # data wrangling
+
+library(tidyr) # tidy data
 
 library(countrycode)
 
@@ -69,6 +75,13 @@ library(countrycode)
 - Press *o* for *panel overview*.
 - Press **☰** for *menu*.
 :::
+
+# Acknowledgements
+
+* Collaborators: Professor Julie Ma, Professor Yoonsun Han, Dr. Kaitlin Ward
+* Members of the *Global Families Project*
+* IPUMS
+* NICHD
 
 # The Scope of the Issue {.smaller}
 
@@ -90,7 +103,7 @@ library(countrycode)
 
 # Data {.smaller}
 
-MICS data collected by UNICEF from Low and Middle Income Countries (LMIC) around the world. $N = 224,647 \text{ families}; N_{countries} = 60$
+MICS data collected by UNICEF from Low and Middle Income Countries (LMIC) around the world. <mark>$N = XXXXXXXX \text{ families}; N_{countries} = 60$</mark>
 
 ```{r}
 #| output: false
@@ -166,9 +179,124 @@ p0
 ```
 :::
 
-# Parenting Behaviors Vary *Somewhat*
+# Sources of Variation In The Study of Parenting And Child Outcomes
+
+```{r}
+#| label: fig-variationsources
+#| fig-cap: "Sources of Variation In The Study of Parenting And Child Outcomes"
+#| fig-height: 6
+#| echo: false
+#| warning: false
+
+# CONSIDER USING ANNOTATE
+
+tribble(
+  ~beta0, ~beta1, ~u0, ~u1,
+  5, 0, .5, .25) %>% 
+  uncount(weights = 30) %>%
+  mutate(country = factor(row_number())) %>%
+  ungroup() %>%
+  rowwise() %>%
+  mutate(intercept = beta0 + rnorm(1, 0, u0),
+         slope = beta1 + rnorm(1, 0, u1)) %>%
+  ggplot() +
+  geom_abline(aes(intercept = intercept, 
+                  slope = slope),
+              color = "grey") +
+  geom_segment(aes(x = 0, 
+                   xend = 0,
+                   y = max(intercept),
+                   yend = min(intercept)),
+               alpha = .25,
+               color = "red",
+               size = 1,
+               arrow = arrow(ends = "both",
+                             length = unit(0.1, 
+                                           "inches"))) +
+  # annotate(geom = "point", 
+  #          x = 0, 
+  #          y = 5, 
+  #          color = "#FDE725",
+  #          alpha = .5,
+  #          size = 25) +
+  annotate("text", 
+           x = 2.0, 
+           y = 2.5, 
+           label = "variation in outcome",
+           color = "red") +
+  annotate("segment", 
+           x = 2, 
+           xend = .1, 
+           y = 3, 
+           yend = 5,
+           colour = "red", 
+           linewidth = 1, 
+           arrow = arrow()) +
+  annotate("segment", 
+           x = 0, 
+           xend = 10, 
+           y = 1, 
+           yend = 1,
+           colour = "red", 
+           linewidth = 1, 
+           arrow = arrow(ends = "both")) +
+  annotate("text",
+           x = 5,
+           y = .5,
+           label = "variation in parenting behavior",
+           color = "red") +
+  geom_labelabline(aes(intercept = 5, 
+                       slope = max(slope), 
+                       label = "variation in relationship of \nparenting behavior \nto child outcome"),
+                   size = 3,
+                   text_only = TRUE,
+                   textcolor = "red",
+                   linecolor = "red") +
+  geom_labelabline(aes(intercept = 5, 
+                       slope = min(slope), 
+                       label = "variation in relationship of \nparenting behavior \nto child outcome"),
+                   size = 3,
+                   text_only = TRUE,
+                   textcolor = "red",
+                   linecolor = "red") +
+  labs(title = "Sources of Variation",
+       subtitle = "In The Study of Parenting And Child Outcomes",
+       x = "parenting behavior",
+       y = "child outcome") +
+  xlim(0, 10) +
+  ylim(0, 10) +
+  scale_color_viridis_d() +
+  theme_minimal() 
+
+```
+ 
+# Parenting Behaviors Vary *Somewhat* Across Countries
 
 Verbal reasoning (78%) and shouting (64%) are the most common parental discipline behaviors toward young children.
+
+# The *Maximal Model* Approach {.smaller}
+
+* Hypothetically, one might imagine that there could be group level unobserved factors which affect many regression slopes--i.e. the relationship between multiple predictors (e.g. $x_1$, $x_2$, $x_3$, etc.) and outcome variable $y$. 
+* Arguably, were one to ignore these unobserved factors in statistical estimation, they would show up either in an error term ($e_i$ or $u_0$), or in the regression coefficients ($\beta$). 
+* The above could lead to statistical bias and a substantive mis-estimation of important effects. Thus, there is a conceptual argument for including as many random effects—i.e. random slopes—in a statistical model as possible.
+* There is also a substantive reason: We might be interested in the *sizes* of *all* the random slopes!
+
+# Average Relationships of Parenting And Child Outcomes
+
+
+# The Relationship of Parenting And Child Outcomes Shows Little Variation Across Countries
+
+# A Standard Spaghetti Plot
+
+# A Modified Spaghetti Plot
+
+# Quantifying Diversity and Commonality in the Relationship of Parenting To Child Outcomes
+
+# Questions 
+
+# Discussion
+
+abcdefg
 
 ::: {.content-visible when-format="revealjs"}
 # References
