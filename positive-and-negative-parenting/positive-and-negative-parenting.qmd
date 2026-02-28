@@ -84,7 +84,7 @@ library(countrycode)
 > "Despite the incredible diversity existing among and within human cultures, there are many phenomena that occur regularly in all known societies. These commonalities, or universals, while deriving in part from human nature, may also have specific social, cultural, and systemic sources. We need to develop a working understanding of these universals so that we might advance legitimate, empirically based human science set on [creating knowledge that is politically relevant to fostering real solutions to the problems that complicate human co-existence]{.fragment .highlight-red} in the Age of the Anthropocene." [@Antweiler2016]
 
 
-# Universals and Variation (2)
+# Highlighting Commonalities May Promote Intergroup Attitudes and Solidarity
 
 > "@Hanel2019 cite research suggesting that 'highlighting similarities between groups [improves interpersonal and intergroup attitudes]{.fragment .highlight-red}.' Others have argued that 'build[ing] bonds of commonality across our differences' might be an [impetus for social transformation]{.fragment .highlight-red} [@Hunt-Hendrix2024]."
 
