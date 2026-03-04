@@ -12,6 +12,7 @@ h1.title {
 .quarto-title-author-name, .date {
   font-size: 30px;
   color: white;
+  background-color: red;
 }
 
 p.author {
