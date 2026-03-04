@@ -1,5 +1,5 @@
 ---
-title: "Positive and Negative Parenting, and Child Development Outcomes" 
+title: "Positive Parenting, Negative Parenting, and Child Development Outcomes" 
 subtitle: "Variation, Commonality and Possible Universals Across Multiple Countries"
 author: 
   - name: "Andy Grogan-Kaylor"
@@ -12,7 +12,6 @@ format:
     theme: yeti
     lightbox: true
     css: positive-and-negative-parenting.css
-    title-block-banner: "dodgerblue"
   pdf: 
     toc: true
     number-sections: true
