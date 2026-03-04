@@ -12,11 +12,12 @@ format:
     theme: yeti
     lightbox: true
     css: positive-and-negative-parenting.css
+    title-block-banner: "dodgerblue"
   pdf: 
     toc: true
     number-sections: true
   revealjs: 
-    theme: default
+    theme: [default, theme.scss]
     lightbox: true
     scrollable: true
     controls: true
@@ -27,7 +28,7 @@ format:
     transition-speed: slow
     chalkboard: true
     title-slide-attributes:
-      data-background-image: earth.png
+      data-background-image: MICS.png
       data-background-size: cover
       data-background-transition: fade
     css: positive-and-negative-parenting-revealjs.css
@@ -56,15 +57,19 @@ library(ggplot2) # beautiful graphs
 
 library(geomtextpath) # path geoms
 
-library(readr)
+library(readr) # read csv
 
-library(plotly)
+library(plotly) # interactive graphs
 
 library(dplyr) # data wrangling
 
 library(tidyr) # tidy data
 
-library(countrycode)
+library(countrycode) # work with country names
+
+library(sf) # simple features
+
+library(rnaturalearth) # natural earth data
 
 ```
 
@@ -97,7 +102,7 @@ library(countrycode)
 > "Despite the incredible diversity existing among and within human cultures, there are many phenomena that occur regularly in all known societies. These commonalities, or universals, while deriving in part from human nature, may also have specific social, cultural, and systemic sources. We need to develop a working understanding of these universals so that we might advance legitimate, empirically based human science set on [creating knowledge that is politically relevant to fostering real solutions to the problems that complicate human co-existence]{.fragment .highlight-red} in the Age of the Anthropocene." [@Antweiler2016]
 
 
-# Highlighting Commonalities May Promote Intergroup Attitudes and Solidarity
+# Highlighting Commonalities May Promote Intergroup Attitudes and Solidarity {.smaller}
 
 > "@Hanel2019 cite research suggesting that 'highlighting similarities between groups [improves interpersonal and intergroup attitudes]{.fragment .highlight-red}.' Others have argued that 'build[ing] bonds of commonality across our differences' might be an [impetus for social transformation]{.fragment .highlight-red} [@Hunt-Hendrix2024]."
 
@@ -110,6 +115,25 @@ MICS data collected by UNICEF from Low and Middle Income Countries (LMIC) around
 #| echo: false
 
 library(Statamarkdown)
+
+```
+
+```{r}
+#| echo: false
+#| output: false
+
+mapdata <- ne_countries(scale = "medium", # medium scale
+                        returnclass = "sf") # as sf object
+
+MICS <- read_sf("MICS-shapefile/MICS.shp")
+
+ggplot() +
+  geom_sf(data=mapdata) +
+  geom_sf(data = MICS, fill = "dodgerblue") +
+  theme_minimal() # +
+  # labs(title = "Countries in UNICEF MICS Data")
+
+ggsave("MICS.png")
 
 ```
 
@@ -157,7 +181,7 @@ p0 <- MICScountries %>%
   plot_geo() %>% 
   add_trace(z = 1,
     text = ~country, 
-    colors = "#1CABE2",
+    colors = "dodgerblue",
     hoverinfo = 'text',
     locations = ~country_iso, 
     showscale = FALSE,
@@ -168,6 +192,7 @@ p0 <- MICScountries %>%
   config(displayModeBar = FALSE)
 
 ```
+
 
 ::: {.content-visible when-format="html"}
 ```{r}
@@ -269,6 +294,10 @@ tribble(
   theme_minimal() 
 
 ```
+
+# The Equation
+
+
  
 # Parenting Behaviors Vary *Somewhat* Across Countries
 
@@ -278,7 +307,7 @@ Verbal reasoning (78%) and shouting (64%) are the most common parental disciplin
 
 * Hypothetically, one might imagine that there could be group level unobserved factors which affect many regression slopes--i.e. the relationship between multiple predictors (e.g. $x_1$, $x_2$, $x_3$, etc.) and outcome variable $y$. 
 * Arguably, were one to ignore these unobserved factors in statistical estimation, they would show up either in an error term ($e_i$ or $u_0$), or in the regression coefficients ($\beta$). 
-* The above could lead to statistical bias and a substantive mis-estimation of important effects. Thus, there is a conceptual argument for including as many random effects—i.e. random slopes—in a statistical model as possible.
+* The above could lead to statistical bias and a substantive mis-estimation of important effects. Thus, there is a conceptual argument for including as many random effects—i.e. random slopes—in a statistical model as possible [@Barr2013; @Frank2018].
 * There is also a substantive reason: We might be interested in the *sizes* of *all* the random slopes!
 
 # Average Relationships of Parenting And Child Outcomes
