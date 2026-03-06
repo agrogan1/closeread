@@ -12,9 +12,16 @@ format:
     theme: yeti
     lightbox: true
     css: positive-and-negative-parenting.css
-  pdf: 
-    toc: true
-    number-sections: true
+  poster-typst: 
+    size: "36x24"
+    poster-authors: "Andrew Grogan-Kaylor, Julie Ma, Yoonsun Han, Kaitlin Ward"
+    departments: "University of Michigan"
+    institution-logo: "./images/ncstate.png"
+    footer-text: "posit::conf 2023"
+    footer-url: "https://posit.co/conference/"
+    footer-emails: "abc@example.com"
+    footer-color: "FFCB05"
+    keywords: ["Typesetting", "Typst", "Quarto"]
   revealjs: 
     theme: [default, theme.scss]
     lightbox: true
@@ -82,7 +89,10 @@ library(rnaturalearth) # natural earth data
 
 # Acknowledgements
 
-* Collaborators: Professor Julie Ma, Professor Yoonsun Han, Dr. Kaitlin Ward
+* Collaborators: 
+  + Professor Julie Ma
+  + Professor Yoonsun Han
+  + Dr. Kaitlin Ward
 * Members of the *Global Families Project*
 * IPUMS
 * NICHD
@@ -296,7 +306,7 @@ tribble(
 
 # The Equation
 
-
+![annotated equation](annotated-equation.png)
  
 # Parenting Behaviors Vary *Somewhat* Across Countries
 
