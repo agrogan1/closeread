@@ -13,15 +13,15 @@ format:
     lightbox: true
     css: positive-and-negative-parenting.css
   poster-typst: 
-    size: "36x24"
+    size: "48x36"
     poster-authors: "Andrew Grogan-Kaylor, Julie Ma, Yoonsun Han, Kaitlin Ward"
     departments: "University of Michigan"
-    institution-logo: "./images/ncstate.png"
-    footer-text: "posit::conf 2023"
-    footer-url: "https://posit.co/conference/"
-    footer-emails: "abc@example.com"
+    institution-logo: "UM.png"
+    footer-text: "APS Barcelona 2026"
+    footer-url: "https://www.umich.edu"
+    footer-emails: "agrogan@umich.edu"
     footer-color: "FFCB05"
-    keywords: ["Typesetting", "Typst", "Quarto"]
+    keywords: ["parenting", "discipline", "child development"]
   revealjs: 
     theme: [default, theme.scss]
     lightbox: true
@@ -86,6 +86,8 @@ library(rnaturalearth) # natural earth data
 - Press *o* for *panel overview*.
 - Press **☰** for *menu*.
 :::
+
+![positive parenting](positiveparenting.png)
 
 # Acknowledgements
 
@@ -213,6 +215,9 @@ p0
 ```
 :::
 
+![countries in UNICEF MICS Data](MICS.png)
+
+
 # Sources of Variation In The Study of Parenting And Child Outcomes
 
 ```{r}
@@ -319,8 +324,10 @@ Verbal reasoning (78%) and shouting (64%) are the most common parental disciplin
 * The above could lead to statistical bias and a substantive mis-estimation of important effects. Thus, there is a conceptual argument for including as many random effects—i.e. random slopes—in a statistical model as possible [@Barr2013; @Frank2018].
 * There is also a substantive reason: We might be interested in the *sizes* of *all* the random slopes!
 
-# Average Relationships of Parenting And Child Outcomes
+# Relationship of Parenting And Child Outcomes
 
+```{r, child=c('./mytable.md')}
+```
 
 # The Relationship of Parenting And Child Outcomes Shows Little Variation Across Countries
 
