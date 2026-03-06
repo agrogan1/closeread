@@ -2,6 +2,8 @@
 
 clear all
 
+cd "/Users/agrogan/Desktop/GitHub/closeread/positive-and-negative-parenting"
+
 use "/Users/agrogan/Library/CloudStorage/Dropbox-UniversityofMichigan/Andrew Grogan-Kaylor/MICS/merging MICS and World Bank WDI/MICS_R15_Oct2023.dta"
 
 recode no_aggress (0=1)(1=0), generate(aggress)
@@ -33,7 +35,9 @@ describe u? u1? // describe random effects
 
 collapse u? u1?, by(country)
 
+save reffects.dta, replace
 
+restore // restore older data
 
 
 
