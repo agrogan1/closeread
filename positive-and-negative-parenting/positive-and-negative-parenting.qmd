@@ -14,6 +14,7 @@ format:
     css: positive-and-negative-parenting.css
   poster-typst: 
     size: "48x36"
+    font-size: 48
     poster-authors: "Andrew Grogan-Kaylor, Julie Ma, Yoonsun Han, Kaitlin Ward"
     departments: "University of Michigan"
     institution-logo: "UM.png"
@@ -34,21 +35,13 @@ format:
     transition-speed: slow
     chalkboard: true
     title-slide-attributes:
-      data-background-image: MICS.png
-      data-background-size: cover
+      data-background-image: positiveparenting.png
+      data-background-size: contain
       data-background-transition: fade
     css: positive-and-negative-parenting-revealjs.css
     view-distance: 10
     mobile-view-distance: 10
     output-file: positive-and-negative-parenting-revealjs.html
-  closeread-html:
-    output-file: positive-and-negative-parenting-closeread.html
-    cr-style:
-      narrative-text-color-sidebar: black
-      narrative-background-color-overlay: lightgrey
-      narrative-text-color-overlay: black
-      narrative-background-color-sidebar: white
-      section-background-color: white
 bibliography: positive-and-negative-parenting.bib
 from: markdown+emoji
 ---
@@ -87,7 +80,9 @@ library(rnaturalearth) # natural earth data
 - Press **☰** for *menu*.
 :::
 
+::: {.content-visible unless-format="html"}
 ![positive parenting](positiveparenting.png)
+:::
 
 # Acknowledgements
 
@@ -215,7 +210,9 @@ p0
 ```
 :::
 
+::: {.content-visible unless-format="html"}
 ![countries in UNICEF MICS Data](MICS.png)
+:::
 
 
 # Sources of Variation In The Study of Parenting And Child Outcomes
@@ -324,7 +321,7 @@ Verbal reasoning (78%) and shouting (64%) are the most common parental disciplin
 * The above could lead to statistical bias and a substantive mis-estimation of important effects. Thus, there is a conceptual argument for including as many random effects—i.e. random slopes—in a statistical model as possible [@Barr2013; @Frank2018].
 * There is also a substantive reason: We might be interested in the *sizes* of *all* the random slopes!
 
-# Relationship of Parenting And Child Outcomes
+# Relationship of Parenting And Child Outcomes {.smaller .scrollable}
 
 ```{r, child=c('./mytable.md')}
 ```
@@ -337,7 +334,9 @@ Verbal reasoning (78%) and shouting (64%) are the most common parental disciplin
 
 # Quantifying Diversity and Commonality in the Relationship of Parenting To Child Outcomes
 
+::: {.content-visible when-format="html"}
 # Questions 
+:::
 
 # Discussion
 
