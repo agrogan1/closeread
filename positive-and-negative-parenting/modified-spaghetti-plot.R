@@ -9,7 +9,8 @@ ggplot(reffects,
   geom_segment(aes(x = 0,
                    xend = 1,
                    y = 0,
-                   yend = (.023 + u5) * 1)) +
+                   yend = (.023 + u4) * 1)) +
+  theme_minimal() +
   theme(legend.position = "none")
 
 
