@@ -18,7 +18,7 @@ format: html
 * [https://agrogan1.github.io/closeread/empathy/empathy.html](https://agrogan1.github.io/closeread/empathy/empathy.html)
 
 
-Not a `closeread` document, but it's here:  [https://agrogan1.github.io/closeread/positive-and-negative-parenting/positive-and-negative-parenting.html](https://agrogan1.github.io/closeread/positive-and-negative-parenting/positive-and-negative-parenting.html)
+Not a `closeread` document, but it used to be in this repo; now it's here:  [https://agrogan1.github.io/closeread/positive-and-negative-parenting/positive-and-negative-parenting.html](https://agrogan1.github.io/closeread/positive-and-negative-parenting/positive-and-negative-parenting.html)
 
 Not a `closeread` document, but a tutorial on using *OJS*, which can be useful in `closeread` documents:  [https://agrogan1.github.io/closeread/ojs-demo/ojs-demo.html](https://agrogan1.github.io/closeread/ojs-demo/ojs-demo.html)
 
