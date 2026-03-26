@@ -207,7 +207,8 @@ Multilevel logistic regression models examined main effects and interactions of 
 :::
 
 :::{focus-on="cr-equation" pan-to="50%,50%" scale-by="2.0"}
-<span style="font-size:105px;color:#E2231A;text-align:center;">`r emo::ji("down_arrow")`</span>
+<div style="font-size: 55px;">
+`r emo::ji("down_arrow")`</div>
 :::
 
 :::{#cr-equation}
