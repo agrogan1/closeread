@@ -100,6 +100,10 @@ p0 <- MICScountries %>%
 
 ```
 
+:::{.story-scroll-hint}
+Scroll to explore 
+`r emo::ji("down_arrow")`
+:::
 
 :::{.cr-section}
 

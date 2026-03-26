@@ -37,6 +37,10 @@ share:
   bsky: true
 ---
 
+:::{.story-scroll-hint}
+Scroll down to explore &#8675;
+:::
+
 :::{.cr-section}
 
 :::{focus-on="cr-child-maltreatment" scale-by=".45"}
