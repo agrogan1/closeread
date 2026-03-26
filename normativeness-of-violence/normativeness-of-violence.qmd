@@ -104,10 +104,15 @@ p0 <- MICScountries %>%
 
 ```
 
+:::{.story-scroll-hint}
+Scroll to explore 
+`r emo::ji("down_arrow")`
+:::
+
 :::{.cr-section}
 
 :::{focus-on="cr-MICS-countries"}
-<span style="font-size:105px;color:#E2231A;text-align:center;">`r emo::ji("down_arrow")`</span>
+
 :::
 
 :::{focus-on="cr-question-1"}
