@@ -114,7 +114,8 @@ Scroll to explore
 :::{.cr-section}
 
 :::{focus-on="cr-MICS-countries"}
-
+<div style="font-size: 55px;">
+`r emo::ji("down_arrow")`</div>
 :::
 
 :::{focus-on="cr-question-1"}
