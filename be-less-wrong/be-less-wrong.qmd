@@ -210,6 +210,7 @@ flowchart LR
   classDef red fill:#9A3324,stroke:#000000,stroke-width:2px,color:#FFFFFF;
 
   intervention(intervention) --> outcome(outcome)
+  
 ```
 :::
 
@@ -269,6 +270,7 @@ flowchart LR
   intervention(intervention) --> outcome(outcome)
 
   group(group) --> outcome(outcome)
+  
 ```
 :::
 
@@ -345,6 +347,7 @@ Imagine a situation in which an intervention is administered based upon the situ
 
 p0 + p0 + aes(color = group) +
   plot_annotation(title = "One Model Accounts for Group While The Other Does Not")
+
 ```
 
 :::
@@ -433,7 +436,6 @@ p1B <- p1 +
   labs(title = "A Simple Model of The Data Accounting for Group Membership",
        subtitle = "What is the observed relationship between intervention and outcome?",
        y = "beneficial mental health or \npsychological outcome")
-
 
 ```
 
