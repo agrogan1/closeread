@@ -306,7 +306,7 @@ The fact that statistical results--and analogously visual results--can flip when
 :::{#cr-Simpson}
 ## Simpson's Paradox
 
-Put briefly, and intuitively, our evidence based "story" can change--sometimes quite dramatically--as we add more and more factors to our model.
+Put briefly, and intuitively, our evidence based "story" can change--sometimes quite dramatically--as we add more and more factors to our model [@Marang-vandeMheen2014; @Norton2015].
 :::
 
 [^multilevelstructure]: An analogous process can occur with *multilevel* data, in which there are often many groups, such as many schools, many neighborhoods, or many countries. Failure to account for the grouping of the data--in schools, neighborhoods or countries--can sometimes lead to dramatically incorrect results [@Gelman2007; @Nieuwenhuis2015; @DiezRoux2003]. 
