@@ -103,7 +103,7 @@ p0 <- MICScountries %>%
 
 ```
 :::{.story-scroll-hint}
-Scroll to explore 
+Scroll down to explore 
 `r emo::ji("down_arrow")`
 :::
 

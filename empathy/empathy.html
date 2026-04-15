@@ -2,15 +2,18 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.33">
+<meta name="generator" content="quarto-1.9.30">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Andy Grogan-Kaylor">
-<meta name="dcterms.date" content="2026-02-09">
+<meta name="dcterms.date" content="2026-04-15">
 
 <title>When Empathy Helps and Hurts</title>
 <style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
 div.columns{display: flex; gap: min(4vw, 1.5em);}
@@ -52,10 +55,10 @@ div.csl-indent {
 <script src="empathy_files/libs/quarto-html/tippy.umd.min.js"></script>
 <script src="empathy_files/libs/quarto-html/anchor.min.js"></script>
 <link href="empathy_files/libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="empathy_files/libs/quarto-html/quarto-syntax-highlighting-ea385d0e468b0dd5ea5bf0780b1290d9.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="empathy_files/libs/quarto-html/quarto-syntax-highlighting-b6a8276bf55561bdbc268162d41bd1f7.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="empathy_files/libs/bootstrap/bootstrap.min.js"></script>
 <link href="empathy_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="empathy_files/libs/bootstrap/bootstrap-81267100e462c21b3d6c0d5bf76a3417.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="empathy_files/libs/bootstrap/bootstrap-138a6193a3bd40baf1e627da441a4734.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script src="empathy_files/libs/quarto-contrib/intersection-observer-polyfill-1.0.0/intersection-observer.js"></script>
 <script src="empathy_files/libs/quarto-contrib/scrollama-3.2.0/scrollama.min.js"></script>
 <script src="empathy_files/libs/quarto-contrib/closeread-0.1.0/closeread.js"></script>
@@ -80,11 +83,11 @@ div.csl-indent {
       <!-- user-provided yaml closeread style options -->
       <style>
         :root {
-          --cr-narrative-background-color-overlay: lightgrey;
---cr-narrative-text-color-overlay: black;
+          --cr-section-background-color: white;
+--cr-narrative-background-color-overlay: lightgrey;
 --cr-narrative-background-color-sidebar: white;
---cr-section-background-color: white;
 --cr-narrative-text-color-sidebar: black;
+--cr-narrative-text-color-overlay: black;
         }
       </style>
     
@@ -109,7 +112,7 @@ div.csl-indent {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">February 9, 2026</p>
+      <p class="date">April 15, 2026</p>
     </div>
   </div>
   
@@ -121,6 +124,9 @@ div.csl-indent {
 </header>
 
 
+<div class="story-scroll-hint">
+<p>Scroll down to explore ↓</p>
+</div>
 <div class="cr-section cr-column-screen sidebar-left">
 <div class="narrative-col">
 <div class="trigger new-trigger" data-focus-on="cr-research-question">
@@ -157,17 +163,17 @@ div.csl-indent {
 <p>A significant nonlinear association was observed between empathy and self-harm thoughts.</p>
 </div>
 </div>
-<div class="trigger new-trigger" data-scale-by="1.5" data-focus-on="cr-empathy" data-pan-to="-15%,-25%">
+<div class="trigger new-trigger" data-scale-by="1.5" data-pan-to="-15%,-25%" data-focus-on="cr-empathy">
 <div class="narrative">
 <p>Predicted probabilities of self-harm thoughts were lowest at moderate levels of empathy for both groups.</p>
 </div>
 </div>
-<div class="trigger new-trigger" data-scale-by="1.5" data-focus-on="cr-empathy" data-pan-to="-45%,-5%">
+<div class="trigger new-trigger" data-scale-by="1.5" data-pan-to="-45%,-5%" data-focus-on="cr-empathy">
 <div class="narrative">
 <p>Risk for self-harm thoughts was highest among individuals with high empathy.</p>
 </div>
 </div>
-<div class="trigger new-trigger" data-scale-by="2.0" data-focus-on="cr-empathy" data-pan-to="15%,-5%">
+<div class="trigger new-trigger" data-scale-by="2.0" data-pan-to="15%,-5%" data-focus-on="cr-empathy">
 <div class="narrative">
 <p>Risk for self-harm thoughts was also somewhat high for individuals with low empathy.</p>
 </div>
@@ -380,13 +386,14 @@ Wood, S. N. (2025). Generalized additive models. <em>Annual Review of Statistics
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy

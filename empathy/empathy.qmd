@@ -35,8 +35,7 @@ share:
 ---
 
 :::{.story-scroll-hint}
-Scroll to explore 
-`r emo::ji("down_arrow")`
+Scroll down to explore ↓
 :::
 
 :::{.cr-section}
