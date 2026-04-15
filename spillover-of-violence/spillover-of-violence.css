@@ -50,3 +50,22 @@ blockquote {
   .boxgreen {background-color: white;}
  }
 }
+
+.story-scroll-hint {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    margin-top: 30px;
+    color: darkgrey;
+    font-size: 1.0rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    animation: storyScrollBounce 2s ease-in-out infinite;
+  }
+
+  @keyframes storyScrollBounce {
+    0%, 100% { transform: translateY(0); opacity: 0.6; }
+    50% { transform: translateY(6px); opacity: 1; }
+}
