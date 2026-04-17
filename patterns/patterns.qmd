@@ -3,11 +3,14 @@ title: "Patterns Of Caregiver Aggressive And Nonaggressive Discipline"
 author: "TBD"
 date: "today"
 format: 
-  html:
-    toc: true
-    number-sections: true
-    code-fold: true
-    highlight-style: haddock
+  closeread-html:
+    cr-style:
+      narrative-text-color-sidebar: black
+      narrative-background-color-sidebar: white
+      narrative-background-color-overlay: lightgrey
+      narrative-text-color-overlay: black
+      section-background-color: white
+css: patterns.css
 ---
 
 ```{r}
@@ -30,6 +33,12 @@ library(countrycode) # work with country names
 
 ```
 
+:::{.story-scroll-hint}
+Scroll to explore 
+`r emo::ji("down_arrow")`
+:::
+
+:::{.cr-section}
 # Background
 
 Caregivers use a variety of disciplinary methods to respond to undesired child behavior. Many caregivers use nonaggressive forms of discipline, such as verbal reasoning and redirection. Some caregivers use aggressive forms of discipline, such as spanking and yelling. However, most caregivers use a combination of aggressive and nonaggressive discipline. To date, a disproportionately small number of caregiver discipline studies are conducted in low- and middle-income countries (LMICs), and few studies in low-resource contexts examine aggressive and nonaggressive behaviors simultaneously.
@@ -282,7 +291,7 @@ flowchart TB
 
 ```
 
-
+:::
 
 
 
