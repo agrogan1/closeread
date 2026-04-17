@@ -70,11 +70,11 @@ ul.task-list li input[type="checkbox"] {
       <!-- user-provided yaml closeread style options -->
       <style>
         :root {
-          --cr-narrative-text-color-overlay: black;
+          --cr-section-background-color: white;
+--cr-narrative-text-color-sidebar: black;
 --cr-narrative-background-color-overlay: lightgrey;
 --cr-narrative-background-color-sidebar: white;
---cr-section-background-color: white;
---cr-narrative-text-color-sidebar: black;
+--cr-narrative-text-color-overlay: black;
         }
       </style>
     
@@ -115,72 +115,58 @@ ul.task-list li input[type="checkbox"] {
 </div>
 <div class="cr-section cr-column-screen sidebar-left">
 <div class="narrative-col">
-<section id="background" class="level1 narrative trigger">
-<h1 class="narrative">Background</h1>
+<div class="trigger new-trigger" data-focus-on="cr-positiveparenting">
+<section id="background" class="level1 narrative">
+<h1>Background</h1>
+<p>Caregivers use a variety of disciplinary methods to respond to undesired child behavior.</p>
+<p>Many caregivers use nonaggressive forms of discipline, such as verbal reasoning and redirection. Some caregivers use aggressive forms of discipline, such as spanking and yelling.</p>
+<p>However, most caregivers use a combination of aggressive and nonaggressive discipline.</p>
+<p>To date, a disproportionately small number of caregiver discipline studies are conducted in low- and middle-income countries (LMICs), and few studies in low-resource contexts examine aggressive and nonaggressive behaviors simultaneously.</p>
 </section>
-<div class="trigger">
-<div class="narrative">
-<p>Caregivers use a variety of disciplinary methods to respond to undesired child behavior. Many caregivers use nonaggressive forms of discipline, such as verbal reasoning and redirection. Some caregivers use aggressive forms of discipline, such as spanking and yelling. However, most caregivers use a combination of aggressive and nonaggressive discipline. To date, a disproportionately small number of caregiver discipline studies are conducted in low- and middle-income countries (LMICs), and few studies in low-resource contexts examine aggressive and nonaggressive behaviors simultaneously.</p>
 </div>
-</div>
-<section id="objective" class="level1 narrative trigger">
-<h1 class="narrative">Objective</h1>
-</section>
-<div class="trigger">
-<div class="narrative">
+<div class="trigger new-trigger" data-focus-on="cr-positiveparenting" data-scale-by="1.5">
+<section id="objective" class="level1 narrative">
+<h1>Objective</h1>
 <p>This study aims to elucidate caregiver patterns of 11 disciplinary behaviors used in LMICs, and examine how these patterns relate to child outcomes and household characteristics.</p>
-</div>
-</div>
-<section id="participants-and-setting" class="level1 narrative trigger">
-<h1 class="narrative">Participants and setting</h1>
 </section>
-<div class="trigger">
-<div class="narrative">
+</div>
+<div class="trigger new-trigger" data-focus-on="cr-map">
+<section id="participants-and-setting" class="level1 narrative">
+<h1>Participants and setting</h1>
 <p>Data came from the fourth and fifth rounds of UNICEF Multiple Indicator Cluster Surveys (MICS) distributed between 2009 and 2017 (N = 218,824 respondents across 63 countries). Focal children were 3–4 years old.</p>
+</section>
 </div>
 </div>
-<div class="trigger">
-<div class="cell narrative">
-
+<div class="sticky-col">
+<div class="sticky-col-stack">
+<div id="cr-positiveparenting" class="sticky">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="positiveparenting.png" class="img-fluid figure-img"></p>
+<figcaption>positive parenting</figcaption>
+</figure>
 </div>
 </div>
-<div class="trigger">
-<div class="cell narrative">
-
-</div>
-</div>
-<div class="trigger">
-<div class="cell narrative">
+<div id="cr-map" class="scale-to-fill sticky">
+<div class="cell">
 <div class="cell-output-display">
-<div class="plotly html-widget html-fill-item" id="htmlwidget-1d6039f7291f8cfa52cd" style="width:100%;height:464px;"></div>
-<script type="application/json" data-for="htmlwidget-1d6039f7291f8cfa52cd">{"x":{"visdat":{"53c129fcca64":["function () ","plotlyVisDat"]},"cur_data":"53c129fcca64","attrs":{"53c129fcca64":{"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"z":1,"text":{},"colors":"#1CABE2","hoverinfo":"text","locations":{},"showscale":false,"marker":{"size":10,"line":{"color":"rgba(0,0,0,1)","width":0.5}},"inherit":true}},"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"mapType":"geo","geo":{"domain":{"x":[0,1],"y":[0,1]},"showframe":true,"showcoastlines":true,"showcountries":true,"showland":true,"countrycolor":"rgba(190,190,190,1)","showocean":true,"oceancolor":"white","projection":{"type":"robinson"},"landcolor":"rgba(211,211,211,1)","bgcolor":"transparent"},"plot_bgcolor":"transparent","paper_bgcolor":"transparent","scene":{"zaxis":{"title":[]}},"hovermode":"closest","showlegend":false},"source":"A","config":{"modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false,"displayModeBar":false},"data":[{"colorbar":{"title":"","ticklen":2},"colorscale":[["0","rgba(28,171,226,1)"],["1","rgba(28,171,226,1)"]],"showscale":false,"z":[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],"text":["Algeria","Argentina","Bangladesh","Barbados","Belarus","Belize","Benin","Bosnia and Herzegovina","Cameroon","Central African Republic","Chad","Democratic Republic of the Congo","Republic of the Congo","Costa Rica","Cote d'Ivoire","Dominican Republic","El Salvador","Eswatini","Ghana","Guinea","Guinea Bissau","Guyana","Iraq","Jamaica","Kazakhstan","Kenya","Kosovo","Kyrgyzstan","Laos","Macedonia","Madagascar","Malawi","Mali","Mauritania","Mexico","Moldova","Mongolia","Montenegro","Nepal","Nigeria","Pakistan","Panama","Paraguay","Sao Tome and Principe","Senegal","Serbia","Sierra Leone","Somalia","St. Lucia","State of Palestine","Suriname","Thailand","The Gambia","Togo","Trinidad and Tobago","Tunisia","Turkmenistan","Ukraine","Uruguay","Vietnam","Zimbabwe"],"hoverinfo":["text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text"],"locations":["DZA","ARG","BGD","BRB","BLR","BLZ","BEN","BIH","CMR","CAF","TCD","COD","COG","CRI","CIV","DOM","SLV","SWZ","GHA","GIN","GNB","GUY","IRQ","JAM","KAZ","KEN",null,"KGZ","LAO","MKD","MDG","MWI","MLI","MRT","MEX","MDA","MNG","MNE","NPL","NGA","PAK","PAN","PRY","STP","SEN","SRB","SLE","SOM","LCA","PSE","SUR","THA","GMB","TGO","TTO","TUN","TKM","UKR","URY","VNM","ZWE"],"marker":{"size":10,"line":{"color":"rgba(0,0,0,1)","width":0.5}},"type":"choropleth","geo":"geo","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+<div class="plotly html-widget html-fill-item" id="htmlwidget-b03d032778bea7706dd2" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-b03d032778bea7706dd2">{"x":{"visdat":{"5b93228bcf67":["function () ","plotlyVisDat"]},"cur_data":"5b93228bcf67","attrs":{"5b93228bcf67":{"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"z":1,"text":{},"colors":"#1CABE2","hoverinfo":"text","locations":{},"showscale":false,"marker":{"size":10,"line":{"color":"rgba(0,0,0,1)","width":0.5}},"inherit":true}},"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"mapType":"geo","geo":{"domain":{"x":[0,1],"y":[0,1]},"showframe":true,"showcoastlines":true,"showcountries":true,"showland":true,"countrycolor":"rgba(190,190,190,1)","showocean":true,"oceancolor":"white","projection":{"type":"robinson"},"landcolor":"rgba(211,211,211,1)","bgcolor":"transparent"},"plot_bgcolor":"transparent","paper_bgcolor":"transparent","scene":{"zaxis":{"title":[]}},"hovermode":"closest","showlegend":false},"source":"A","config":{"modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false,"displayModeBar":false},"data":[{"colorbar":{"title":"","ticklen":2},"colorscale":[["0","rgba(28,171,226,1)"],["1","rgba(28,171,226,1)"]],"showscale":false,"z":[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],"text":["Algeria","Argentina","Bangladesh","Barbados","Belarus","Belize","Benin","Bosnia and Herzegovina","Cameroon","Central African Republic","Chad","Democratic Republic of the Congo","Republic of the Congo","Costa Rica","Cote d'Ivoire","Dominican Republic","El Salvador","Eswatini","Ghana","Guinea","Guinea Bissau","Guyana","Iraq","Jamaica","Kazakhstan","Kenya","Kosovo","Kyrgyzstan","Laos","Macedonia","Madagascar","Malawi","Mali","Mauritania","Mexico","Moldova","Mongolia","Montenegro","Nepal","Nigeria","Pakistan","Panama","Paraguay","Sao Tome and Principe","Senegal","Serbia","Sierra Leone","Somalia","St. Lucia","State of Palestine","Suriname","Thailand","The Gambia","Togo","Trinidad and Tobago","Tunisia","Turkmenistan","Ukraine","Uruguay","Vietnam","Zimbabwe"],"hoverinfo":["text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text"],"locations":["DZA","ARG","BGD","BRB","BLR","BLZ","BEN","BIH","CMR","CAF","TCD","COD","COG","CRI","CIV","DOM","SLV","SWZ","GHA","GIN","GNB","GUY","IRQ","JAM","KAZ","KEN",null,"KGZ","LAO","MKD","MDG","MWI","MLI","MRT","MEX","MDA","MNG","MNE","NPL","NGA","PAK","PAN","PRY","STP","SEN","SRB","SLE","SOM","LCA","PSE","SUR","THA","GMB","TGO","TTO","TUN","TKM","UKR","URY","VNM","ZWE"],"marker":{"size":10,"line":{"color":"rgba(0,0,0,1)","width":0.5}},"type":"choropleth","geo":"geo","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
 <p>Countries in UNICEF MICS Data</p>
 </div>
 </div>
 </div>
-<section id="methods" class="level1 narrative trigger">
-<h1 class="narrative">Methods</h1>
-</section>
-<div class="trigger">
-<div class="narrative">
+</div>
+</div>
+</div>
+<section id="methods" class="level1">
+<h1>Methods</h1>
 <p>Patterns of disciplinary behaviors were estimated using a multilevel latent class analysis (LCA). Multinomial regression analyses examined associations of disciplinary patterns with caregiver-reported child outcomes and household characteristics.</p>
-</div>
-</div>
-<section id="results" class="level1 narrative trigger">
-<h1 class="narrative">Results</h1>
 </section>
-<div class="trigger">
-<div class="narrative">
+<section id="results" class="level1">
+<h1>Results</h1>
 <p>The LCA suggested caregiver discipline fell into three overall patterns: high behavioral control, moderate behavior control, and lower behavioral control.</p>
-</div>
-</div>
-<div class="trigger">
-<div class="cell narrative">
-
-</div>
-</div>
-<div class="trigger">
-<div class="cell narrative">
+<div class="cell">
 <div class="cell-output-display">
 <div>
 <figure class="figure">
@@ -189,14 +175,8 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 </div>
-</div>
-<div class="trigger">
-<div class="narrative">
 <p>The lower behavioral control class was associated with the most advantageous child outcomes and household socio-demographic characteristics.</p>
-</div>
-</div>
-<div class="trigger">
-<div class="cell narrative">
+<div class="cell">
 <div class="cell-output-display">
 <div>
 <figure class="figure">
@@ -205,19 +185,8 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 </div>
-</div>
-<div class="trigger">
-<div class="narrative">
 <p>The high behavioral control class was associated with the most disadvantageous child outcomes and household characteristics.</p>
-</div>
-</div>
-<div class="trigger">
-<div class="cell narrative">
-
-</div>
-</div>
-<div class="trigger">
-<div class="cell narrative">
+<div class="cell">
 <div class="cell-output-display">
 <div>
 <figure class="figure">
@@ -226,14 +195,11 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 </div>
-</div>
-<div class="trigger">
-<div class="narrative">
+</section>
+<section id="conclusions" class="level1">
+<h1>Conclusions</h1>
 <p>Efforts should be employed to reduce aggressive behaviors and promote positive parenting among caregivers in LMICs.</p>
-</div>
-</div>
-<div class="trigger" data-layout-align="default">
-<div class="cell narrative">
+<div class="cell" data-layout-align="default">
 <div class="cell-output-display">
 <div>
 <p></p><figure class="figure"><p></p>
@@ -272,14 +238,7 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 </div>
-</div>
-</div>
-<div class="sticky-col">
-<section id="conclusions" class="level1 sticky sticky-col-stack">
-<h1 class="sticky">Conclusions</h1>
 </section>
-</div>
-</div>
 
 </main>
 <!-- /main column -->
