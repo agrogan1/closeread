@@ -136,16 +136,44 @@ p0
 ```
 :::
 
-:::
-
+:::{focus-on="cr-method"}
 # Methods
 
 Patterns of disciplinary behaviors were estimated using a multilevel latent class analysis (LCA). Multinomial regression analyses examined associations of disciplinary patterns with caregiver-reported child outcomes and household characteristics.
+:::
 
+:::{#cr-method .scale-to-fill}
+```{mermaid}
+
+flowchart TB
+
+  classDef yellow fill:#FFC20E,stroke:#000000,stroke-width:2px,color:#000000;
+  
+  classDef blue fill:#374EA2,stroke:#000000,stroke-width:2px,color:#FFFFFF;
+  
+  classDef green fill:#00833D,stroke:#000000,stroke-width:2px,color:#FFFFFF;
+  
+  classDef orange fill:#D86018,stroke:#000000,stroke-width:2px,color:#FFFFFF;
+  
+  classDef red fill:#9A3324,stroke:#000000,stroke-width:2px,color:#FFFFFF;
+  
+  class1((class 1)):::blue
+  
+  class2((class 2)):::blue
+  
+  class3((class 3)):::blue
+
+
+```
+:::
+
+:::{focus-on="cr-results"}
 # Results
 
 The LCA suggested caregiver discipline fell into three overall patterns: high behavioral control, moderate behavior control, and lower behavioral control. 
+:::
 
+:::{#cr-results .scale-to-fill}
 ```{r}
 #| message: false
 
@@ -225,7 +253,9 @@ p1 <- p0 +
 p1 # replay
 
 ```
+:::
 
+:::
 
 The lower behavioral control class was associated with the most advantageous child outcomes and household socio-demographic characteristics. 
 
