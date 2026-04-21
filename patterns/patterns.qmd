@@ -1,6 +1,6 @@
 ---
 title: "Patterns Of Caregiver Aggressive And Nonaggressive Discipline"
-author: "TBD"
+author: "Kaitlin P. Ward, Shawna J. Lee, Andrew C. Grogan-Kaylor, Julie Ma, Garrett T. Pace"
 date: "today"
 format: 
   closeread-html:
@@ -11,6 +11,23 @@ format:
       narrative-text-color-overlay: black
       section-background-color: white
 css: patterns.css
+bibliography: patterns.bib
+apa: apa.csl
+filters:
+  - highlight-text
+  - social-share
+share:
+  permalink: "https://agrogan1.github.io/closeread/patterns/patterns.html"
+  description: "patterns of caregiver discipline"
+  twitter: false
+  facebook: true
+  reddit: true
+  stumble: true
+  tumblr: true
+  linkedin: true
+  email: true
+  mastodon: true
+  bsky: true
 ---
 
 ```{r}
@@ -45,24 +62,41 @@ Scroll to explore
 
 Caregivers use a variety of disciplinary methods to respond to undesired child behavior. 
 
-Many caregivers use nonaggressive forms of discipline, such as verbal reasoning and redirection. Some caregivers use aggressive forms of discipline, such as spanking and yelling. 
+Many caregivers use [nonaggressive]{color="#006400"} forms of discipline, such as verbal reasoning and redirection. Some caregivers use [aggressive]{color="#ff0000"} forms of discipline, such as spanking and yelling. 
 
-However, most caregivers use a combination of aggressive and nonaggressive discipline. 
+However, most caregivers use a combination of [aggressive]{color="#ff0000"} and [nonaggressive]{color="#006400"} discipline. 
 
-To date, a disproportionately small number of caregiver discipline studies are conducted in low- and middle-income countries (LMICs), and few studies in low-resource contexts examine aggressive and nonaggressive behaviors simultaneously.
+To date, a disproportionately small number of caregiver discipline studies are conducted in low- and middle-income countries (LMICs), and few studies in low-resource contexts examine [aggressive]{color="#ff0000"} and [nonaggressive]{color="#006400"} behaviors simultaneously.
 :::
 
-:::{focus-on="cr-positiveparenting" scale-by="1.5"}
-# Objective
-
-This study aims to elucidate caregiver patterns of 11 disciplinary behaviors used in LMICs, and examine how these patterns relate to child outcomes and household characteristics.
-:::
-
-:::{#cr-positiveparenting}
+:::{#cr-positiveparenting .scale-to-fill}
 ![positive parenting](positiveparenting.png)
 :::
 
 
+:::{focus-on="cr-objective" }
+# Objective
+
+This study [@Ward2022] aims to elucidate caregiver patterns of 11 disciplinary behaviors used in LMICs, and examine how these patterns relate to child outcomes and household characteristics.
+:::
+
+:::{#cr-objective .scale-to-fill}
+
+| Discipline                             | Type                             |
+|----------------------------------------|----------------------------------|
+|"Shouted at child"                      | [psychological]{color="#0000ff"} |
+|"Called child names"                    | [psychological]{color="#0000ff"} |
+|"Shook child"                           | [physical]{color="#ff0000"}      |
+|"Spanked child"                         | [physical]{color="#ff0000"}      |
+|"Hit/slapped child on arm/leg"          | [physical]{color="#ff0000"}      |
+|"Hit child with object"                 | [physical]{color="#ff0000"}      |
+|"Hit/slapped child on face/head/ears"   | [physical]{color="#ff0000"}      |
+|"Beat as hard as one could"             | [physical]{color="#ff0000"}      |
+|"Took privileges away from child"       | [non-violent]{color="#006400"}   |
+|"Explained why behavior was wrong"      | [non-violent]{color="#006400"}   |
+|"Gave child something else to do"       | [non-violent]{color="#006400"}   |
+
+:::
 
 :::{focus-on="cr-map"}
 # Participants and setting
@@ -157,11 +191,11 @@ flowchart TB
   
   classDef red fill:#9A3324,stroke:#000000,stroke-width:2px,color:#FFFFFF;
   
-  class1((class 1)):::blue
+  class1((class 1)):::yellow
   
-  class2((class 2)):::blue
+  class2((class 2)):::yellow
   
-  class3((class 3)):::blue
+  class3((class 3)):::yellow
 
 
 ```
@@ -170,7 +204,7 @@ flowchart TB
 :::{focus-on="cr-results"}
 # Results
 
-The LCA suggested caregiver discipline fell into three overall patterns: high behavioral control, moderate behavior control, and lower behavioral control. 
+The LCA suggested caregiver discipline fell into three overall patterns: *high behavioral control*, *moderate behavior control*, and *lower behavioral control*. 
 :::
 
 :::{#cr-results .scale-to-fill}
@@ -255,10 +289,11 @@ p1 # replay
 ```
 :::
 
+:::{focus-on="cr-results-lower-control"}
+The *lower behavioral control class*--associated with low use of [psychological discipline]{color="#0000ff"}, low use of [physical discipline]{color="#ff0000"}, and some use of [nonviolent discipline]{color="#006400"}--was associated with the *most advantageous* child outcomes and household socio-demographic characteristics. 
 :::
 
-The lower behavioral control class was associated with the most advantageous child outcomes and household socio-demographic characteristics. 
-
+:::{#cr-results-lower-control .scale-to-fill}
 ```{r}
 
 p1C <- p0 + 
@@ -272,9 +307,13 @@ p1C <- p0 +
 p1C # replay
 
 ```
+:::
 
-The high behavioral control class was associated with the most disadvantageous child outcomes and household characteristics.
+:::{focus-on="cr-results-high-control"}
+The *high behavioral control class*--associated with higher use of [psychological discipline]{color="#0000ff"}, [physical discipline]{color="#ff0000"}, and [nonviolent discipline]{color="#006400"}--was associated with the *most disadvantageous* child outcomes and household characteristics.
+:::
 
+:::{#cr-results-high-control .scale-to-fill}
 ```{r}
 #| eval: false
 
@@ -289,7 +328,6 @@ p1B <- p0 +
 p1B # replay
 
 ```
-
 
 ```{r}
 
@@ -306,12 +344,16 @@ p1A <- p0 +
 p1A # replay
 
 ```
+:::
 
 
-# Conclusions
+:::{focus-on="cr-conclusion"}
+# Conclusion
 
 Efforts should be employed to reduce aggressive behaviors and promote positive parenting among caregivers in LMICs.
+:::
 
+:::{#cr-conclusion .scale-to-fill}
 ```{mermaid}
 
 flowchart TB
@@ -343,8 +385,9 @@ flowchart TB
   style programs fill: #F2F2F2
 
 ```
+:::
 
-
+:::
 
 
 
