@@ -191,12 +191,19 @@ flowchart TB
   
   classDef red fill:#9A3324,stroke:#000000,stroke-width:2px,color:#FFFFFF;
   
-  class1((class 1)):::yellow
+  class1((class 1)):::yellow --> outcomes((child <br>outcomes)):::blue
   
-  class2((class 2)):::yellow
+  class2((class 2)):::yellow --> outcomes
   
-  class3((class 3)):::yellow
+  class3((class 3)):::yellow --> outcomes
+  
+  household((household <br>characteristics)):::orange --> class1
+  
+  household --> class2
+  
+  household --> class3
 
+  linkStyle 0,1,2,3,4,5 stroke:#000000,stroke-width:3px;
 
 ```
 :::
