@@ -220,6 +220,7 @@ patterns <- patterns %>%
 
 
 ```{r}
+#| message: false
 
 # library(scales)
 
