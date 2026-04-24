@@ -1,0 +1,76 @@
+---
+title: "OJS-test"
+format: html
+---
+
+```{r}
+#| message: false
+#| code-fold: true
+
+library(readr) # read CSV
+
+library(tidyr) # tidy data
+
+library(dplyr) # data wrangling, and for pipe %>%
+
+patterns <- read_csv("patterns.csv")
+
+patterns <- patterns %>%
+  mutate(row_id = row_number())
+
+
+patterns$Item <- factor(patterns$Item)
+
+patterns$Item <- factor(patterns$Item, 
+                        levels = c("Shouted at child", 
+                                   "Called child names", 
+                                   "Shook child", 
+                                   "Spanked child",
+                                   "Hit/slapped child on arm/leg",
+                                   "Hit child with object",
+                                   "Hit/slapped child on face/head/ears",
+                                   "Beat as hard as one could",
+                                   "Took privileges away from child",
+                                   "Explained why behavior was wrong",
+                                   "Gave child something else to do"))
+
+patterns2 <- patterns %>% 
+  pivot_longer(!c(Item, row_id), 
+               names_to = "discipline", 
+               values_to = "value")
+
+write_csv(patterns2, "patterns2.csv")
+
+```
+
+
+```{ojs}
+
+data = FileAttachment("patterns2.csv").csv({ typed: true })
+
+```
+
+```{ojs}
+
+Plot.plot({
+  x: {axis: null, domain: ["Shouted at child", "Called child names", "Shook child", "Spanked child", "Hit/slapped child on arm/leg", "Hit child with object", "Hit/slapped child on face/head/ears", "Beat as hard as one could", "Took privileges away from child", "Explained why behavior was wrong", "Gave child something else to do"]},
+  y: {tickFormat: "p", grid: true},
+  fx: {label: null},
+  color: {
+    domain: ["Shouted at child", "Called child names", "Shook child", "Spanked child", "Hit/slapped child on arm/leg", "Hit child with object", "Hit/slapped child on face/head/ears", "Beat as hard as one could", "Took privileges away from child", "Explained why behavior was wrong", "Gave child something else to do"],
+    range: [ "#4147ADFF", "#4777EFFF", "#39A4FBFF", "#FE9B2DFF", "#F46516FF", "#DB3A07FF", "#B21A01FF", "#7A0403FF", "#62FC6BFF", "#A2FC3CFF", "#D2E935FF"], // Your custom hex codes
+    legend: true
+  },
+  marks: [
+    Plot.barY(data, {
+      x: "Item",
+      y: "value",
+      fill: "Item",
+      fx: "discipline",
+      tip: true
+    }),
+    Plot.ruleY([0])
+  ]
+})
+
+```
