@@ -1,6 +1,6 @@
 ---
 title: "Logarithms"
-subtitle: "Scroll down to move through this presentation."
+subtitle: "An attempt to develop intuitions around an unintuitive idea"
 author: 
   name: "Andy Grogan-Kaylor" 
   url: "https://agrogan1.github.io/"
@@ -38,6 +38,11 @@ share:
 library(Statamarkdown)
 
 ```
+
+:::{.story-scroll-hint}
+Scroll to explore 
+`r emo::ji("down_arrow")`
+:::
 
 :::{.cr-section}
 :::{focus-on="cr-exponential"}
