@@ -12,7 +12,7 @@ format:
       section-background-color: white
 css: patterns.css
 bibliography: patterns.bib
-apa: apa.csl
+csl: apa.csl
 filters:
   - highlight-text
   - social-share
