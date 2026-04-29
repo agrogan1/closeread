@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.29">
+<meta name="generator" content="quarto-1.9.30">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -11,6 +11,9 @@
 
 <title>Be Less Wrong</title>
 <style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
 div.columns{display: flex; gap: min(4vw, 1.5em);}
@@ -52,10 +55,10 @@ div.csl-indent {
 <script src="be-less-wrong_files/libs/quarto-html/tippy.umd.min.js"></script>
 <script src="be-less-wrong_files/libs/quarto-html/anchor.min.js"></script>
 <link href="be-less-wrong_files/libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="be-less-wrong_files/libs/quarto-html/quarto-syntax-highlighting-0815c480559380816a4d1ea211a47e91.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="be-less-wrong_files/libs/quarto-html/quarto-syntax-highlighting-b6a8276bf55561bdbc268162d41bd1f7.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="be-less-wrong_files/libs/bootstrap/bootstrap.min.js"></script>
 <link href="be-less-wrong_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="be-less-wrong_files/libs/bootstrap/bootstrap-bb462d781dde1847d9e3ccf7736099dd.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="be-less-wrong_files/libs/bootstrap/bootstrap-138a6193a3bd40baf1e627da441a4734.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script src="be-less-wrong_files/libs/quarto-contrib/intersection-observer-polyfill-1.0.0/intersection-observer.js"></script>
 <script src="be-less-wrong_files/libs/quarto-contrib/scrollama-3.2.0/scrollama.min.js"></script>
 <script src="be-less-wrong_files/libs/quarto-contrib/closeread-0.1.0/closeread.js"></script>
@@ -64,29 +67,20 @@ div.csl-indent {
 <script src="be-less-wrong_files/libs/quarto-diagram/mermaid.min.js"></script>
 <script src="be-less-wrong_files/libs/quarto-diagram/mermaid-init.js"></script>
 <link href="be-less-wrong_files/libs/quarto-diagram/mermaid.css" rel="stylesheet">
-<link href="be-less-wrong_files/libs/htmltools-fill-0.5.8.1/fill.css" rel="stylesheet">
-
+<link href="be-less-wrong_files/libs/htmltools-fill-0.5.9/fill.css" rel="stylesheet">
 <script src="be-less-wrong_files/libs/htmlwidgets-1.6.4/htmlwidgets.js"></script>
-
-<script src="be-less-wrong_files/libs/plotly-binding-4.11.0/plotly.js"></script>
-
+<script src="be-less-wrong_files/libs/plotly-binding-4.12.0/plotly.js"></script>
 <script src="be-less-wrong_files/libs/typedarray-0.1/typedarray.min.js"></script>
-
 <script src="be-less-wrong_files/libs/jquery-3.5.1/jquery.min.js"></script>
-
 <link href="be-less-wrong_files/libs/crosstalk-1.2.2/css/crosstalk.min.css" rel="stylesheet">
-
 <script src="be-less-wrong_files/libs/crosstalk-1.2.2/js/crosstalk.min.js"></script>
-
-<link href="be-less-wrong_files/libs/plotly-htmlwidgets-css-2.11.1/plotly-htmlwidgets.css" rel="stylesheet">
-
-<script src="be-less-wrong_files/libs/plotly-main-2.11.1/plotly-latest.min.js"></script>
-
+<link href="be-less-wrong_files/libs/plotly-htmlwidgets-css-2.25.2/plotly-htmlwidgets.css" rel="stylesheet">
+<script src="be-less-wrong_files/libs/plotly-main-2.25.2/plotly-latest.min.js"></script>
 <meta cr-debug-mode="false">
 <meta cr-remove-header-space="false">
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <script type="text/javascript">
 const typesetMath = (el) => {
@@ -99,7 +93,7 @@ const typesetMath = (el) => {
     var macros = [];
     for (var i = 0; i < mathElements.length; i++) {
       var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
         window.katex.render(texText.data, mathElements[i], {
           displayMode: mathElements[i].classList.contains('display'),
           throwOnError: false,
@@ -127,11 +121,11 @@ window.Quarto = {
       <!-- user-provided yaml closeread style options -->
       <style>
         :root {
-          --cr-narrative-background-color-sidebar: white;
---cr-narrative-text-color-overlay: black;
---cr-section-background-color: white;
---cr-narrative-background-color-overlay: lightgrey;
+          --cr-narrative-text-color-overlay: black;
+--cr-narrative-background-color-sidebar: white;
 --cr-narrative-text-color-sidebar: black;
+--cr-narrative-background-color-overlay: lightgrey;
+--cr-section-background-color: white;
         }
       </style>
     
@@ -269,7 +263,7 @@ window.Quarto = {
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-globe-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="plotly html-widget html-fill-item" id="htmlwidget-70a688681697cdb7b619" style="width:100%;height:288px;"></div>
-<script type="application/json" data-for="htmlwidget-70a688681697cdb7b619">{"x":{"visdat":{"402865c6407f":["function () ","plotlyVisDat"]},"cur_data":"402865c6407f","attrs":{"402865c6407f":{"alpha_stroke":1,"sizes":[10,100],"spans":[1,20]}},"layout":{"margin":{"b":0,"l":0,"t":0,"r":0,"pad":3},"mapType":"geo","geo":{"domain":{"x":[0,1],"y":[0,1]},"showland":true,"landcolor":"rgba(211,211,211,1)","showcountries":true,"showocean":false,"oceancolor":"royalblue","lataxis":{"showgrid":true,"gridcolor":"rgba(190,190,190,1)"},"lonaxis":{"showgrid":true,"gridcolor":"rgba(190,190,190,1)"},"projection":{"type":"orthographic","rotation":{"lon":-45,"lat":10,"roll":0}}},"hovermode":"closest","showlegend":false},"source":"A","config":{"modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false,"displayModeBar":false},"data":[{"type":"scattergeo","mode":"markers","marker":{"color":"rgba(31,119,180,1)","line":{"color":"rgba(31,119,180,1)"}},"line":{"color":"rgba(31,119,180,1)"},"geo":"geo","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+<script type="application/json" data-for="htmlwidget-70a688681697cdb7b619">{"x":{"visdat":{"d0c36d4862d":["function () ","plotlyVisDat"]},"cur_data":"d0c36d4862d","attrs":{"d0c36d4862d":{"alpha_stroke":1,"sizes":[10,100],"spans":[1,20]}},"layout":{"margin":{"b":0,"l":0,"t":0,"r":0,"pad":3},"mapType":"geo","geo":{"domain":{"x":[0,1],"y":[0,1]},"showland":true,"landcolor":"rgba(211,211,211,1)","showcountries":true,"showocean":false,"oceancolor":"royalblue","lataxis":{"showgrid":true,"gridcolor":"rgba(190,190,190,1)"},"lonaxis":{"showgrid":true,"gridcolor":"rgba(190,190,190,1)"},"projection":{"type":"orthographic","rotation":{"lon":-45,"lat":10,"roll":0}}},"hovermode":"closest","showlegend":false},"source":"A","config":{"modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false,"displayModeBar":false},"data":[{"type":"scattergeo","mode":"markers","marker":{"color":"rgba(31,119,180,1)","line":{"color":"rgba(31,119,180,1)"}},"line":{"color":"rgba(31,119,180,1)"},"geo":"geo","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-globe-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Figure&nbsp;1: Countries of the World
@@ -571,13 +565,14 @@ Grogan-Kaylor, A. (2026, April 29). <em>Be Less Wrong</em>. <a href="https://glo
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy
