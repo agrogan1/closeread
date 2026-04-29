@@ -18,6 +18,11 @@ bibliography  <- gsub(pattern = "Ignacio Mart{\\a'\\i}n-Bar{\\a'o}",
                       x = bibliography,
                       fixed = TRUE)
 
+bibliography  <- gsub(pattern = "Marcus R Munaf{\\a`o}",
+                      replace = "Marcus R. Munafò",
+                      x = bibliography,
+                      fixed = TRUE)
+
 # bibliography  <- gsub(pattern = "Ellacur{\\a'\\i}a", 
 #                       replace = "Ellacuría", 
 #                       x = bibliography,
