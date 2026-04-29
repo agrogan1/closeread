@@ -44,6 +44,8 @@ library(ggplot2) # beautiful graphs
 
 library(ggforce) # extensions to ggplot
 
+library(gganimate) # animated graphs
+
 library(plotly) # interactive graphics
 
 library(countrycode) # work with country names
@@ -295,6 +297,9 @@ p1 <- p0 +
 p1 # replay
 
 ggsave("patterns.png")
+
+# p1 + 
+#   transition_manual(Item, cumulative = TRUE)
 
 ```
 :::
