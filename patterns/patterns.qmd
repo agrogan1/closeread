@@ -4,6 +4,7 @@ author: "Kaitlin P. Ward, Shawna J. Lee, Andrew C. Grogan-Kaylor, Julie Ma, Garr
 date: "today"
 format: 
   closeread-html:
+    fig-dpi: 600
     cr-style:
       narrative-text-color-sidebar: black
       narrative-background-color-sidebar: white
