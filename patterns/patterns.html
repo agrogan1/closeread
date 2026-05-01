@@ -92,11 +92,11 @@ div.csl-indent {
       <!-- user-provided yaml closeread style options -->
       <style>
         :root {
-          --cr-narrative-text-color-sidebar: black;
---cr-narrative-background-color-sidebar: white;
---cr-narrative-background-color-overlay: lightgrey;
---cr-section-background-color: white;
+          --cr-narrative-background-color-sidebar: white;
 --cr-narrative-text-color-overlay: black;
+--cr-section-background-color: white;
+--cr-narrative-background-color-overlay: lightgrey;
+--cr-narrative-text-color-sidebar: black;
         }
       </style>
     
@@ -167,18 +167,23 @@ div.csl-indent {
 <div class="trigger new-trigger" data-focus-on="cr-results">
 <section id="results" class="level1 narrative">
 <h1>Results</h1>
+<section id="overall-results" class="level2">
+<h2 class="anchored" data-anchor-id="overall-results">Overall Results</h2>
 <p>The LCA suggested caregiver discipline fell into three overall patterns: <em>high behavioral control</em>, <em>moderate behavior control</em>, and <em>lower behavioral control</em>.</p>
+</section>
 </section>
 </div>
 <div class="trigger new-trigger" data-focus-on="cr-results-lower-control">
-<div class="narrative">
+<section id="lower-behavioral-control-associated-with-most-advantageous-outcomes" class="level2 narrative">
+<h2 class="anchored" data-anchor-id="lower-behavioral-control-associated-with-most-advantageous-outcomes">Lower Behavioral Control Associated With Most Advantageous Outcomes</h2>
 <p>The <em>lower behavioral control class</em>–associated with low use of <span class="light-content" style="color: #0000ff;">psychological discipline</span>, low use of <span class="light-content" style="color: #ff0000;">physical discipline</span>, and some use of <span class="light-content" style="color: #006400;">nonviolent discipline</span>–was associated with the <em>most advantageous</em> child outcomes and household socio-demographic characteristics.</p>
-</div>
+</section>
 </div>
 <div class="trigger new-trigger" data-focus-on="cr-results-high-control">
-<div class="narrative">
+<section id="high-behavioral-control-associated-with-most-disadvantageous-outcomes" class="level2 narrative">
+<h2 class="anchored" data-anchor-id="high-behavioral-control-associated-with-most-disadvantageous-outcomes">High Behavioral Control Associated With Most Disadvantageous Outcomes</h2>
 <p>The <em>high behavioral control class</em>–associated with higher use of <span class="light-content" style="color: #0000ff;">psychological discipline</span>, <span class="light-content" style="color: #ff0000;">physical discipline</span>, and <span class="light-content" style="color: #006400;">nonviolent discipline</span>–was associated with the <em>most disadvantageous</em> child outcomes and household characteristics.</p>
-</div>
+</section>
 </div>
 <div class="trigger new-trigger" data-focus-on="cr-conclusion">
 <section id="conclusion" class="level1 narrative">
@@ -260,8 +265,8 @@ div.csl-indent {
 <div id="cr-map" class="scale-to-fill sticky">
 <div class="cell">
 <div class="cell-output-display">
-<div class="plotly html-widget html-fill-item" id="htmlwidget-148600b33128a3340cef" style="width:100%;height:464px;"></div>
-<script type="application/json" data-for="htmlwidget-148600b33128a3340cef">{"x":{"visdat":{"18d418cf349c":["function () ","plotlyVisDat"]},"cur_data":"18d418cf349c","attrs":{"18d418cf349c":{"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"z":1,"text":{},"colors":"#1CABE2","hoverinfo":"text","locations":{},"showscale":false,"marker":{"size":10,"line":{"color":"rgba(0,0,0,1)","width":0.5}},"inherit":true}},"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"mapType":"geo","geo":{"domain":{"x":[0,1],"y":[0,1]},"showframe":true,"showcoastlines":true,"showcountries":true,"showland":true,"countrycolor":"rgba(190,190,190,1)","showocean":true,"oceancolor":"white","projection":{"type":"robinson"},"landcolor":"rgba(211,211,211,1)","bgcolor":"transparent"},"plot_bgcolor":"transparent","paper_bgcolor":"transparent","scene":{"zaxis":{"title":[]}},"hovermode":"closest","showlegend":false},"source":"A","config":{"modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false,"displayModeBar":false},"data":[{"colorbar":{"title":"","ticklen":2},"colorscale":[["0","rgba(28,171,226,1)"],["1","rgba(28,171,226,1)"]],"showscale":false,"z":[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],"text":["Algeria","Argentina","Bangladesh","Barbados","Belarus","Belize","Benin","Bosnia and Herzegovina","Cameroon","Central African Republic","Chad","Democratic Republic of the Congo","Republic of the Congo","Costa Rica","Cote d'Ivoire","Dominican Republic","El Salvador","Eswatini","Ghana","Guinea","Guinea Bissau","Guyana","Iraq","Jamaica","Kazakhstan","Kenya","Kosovo","Kyrgyzstan","Laos","Macedonia","Madagascar","Malawi","Mali","Mauritania","Mexico","Moldova","Mongolia","Montenegro","Nepal","Nigeria","Pakistan","Panama","Paraguay","Sao Tome and Principe","Senegal","Serbia","Sierra Leone","Somalia","St. Lucia","State of Palestine","Suriname","Thailand","The Gambia","Togo","Trinidad and Tobago","Tunisia","Turkmenistan","Ukraine","Uruguay","Vietnam","Zimbabwe"],"hoverinfo":["text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text"],"locations":["DZA","ARG","BGD","BRB","BLR","BLZ","BEN","BIH","CMR","CAF","TCD","COD","COG","CRI","CIV","DOM","SLV","SWZ","GHA","GIN","GNB","GUY","IRQ","JAM","KAZ","KEN",null,"KGZ","LAO","MKD","MDG","MWI","MLI","MRT","MEX","MDA","MNG","MNE","NPL","NGA","PAK","PAN","PRY","STP","SEN","SRB","SLE","SOM","LCA","PSE","SUR","THA","GMB","TGO","TTO","TUN","TKM","UKR","URY","VNM","ZWE"],"marker":{"size":10,"line":{"color":"rgba(0,0,0,1)","width":0.5}},"type":"choropleth","geo":"geo","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+<div class="plotly html-widget html-fill-item" id="htmlwidget-ec884fd8934d1c1f0640" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-ec884fd8934d1c1f0640">{"x":{"visdat":{"1a4936501d12":["function () ","plotlyVisDat"]},"cur_data":"1a4936501d12","attrs":{"1a4936501d12":{"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"z":1,"text":{},"colors":"#1CABE2","hoverinfo":"text","locations":{},"showscale":false,"marker":{"size":10,"line":{"color":"rgba(0,0,0,1)","width":0.5}},"inherit":true}},"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"mapType":"geo","geo":{"domain":{"x":[0,1],"y":[0,1]},"showframe":true,"showcoastlines":true,"showcountries":true,"showland":true,"countrycolor":"rgba(190,190,190,1)","showocean":true,"oceancolor":"white","projection":{"type":"robinson"},"landcolor":"rgba(211,211,211,1)","bgcolor":"transparent"},"plot_bgcolor":"transparent","paper_bgcolor":"transparent","scene":{"zaxis":{"title":[]}},"hovermode":"closest","showlegend":false},"source":"A","config":{"modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false,"displayModeBar":false},"data":[{"colorbar":{"title":"","ticklen":2},"colorscale":[["0","rgba(28,171,226,1)"],["1","rgba(28,171,226,1)"]],"showscale":false,"z":[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],"text":["Algeria","Argentina","Bangladesh","Barbados","Belarus","Belize","Benin","Bosnia and Herzegovina","Cameroon","Central African Republic","Chad","Democratic Republic of the Congo","Republic of the Congo","Costa Rica","Cote d'Ivoire","Dominican Republic","El Salvador","Eswatini","Ghana","Guinea","Guinea Bissau","Guyana","Iraq","Jamaica","Kazakhstan","Kenya","Kosovo","Kyrgyzstan","Laos","Macedonia","Madagascar","Malawi","Mali","Mauritania","Mexico","Moldova","Mongolia","Montenegro","Nepal","Nigeria","Pakistan","Panama","Paraguay","Sao Tome and Principe","Senegal","Serbia","Sierra Leone","Somalia","St. Lucia","State of Palestine","Suriname","Thailand","The Gambia","Togo","Trinidad and Tobago","Tunisia","Turkmenistan","Ukraine","Uruguay","Vietnam","Zimbabwe"],"hoverinfo":["text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text"],"locations":["DZA","ARG","BGD","BRB","BLR","BLZ","BEN","BIH","CMR","CAF","TCD","COD","COG","CRI","CIV","DOM","SLV","SWZ","GHA","GIN","GNB","GUY","IRQ","JAM","KAZ","KEN",null,"KGZ","LAO","MKD","MDG","MWI","MLI","MRT","MEX","MDA","MNG","MNE","NPL","NGA","PAK","PAN","PRY","STP","SEN","SRB","SLE","SOM","LCA","PSE","SUR","THA","GMB","TGO","TTO","TUN","TKM","UKR","URY","VNM","ZWE"],"marker":{"size":10,"line":{"color":"rgba(0,0,0,1)","width":0.5}},"type":"choropleth","geo":"geo","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
 <p>Countries in UNICEF MICS Data</p>
 </div>
 </div>
