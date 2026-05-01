@@ -295,12 +295,14 @@ p1 <- p0 +
   theme(legend.position = "bottom") +
   guides(fill = guide_legend(nrow = 6))
 
-p1 # replay
+# p1 # replay
 
-ggsave("patterns.png")
+ggsave("patterns.png", p1)
 
-# p1 + 
-#   transition_manual(Item, cumulative = TRUE)
+p1_anim <- p1 +
+  transition_manual(Item, cumulative = TRUE)
+
+animate(p1_anim, renderer = gifski_renderer(loop = FALSE))
 
 ```
 :::
@@ -311,6 +313,7 @@ The *lower behavioral control class*--associated with low use of [psychological 
 
 :::{#cr-results-lower-control .scale-to-fill}
 ```{r}
+#| message: false
 
 p1C <- p0 + 
   facet_wrap_paginate(~discipline,
@@ -321,6 +324,14 @@ p1C <- p0 +
   guides(fill = guide_legend(nrow = 6))
 
 p1C # replay
+
+# p1C_anim <- p1C +
+#   transition_layers(layer_length = 1, 
+#                     transition_length = 1,
+#                     from_blank = TRUE) +
+#   enter_fade()
+
+# animate(p1C_anim, renderer = gifski_renderer(loop = FALSE))
 
 ```
 :::
@@ -346,6 +357,7 @@ p1B # replay
 ```
 
 ```{r}
+#| message: false
 
 # facet by facet
 
@@ -358,6 +370,14 @@ p1A <- p0 +
   guides(fill = guide_legend(nrow = 6))
 
 p1A # replay
+
+# p1A_anim <- p1A + 
+#   transition_layers(layer_length = 1, 
+#                     transition_length = 1,
+#                     from_blank = TRUE) +
+#   enter_fade()
+
+# animate(p1A_anim, renderer = gifski_renderer(loop = FALSE))
 
 ```
 :::
