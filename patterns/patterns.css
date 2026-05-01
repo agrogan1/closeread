@@ -35,6 +35,9 @@ blockquote {
   .narrative {
     font-size: 125%;
   }
+  .no-mobile {
+  display: block;
+  }
 }
 @media only screen and (max-width: 575px) {
   .narrative {
@@ -43,7 +46,10 @@ blockquote {
   }
   .footnote-ref {color: red;}
   .boxgreen {background-color: white;}
- }
+  }
+  .no-mobile {
+  display: none;
+  }
 }
 .story-scroll-hint {
     display: flex;

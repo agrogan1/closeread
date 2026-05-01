@@ -220,6 +220,7 @@ The LCA suggested caregiver discipline fell into three overall patterns: *high b
 :::
 
 :::{#cr-results .scale-to-fill}
+:::{.no-mobile}
 ```{r}
 #| message: false
 
@@ -307,6 +308,7 @@ p1_anim <- p1 +
 animate(p1_anim, renderer = gifski_renderer(loop = FALSE))
 
 ```
+:::
 :::
 
 :::{focus-on="cr-results-lower-control"}
