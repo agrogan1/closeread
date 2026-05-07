@@ -309,6 +309,9 @@ animate(p1_anim, renderer = gifski_renderer(loop = FALSE))
 
 ```
 :::
+:::{.mobile-only}
+![Patterns of Parental Discipline](patterns.png)
+:::
 :::
 
 :::{focus-on="cr-results-lower-control"}

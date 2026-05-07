@@ -38,6 +38,9 @@ blockquote {
   .no-mobile {
   display: block;
   }
+  .mobile-only {
+  display: none;
+  }
 }
 @media only screen and (max-width: 575px) {
   .narrative {
@@ -49,6 +52,9 @@ blockquote {
   }
   .no-mobile {
   display: none;
+  }
+  .mobile-only {
+  display: block;
   }
 }
 .story-scroll-hint {
