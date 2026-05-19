@@ -317,7 +317,7 @@ animate(p1_anim, renderer = gifski_renderer(loop = FALSE))
 :::{focus-on="cr-results-lower-control"}
 ## Lower Behavioral Control Associated With Most Advantageous Outcomes
 
-The *lower behavioral control class*--associated with low use of [psychological discipline]{color="#0000ff"}, low use of [physical discipline]{color="#ff0000"}, and some use of [nonviolent discipline]{color="#006400"}--was associated with the *most advantageous* child outcomes and household socio-demographic characteristics. 
+The *lower behavioral control class*--associated with low use of [psychological discipline]{color="#0000ff"}, low use of [physical discipline]{color="#ff0000"}, and some use of [nonviolent discipline]{color="#006400"}--was associated with the <span style="background-color: yellow;">*most advantageous*</span> child outcomes and household socio-demographic characteristics. 
 :::
 
 :::{#cr-results-lower-control .scale-to-fill}
@@ -348,7 +348,7 @@ p1C # replay
 :::{focus-on="cr-results-high-control"}
 ## High Behavioral Control Associated With Most Disadvantageous Outcomes
 
-The *high behavioral control class*--associated with higher use of [psychological discipline]{color="#0000ff"}, [physical discipline]{color="#ff0000"}, and [nonviolent discipline]{color="#006400"}--was associated with the *most disadvantageous* child outcomes and household characteristics.
+The *high behavioral control class*--associated with higher use of [psychological discipline]{color="#0000ff"}, [physical discipline]{color="#ff0000"}, and [nonviolent discipline]{color="#006400"}--was associated with the <span style="background-color: yellow;">*most disadvantageous*</span> child outcomes and household characteristics.
 :::
 
 :::{#cr-results-high-control .scale-to-fill}
