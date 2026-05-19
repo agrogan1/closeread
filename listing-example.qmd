@@ -1,0 +1,14 @@
+---
+title: "Listing Example"
+listing:
+  type: grid
+  table-hover: true
+  sort: false
+  sort-ui: false
+  filter-ui: false
+  fields: [title, image]
+  contents:
+    - title: "Quantitative Data Analysis"
+      path: https://agrogan1.github.io/teaching/quantitative-data-analysis/quantitative-data-analysis.html
+      categories: [workflow, stats, Stata, R]
+---
