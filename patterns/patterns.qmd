@@ -335,11 +335,11 @@ p1C <- p0 +
 p1C # replay
 
 # p1C_anim <- p1C +
-#   transition_layers(layer_length = 1, 
+#   transition_layers(layer_length = 1,
 #                     transition_length = 1,
 #                     from_blank = TRUE) +
 #   enter_fade()
-
+# 
 # animate(p1C_anim, renderer = gifski_renderer(loop = FALSE))
 
 ```
