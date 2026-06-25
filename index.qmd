@@ -7,6 +7,18 @@ date: "today"
 format: html
 ---
 
+```{r}
+#| echo: false
+#| output: false
+
+library(bslib)
+
+library(shiny)
+
+library(htmltools)
+
+```
+
 `closeread` *scrollytelling* projects using [https://closeread.dev/](https://closeread.dev/)
 
 * [https://globalfamilies.quarto.pub/parenting/](https://globalfamilies.quarto.pub/parenting/)
@@ -22,5 +34,22 @@ format: html
 Not a `closeread` document, but a tutorial on using *OJS*, which can be useful in `closeread` documents:  [https://agrogan1.github.io/closeread/ojs-demo/ojs-demo.html](https://agrogan1.github.io/closeread/ojs-demo/ojs-demo.html)
 
 
+```{r}
+#| echo: false
+#| eval: false
 
+layout_column_wrap(
+  width = 1/2,
+  # height = 300, 
+  card(card_header(class = "bg-dark", 
+                   "Patterns Of Caregiver Aggressive And Nonaggressive Discipline"), 
+       card_body(card_image(src = "https://agrogan1.github.io/closeread/patterns/patterns.png"), 
+                 markdown("[https://agrogan1.github.io/closeread/patterns/patterns.html](https://agrogan1.github.io/closeread/patterns/patterns.html)"))), 
+  
+  card(card_header(class = "bg-dark", 
+                   "Parenting and Child Development"), 
+       card_body(card_image(src = "https://agrogan1.github.io/closeread/parenting/positiveparenting.png"),
+                 markdown("[https://globalfamilies.quarto.pub/parenting/](https://globalfamilies.quarto.pub/parenting/)"))))
+
+```
 
