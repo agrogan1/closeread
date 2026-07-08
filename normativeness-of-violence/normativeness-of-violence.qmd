@@ -163,7 +163,7 @@ flowchart LR
   
   classDef red fill:#9A3324,stroke:#000000,stroke-width:2px,color:#FFFFFF;
   
-  subgraph lowerviolence [lower violence]
+  subgraph lowerviolence [lower violence context]
   
   direction LR
 
@@ -171,7 +171,7 @@ flowchart LR
   
   end
   
-  subgraph higherviolence [higher violence]
+  subgraph higherviolence [higher violence context]
   
   direction LR
 
@@ -264,7 +264,7 @@ flowchart LR
   
   classDef red fill:#9A3324,stroke:#000000,stroke-width:2px,color:#FFFFFF;
   
-  subgraph lowerviolence [lower violence]
+  subgraph lowerviolence [lower violence context]
   
   direction LR
 
@@ -272,7 +272,7 @@ flowchart LR
   
   end
   
-  subgraph higherviolence [higher violence]
+  subgraph higherviolence [higher violence context]
   
   direction LR
 
