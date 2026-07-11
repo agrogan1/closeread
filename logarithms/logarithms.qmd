@@ -177,7 +177,7 @@ For mathematical reasons--illustrated below--we end up working with the *logarit
 :::
 
 :::{#cr-log-odds .scale-to-fill}
-$$\ln(\frac{p(\text{outcome})}{1-p(\text{outcome})}) = \beta x$$
+$$\ln(\frac{p(\text{outcome})}{1-p(\text{outcome})}) = \beta_0 + \beta x$$
 :::
 
 :::{focus-on="cr-solve-for-y"}
@@ -185,7 +185,7 @@ To *graph* or *visualize* these *log odds*, we need to solve for $p(\text{outcom
 :::
 
 :::{#cr-solve-for-y .scale-to-fill}
-$$p(\text{outcome}) = \frac{e^{\beta x}}{1 + e^{\beta x}}$$
+$$p(\text{outcome}) = \frac{e^{\beta_0 + \beta x}}{1 + e^{\beta_0 + \beta x}}$$
 :::
 
 :::{focus-on="cr-sigmoid"}

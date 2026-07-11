@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Andy Grogan-Kaylor">
-<meta name="dcterms.date" content="2026-04-24">
+<meta name="dcterms.date" content="2026-07-11">
 
 <title>Logarithms</title>
 <style>
@@ -109,8 +109,8 @@ window.Quarto = {
       <style>
         :root {
           --cr-narrative-background-color-overlay: grey;
---cr-section-background-color: white;
 --cr-narrative-background-color-sidebar: white;
+--cr-section-background-color: white;
 --cr-narrative-text-color-sidebar: black;
         }
       </style>
@@ -136,7 +136,7 @@ window.Quarto = {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">April 24, 2026</p>
+      <p class="date">July 11, 2026</p>
     </div>
   </div>
   
@@ -314,10 +314,10 @@ window.Quarto = {
 <p><span class="math display">\[\frac{p(\text{outcome})}{1-p(\text{outcome})}\]</span></p>
 </div>
 <div id="cr-log-odds" class="scale-to-fill sticky">
-<p><span class="math display">\[\ln(\frac{p(\text{outcome})}{1-p(\text{outcome})}) = \beta x\]</span></p>
+<p><span class="math display">\[\ln(\frac{p(\text{outcome})}{1-p(\text{outcome})}) = \beta_0 + \beta x\]</span></p>
 </div>
 <div id="cr-solve-for-y" class="scale-to-fill sticky">
-<p><span class="math display">\[p(\text{outcome}) = \frac{e^{\beta x}}{1 + e^{\beta x}}\]</span></p>
+<p><span class="math display">\[p(\text{outcome}) = \frac{e^{\beta_0 + \beta x}}{1 + e^{\beta_0 + \beta x}}\]</span></p>
 </div>
 <div id="cr-sigmoid" class="scale-to-fill sticky">
 <div class="cell">
