@@ -21,11 +21,11 @@ library(htmltools)
 
 `closeread` *scrollytelling* projects using [https://closeread.dev/](https://closeread.dev/)
 
-* [https://globalfamilies.quarto.pub/parenting/](https://globalfamilies.quarto.pub/parenting/)
-* [https://globalfamilies.quarto.pub/be-less-wrong/](https://globalfamilies.quarto.pub/be-less-wrong/)
-* [https://globalfamilies.quarto.pub/spillover-of-violence/](https://globalfamilies.quarto.pub/spillover-of-violence/)
-* [https://globalfamilies.quarto.pub/logarithms/](https://globalfamilies.quarto.pub/logarithms/) | ([simplified version](https://globalfamilies.quarto.pub/logarithms-simple/))
-* [https://globalfamilies.quarto.pub/normativeness-of-violence/](https://globalfamilies.quarto.pub/normativeness-of-violence/)
+* [https://agrogan1.github.io/closeread/parenting/parenting.html](https://agrogan1.github.io/closeread/parenting/parenting.html)
+* [https://agrogan1.github.io/closeread/be-less-wrong/be-less-wrong.html](https://agrogan1.github.io/closeread/be-less-wrong/be-less-wrong.html)
+* [https://agrogan1.github.io/closeread/spillover-of-violence/spillover-of-violence.html](https://agrogan1.github.io/closeread/spillover-of-violence/spillover-of-violence.html)
+* [https://agrogan1.github.io/closeread/logarithms/logarithms.html](https://agrogan1.github.io/closeread/logarithms/logarithms.html) | ([simplified version](https://agrogan1.github.io/closeread/logarithms/logarithms-simple.html))
+* [https://agrogan1.github.io/closeread/normativeness-of-violence/normativeness-of-violence.html](https://agrogan1.github.io/closeread/normativeness-of-violence/normativeness-of-violence.html)
 * [https://agrogan1.github.io/closeread/triangulation/triangulation.html](https://agrogan1.github.io/closeread/triangulation/triangulation.html)
 * [https://agrogan1.github.io/closeread/empathy/empathy.html](https://agrogan1.github.io/closeread/empathy/empathy.html)
 * [https://agrogan1.github.io/closeread/patterns/patterns.html](https://agrogan1.github.io/closeread/patterns/patterns.html)
@@ -49,7 +49,7 @@ layout_column_wrap(
   card(card_header(class = "bg-dark", 
                    "Parenting and Child Development"), 
        card_body(card_image(src = "https://agrogan1.github.io/closeread/parenting/positiveparenting.png"),
-                 markdown("[https://globalfamilies.quarto.pub/parenting/](https://globalfamilies.quarto.pub/parenting/)"))))
+                 markdown("[https://agrogan1.github.io/closereadparenting/](https://agrogan1.github.io/closereadparenting/)"))))
 
 ```
 
