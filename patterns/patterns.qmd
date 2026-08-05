@@ -68,7 +68,9 @@ Caregivers use a variety of disciplinary methods to respond to undesired child b
 Many caregivers use [nonaggressive]{color="#006400"} forms of discipline, such as verbal reasoning and redirection. Some caregivers use [aggressive]{color="#ff0000"} forms of discipline, such as spanking and yelling. 
 
 However, most caregivers use a combination of [aggressive]{color="#ff0000"} and [nonaggressive]{color="#006400"} discipline. 
+:::
 
+:::{focus-on="cr-map"}
 To date, a disproportionately small number of caregiver discipline studies are conducted in low- and middle-income countries (LMICs), and few studies in low-resource contexts examine [aggressive]{color="#ff0000"} and [nonaggressive]{color="#006400"} behaviors simultaneously.
 :::
 
