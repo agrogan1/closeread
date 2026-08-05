@@ -348,6 +348,8 @@ Imagine a situation in which an intervention is administered based upon the situ
 p0 + p0 + aes(color = group) +
   plot_annotation(title = "One Model Accounts for Group While The Other Does Not")
 
+ggsave("combined.png")
+
 ```
 
 :::
