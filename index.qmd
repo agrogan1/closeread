@@ -39,17 +39,30 @@ Not a `closeread` document, but a tutorial on using *OJS*, which can be useful i
 #| eval: false
 
 layout_column_wrap(
-  width = 1/2,
+  width = 1/3,
   # height = 300, 
   card(card_header(class = "bg-dark", 
-                   "Patterns Of Caregiver Aggressive And Nonaggressive Discipline"), 
-       card_body(card_image(src = "https://agrogan1.github.io/closeread/patterns/patterns.png"), 
-                 markdown("[https://agrogan1.github.io/closeread/patterns/patterns.html](https://agrogan1.github.io/closeread/patterns/patterns.html)"))), 
+                   "Parenting and Child Development"), 
+       card_body(card_image(src = "../parenting/positiveparenting.png"),
+                 markdown("[https://agrogan1.github.io/closeread/parenting/parenting.html](https://agrogan1.github.io/closeread/parenting/parenting.html)"))), 
   
   card(card_header(class = "bg-dark", 
-                   "Parenting and Child Development"), 
-       card_body(card_image(src = "https://agrogan1.github.io/closeread/parenting/positiveparenting.png"),
-                 markdown("[https://agrogan1.github.io/closereadparenting/](https://agrogan1.github.io/closereadparenting/)"))))
+                   "Be Less Wrong"), 
+       card_body(card_image(src = "../be-less-wrong/combined.png"),
+                 markdown("[https://agrogan1.github.io/closeread/be-less-wrong/be-less-wrong.html](https://agrogan1.github.io/closeread/be-less-wrong/be-less-wrong.html)"))), 
+  
+  card(card_header(class = "bg-dark", 
+                   "Spillover of Violence"), 
+       card_body(card_image(src = "../spillover-of-violence/context.png"),
+                 markdown("[https://agrogan1.github.io/closeread/spillover-of-violence/spillover-of-violence.html](https://agrogan1.github.io/closeread/spillover-of-violence/spillover-of-violence.html)"))), 
+  
+  card(card_header(class = "bg-dark", 
+                   "Patterns Of Caregiver Aggressive And Nonaggressive Discipline"), 
+       card_body(card_image(src = "../patterns/patterns.png"), 
+                 markdown("[https://agrogan1.github.io/closeread/patterns/patterns.html](https://agrogan1.github.io/closeread/patterns/patterns.html)"))), 
+  
+
+  )
 
 ```
 
