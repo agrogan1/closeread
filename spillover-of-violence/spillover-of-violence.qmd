@@ -2,7 +2,7 @@
 title: "The Spillover of Violence in Low- and Middle-Income Countries"
 author: 
   name: "Global Families Research Team" 
-  url: https://globalfamilies.quarto.pub/global-families-project/
+  url: https://agrogan1.github.io/globalfamilies/
 date: "today"
 format:
   closeread-html:
@@ -17,7 +17,7 @@ mermaid:
 filters:
   - social-share
 share:
-  permalink: "https://globalfamilies.quarto.pub/spillover-of-violence"
+  permalink: "https://agrogan1.github.io/closeread/spillover-of-violence/spillover-of-violence.html"
   description: "Spillover of Violence"
   twitter: false
   facebook: true

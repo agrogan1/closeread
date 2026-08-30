@@ -3,7 +3,7 @@ title: "Parenting and Child Development"
 subtitle: "Positive and Negative Parental Discipline Behaviors And Child Outcomes Across 60 Countries"
 author: 
   name: "Global Families Research Team" 
-  url: https://globalfamilies.quarto.pub/global-families-project/
+  url: https://agrogan1.github.io/globalfamilies/
 date: "today"
 format: 
   closeread-html:
@@ -20,7 +20,7 @@ nocite: |
 filters:
   - social-share
 share:
-  permalink: "https://globalfamilies.quarto.pub/parenting/"
+  permalink: "https://agrogan1.github.io/closeread/parenting/parenting.html"
   description: "What Should Parents Do?"
   twitter: false
   facebook: true

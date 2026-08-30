@@ -18,7 +18,7 @@ bibliography: logarithms.bib
 filters:
   - social-share
 share:
-  permalink: "https://globalfamilies.quarto.pub/logarithms/"
+  permalink: "https://agrogan1.github.io/closeread/logarithms/logarithms.html"
   description: "Looking for Intuitive Explanations of an Elusive Concept"
   twitter: false
   facebook: true

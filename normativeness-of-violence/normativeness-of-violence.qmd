@@ -2,7 +2,7 @@
 title: "Normativeness of Violence and Associations Between Caregiver Physical Abuse and Child Aggression"
 author: 
   name: "Global Families Research Team" 
-  url: https://globalfamilies.quarto.pub/global-families-project/
+  url: https://agrogan1.github.io/globalfamilies/
 date: "today"
 format: 
   closeread-html:
@@ -19,7 +19,7 @@ filters:
   - social-share
   - highlight-text
 share:
-  permalink: "https://globalfamilies.quarto.pub/normativeness-of-violence/"
+  permalink: "https://agrogan1.github.io/closeread/normativeness-of-violence/normativeness-of-violence.html"
   description: "Normativeness of Violence"
   twitter: false
   facebook: true
@@ -294,7 +294,7 @@ The link between physical abuse and child aggression appears to be [constant]{co
 :::
 
 :::{focus-on="cr-other-research"}
-There is [some evidence from other research](https://globalfamilies.quarto.pub/spillover-of-violence/) [@Ma2025] that there is a [pathway]{color="#FF0000"} from higher levels of community or societal violence to physical abuse, and onward to child aggression.
+There is [some evidence from other research](https://agrogan1.github.io/closeread/spillover-of-violence/spillover-of-violence.html) [@Ma2025] that there is a [pathway]{color="#FF0000"} from higher levels of community or societal violence to physical abuse, and onward to child aggression.
 :::
 
 :::{#cr-other-research .scale-to-fill}
