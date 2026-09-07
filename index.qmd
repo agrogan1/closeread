@@ -30,7 +30,7 @@ layout_column_wrap(
   # height = 700,
   card(card_header(class = "bg-dark", 
                    "Parenting and Child Development"), 
-       card_body(card_image(src = "../parenting/positiveparenting.png"),
+       card_body(card_image(src = "https://agrogan1.github.io/closeread/parenting/positiveparenting.png"),
                  markdown("[https://agrogan1.github.io/closeread/parenting/parenting.html](https://agrogan1.github.io/closeread/parenting/parenting.html)"))), 
   
   card(card_header(class = "bg-dark", 
