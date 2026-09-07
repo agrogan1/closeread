@@ -35,38 +35,38 @@ layout_column_wrap(
   
   card(card_header(class = "bg-dark", 
                    "Be Less Wrong"), 
-       card_body(card_image(src = "../be-less-wrong/combined.png"),
+       card_body(card_image(src = "https://agrogan1.github.io/closeread/be-less-wrong/combined.png"),
                  markdown("[https://agrogan1.github.io/closeread/be-less-wrong/be-less-wrong.html](https://agrogan1.github.io/closeread/be-less-wrong/be-less-wrong.html)"))), 
   
   card(card_header(class = "bg-dark", 
                    "Spillover of Violence"), 
-       card_body(card_image(src = "../spillover-of-violence/context.png"),
+       card_body(card_image(src = "https://agrogan1.github.io/closeread/spillover-of-violence/context.png"),
                  markdown("[https://agrogan1.github.io/closeread/spillover-of-violence/spillover-of-violence.html](https://agrogan1.github.io/closeread/spillover-of-violence/spillover-of-violence.html)"))), 
   
   card(card_header(class = "bg-dark", 
                    "Patterns Of Caregiver Aggressive And Nonaggressive Discipline"), 
-       card_body(card_image(src = "../patterns/patterns.png"), 
+       card_body(card_image(src = "https://agrogan1.github.io/closeread/patterns/patterns.png"), 
                  markdown("[https://agrogan1.github.io/closeread/patterns/patterns.html](https://agrogan1.github.io/closeread/patterns/patterns.html)"))), 
   
   card(card_header(class = "bg-dark", 
                    "Logarithms"), 
-       card_body(card_image(src = "../logarithms/desmos-graph.png"), 
+       card_body(card_image(src = "https://agrogan1.github.io/closeread/logarithms/desmos-graph.png"), 
                  markdown("[https://agrogan1.github.io/closeread/logarithms/logarithms.html](https://agrogan1.github.io/closeread/logarithms/logarithms.html)"),
                  markdown("[https://agrogan1.github.io/closeread/logarithms/logarithms-simple.html](https://agrogan1.github.io/closeread/logarithms/logarithms-simple.html)"))),
   
     card(card_header(class = "bg-dark", 
                    "Normativeness of Violence"), 
-       card_body(card_image(src = "../normativeness-of-violence/interaction-illustration.png"), 
+       card_body(card_image(src = "https://agrogan1.github.io/closeread/normativeness-of-violence/interaction-illustration.png"), 
                  markdown("[https://agrogan1.github.io/closeread/normativeness-of-violence/normativeness-of-violence.html](https://agrogan1.github.io/closeread/normativeness-of-violence/normativeness-of-violence.html)"))),
   
       card(card_header(class = "bg-dark", 
                    "Squaring the Circle: Is Triangulation of Child Abuse Reports Helpful?"), 
-       card_body(card_image(src = "../triangulation/multiple-measures.png"), 
+       card_body(card_image(src = "https://agrogan1.github.io/closeread/triangulation/multiple-measures.png"), 
                  markdown("[https://agrogan1.github.io/closeread/triangulation/triangulation.html](https://agrogan1.github.io/closeread/triangulation/triangulation.html)"))),
   
        card(card_header(class = "bg-dark", 
                    "When Empathy Helps and Hurts"), 
-       card_body(card_image(src = "../empathy/empathy-vis-gam.png"), 
+       card_body(card_image(src = "https://agrogan1.github.io/closeread/empathy/empathy-vis-gam.png"), 
                  markdown("[https://agrogan1.github.io/closeread/empathy/empathy.html](https://agrogan1.github.io/closeread/empathy/empathy.html)")))
   
   )
