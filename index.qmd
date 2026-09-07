@@ -21,26 +21,13 @@ library(htmltools)
 
 `closeread` *scrollytelling* projects using [https://closeread.dev/](https://closeread.dev/)
 
-* [https://agrogan1.github.io/closeread/parenting/parenting.html](https://agrogan1.github.io/closeread/parenting/parenting.html)
-* [https://agrogan1.github.io/closeread/be-less-wrong/be-less-wrong.html](https://agrogan1.github.io/closeread/be-less-wrong/be-less-wrong.html)
-* [https://agrogan1.github.io/closeread/spillover-of-violence/spillover-of-violence.html](https://agrogan1.github.io/closeread/spillover-of-violence/spillover-of-violence.html)
-* [https://agrogan1.github.io/closeread/logarithms/logarithms.html](https://agrogan1.github.io/closeread/logarithms/logarithms.html) | ([simplified version](https://agrogan1.github.io/closeread/logarithms/logarithms-simple.html))
-* [https://agrogan1.github.io/closeread/normativeness-of-violence/normativeness-of-violence.html](https://agrogan1.github.io/closeread/normativeness-of-violence/normativeness-of-violence.html)
-* [https://agrogan1.github.io/closeread/triangulation/triangulation.html](https://agrogan1.github.io/closeread/triangulation/triangulation.html)
-* [https://agrogan1.github.io/closeread/empathy/empathy.html](https://agrogan1.github.io/closeread/empathy/empathy.html)
-* [https://agrogan1.github.io/closeread/patterns/patterns.html](https://agrogan1.github.io/closeread/patterns/patterns.html)
-
-
-Not a `closeread` document, but a tutorial on using *OJS*, which can be useful in `closeread` documents:  [https://agrogan1.github.io/closeread/ojs-demo/ojs-demo.html](https://agrogan1.github.io/closeread/ojs-demo/ojs-demo.html)
-
-
 ```{r}
 #| echo: false
-#| eval: false
+#| eval: true
 
 layout_column_wrap(
   width = 1/3,
-  # height = 300, 
+  # height = 700,
   card(card_header(class = "bg-dark", 
                    "Parenting and Child Development"), 
        card_body(card_image(src = "../parenting/positiveparenting.png"),
@@ -61,8 +48,31 @@ layout_column_wrap(
        card_body(card_image(src = "../patterns/patterns.png"), 
                  markdown("[https://agrogan1.github.io/closeread/patterns/patterns.html](https://agrogan1.github.io/closeread/patterns/patterns.html)"))), 
   
-
+  card(card_header(class = "bg-dark", 
+                   "Logarithms"), 
+       card_body(card_image(src = "../logarithms/desmos-graph.png"), 
+                 markdown("[https://agrogan1.github.io/closeread/logarithms/logarithms.html](https://agrogan1.github.io/closeread/logarithms/logarithms.html)"),
+                 markdown("[https://agrogan1.github.io/closeread/logarithms/logarithms-simple.html](https://agrogan1.github.io/closeread/logarithms/logarithms-simple.html)"))),
+  
+    card(card_header(class = "bg-dark", 
+                   "Normativeness of Violence"), 
+       card_body(card_image(src = "../normativeness-of-violence/interaction-illustration.png"), 
+                 markdown("[https://agrogan1.github.io/closeread/normativeness-of-violence/normativeness-of-violence.html](https://agrogan1.github.io/closeread/normativeness-of-violence/normativeness-of-violence.html)"))),
+  
+      card(card_header(class = "bg-dark", 
+                   "Squaring the Circle: Is Triangulation of Child Abuse Reports Helpful?"), 
+       card_body(card_image(src = "../triangulation/multiple-measures.png"), 
+                 markdown("[https://agrogan1.github.io/closeread/triangulation/triangulation.html](https://agrogan1.github.io/closeread/triangulation/triangulation.html)"))),
+  
+       card(card_header(class = "bg-dark", 
+                   "When Empathy Helps and Hurts"), 
+       card_body(card_image(src = "../empathy/empathy-vis-gam.png"), 
+                 markdown("[https://agrogan1.github.io/closeread/empathy/empathy.html](https://agrogan1.github.io/closeread/empathy/empathy.html)")))
+  
   )
 
 ```
+
+
+Not a `closeread` document, but a tutorial on using *OJS*, which can be useful in `closeread` documents:  [https://agrogan1.github.io/closeread/ojs-demo/ojs-demo.html](https://agrogan1.github.io/closeread/ojs-demo/ojs-demo.html)
 
