@@ -119,7 +119,7 @@ Scroll to explore
 :::
 
 :::{focus-on="cr-question-1"}
-This study [@Ma_normativeness] examined the associations between caregiver physical abuse and aggressive behaviors among 3- to 4-year-old children in low- and middle-income countries (LMICs). 
+This study [@Ma_normativeness] examined the associations between caregiver [physical abuse]{color="#FF0000"} and [aggressive behaviors]{color="#FF0000"} among 3- to 4-year-old children in low- and middle-income countries (LMICs). 
 :::
 
 :::{#cr-question-1 .scale-to-fill}
@@ -145,7 +145,7 @@ flowchart LR
 :::
 
 :::{focus-on="cr-question-2"}
-We also examined whether these associations are different or similar in contexts with high levels of macro-level violence (physical abuse, intimate partner violence, and terrorism and political violence).
+We also examined whether these associations are [different]{color="#FF0000"} or [similar]{color="#FF0000"} in contexts with high levels of macro-level violence ([physical abuse]{color="#FF0000"}, [intimate partner violence]{color="#FF0000"}, and [terrorism and political violence]{color="#FF0000"}).
 :::
 
 :::{#cr-question-2 .scale-to-fill}
@@ -216,7 +216,7 @@ Multilevel logistic regression models examined main effects and interactions of 
 :::
 
 :::{focus-on="cr-result-1"}
-The results revealed that physical abuse [is]{color="#FF0000"} associated with higher aggression in children. 
+The results revealed that [physical abuse is associated with higher aggression]{color="#FF0000"} in children. 
 :::
 
 :::{#cr-result-1 .scale-to-fill}
