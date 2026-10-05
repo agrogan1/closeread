@@ -12,6 +12,8 @@ format:
       narrative-background-color-sidebar: white
       section-background-color: white
     css: spillover-of-violence.css
+  docx:
+    dpi:  600
 mermaid: 
   theme: default
 filters:
@@ -103,6 +105,7 @@ p0 <- MICScountries %>%
   config(displayModeBar = FALSE)
 
 ```
+
 :::{.story-scroll-hint}
 Scroll down to explore 
 `r emo::ji("down_arrow")`
