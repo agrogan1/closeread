@@ -1,0 +1,64 @@
+---
+title: "*Scrollytelling* Projects Using UNICEF MICS Data"
+author: 
+  - name: "Andy Grogan-Kaylor"
+    url: https://agrogan1.github.io/
+date: "today"
+format: html
+---
+
+```{r}
+#| echo: false
+#| output: false
+
+library(bslib)
+
+library(shiny)
+
+library(htmltools)
+
+```
+
+*Scrollytelling* projects using [UNICEF MICS Data](https://mics.unicef.org/)
+
+```{css, echo=FALSE}
+
+.card-body {
+  font-size: 11px !important; 
+  }
+
+```
+
+```{r}
+#| echo: false
+#| eval: true
+
+# theme = bs_theme(font_scale = 0.5)
+
+layout_column_wrap(
+  width = 1/3,
+  # height = 700,
+  card(card_header(class = "bg-dark", 
+                   "Parenting and Child Development"), 
+       card_body(card_image(src = "https://agrogan1.github.io/closeread/parenting/positiveparenting.png"),
+                 markdown("[https://agrogan1.github.io/closeread/parenting/parenting.html](https://agrogan1.github.io/closeread/parenting/parenting.html)"))), 
+
+  card(card_header(class = "bg-dark", 
+                   "Spillover of Violence"), 
+       card_body(card_image(src = "https://agrogan1.github.io/closeread/spillover-of-violence/context.png"),
+                 markdown("[https://agrogan1.github.io/closeread/spillover-of-violence/spillover-of-violence.html](https://agrogan1.github.io/closeread/spillover-of-violence/spillover-of-violence.html)"))), 
+  
+  card(card_header(class = "bg-dark", 
+                   "Patterns Of Caregiver Aggressive And Nonaggressive Discipline"), 
+       card_body(card_image(src = "https://agrogan1.github.io/closeread/patterns/patterns.png"), 
+                 markdown("[https://agrogan1.github.io/closeread/patterns/patterns.html](https://agrogan1.github.io/closeread/patterns/patterns.html)"))), 
+  
+  card(card_header(class = "bg-dark", 
+                   "Normativeness of Violence"), 
+       card_body(card_image(src = "https://agrogan1.github.io/closeread/normativeness-of-violence/interaction-illustration.png"), 
+                 markdown("[https://agrogan1.github.io/closeread/normativeness-of-violence/normativeness-of-violence.html](https://agrogan1.github.io/closeread/normativeness-of-violence/normativeness-of-violence.html)")))
+)
+
+```
+
+
