@@ -290,7 +290,7 @@ flowchart LR
 :::
 
 :::{focus-on="cr-result-2"}
-The link between physical abuse and child aggression appears to be [constant]{color="#FF0000"}, and [does not appear to depend upon context]{color="#FF0000"}. 
+The link between physical abuse and child aggression appears to be mostly [constant]{color="#FF0000"}, and [does not appear to depend upon context]{color="#FF0000"}. 
 :::
 
 :::{focus-on="cr-other-research"}
