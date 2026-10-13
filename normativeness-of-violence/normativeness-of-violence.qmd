@@ -119,8 +119,14 @@ Scroll to explore
 :::
 
 :::{focus-on="cr-question-1"}
-This study [@Ma_normativeness] examined the associations between caregiver [physical abuse]{color="#FF0000"} and [aggressive behaviors]{color="#FF0000"} among 3- to 4-year-old children in low- and middle-income countries (LMICs). 
+This study [@Ma_normativeness] examined the associations between caregiver moderate[^moderate] and severe[^severe] [physical abuse]{color="#FF0000"}[^abuse] and [aggressive behaviors]{color="#FF0000"} among 3- to 4-year-old children in low- and middle-income countries (LMICs). 
 :::
+
+[^moderate]: "Moderate physical abuse was assessed with four items that measured whether the respondent or anyone else in the household used the following behaviors toward the child in the past month: (1) Shook [child], (2) Spanked, hit or slapped [child] on the bottom with a bare hand, (3) Hit or slapped [child] on the hand, arm, or leg, and (4) Hit [child] on the bottom or elsewhere on the body with something like a belt, hairbrush, stick or other hard object. All items were dichotomous (1 = yes; 0 = no). We combined these four items to create a binary variable that indicated whether moderate physical abuse occurred (=1) or did not occur (=0) in the past month."
+
+[^severe]: "Severe physical abuse was measured by two dichotomous items (1 = yes; 0 = no). Respondents were asked whether any adult in the household used the following behaviors toward the child in the preceding month of the interview: (1) Beat [child] up, that is, hit [child] over and over as hard as one could and (2) Hit or slapped [child] on the face, head, or ears. We combined these two items to create a binary variable that indicated whether severe physical abuse occurred (=1) or did not occur (=0) in the past month."
+
+[^abuse]: "Our operational definition of physical child abuse follows the definition adopted by the WHO and used in prior research [@Akmatov2011; @WorldHealthOrganization1999], under which any parental aggression with the potential to harm the child is considered abusive." 
 
 :::{#cr-question-1 .scale-to-fill}
 ```{mermaid}
@@ -216,7 +222,7 @@ Multilevel logistic regression models examined main effects and interactions of 
 :::
 
 :::{focus-on="cr-result-1"}
-The results revealed that [physical abuse is associated with higher aggression]{color="#FF0000"} in children. 
+The results revealed that both moderate and severe [physical abuse are associated with higher aggression]{color="#FF0000"} in children. 
 :::
 
 :::{#cr-result-1 .scale-to-fill}
