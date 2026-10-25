@@ -332,11 +332,35 @@ These findings emphasize that physical abuse poses a [significant threat]{color=
 :::
 
 :::{focus-on="cr-interventions"}
-The findings highlight the need for contextually-responsive policy [interventions]{color="#FF0000"} aimed at reducing physically abusive practices worldwide.
+The findings highlight the need for [contextually-responsive]{color="#FF0000"} [interventions]{color="#FF0000"} aimed at reducing physically abusive practices worldwide.
 :::
 
 :::{#cr-interventions .scale-to-fill}
 ```{mermaid}
+%%| eval: true
+
+flowchart TB
+
+  classDef yellow fill:#FFC20E,stroke:#000000,stroke-width:2px,color:#000000;
+  
+  classDef blue fill:#374EA2,stroke:#000000,stroke-width:2px,color:#FFFFFF;
+  
+  classDef green fill:#00833D,stroke:#000000,stroke-width:2px,color:#FFFFFF;
+  
+  classDef orange fill:#D86018,stroke:#000000,stroke-width:2px,color:#FFFFFF;
+  
+  classDef red fill:#9A3324,stroke:#000000,stroke-width:2px,color:#FFFFFF;
+
+  interventions[contextually responsive interventions]:::green --> |"reduce"| abuse
+  
+  abuse[physical abuse]:::red -->  |"reduce"| aggression[child aggression]:::yellow
+
+  linkStyle 0,1 stroke:#000000,stroke-width:3px,font-size:12px,color:red;
+
+```
+
+```{mermaid}
+%%| eval: false
 
 flowchart TB
 
@@ -352,9 +376,21 @@ flowchart TB
   
   abuse[physical abuse]:::red -->  |"reduce"| aggression[child aggression]:::yellow
 
+  subgraph interventions["interventions"]
+  
+  explanation["interventions are aware that..."]:::green
+  
+  explanation --> context
+  
+  context:::blue --> parenting:::orange
+  
+  parenting --> childOutcomes["child outcomes"]:::yellow
+  
+  end
+  
   interventions:::green --> |"reduce"| abuse
-
-  linkStyle 0,1 stroke:#000000,stroke-width:3px,font-size:12px,color:red;
+  
+  linkStyle 0,1,2,3,4 stroke:#000000,stroke-width:3px,font-size:12px,color:red;
 
 ```
 :::
