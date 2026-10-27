@@ -12,8 +12,9 @@ format:
       narrative-background-color-sidebar: white
       section-background-color: white
     css: spillover-of-violence.css
+    format-links: false
   docx:
-    dpi:  600
+    dpi:  1200
 mermaid: 
   theme: default
 filters:
