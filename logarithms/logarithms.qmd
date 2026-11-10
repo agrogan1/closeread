@@ -146,6 +146,45 @@ $e$ emerges in many contexts, including some aspects of compound growth processe
 
 [^e]: A common definition of $e$--grounded in ideas of compound growth--is $$e = \lim_{n \to \infty} \left(1 + \frac{1}{n} \right)^n$$
 
+:::{focus-on="cr-compound-growth"}
+## Compound Growth
+
+Compound growth can occur with many phenomena, including the growth of animal or plant populations, disease spread, or the growth of a sum of money.
+:::
+
+:::{#cr-compound-growth .scale-to-fill}
+```{r}
+#| echo: false
+#| output: true
+#| message: false
+#| warning: false
+
+x3 <- seq(0, 10, .5)
+
+y3 <- 10 * 1.15^x3
+
+mydata3 <- data.frame(x3, y3)
+
+p_compound_growth <- ggplot(mydata3,
+       aes(x = x3,
+           y = y3)) +
+  geom_point(color = "darkgreen",
+             size = 3) +
+  labs(title = "Compound Growth",
+       x = "x",
+       y = "amount") +
+  theme_void()
+  
+p_compound_growth_anim <- p_compound_growth +
+  transition_manual(x3, cumulative = TRUE)
+
+animate(p_compound_growth_anim, 
+        nframes = 21,
+        renderer = gifski_renderer(loop = FALSE))
+
+```
+:::
+
 :::{focus-on="cr-ln-definition-if"}
 :arrow_down:
 :::
@@ -226,7 +265,7 @@ p_logistic_sigmoid <- ggplot(mydata2,
              size = 3) +
   labs(title = "Logistic or Sigmoid Function",
        x = "x",
-       y = "probablity") +
+       y = "probability") +
   theme_void()
   
 p_logistic_sigmoid_anim <- p_logistic_sigmoid +
