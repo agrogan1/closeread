@@ -2,22 +2,25 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.30">
+<meta name="generator" content="quarto-1.10.18">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Andy Grogan-Kaylor">
-<meta name="dcterms.date" content="2026-08-30">
+<meta name="dcterms.date" content="2026-11-10">
 
 <title>Logarithms</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
 */
-code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
@@ -54,10 +57,10 @@ div.csl-indent {
 <script src="logarithms_files/libs/quarto-html/tippy.umd.min.js"></script>
 <script src="logarithms_files/libs/quarto-html/anchor.min.js"></script>
 <link href="logarithms_files/libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="logarithms_files/libs/quarto-html/quarto-syntax-highlighting-b6a8276bf55561bdbc268162d41bd1f7.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="logarithms_files/libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="logarithms_files/libs/bootstrap/bootstrap.min.js"></script>
 <link href="logarithms_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="logarithms_files/libs/bootstrap/bootstrap-138a6193a3bd40baf1e627da441a4734.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="logarithms_files/libs/bootstrap/bootstrap-215b371544c282197b31c8aa00ce3677.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script src="logarithms_files/libs/quarto-contrib/intersection-observer-polyfill-1.0.0/intersection-observer.js"></script>
 <script src="logarithms_files/libs/quarto-contrib/scrollama-3.2.0/scrollama.min.js"></script>
 <script src="logarithms_files/libs/quarto-contrib/closeread-0.1.0/closeread.js"></script>
@@ -67,7 +70,7 @@ div.csl-indent {
 <meta cr-remove-header-space="false">
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
 
 <script type="text/javascript">
 const typesetMath = (el) => {
@@ -109,9 +112,9 @@ window.Quarto = {
       <style>
         :root {
           --cr-section-background-color: white;
---cr-narrative-background-color-overlay: grey;
---cr-narrative-background-color-sidebar: white;
 --cr-narrative-text-color-sidebar: black;
+--cr-narrative-background-color-sidebar: white;
+--cr-narrative-background-color-overlay: grey;
         }
       </style>
     
@@ -136,7 +139,7 @@ window.Quarto = {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">August 30, 2026</p>
+      <p class="date">November 10, 2026</p>
     </div>
   </div>
   
@@ -211,11 +214,16 @@ window.Quarto = {
 <p><span class="emoji" data-emoji="arrow_down">⬇️</span></p>
 </div>
 </div>
-<div class="trigger new-trigger" data-focus-on="cr-odds">
+<div class="trigger new-trigger" data-focus-on="cr-probability">
 <section id="logistic-regression" class="level2 narrative">
 <h2 class="anchored" data-anchor-id="logistic-regression">Logistic Regression</h2>
-<p>One application of the logarithm is in thinking about <em>logistic regression</em>. In logistic regression, we start by thinking about the <em>odds</em> of our outcome:</p>
+<p>One application of the logarithm is in thinking about <em>logistic regression</em>. In logistic regression, we start by thinking about the <em>probability</em> of our outcome:</p>
 </section>
+</div>
+<div class="trigger new-trigger" data-focus-on="cr-odds">
+<div class="narrative">
+<p>We move to thinking about the <em>odds</em> of our outcome: the <em>probability</em> that our outcome will occur weighed against the <em>probability</em> that our outcome will not occur.</p>
+</div>
 </div>
 <div class="trigger new-trigger" data-focus-on="cr-log-odds">
 <div class="narrative">
@@ -230,7 +238,7 @@ window.Quarto = {
 <div class="trigger new-trigger" data-focus-on="cr-sigmoid">
 <div class="narrative">
 <p>This function is sometimes called a <em>sigmoid</em>, and has the interesting property of mapping the interval <span class="math inline">\(- \infty &lt; x &lt; \infty\)</span> to <span class="math inline">\(0 &lt; \text{probability} &lt; 1\)</span>.</p>
-<p>This is the first step in mapping a set of <em>continuous</em> predictors to the probability of <em>categorical</em> outcome.</p>
+<p>This is the first step in mapping a set of <em>continuous</em> predictors to the probability of a <em>categorical</em> outcome.</p>
 </div>
 </div>
 <div class="trigger new-trigger" data-focus-on="cr-logarithmic-spiral">
@@ -310,6 +318,9 @@ window.Quarto = {
 <p>Then</p>
 <p><span class="math display">\[\ln{\color{purple}{y}} = \color{red}{x}\]</span></p>
 </div>
+<div id="cr-probability" class="scale-to-fill sticky">
+<p><span class="math display">\[p(\text{outcome})\]</span></p>
+</div>
 <div id="cr-odds" class="scale-to-fill sticky">
 <p><span class="math display">\[\frac{p(\text{outcome})}{1-p(\text{outcome})}\]</span></p>
 </div>
@@ -385,7 +396,7 @@ Livio, Mario. 2002. <em>The Golden Ratio: The Story of Phi, the World’s Most A
 <li id="fn1"><span class="math inline">\(e\)</span> does not have the easy geometric definition that <span class="math inline">\(\pi\)</span> has.
 <p>
 </p><p>For any <span class="math inline">\(\bigcirc\)</span>, <span class="math display">\[\pi = \frac{\text{circumference}}{\text{diameter}}\]</span>.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn2"><p>A common definition of <span class="math inline">\(e\)</span> is <span class="math display">\[e = \lim_{n \to \infty} \left(1 + \frac{1}{n} \right)^n\]</span><a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>A common definition of <span class="math inline">\(e\)</span>–grounded in ideas of compound growth–is <span class="math display">\[e = \lim_{n \to \infty} \left(1 + \frac{1}{n} \right)^n\]</span><a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 </ol>
 </section></div></main>
 <!-- /main column -->

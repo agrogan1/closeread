@@ -140,7 +140,7 @@ $e$ is a kind of fundamental mathematical constant, like $\pi$.
 
 $e$ emerges in many contexts, including some aspects of compound growth processes[^e]. $e$ is approximately equal to 2.71828....
 
-[^e]: A common definition of $e$ is $$e = \lim_{n \to \infty} \left(1 + \frac{1}{n} \right)^n$$
+[^e]: A common definition of $e$--grounded in ideas of compound growth--is $$e = \lim_{n \to \infty} \left(1 + \frac{1}{n} \right)^n$$
 
 :::{focus-on="cr-ln-definition-if"}
 :arrow_down:
@@ -162,10 +162,18 @@ Then
 $$\ln{\color{purple}{y}} = \color{red}{x}$$
 :::
 
-:::{focus-on="cr-odds"}
+:::{focus-on="cr-probability"}
 ## Logistic Regression
 
-One application of the logarithm is in thinking about *logistic regression*. In logistic regression, we start by thinking about the *odds* of our outcome: 
+One application of the logarithm is in thinking about *logistic regression*. In logistic regression, we start by thinking about the *probability* of our outcome: 
+:::
+
+:::{#cr-probability .scale-to-fill}
+$$p(\text{outcome})$$
+:::
+
+:::{focus-on="cr-odds"}
+We move to thinking about the *odds* of our outcome: the *probability* that our outcome will occur weighed against the *probability* that our outcome will not occur.
 :::
 
 :::{#cr-odds .scale-to-fill}
@@ -191,7 +199,7 @@ $$p(\text{outcome}) = \frac{e^{\beta_0 + \beta x}}{1 + e^{\beta_0 + \beta x}}$$
 :::{focus-on="cr-sigmoid"}
 This function is sometimes called a *sigmoid*, and has the interesting property of mapping the interval $- \infty < x < \infty$ to $0 < \text{probability} < 1$. 
 
-This is the first step in mapping a set of *continuous* predictors to the probability of *categorical* outcome.
+This is the first step in mapping a set of *continuous* predictors to the probability of a *categorical* outcome.
 :::
 
 :::{#cr-sigmoid .scale-to-fill}
