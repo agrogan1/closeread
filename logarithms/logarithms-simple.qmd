@@ -243,6 +243,9 @@ p_logarithmic_spiral <- ggplot(data = mydata,
   theme_minimal() + 
   theme(axis.text = element_blank())  
 
+ggsave(p_logarithmic_spiral, 
+       file = "logarithmic-spiral.png")
+
 p_logarithmic_spiral_anim <- p_logarithmic_spiral +
   transition_manual(x1, cumulative = TRUE)
 
