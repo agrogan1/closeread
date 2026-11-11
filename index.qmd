@@ -60,7 +60,7 @@ layout_column_wrap(
   
   card(card_header(class = "bg-dark", 
                    "Logarithms"), 
-       card_body(card_image(src = "https://agrogan1.github.io/closeread/logarithms/desmos-graph.png"), 
+       card_body(card_image(src = "https://agrogan1.github.io/closeread/logarithms/logarithm-definition.png"), 
                  markdown("[https://agrogan1.github.io/closeread/logarithms/logarithms.html](https://agrogan1.github.io/closeread/logarithms/logarithms.html)"),
                  markdown("[https://agrogan1.github.io/closeread/logarithms/logarithms-simple.html](https://agrogan1.github.io/closeread/logarithms/logarithms-simple.html)"))),
   
