@@ -291,8 +291,6 @@ The equation for a logarithmic spiral in polar coordinates is: $r = ae^{b \theta
 :::
 
 :::{#cr-logarithmic-spiral .scale-to-fill}
-::: {layout-ncol=1}
-
 ```{r}
 #| echo: false
 #| output: true
@@ -328,8 +326,6 @@ animate(p_logarithmic_spiral_anim,
         renderer = gifski_renderer(loop = FALSE))
 
 ```
-
-:::
 :::
 
 :::{focus-on="cr-logarithmic-spiral-2"}

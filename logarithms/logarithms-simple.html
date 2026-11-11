@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Andy Grogan-Kaylor">
-<meta name="dcterms.date" content="2026-08-30">
+<meta name="dcterms.date" content="2026-11-11">
 
 <title>Logarithms</title>
 <style>
@@ -109,9 +109,9 @@ window.Quarto = {
       <style>
         :root {
           --cr-section-background-color: white;
---cr-narrative-background-color-sidebar: white;
---cr-narrative-background-color-overlay: grey;
 --cr-narrative-text-color-sidebar: black;
+--cr-narrative-background-color-overlay: grey;
+--cr-narrative-background-color-sidebar: white;
         }
       </style>
     
@@ -136,7 +136,7 @@ window.Quarto = {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">August 30, 2026</p>
+      <p class="date">November 11, 2026</p>
     </div>
   </div>
   
@@ -201,6 +201,12 @@ window.Quarto = {
 <p><span class="math inline">\(e\)</span> emerges in many contexts, including some aspects of compound growth processes<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a>. <span class="math inline">\(e\)</span> is approximately equal to 2.71828….</p>
 </div>
 </div>
+<div class="trigger new-trigger" data-focus-on="cr-compound-growth">
+<section id="compound-growth" class="level2 narrative">
+<h2 class="anchored" data-anchor-id="compound-growth">Compound Growth</h2>
+<p>Compound growth can occur with many phenomena, including the growth of animal or plant populations, disease spread, or the growth of a sum of money.</p>
+</section>
+</div>
 <div class="trigger new-trigger" data-focus-on="cr-ln-definition-if">
 <div class="narrative">
 <p><span class="emoji" data-emoji="arrow_down">⬇️</span></p>
@@ -214,7 +220,8 @@ window.Quarto = {
 <div class="trigger new-trigger" data-focus-on="cr-logarithmic-spiral">
 <section id="logarithmic-spiral" class="level2 narrative">
 <h2 class="anchored" data-anchor-id="logarithmic-spiral">Logarithmic Spiral</h2>
-<p>An interesting sidenote is that the logarithm forms the basis of the logarithmic spiral. The equation for a logarithmic spiral in polar coordinates is: <span class="math inline">\(r = ae^{b \theta}\)</span>, where <span class="math inline">\(\theta\)</span> is the angle, <span class="math inline">\(r\)</span> is the radius, and <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> are constants.</p>
+<p>An interesting sidenote is that the logarithm forms the basis of the logarithmic spiral.</p>
+<p>The equation for a logarithmic spiral in polar coordinates is: <span class="math inline">\(r = ae^{b \theta}\)</span>, where <span class="math inline">\(\theta\)</span> is the angle, <span class="math inline">\(r\)</span> is the radius, and <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> are constants.</p>
 </section>
 </div>
 <div class="trigger new-trigger" data-focus-on="cr-logarithmic-spiral-2">
@@ -280,6 +287,17 @@ window.Quarto = {
 </div>
 </div>
 </div>
+<div id="cr-compound-growth" class="scale-to-fill sticky">
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="logarithms-simple_files/figure-html/unnamed-chunk-2-1.gif" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
 <div id="cr-ln-definition-if" class="scale-to-fill sticky">
 <p>If</p>
 <p><span class="math display">\[\color{purple}{y} = \color{blue}{e}^{\color{red}{x}}\]</span></p>
@@ -289,10 +307,12 @@ window.Quarto = {
 <p><span class="math display">\[\ln{\color{purple}{y}} = \color{red}{x}\]</span></p>
 </div>
 <div id="cr-logarithmic-spiral" class="scale-to-fill sticky">
-<div class="quarto-layout-panel" data-layout-ncol="1">
-<div class="quarto-layout-row">
-<div class="quarto-layout-cell" style="flex-basis: 100.0%;justify-content: center;">
-<p><img src="desmos-graph.png" class="img-fluid"></p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="logarithms-simple_files/figure-html/unnamed-chunk-3-1.gif" class="img-fluid figure-img"></p>
+</figure>
 </div>
 </div>
 </div>
@@ -343,7 +363,7 @@ Livio, Mario. 2002. <em>The Golden Ratio: The Story of Phi, the World’s Most A
 <li id="fn1"><span class="math inline">\(e\)</span> does not have the easy geometric definition that <span class="math inline">\(\pi\)</span> has.
 <p>
 </p><p>For any <span class="math inline">\(\bigcirc\)</span>, <span class="math display">\[\pi = \frac{\text{circumference}}{\text{diameter}}\]</span>.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn2"><p>A common definition of <span class="math inline">\(e\)</span> is <span class="math display">\[e = \lim_{n \to \infty} \left(1 + \frac{1}{n} \right)^n\]</span><a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>A common definition of <span class="math inline">\(e\)</span>–grounded in ideas of compound growth–is <span class="math display">\[e = \lim_{n \to \infty} \left(1 + \frac{1}{n} \right)^n\]</span><a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 </ol>
 </section></div></main>
 <!-- /main column -->

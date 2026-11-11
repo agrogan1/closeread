@@ -37,6 +37,10 @@ share:
 
 library(Statamarkdown)
 
+library(ggplot2)
+
+library(gganimate)
+
 ```
 
 :::{.story-scroll-hint}
@@ -140,7 +144,48 @@ $e$ is a kind of fundamental mathematical constant, like $\pi$.
 
 $e$ emerges in many contexts, including some aspects of compound growth processes[^e]. $e$ is approximately equal to 2.71828....
 
-[^e]: A common definition of $e$ is $$e = \lim_{n \to \infty} \left(1 + \frac{1}{n} \right)^n$$
+[^e]: A common definition of $e$--grounded in ideas of compound growth--is $$e = \lim_{n \to \infty} \left(1 + \frac{1}{n} \right)^n$$
+
+:::{focus-on="cr-compound-growth"}
+## Compound Growth
+
+Compound growth can occur with many phenomena, including the growth of animal or plant populations, disease spread, or the growth of a sum of money.
+:::
+
+:::{#cr-compound-growth .scale-to-fill}
+```{r}
+#| echo: false
+#| output: true
+#| message: false
+#| warning: false
+
+x3 <- seq(0, 10, .5)
+
+y3 <- 10 * 1.15^x3
+
+mydata3 <- data.frame(x3, y3)
+
+p_compound_growth <- ggplot(mydata3,
+       aes(x = x3,
+           y = y3)) +
+  geom_point(color = "darkgreen",
+             size = 3) +
+  labs(title = "Compound Growth",
+       x = "x",
+       y = "amount") +
+  theme_minimal() + 
+  theme(axis.text = element_blank())
+  
+p_compound_growth_anim <- p_compound_growth +
+  transition_manual(x3, cumulative = TRUE)
+
+animate(p_compound_growth_anim, 
+        nframes = 21,
+        # height = 600,
+        renderer = gifski_renderer(loop = FALSE))
+
+```
+:::
 
 :::{focus-on="cr-ln-definition-if"}
 :arrow_down:
@@ -165,13 +210,47 @@ $$\ln{\color{purple}{y}} = \color{red}{x}$$
 :::{focus-on="cr-logarithmic-spiral"}
 ## Logarithmic Spiral
 
-An interesting sidenote is that the logarithm forms the basis of the logarithmic spiral. The equation for a logarithmic spiral in polar coordinates is: $r = ae^{b \theta}$, where $\theta$ is the angle, $r$ is the radius, and $a$ and $b$ are constants. 
+An interesting sidenote is that the logarithm forms the basis of the logarithmic spiral. 
+
+The equation for a logarithmic spiral in polar coordinates is: $r = ae^{b \theta}$, where $\theta$ is the angle, $r$ is the radius, and $a$ and $b$ are constants. 
 :::
 
 :::{#cr-logarithmic-spiral .scale-to-fill}
-::: {layout-ncol=1}
-![](desmos-graph.png){width=30%}
-:::
+```{r}
+#| echo: false
+#| output: true
+#| message: false
+#| warning: false
+
+x1 <- seq(1, 10, .1)
+
+y1 <- .05 * exp(.05 * x1)
+
+mydata <- data.frame(x1, y1)
+
+p_logarithmic_spiral <- ggplot(data = mydata,
+       aes(x = x1,
+           y = y1, 
+           group = x1)) +
+  geom_point(color = "darkred", 
+             size = 3) +
+  # geom_smooth() +
+  coord_polar(theta = "x") +
+  labs(title = "Logarithmic Spiral",
+       x = " ",
+       y = " ") +
+  # transition_reveal(x) +
+  theme_minimal() + 
+  theme(axis.text = element_blank())  
+
+p_logarithmic_spiral_anim <- p_logarithmic_spiral +
+  transition_manual(x1, cumulative = TRUE)
+
+animate(p_logarithmic_spiral_anim, 
+        nframes = 91,
+        renderer = gifski_renderer(loop = FALSE))
+
+```
 :::
 
 :::{focus-on="cr-logarithmic-spiral-2"}
