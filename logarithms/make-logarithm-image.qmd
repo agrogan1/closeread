@@ -1,0 +1,14 @@
+---
+title: "Make Logarithm Image"
+author: "Andy Grogan-Kaylor"
+date: "today"
+format: html
+---
+
+<span style = "font-size: 300%">
+If $\color{purple}{y} \color{black}{=} \color{blue}{b}^{\color{red}{x}}$, 
+</span>
+
+<span style = "font-size: 300%">
+then $\log_{\color{blue}{b}}{\color{purple}{y}} \color{black}{=} \color{red}{x}$.
+</span>
