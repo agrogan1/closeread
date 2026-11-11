@@ -173,13 +173,15 @@ p_compound_growth <- ggplot(mydata3,
   labs(title = "Compound Growth",
        x = "x",
        y = "amount") +
-  theme_void()
+  theme_minimal() + 
+  theme(axis.text = element_blank())
   
 p_compound_growth_anim <- p_compound_growth +
   transition_manual(x3, cumulative = TRUE)
 
 animate(p_compound_growth_anim, 
         nframes = 21,
+        # height = 600,
         renderer = gifski_renderer(loop = FALSE))
 
 ```
@@ -266,8 +268,9 @@ p_logistic_sigmoid <- ggplot(mydata2,
   labs(title = "Logistic or Sigmoid Function",
        x = "x",
        y = "probability") +
-  theme_void()
-  
+  theme_minimal() + 
+  theme(axis.text = element_blank())  
+
 p_logistic_sigmoid_anim <- p_logistic_sigmoid +
   transition_manual(x2, cumulative = TRUE)
 
@@ -282,7 +285,9 @@ animate(p_logistic_sigmoid_anim,
 :::{focus-on="cr-logarithmic-spiral"}
 ## Logarithmic Spiral
 
-An interesting sidenote is that the logarithm forms the basis of the logarithmic spiral. The equation for a logarithmic spiral in polar coordinates is: $r = ae^{b \theta}$, where $\theta$ is the angle, $r$ is the radius, and $a$ and $b$ are constants. 
+An interesting sidenote is that the logarithm forms the basis of the logarithmic spiral. 
+
+The equation for a logarithmic spiral in polar coordinates is: $r = ae^{b \theta}$, where $\theta$ is the angle, $r$ is the radius, and $a$ and $b$ are constants. 
 :::
 
 :::{#cr-logarithmic-spiral .scale-to-fill}
@@ -308,9 +313,12 @@ p_logarithmic_spiral <- ggplot(data = mydata,
              size = 3) +
   # geom_smooth() +
   coord_polar(theta = "x") +
-  labs(title = "Logarithmic Spiral") +
+  labs(title = "Logarithmic Spiral",
+       x = " ",
+       y = " ") +
   # transition_reveal(x) +
-  theme_void()
+  theme_minimal() + 
+  theme(axis.text = element_blank())  
 
 p_logarithmic_spiral_anim <- p_logarithmic_spiral +
   transition_manual(x1, cumulative = TRUE)
