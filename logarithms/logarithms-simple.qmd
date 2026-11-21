@@ -161,7 +161,7 @@ Compound growth can occur with many phenomena, including the growth of animal or
 
 x3 <- seq(0, 10, .5)
 
-y3 <- 10 * 1.15^x3
+y3 <- 10 * 1.35^x3
 
 mydata3 <- data.frame(x3, y3)
 
@@ -171,7 +171,7 @@ p_compound_growth <- ggplot(mydata3,
   geom_point(color = "darkgreen",
              size = 3) +
   labs(title = "Compound Growth",
-       x = "x",
+       x = "time",
        y = "amount") +
   theme_minimal() + 
   theme(axis.text = element_blank())
