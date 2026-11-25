@@ -243,9 +243,6 @@ p_logarithmic_spiral <- ggplot(data = mydata,
   theme_minimal() + 
   theme(axis.text = element_blank())  
 
-ggsave(p_logarithmic_spiral, 
-       file = "logarithmic-spiral.png")
-
 p_logarithmic_spiral_anim <- p_logarithmic_spiral +
   transition_manual(x1, cumulative = TRUE)
 
@@ -270,5 +267,15 @@ Logarithmic spirals can be found in nature in the *nautilus shell*, and in *sunf
 :::
 :::
 
+```{r}
+#| echo: false
+#| output: false
+#| message: false
+#| warning: false
+
+ggsave(p_logarithmic_spiral, 
+       file = "logarithmic-spiral.png")
+
+```
 :::
 
